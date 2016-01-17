@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
-<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="83" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.0.1" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:it-IT; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="84" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.0.1" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:it-IT; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
 <!-- ======================================================================== -->
 <!-- This file is an AbiWord document.                                        -->
 <!-- AbiWord is a free, Open Source word processor.                           -->
@@ -9,7 +9,7 @@
 <!-- ======================================================================== -->
 
 <metadata>
-<m key="abiword.date_last_changed">Sun Jan 17 17:25:00 2016
+<m key="abiword.date_last_changed">Sun Jan 17 17:33:41 2016
 </m>
 <m key="abiword.generator">AbiWord</m>
 <m key="dc.creator">cconforti</m>
@@ -21,18 +21,18 @@
 </metadata>
 <rdf>
 </rdf>
-<history version="1" edit-time="314" last-saved="1453047900" uid="1fd64fb2-bd36-11e5-87a2-bfbefeb2bc43">
-<version id="1" started="1453047900" uid="db2b12ac-bd36-11e5-87a2-bfbefeb2bc43" auto="0" top-xid="83"/>
+<history version="2" edit-time="835" last-saved="1453048421" uid="1fd64fb2-bd36-11e5-87a2-bfbefeb2bc43">
+<version id="2" started="1453047900" uid="11a404aa-bd38-11e5-87a2-bfbefeb2bc43" auto="0" top-xid="83"/>
 </history>
 <styles>
-<s type="P" name="Corpo del testo" basedon="Normal" followedby="Corpo del testo" props="text-align:justify; lang:it-IT; font-size:12pt; line-height:1.0; font-family:Times New Roman; dom-dir:ltr"/>
+<s type="P" name="Heading 1" basedon="Normal" followedby="Heading 1" props="font-family:Times New Roman; font-size:17pt; dom-dir:ltr; margin-bottom:3pt; lang:it-IT; font-weight:bold; line-height:1.0; color:000000; text-align:left; margin-top:6pt"/>
 <s type="P" name="Normal" followedby="Normal" props="text-align:left; lang:it-IT; font-size:12pt; line-height:1.0; font-family:Times New Roman; dom-dir:ltr"/>
+<s type="P" name="Heading 2" basedon="Normal" followedby="Heading 2" props="font-family:Arial Unicode MS; font-size:18pt; dom-dir:ltr; margin-bottom:5pt; lang:it-IT; font-weight:bold; line-height:1.0; text-align:left; margin-top:5pt"/>
+<s type="P" name="Corpo del testo" basedon="Normal" followedby="Corpo del testo" props="text-align:justify; lang:it-IT; font-size:12pt; line-height:1.0; font-family:Times New Roman; dom-dir:ltr"/>
 <s type="P" name="Heading 4" basedon="Normal" followedby="Heading 4" props="font-family:Arial Unicode MS; font-size:12pt; dom-dir:ltr; margin-bottom:5pt; lang:it-IT; font-weight:bold; line-height:1.0; text-align:left; margin-top:5pt"/>
 <s type="P" name="Corpo del testo 2" basedon="Normal" followedby="Corpo del testo 2" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; lang:it-IT; line-height:1.0; text-align:justify; font-style:italic"/>
 <s type="P" name="Corpo del testo 3" basedon="Normal" followedby="Corpo del testo 3" props="font-family:Times New Roman; font-size:8pt; dom-dir:ltr; margin-bottom:6pt; lang:it-IT; line-height:1.0; text-align:left"/>
 <s type="P" name="Fine modulo -z" basedon="Normal" followedby="Normal" props="font-family:Arial; font-size:8pt; display:none; lang:it-IT; line-height:1.0; dom-dir:ltr; text-align:center"/>
-<s type="P" name="Heading 1" basedon="Normal" followedby="Heading 1" props="font-family:Times New Roman; font-size:17pt; dom-dir:ltr; margin-bottom:3pt; lang:it-IT; font-weight:bold; line-height:1.0; color:000000; text-align:left; margin-top:6pt"/>
-<s type="P" name="Heading 2" basedon="Normal" followedby="Heading 2" props="font-family:Arial Unicode MS; font-size:18pt; dom-dir:ltr; margin-bottom:5pt; lang:it-IT; font-weight:bold; line-height:1.0; text-align:left; margin-top:5pt"/>
 <s type="P" name="Heading 3" basedon="Normal" followedby="Heading 3" props="font-family:Arial Unicode MS; font-size:13pt; dom-dir:ltr; margin-bottom:5pt; lang:it-IT; font-weight:bold; line-height:1.0; text-align:left; margin-top:5pt"/>
 <s type="P" name="Indirizzo HTML" basedon="Normal" followedby="Endnote Text" props="font-family:Arial Unicode MS; font-size:12pt; dom-dir:ltr; lang:it-IT; line-height:1.0; text-align:left; font-style:italic"/>
 <s type="P" name="Inizio modulo -z" basedon="Normal" followedby="Normal" props="font-family:Arial; font-size:8pt; display:none; lang:it-IT; line-height:1.0; dom-dir:ltr; text-align:center"/>
@@ -49,8 +49,9 @@
 </lists>
 <pagesize pagetype="A4" orientation="portrait" width="8.267717" height="11.692913" units="in" page-scale="1.000000"/>
 <section xid="5" props="page-margin-right:0.7875in; section-restart-value:1; dom-dir:ltr; section-space-after:0.0000in; page-margin-footer:0.2958in; page-margin-header:0.4917in; page-margin-left:0.7875in; page-margin-top:0.9840in; page-margin-bottom:0.7875in">
-<p style="Corpo del testo" xid="6" props="text-align:center; line-height:1.0; dom-dir:ltr"><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman; font-weight:bold"></c><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman; font-weight:bold">Qualche definizione, come punto di partenza:</c></p>
-<p style="Normal" xid="8" props="text-align:justify; line-height:1.0; dom-dir:ltr"><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman; font-weight:bold">Dato. </c><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman">Definizione encicolopedia Treccani “ciò che è immediatamente presente alla conoscenza, prima di ogni forma di elaborazione”.</c></p>
+<p style="Heading 1" xid="6"><c>PW: </c><c props="text-position:normal; text-decoration:none">Disponibilità e comunicabilità delle banche dati</c></p>
+<p style="Heading 2" xid="84"><c></c><c>Qualche definizione, come punto di partenza:</c></p>
+<p style="Normal" xid="8" props="text-align:justify; line-height:1.0; dom-dir:ltr"><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman; font-weight:bold">Dato. </c><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman">Definizione enciclopedia Treccani “ciò che è immediatamente presente alla conoscenza, prima di ogni forma di elaborazione”.</c></p>
 <p style="Normal" xid="9" props="text-align:justify; line-height:1.0; dom-dir:ltr"></p>
 <p style="Normal" xid="10" props="text-align:justify; line-height:1.0; dom-dir:ltr"><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman; font-weight:bold">Database</c><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman">. </c><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman; text-decoration:underline">Definizione che si trova su wikipedia</c><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman">: “in informatica, il termine database, banca  dati o base di dati, indica un insieme di archivi collegati secondo un particolare modello logico (relazionale, gerarchico o reticolare) e in modo tale da consentire la gestione dei dati stessi (inserimento,  ricerca, cancellazione e aggiornamento) da parte di particolari applicazioni software dedicate.</c></p>
 <p style="Corpo del testo" xid="11" props="text-align:justify; line-height:1.0; dom-dir:ltr"><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman">I “dati” sono oggetto di regolamentazione e tutela da parte del diritto della proprietà intellettuale solo quando si presentano come sistemi organizzati.</c></p>
@@ -75,7 +76,6 @@
 <p style="Normal" xid="30" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
 <p style="Normal" xid="31" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman">Open data in Regione Piemonte: legge regionale 24/2011</c></p>
 <p style="Normal" xid="32" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
-<p style="Heading 4" xid="33" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
 <p style="Heading 4" xid="34" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman; font-weight:bold">12/01/2016</c></p>
 <p style="Heading 4" xid="35" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
 <p style="Normal" xid="36" props="text-align:justify; line-height:1.0; dom-dir:ltr"><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman">I </c><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman; font-weight:bold">Raw Data</c><c props="lang:it-IT; font-size:12pt; font-family:Times New Roman">: dati grezzi, non elaborati, disorganizzati e disaggregati. E’ difficile analizzarli e fare considerazioni complessive. I dati organizzati ed interpretati sono più facili da comprendere e da ricordare, ma nascondono i dati di partenza, rendendo difficile la verifica o la creazione di analisi e raggruppamenti diversi da quelli forniti. Nell’ambito degli Open Data i “raw data" dovrebbero essere resi pubblici.</c></p>
