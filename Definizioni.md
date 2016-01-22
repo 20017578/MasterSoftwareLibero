@@ -41,3 +41,26 @@ b) dati di tipo aperto, i dati che presentano le seguenti caratteristiche:
 3) sono resi disponibili gratuitamente attraverso le tecnologie dell'informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, oppure sono resi disponibili ai costi marginali sostenuti per la loro riproduzione e divulgazione. L'Agenzia per l'Italia digitale deve stabilire, con propria deliberazione, i casi eccezionali, individuati secondo criteri oggettivi, trasparenti e verificabili, in cui essi sono resi disponibili a tariffe superiori ai costi marginali. In ogni caso, l'Agenzia, nel trattamento dei casi eccezionali individuati, si attiene alle indicazioni fornite dalla direttiva 2003/98/CE del Parlamento europeo e del Consiglio, del 17 novembre 2003, sul riutilizzo dell'informazione del settore pubblico, recepita con il decreto legislativo 24 gennaio 2006, n. 36.»
 
 Open data secondo il CAD: decreto legislativo 7 marzo 2005 numero 82, articolo 68, comma 3.
+
+
+I Raw Data: dati grezzi, non elaborati, disorganizzati e disaggregati. E’ difficile analizzarli e fare considerazioni complessive. I dati organizzati ed interpretati sono più facili da comprendere e da ricordare, ma nascondono i dati di partenza, rendendo difficile la verifica o la creazione di analisi e raggruppamenti diversi da quelli forniti. Nell’ambito degli Open Data i “raw data" dovrebbero essere resi pubblici.
+
+I **Linked Data** sono un metodo di esporre, condividere e connettere dati attraverso URI deferenziabili sul Web.
+
+L'interoperabilità è uno dei vantaggi più importanti del modello Open Data. I dati, se isolati, hanno poco valore; viceversa, il loro valore aumenta sensibilmente quando dataset differenti, prodotti e pubblicati in modo indipendente da diversi soggetti, possono essere incrociati liberamente fra loro, da utenti terzi.
+
+Fanno parte dei Closed Data tutti i dati che non sono liberamente accessibili o riutilizzabili. Diversi meccanismi impediscono l'accesso e il riuso dei dati, ad esempio: licenze, copyright, brevetti, barriere tecnologiche, costi, ecc
+
+Gli Open Data si contrappongono ai Closed Data in quanto sono accessibili a tutti e possono essere riutilizzati e ridistribuiti liberamente. Vantaggi:
+ *	fiducia verso le PA e lo Stato, collaborazione e partecipazione di tutti;
+ *	zero costi;
+ *	valore sociale;
+ *	disponibilità immediata di informazioni
+
+*da approfondire*: “Il Free Software si propone di garantire 4 libertà:
+	* Libertà di eseguire il programma per qualsiasi scopo;
+	* Libertà di studiare il programma e modificarlo;
+	* Libertà di ridistribuire copie del programma in modo da aiutare il prossimo;
+	* Libertà di migliorare il programma e di distribuire pubblicamente i miglioramenti in modo tale che tutta la comunità ne tragga beneficio”
+
+*Da ricordare*: Il primo data store italiano è stato quello della Regione Piemonte (2010), dati.piemonte.it, all'interno del quale sono catalogati dati aperti riconducibili ai vari enti regionali (comuni, province,...)
