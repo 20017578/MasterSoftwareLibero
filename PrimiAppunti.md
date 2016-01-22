@@ -29,10 +29,12 @@
 ####Verificare dati esistenti
  1. Utilizzabilità dati da [Scuola in chiaro](http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/)
  * Opportunità di incrociare dati da [IPA](http://spcdata.digitpa.gov.it/data.html)
- * Collegamento con dati già "open" regionali? comunali?
+ * Geolocalizzazione edifici della Regione Piemonte, sul [Geoportale](http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione/)
+ * Dati scolastici della Regione Piemonte, su (dati)[http://www.dati.piemonte.it/catalogodati/dato/100654-.html]
+ * Dati scolastici presso l'(AgID)[http://www.agid.gov.it/search/node/scuole]
  * Altri dati in possesso degli enti pubblicabili. 
 
 ####Normativa di riferimento
- * Oltre alle norme generice, cosa dice la legge 107/2015?
+ * Oltre alle (norme generice)[Normativa.md], cosa dice la legge 107/2015?
 
 ####Analizzare categorie dati e classificazioni possibili.
