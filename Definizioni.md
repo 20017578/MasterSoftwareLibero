@@ -30,3 +30,14 @@ Dati aperti:
 
 “informazioni pubblicate in formato tale da poter essere trattate senza il vincolo della disponibilità di uno specifico software  e con il consenso affinché possano essere riusate dalgi utenti Questi dati possono essere liberamente riutilizzati da chiunque e, al massimo, vincolati alla necessità di citarne la fonte e di condividerli con lo stesso tipo di licenza con cui sono stati originariamente rilasciati”.
 Caratteristiche: devono essere completi, primari, tempestivi, accessibili senza barriere, machine readable, in formati non proprietari, liberi da licenze, riutilizzabili, facilmente identificabili in rete.
+
+Open data in Regione Piemonte: legge regionale 24/2011
+
+«﻿3. Agli effetti del presente decreto legislativo si intende per:
+a) formato dei dati di tipo aperto, un formato di dati reso pubblico, documentato esaustivamente e neutro rispetto agli strumenti tecnologici necessari per la fruizione dei dati stessi;
+b) dati di tipo aperto, i dati che presentano le seguenti caratteristiche:
+1) sono disponibili secondo i termini di una licenza che ne permetta l'utilizzo da parte di chiunque, anche per finalità commerciali, in formato disaggregato;
+2) sono accessibili attraverso le tecnologie dell'informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, in formati aperti ai sensi della lettera a), sono adatti all'utilizzo automatico da parte di programmi per elaboratori e sono provvisti dei relativi metadati;
+3) sono resi disponibili gratuitamente attraverso le tecnologie dell'informazione e della comunicazione, ivi comprese le reti telematiche pubbliche e private, oppure sono resi disponibili ai costi marginali sostenuti per la loro riproduzione e divulgazione. L'Agenzia per l'Italia digitale deve stabilire, con propria deliberazione, i casi eccezionali, individuati secondo criteri oggettivi, trasparenti e verificabili, in cui essi sono resi disponibili a tariffe superiori ai costi marginali. In ogni caso, l'Agenzia, nel trattamento dei casi eccezionali individuati, si attiene alle indicazioni fornite dalla direttiva 2003/98/CE del Parlamento europeo e del Consiglio, del 17 novembre 2003, sul riutilizzo dell'informazione del settore pubblico, recepita con il decreto legislativo 24 gennaio 2006, n. 36.»
+
+Open data secondo il CAD: decreto legislativo 7 marzo 2005 numero 82, articolo 68, comma 3.
