@@ -11,4 +11,4 @@ facilmente individuabile dai suoi caratteri somatici.
  * uso di google form, inserimento dati su una piattaforma esterna;
  * dove si memorizzano i dati??
  * in base alla normativa vigente a quali vincoli territoriali e non, dobbiamo attenerci ? Possiamo mantenere o anche solo far transitare dati privati in altre nazioni ( UE, USA ..)
- * Quale infrastruttura per i Linked data? Quali vocabolari condivisi utilizzare per i Linked data?
+ * accorgimenti per raccolta dati dal pubblico (o da altri enti)
