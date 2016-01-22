@@ -58,9 +58,9 @@ Gli Open Data si contrappongono ai Closed Data in quanto sono accessibili a tutt
  *	disponibilità immediata di informazioni
 
 *da approfondire*: “Il Free Software si propone di garantire 4 libertà:
-	* Libertà di eseguire il programma per qualsiasi scopo;
-	* Libertà di studiare il programma e modificarlo;
-	* Libertà di ridistribuire copie del programma in modo da aiutare il prossimo;
-	* Libertà di migliorare il programma e di distribuire pubblicamente i miglioramenti in modo tale che tutta la comunità ne tragga beneficio”
+ * Libertà di eseguire il programma per qualsiasi scopo;
+ * Libertà di studiare il programma e modificarlo;
+ * Libertà di ridistribuire copie del programma in modo da aiutare il prossimo;
+ * Libertà di migliorare il programma e di distribuire pubblicamente i miglioramenti in modo tale che tutta la comunità ne tragga beneficio”
 
 *Da ricordare*: Il primo data store italiano è stato quello della Regione Piemonte (2010), dati.piemonte.it, all'interno del quale sono catalogati dati aperti riconducibili ai vari enti regionali (comuni, province,...)
