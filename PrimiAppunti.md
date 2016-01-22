@@ -1,27 +1,37 @@
-Obiettivi e sotto-obiettivi.
-  1. Manuale di transizione verso gli Open-Data
-    1.1. Ricerca dell'esistente (esistono già guide, istruzioni, direttive in proposito?)
-      1.1.1. http://www.funzionepubblica.gov.it/media/982175/vademecumopendata.pdf
-      1.1.2. http://www.agid.gov.it/agenda-digitale/open-data
-      1.1.3. http://www.agid.gov.it/sites/default/files/linee_guida/patrimoniopubblicolg2014_v0.7finale.pdf
-    1.2. Panorama legislativo (Normativa di riferimento: obblighi/possibilità, fonti: CAD, diritti PI, privacy...)
-      1.2.1. Direttiva 1996
-    1.3. Scelte amministrative / organizzative
-    1.4. Valutazione pubblicabilità dati
-    1.5. 
-  2. Esempio di Open-Data interoperabili
-    2.0. ricerca di dizionari / ontologie esistenti
-    2.1. dati legati agli obblighi di trasparenza
-      2.1.1. Normativa di riferimento
-      2.1.2. Su quali dati concentrarsi?
-      2.1.3. 
-    2.2. dati legati alle scuole
-      2.2.1. Verificare dati esistenti
-        2.2.1.1. Utilizzabilità dati da "Scuola in chiaro" [ http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/ ]
-        2.2.1.2. Opportunità di incrociare dati da IPA [ http://spcdata.digitpa.gov.it/data.html ]
-        2.2.1.3. Collegamento con dati già "open" regionali? comunali?
-        2.2.1.4. Altri dati in possesso degli enti pubblicabili. 
-      2.2.2. Normativa di riferimento
-        2.2.2.1. Oltre alle norme generice, cosa dice la legge 107/2015?
-      2.2.3. Analizzare categorie dati e classificazioni possibili.
-  3. Conclusioni
+# Obiettivi e sotto-obiettivi.
+
+##Manuale di transizione verso gli Open-Data
+
+###Ricerca dell'esistente (esistono già guide, istruzioni, direttive in proposito?)
+ 1. http://www.funzionepubblica.gov.it/media/982175/vademecumopendata.pdf
+ 2. http://www.agid.gov.it/agenda-digitale/open-data
+ 3. http://www.agid.gov.it/sites/default/files/linee_guida/patrimoniopubblicolg2014_v0.7finale.pdf
+
+###Panorama legislativo (Normativa di riferimento: obblighi/possibilità, fonti: CAD, diritti PI, privacy...)
+ 1. [Normativa di riferimento](Normativa.md)
+
+###Scelte amministrative / organizzative
+
+###Valutazione pubblicabilità dati
+
+##Esempio di Open-Data interoperabili
+
+###Ricerca di dizionari / ontologie esistenti
+
+###Dati legati agli obblighi di trasparenza
+ 1. Normativa di riferimento
+ 2. Su quali dati concentrarsi?
+ 3. ...
+
+###Dati legati alle scuole
+
+####Verificare dati esistenti
+ 1. Utilizzabilità dati da [Scuola in chiaro](http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/)
+ * Opportunità di incrociare dati da [IPA](http://spcdata.digitpa.gov.it/data.html)
+ * Collegamento con dati già "open" regionali? comunali?
+ * Altri dati in possesso degli enti pubblicabili. 
+
+####Normativa di riferimento
+ * Oltre alle norme generice, cosa dice la legge 107/2015?
+
+####Analizzare categorie dati e classificazioni possibili.
