@@ -9,7 +9,7 @@ Manuale di transizione verso gli Open-Data
 
 ###Panorama legislativo (Normativa di riferimento: obblighi/possibilità, fonti: CAD, diritti PI, privacy...)
  1. [Normativa di riferimento](Normativa.md)
- 2. http://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/3134436
+ 2. http://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/3134436 ;
 
 ###Scelte amministrative / organizzative
 
