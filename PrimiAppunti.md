@@ -1,7 +1,7 @@
-# Obiettivi e sotto-obiettivi.
-
-##Manuale di transizione verso gli Open-Data
-
+Obiettivi e sotto-obiettivi.
+============================
+Manuale di transizione verso gli Open-Data
+------------------------------------------
 ###Ricerca dell'esistente (esistono già guide, istruzioni, direttive in proposito?)
  1. http://www.funzionepubblica.gov.it/media/982175/vademecumopendata.pdf
  2. http://www.agid.gov.it/agenda-digitale/open-data
@@ -15,8 +15,8 @@
 
 ###Valutazione pubblicabilità dati
 
-##Esempio di Open-Data interoperabili
-
+Esempio di Open-Data interoperabili
+-----------------------------------
 ###Ricerca di dizionari / ontologie esistenti
 
 ###Dati legati agli obblighi di trasparenza
