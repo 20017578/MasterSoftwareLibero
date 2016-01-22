@@ -31,7 +31,8 @@ Esempio di Open-Data interoperabili
  * Geolocalizzazione edifici della Regione Piemonte, sul [Geoportale](http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione/)
  * Dati scolastici della Regione Piemonte, su [dati](http://www.dati.piemonte.it/catalogodati/dato/100654-.html)
  * Dati scolastici presso l'[AgID](http://www.agid.gov.it/search/node/scuole)
- * Altri dati in possesso degli enti pubblicabili. 
+ * Altri dati in possesso degli enti pubblicabili
+ * Spark???
 
 ####Normativa di riferimento
  * Oltre alle [norme generice](Normativa.md), cosa dice la legge 107/2015?
