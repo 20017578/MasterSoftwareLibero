@@ -10,7 +10,7 @@ l'AgID espone un endpoint: http://spcdata.digitpa.gov.it:8899/sparql
 
 Su quel sevizio, per avere la lista dei comuni del Piemonte (limitata a 100 risultati)
 
-```
+```SPARQL
 select distinct ?c ?n where {
 ?c <http://www.geonames.org/ontology#locatedIn> ?p.
 ?p <http://www.geonames.org/ontology#locatedIn> <http://spcdata.digitpa.gov.it/Regione/1>.
@@ -20,7 +20,7 @@ select distinct ?c ?n where {
 
 La lista delle categorie di amministrazione
 
-```
+```SPARQL
 select distinct ?x ?o where {?x a
 <http://spcdata.digitpa.gov.it/CategoriaAmministrazione>. ?x
 <http://www.w3.org/2000/01/rdf-schema#label> ?o.}
