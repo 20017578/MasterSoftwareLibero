@@ -26,11 +26,14 @@ Esempio di Open-Data interoperabili
 ###Dati legati alle scuole
 
 ####Verificare dati esistenti
+Vedi anche l'embrionale [documento in proposito](DatiScuole.md)
+
  1. Utilizzabilità dati da [Scuola in chiaro](http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/)
  * Opportunità di incrociare dati da [IPA](http://spcdata.digitpa.gov.it/data.html)
  * Geolocalizzazione edifici della Regione Piemonte, sul [Geoportale](http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione/)
  * Dati scolastici della Regione Piemonte, su [dati](http://www.dati.piemonte.it/catalogodati/dato/100654-.html)
  * Dati scolastici presso l'[AgID](http://www.agid.gov.it/search/node/scuole)
+ * Dati pubblicati dal comune di Torino, su [asili](http://aperto.comune.torino.it/?q=taxonomy/term/127) e [scuole](http://aperto.comune.torino.it/?q=taxonomy/term/128)
  * Altri dati in possesso degli enti pubblicabili
  * SPARQL? Facciamo quale [esperimento](EsperimentiSparql.md).
 
