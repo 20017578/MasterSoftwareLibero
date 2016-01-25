@@ -12,7 +12,7 @@ Verifiche sui dati esistenti
 ### I dati RDF del [Sistema Pubblico di Connettività](http://spcdata.digitpa.gov.it/data.html)
 L'*Indice della Pubblica Amministrazione* Contiene dati su tutte le amministrazioni, quindi anche sulle scuole.
 
-Tipo di informazioni che possono essere reperiti da questo insieme di dati:
+Tipo di informazioni che possono essere reperite da questo insieme di dati:
 
  * denominazione;
  * Nome e Cognome di chi dirige l'istituzione;
@@ -48,7 +48,7 @@ Oltre a scaricare i dati (nel file spcdata_digitpa_amm.csv), i comandi suggeriti
 ### Il portale [Scuola in Chiaro](http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/)
 Contiene dati specifici sulle scuole, pubblicati direttamente dal MIUR.
 
-Tipo di informazioni che possono essere reperiti da questo insieme di dati:
+Tipo di informazioni che possono essere reperite da questo insieme di dati:
 
  * denominazione;
  * indirizzo postale;
@@ -71,10 +71,14 @@ Punti di debolezza:
 Comandi per scaricare la base dati in formato csv e prime verifiche. Da shell:
 
 ```
-$ curl "http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv" | tee cercalatuascuola_istruzione_ASS_201516.csv|wc -l
+$ curl "http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv" | tee cercalatuascuola_istruzione_ASS_201516.csv | wc -l
 51554
-$ $ grep -E "^Piemonte" cercalatuascuola_istruzione_ASS_201516.csv |wc -l
+$ grep -E "^Piemonte" cercalatuascuola_istruzione_ASS_201516.csv | wc -l
 3850
+$ curl "http://www.istruzione.it/scuolainchiaro_dati/8-Anagrafe_Scuole_Paritarie_201516.csv" | tee tee cercalatuascuola_istruzione_ASP_201516.csv | wc -l
+13669
+$ grep -E "^Piemonte" -a cercalatuascuola_istruzione_ASP_201516.csv | wc -l
+793
 ```
 
 Oltre a scaricare i dati (nel file cercalatuascuola_istruzione_ASS_201516.csv), i comandi suggeriti li contano. I valori sono superiori a quelli visti per l'IPA, ma si riferiscono a tutte le scuole, non solo alle sedi amministrative.
