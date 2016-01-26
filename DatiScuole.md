@@ -34,7 +34,7 @@ Punti di debolezza:
 
 Comandi per scaricare la base dati in formato csv e prime verifiche. Da shell:
 
-```
+```shell
 $ curl "http://spcdata.digitpa.gov.it/data/amm.csv" | grep "Istruzione Statale" | tee spcdata_digitpa_amm.csv | wc -l
 9017
 $ grep Piemonte spcdata_digitpa_amm.csv| wc -l
@@ -70,7 +70,7 @@ Punti di debolezza:
 
 Comandi per scaricare la base dati in formato csv e prime verifiche. Da shell:
 
-```
+```shell
 $ curl "http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv" | tee cercalatuascuola_istruzione_ASS_201516.csv | wc -l
 51554
 $ grep -E "^Piemonte" cercalatuascuola_istruzione_ASS_201516.csv | wc -l
@@ -125,7 +125,7 @@ Punti di debolezza:
 
 Comandi per scaricare la base dati in formato csv. Da shell:
 
-```
+```shell
 $ curl "http://aperto.comune.torino.it/sites/default/files/scuole.csv"| tee aperto_comune_scuole.csv |wc -l
 614
 ```
