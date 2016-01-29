@@ -1,0 +1,15 @@
+Normativa specificamente correlata ai dati aperti sulla scuola
+==============================================================
+Legge 107 del 13 luglio 2015
+----------------------------
+
+Reperibile su [Normattiva](http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-07-13;107)
+
+Interessanti in particolare i commi dal 136 al 141:
+
+* 136 È istituito il Portale unico dei dati della scuola. 
+* 137 Il Ministero dell'istruzione, dell'università e della ricerca, in conformità con l'articolo 68, comma 3, del codice dell'amministrazione digitale, di cui al decreto legislativo 7 marzo 2005, n. 82, e successive modificazioni, e in applicazione del decreto legislativo 24 gennaio 2006, n. 36, garantisce stabilmente l'accesso e la riutilizzabilità dei dati pubblici del sistema nazionale di istruzione e formazione, pubblicando in *formato aperto* i dati relativi ai **bilanci delle scuole**, i dati pubblici afferenti al **Sistema nazionale di valutazione**, l'**Anagrafe dell'edilizia scolastica**, i dati in **forma aggregata dell'Anagrafe degli studenti**, i **provvedimenti di incarico di docenza**, i **piani dell'offerta formativa**, compresi quelli delle scuole paritarie del sistema nazionale di istruzione di cui all'articolo 1 della legge 10 marzo 2000, n. 62, e successive modificazioni, i dati dell'**Osservatorio tecnologico**, i **materiali didattici** e le opere autoprodotti dagli istituti scolastici e rilasciati in formato aperto secondo le modalità di cui all'articolo 15 del decreto-legge 25 giugno 2008, n. 112, convertito, con modificazioni, dalla legge 6 agosto 2008, n. 133, e successive modificazioni. Pubblica altresì i dati, i documenti e le informazioni utili a valutare l'avanzamento didattico, tecnologico e d'innovazione del sistema scolastico.
+* 138 Il Portale di cui al comma 136, gestito  dal Ministero dell'istruzione, dell'università e della ricerca, *sentito il Garante per la protezione dei dati personali*, rende accessibili i dati del **curriculum dello studente** di cui al comma 28, condivisi con il Ministero da ciascuna istituzione scolastica, e il **curriculum del docente** di cui al comma 80.
+* 139 Il Portale di cui al comma 136  pubblica, inoltre, la normativa, gli atti e le circolari in conformità alle disposizioni del decreto-legge 22 dicembre 2008, n. 200, convertito, con modificazioni, dalla legge 18 febbraio 2009, n. 9, e del decreto legislativo 14 marzo 2013, n. 33.
+* 140 I dati presenti nel Portale di cui al  comma 136 o comunque nella disponibilità del Ministero dell'istruzione, dell'università e della ricerca non possono più essere  oggetto di richiesta alle istituzioni scolastiche.
+* 141 Per l'anno 2015 è autorizzata la spesa di euro 1 milione per la predisposizione del Portale di cui al comma 136 e, a decorrere dall'anno 2016, è autorizzata la spesa di euro 100.000 annui per le spese di gestione e di mantenimento del medesimo Portale.

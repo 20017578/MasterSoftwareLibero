@@ -38,6 +38,4 @@ Vedi anche l'embrionale [documento in proposito](DatiScuole.md)
  * SPARQL? Facciamo quale [esperimento](EsperimentiSparql.md).
 
 ####Normativa di riferimento
- * Oltre alle [norme generice](Normativa.md), cosa dice la legge 107/2015?
-
-####Analizzare categorie dati e classificazioni possibili.
+ * Oltre alle [norme generice](Normativa.md), verificare [norme specifiche](NormativaScuola.md)
