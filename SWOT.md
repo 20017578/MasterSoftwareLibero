@@ -10,7 +10,9 @@ Punti di debolezza (W)
 
 Opportunità (O)
 ---------------
-* Nuovi dati pubblicati da altre amministrazioni
+* Nuovi dati pubblicati da altre amministrazioni durante il lavoro
+* Accrescimento delle competenze personali
+* Nuovi e migliori dati pubblicati dai nostri enti
 
 Rischi (T)
 ----------
