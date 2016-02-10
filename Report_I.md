@@ -84,6 +84,6 @@ Num|Nome|Pro|Contro|Licenza|Note
 
 Num|Nome|Pro|Contro|Licenza|Note
 ---|----|---|------|-------|----
-1|GeoJSON|Facilmente importabile anche da web-app||aperta|
-2|CSV|essenziale|non auto-descrittivo: quale separatore? quale codifica?|nessuna (libero)|il più *portabile* per tabelle semplici
-2|ODS|standard ISO, oggi leggibile anche da Suite Office non libere|||
+1|GeoJSON|Facilmente importabile anche da web-app||standard aperto|
+2|CSV|essenziale|non auto-descrittivo: quale separatore? quale codifica?|nessuna (libera)|il più *portabile* per tabelle semplici
+2|ODS|standard ISO, oggi leggibile anche da Suite Office non libere||standard aperto|
