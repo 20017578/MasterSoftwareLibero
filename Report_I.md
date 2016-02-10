@@ -1,3 +1,5 @@
+![UPO](https://www.uniupo.it/sites/all/themes/bootstrap/unipm/img/std/logo.png)
+
 MASTER IN MANAGEMENT DEL SOFTWARE LIBERO - PROJECT WORK
 =======================================================
 
