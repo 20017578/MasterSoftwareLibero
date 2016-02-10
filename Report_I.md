@@ -24,14 +24,22 @@ MASTER IN MANAGEMENT DEL SOFTWARE LIBERO - PROJECT WORK
 
 # ASPETTI GIURIDICI 
 
+## Privacy
+
+### Identificazione problemi
+
+### Modelli ed esempi
+
+### Proposta di soluzione
+
 ## Licenze per dati aperti
 Per massimizzare le possibilità di riuso (e quindi il valore) dei dati aperti, oltre alla qualità dei dati stessi, è necessario garantire diverse condizioni: i dati devono essere accessibili (pubblicati e reperibili), tecnicamente lavorabili (ben strutturati e _machine-readable_) e legalmente riutilizzabili.
 Quest'ultimo punto dipende dalla licenza d'uso scelta (o mancante) per i dati.
 
-### problemi giuridici
+### Identificazione problema
 La presenza di diverse licenze e svariati orientamenti non facilita il riuso dei dati pubblicati dalle diverse PA, né da parte di imprese e cittadini, né da parte delle PA stesse che potrebbero trovarsi in difficoltà ad mescolare dati provenienti da diverse amministrazioni.
 
-### modelli di soluzione
+### Modelli di soluzione ed esempi
 Le [Linee guida dell'AgID](http://www.agid.gov.it/sites/default/files/linee_guida/patrimoniopubblicolg2014_v0.7finale.pdf) approfondiscono il tema nel capitolo 8.
 
 #### IODL
@@ -53,7 +61,7 @@ Sempre le _Linee guida dell'AgID_ concludono consigliando _l’uso della CC-BY n
 #### ODbL
 Al converso, la scelta di usare la licenza ODbL per rilasciare le proprie basi dati ci costringerebbe all'uso di una licenza poco usata se non per dati geografici e comunque **non compatibile** con le licenze CC che sono molto più diffuse.
 
-### Soluzione proposta
+### Sintesi proposta
 Ci proporremmo pertanto di indicare sempre esplicitamente una licenza d'uso, che preveda almeno l'attribuzione, per evitare le incertezze giuridiche.
 
 Al fine di evitare l'incompatibilità tra le modalità di attribuzione richieste dalle licenze CC-BY e quelle della licenza ODbL, si propone di proporle entrambe, in parallelo, a scelta del riutilizzatore. La pratica di usare [licenze multiple per evitare incompatibilità tra licenze libere](https://en.wikipedia.org/wiki/Multi-licensing#License_compatibility) è una prassi già sperimentata nell'ambito del software libero, forse un po' meno nell'ambito dei dati aperti, ma non c'è che da iniziare.
