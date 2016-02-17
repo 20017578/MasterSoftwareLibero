@@ -6,5 +6,4 @@ riporto un estratto di quelli riportati:
 
 |Termine|Definizione|
 |:--|:--|
-|Accessibilità telematica ai dati|Proprietà dei sistemi informatici mediante la quale viene data la possibilità, a soggetti esterni all'amministrazione titolare, di fruire attraverso una rete telematica di specifici dati. 
-L'accesso può essere effettuato sia in modalità interattiva da persone sia in modalità automatizzata da sistemi informatici.|
+|Accessibilità telematica ai dati|Proprietà dei sistemi informatici mediante la quale viene data la possibilità, a soggetti esterni all'amministrazione titolare, di fruire attraverso una rete telematica di specifici dati. L'accesso può essere effettuato sia in modalità interattiva da persone sia in modalità automatizzata da sistemi informatici.|
