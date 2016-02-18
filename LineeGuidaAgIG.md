@@ -32,7 +32,7 @@ Più qualche cenno al coordinamento multilivello tra amministrazioni (es: minist
 
 Brevi definizioni sugli standard, da approfondire per capire quali siano più appetibili per noi.
 
-Tratta gli standard riguardanti la rappresentazione di dati e metadati, quindi in generale essenzialmente *formati*. Non standard di programmazione, trasmissione, registrazione ... 
+Tratta gli standard riguardanti la rappresentazione di dati e metadati, quindi in generale essenzialmente *formati*. Non standard di programmazione, trasmissione, registrazione ... Per i dettagli tecnici sulle piattaforme di pubblicazione, qualche dettaglio si trova al capitolo 10.
 
 ### 6.2 Formati
 
@@ -60,9 +60,17 @@ Discussione sui terini legali per i dati pubblicati, esamina sia l'opzione *pubb
 
 Argomento che personalmente ritengo già approfondito nella nostra [bozza di report](Report_I.md#licenze-per-dati-aperti).
 
-- 9 Aspetti di costo
-- 10-11 Indicazioni operative
-- Appendici
+## 9 Aspetti di costo
+
+Breve resoconto sulla (in)opportunità di richiedere un prezzo per il dato pubblicato e su *modelli di business*...
+
+## 10-11 Indicazioni operative
+
+Il capitolo 10 contiene indicazioni abbastanza tecniche sulla presentazione dei dati su un portale, sarebbe interessante approfondire valutando i CMS attualmente utilizzati dai nostri enti.
+
+Il capitolo 11 accenna alle clausole da prevedere nei capitolati di gara su forniture/servizi che possano comprendere dati aperti.
+
+## Appendici
   - Appendice I
   - Appendice II
   - Appendice III
