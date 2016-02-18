@@ -28,10 +28,28 @@ Inicazioni organizzative e *operative* sul percorso verso i dati aperti, con div
 
 Più qualche cenno al coordinamento multilivello tra amministrazioni (es: ministeri-regioni-comuni).
 
-- 6 Standard tecnici
-  - 6.2 Formati
-  - 6.3 Ontologie
-  - 6.4 Basi Dati di riferimento
+## 6 Standard tecnici
+
+Brevi definizioni sugli standard, da approfondire per capire quali siano più appetibili per noi.
+
+Tratta gli standard riguardanti la rappresentazione di dati e metadati, quindi in generale essenzialmente *formati*. Non standard di programmazione, trasmissione, registrazione ... 
+
+### 6.2 Formati
+
+Brevi panoramiche sui formati
+
+- per *dati aperti* (6.2.1) in cui suggerisce 'XML, N3, JSON, CSV';
+- per *dati geografici* (6.2.2) dove approfondisce 'Shapefile, KML, GeoJSON, GML, GeoPackage';
+- per *documenti* (6.2.3) dove caldeggia CSV e XML per dati strutturati oppure 'ODT, ODS, ODP' (i formati di LibreOffice), 'PDF' ed un per me oscuro 'Akoma Ntoso'.
+
+### 6.3 Ontologie
+
+Lista strutturata di ontologie esistenti, da quelle citate a lezione (Friend of a Friend) ad ambiti piuttosto specifici (UNESCO, potrebbe avere applicazioni nel mondo MIUR?), alcune orientate ad una uniforme metadatazione (INSPIRE, SCHEMA.ORG, Dublin Core ...).
+
+### 6.4 Basi Dati di riferimento
+
+Catalogo che mescola basi dati istituzionali (SPCData, RNDT) e progetti collaborativi internazionali (DBPedia, OpenStreetMap ...)
+
 - 7 Titolarità
 - 8 Licenze
 - 9 Aspetti di costo
