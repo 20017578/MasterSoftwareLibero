@@ -16,8 +16,18 @@ Interessanti possono essere i paragrafi *3.1.1 Le relazioni tra trasparenza e Op
 
 Completa il glossario la sezione *3.3*, che, riprendendo il CAD, specifica nuovamente le differenze tra dati pubblici, disponibili, accessibili, gratuiti, aperti...
 
-- 4 Modelli
-- 5 Produzione-gestione dati aperti
+## 4 Modelli
+
+Classico modello **da 1 a 5 stelle** per la qualità degi dati aperti.
+
+Contiene anche un simile modello **da 1 a 4** per i metadati ed alcune indicazioni su metadati **obbligatori** o **condizionatamente obbligatori**.
+
+## 5 Produzione-gestione dati aperti
+
+Inicazioni organizzative e *operative* sul percorso verso i dati aperti, con diverse *linee di intervento*: dati nativi o mashup, linked o coinvolgimento su app...
+
+Più qualche cenno al coordinamento multilivello tra amministrazioni (es: ministeri-regioni-comuni).
+
 - 6 Standard tecnici
   - 6.2 Formati
   - 6.3 Ontologie
