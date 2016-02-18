@@ -50,8 +50,16 @@ Lista strutturata di ontologie esistenti, da quelle citate a lezione (Friend of 
 
 Catalogo che mescola basi dati istituzionali (SPCData, RNDT) e progetti collaborativi internazionali (DBPedia, OpenStreetMap ...)
 
-- 7 Titolarità
-- 8 Licenze
+## 7 Titolarità
+
+Da riguardare, non ho capito cosa tratta in particolare...
+
+## 8 Licenze
+
+Discussione sui terini legali per i dati pubblicati, esamina sia l'opzione *pubblico dominio* sia le licenze, con una interessante *matrice di compatibilità*.
+
+Argomento che personalmente ritengo già approfondito nella nostra [bozza di report](Report_I.md#licenze-per-dati-aperti).
+
 - 9 Aspetti di costo
 - 10-11 Indicazioni operative
 - Appendici
