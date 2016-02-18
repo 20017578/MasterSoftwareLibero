@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>Modifica posizione di un punto</title>
+
+<meta charset="utf-8">
+<meta name="description" content="Modifica posizione di un punto in Piemonte.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css">
+<style>
+html, body, #carta, p {padding: 0; margin: 0;}
+html, body {height: 100%;}
+#carta {height: 90%;}
+</style>
+<script>
+var map, marker;
+
+function sieteQui(e) {
+  L.marker(e.latlng).addTo(map).bindPopup("Voi siete qui").openPopup();
+}
+
+function memLatLon(e) {
+ var c = e.target.getLatLng();
+ document.getElementById('Lat').setAttribute('value', c.lat);
+ document.getElementById('Lon').setAttribute('value', c.lng);
+}
+
+function init() {
+  map = L.map('carta', {maxBounds: [[44.04, 6.56],[46.47, 9.22]]}).fitBounds([[44.04, 6.56],[46.47, 9.22]]);
+  map.on('locationfound', sieteQui);
+  map.locate();
+
+  var ingr = location.hash.split(';',4);
+  document.getElementById('ID').setAttribute('value', ingr[0].slice(1,11));
+
+  marker = L.marker([parseFloat(ingr[1]),parseFloat(ingr[2])]).addTo(map);
+  marker.bindPopup(ingr[3].replace(/&/g,'<br />')).openPopup();
+
+  map.attributionControl.addAttribution('Sfondo <a href="http://www.piemonte.it/">regione</a>');
+
+  var cartaTecnica = new L.TileLayer.WMS("http://geomap.reteunitaria.piemonte.it/ws/taims/rp-01/taimssfwms/CatalogoSfondoRegione?", {layers: 'CatalogoTMSRegione', format: 'image/png', attribution: "cartografia &copy; <a href='http://www.geoportale.piemonte.it/cms/index.php?option=com_content&view=article&id=55&Itemid=73&lang=it'>Regione Piemonte</a>"}).addTo(map);
+  var ortoFoto = new L.TileLayer.WMS("http://geomap.reteunitaria.piemonte.it/ws/taims/rp-01/taimsortoregp/wms_ortoregp2010", {layers: 'Ortofoto2010', format: 'image/png', attribution: "ortofoto &copy; 2010 <a href='http://www.geoportale.piemonte.it/cms/index.php?option=com_content&view=article&id=55&Itemid=73&lang=it'>Regione Piemonte</a>"});
+  var OSM = new L.TileLayer.WMS("http://irs.gis-lab.info/?", {layers: 'osm', format: 'image/png', attribution: 'cartografia &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'});
+
+  var cloudMade = L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {maxZoom: 16, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'});
+
+  var sfondo = {"Carta Tecnica Regione": cartaTecnica, "Ortofoto": ortoFoto, "OpenStreetMap": OSM, "CloudMade": cloudMade};
+  L.control.layers(sfondo).addTo(map);
+
+  marker.dragging.enable();
+  marker.on('dragend', memLatLon);
+
+  map.setView(marker.getLatLng(),15);
+}
+</script>
+<style type='text/css'> #turnkey-credit { font-family: Tahoma,Sans,Arial,Helvetica,Verdana,sans-serif; font-size: 11px; text-align: center; } #turnkey-credit a { text-decoration: none; } #turnkey-credit a:hover { text-decoration: underline; } body.wp-admin #turnkey-credit, body#image #turnkey-credit, body#media-upload #turnkey-credit { display: none; } </style>
+<body onload="init()">
+<div id="carta"></div>
+<form action="?" method="post">
+<p><input type="submit" value="Invia" />Vostra e-mail*: <input type="email" name="emailUtente" value="anoni@qui.no" maxlength="50" aria-required="true" aria-invalid="false" />
+Codice: <input type="text" name="meccanografico" value="" size="12" maxlength="10" id="ID" aria-required="true" aria-invalid="false" />
+Latitudine: <input type="text" name="latitudine" value="" size="10" maxlength="20" id="Lat" aria-required="true" aria-invalid="false" />
+Longitudine: <input type="text" name="longitudine" value="" size="10" maxlength="20" id="Lon" aria-required="true" aria-invalid="false" />
+</p>
+</form>
+</body>
