@@ -6,9 +6,9 @@ Manuale di transizione verso gli Open-Data
 ####Ricerca dell'esistente (esistono già guide, istruzioni, direttive in proposito?)
  1. Open Data, come rendere aperti i dati delle pubbliche amministrazioni (anno 2011): http://www.funzionepubblica.gov.it/media/982175/vademecumopendata.pdf
  2. http://www.agid.gov.it/agenda-digitale/open-data
- 3. LINEE GUIDA NAZIONALI PER LA VALORIZZAZIONE DEL PATRIMONIO INFORMATIVO PUBBLICO (ANNO 2014): http://www.agid.gov.it/sites/default/files/linee_guida/patrimoniopubblicolg2014_v0.7finale.pdf
+ 3. LINEE GUIDA NAZIONALI PER LA VALORIZZAZIONE DEL PATRIMONIO INFORMATIVO PUBBLICO (ANNO 2014): http://www.agid.gov.it/sites/default/files/linee_guida/patrimoniopubblicolg2014_v0.7finale.pdf , [un breve resoconto](LineeGuidaAgIG.md)
  4. Linee guida per la stesura di convenzioni per la fruibilità di dati delle pubbliche amministrazioni - art. 58 comma 2 del CAD: http://www.agid.gov.it/sites/default/files/linee_guida/linee_guida_convenzioni_fruibilita_dati_delle_pa_art_58_cad_0.pdf
- 5. LINEE GUIDA PER L’INTEROPERABILITÀ SEMANTICA ATTRAVERSO I LINKED OPEN DATA (2012): http://www.agid.gov.it/sites/default/files/documentazione_trasparenza/cdc-spc-gdl6-interoperabilitasemopendata_v2.0_0.pdf
+ 5. LINEE GUIDA PER L’INTEROPERABILITÀ SEMANTICA ATTRAVERSO I LINKED OPEN DATA (2012): http://www.agid.gov.it/sites/default/files/documentazione_trasparenza/cdc-spc-gdl6-interoperabilitasemopendata_v2.0_0.pdf , [alcuni appunti](note-link_n_4.md)
 
 ####Tre casi di PA:
  1. Breve analisi delle scelte politiche, tecniche ed organizzative dell USR
