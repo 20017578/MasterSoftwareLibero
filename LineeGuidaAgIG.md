@@ -52,7 +52,7 @@ Catalogo che mescola basi dati istituzionali (SPCData, RNDT) e progetti collabor
 
 ## 7 Titolarità
 
-Da riguardare, non ho capito cosa tratta in particolare...
+Da riguardare, non ho capito cosa tratta in particolare... Alcuni esempi nell'appendice II.
 
 ## 8 Licenze
 
@@ -71,6 +71,15 @@ Il capitolo 10 contiene indicazioni abbastanza tecniche sulla presentazione dei 
 Il capitolo 11 accenna alle clausole da prevedere nei capitolati di gara su forniture/servizi che possano comprendere dati aperti.
 
 ## Appendici
-  - Appendice I
-  - Appendice II
-  - Appendice III
+
+### Appendice I
+
+Esempi di formati diversi ('RDF/XML, N3') e metadati. 
+
+### Appendice II
+
+Esempio legato al capitolo 7, per me altrettanto incomprensibile.
+
+### Appendice III
+
+*Prontuario* di verifiche da effettuare prima di pubblicare un insieme di dati, ci sono problemi di *privacy*? licenze? leggi? ...
