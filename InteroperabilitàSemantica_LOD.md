@@ -1,4 +1,5 @@
 ##note##
+ * Documento di riferimento: http://www.agid.gov.it/sites/default/files/documentazione_trasparenza/cdc-spc-gdl6-interoperabilitasemopendata_v2.0_0.pdf
  * Dati territoriali (pag. 31-34)
  * Dati scolastici (pag. 37-38)
  * Dati anche relativi ad amministrazione trasparente: dati ambientali e dati relativi al personale (pag. 34-37). ! Solo se interessati a sviluppare questi ambiti nell’ambito dei dati in pubblicazione su /amministrazionetrasparente
