@@ -24,7 +24,12 @@ Contiene anche un simile modello **da 1 a 4** per i metadati ed alcune indicazio
 
 ## 5 Produzione-gestione dati aperti
 
-Inicazioni organizzative e *operative* sul percorso verso i dati aperti, con diverse *linee di intervento*: dati nativi o mashup, linked o coinvolgimento su app...
+Inicazioni organizzative e *operative* sul percorso verso i dati aperti, con diverse *linee di intervento*:
+
+- [ ] dati nativi
+- [ ] mashup
+- [ ] Linked Open Data
+- [ ] coinvolgimento
 
 Più qualche cenno al coordinamento multilivello tra amministrazioni (es: ministeri-regioni-comuni).
 
