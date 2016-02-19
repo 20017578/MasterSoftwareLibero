@@ -7,6 +7,7 @@
  * LOD, vedere:
    * https://www.w3.org/wiki/SweoIG/TaskForces/CommunityProjects/LinkingOpenData
    * http://linkeddata.org/
+   * Esempio ![immagine](linked-open-data-triple.png)
  * Il W3C ha creato una serie di gruppi di lavoro su vari aspetti (RDF, semantica ..): https://www.w3.org/2013/data/
  * Linked Open Vocabularies: http://lov.okfn.org/dataset/lov
  * RDF, OWL, SPARQL (pag. 61 - 63)
