@@ -6,6 +6,7 @@
 import requests
 from rdflib import Graph
 
+# Imposta il proxy, da mettere a 0 se si lavora da fuori dai computer della Regione
 da_regione = 1
 
 if da_regione == 1:
