@@ -2,9 +2,9 @@ Breve resoconto sulle LINEE GUIDA NAZIONALI PER LA VALORIZZAZIONE DEL PATRIMONIO
 
 ## 1-2 Prefazione, struttura
 
-Può essere utile il glossario, per seguire una terminologia conolidata.
+Può essere utile il glossario, per seguire una terminologia consolidata.
 
-Atra nota, la guida è rilasciata con licenza CC-BY-SA.
+Atra nota, la guida è rilasciata con licenza CC-BY-SA 4.0.
 
 ## 3 Introduzione
 
