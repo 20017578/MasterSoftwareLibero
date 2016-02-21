@@ -30,13 +30,21 @@ MASTER IN MANAGEMENT DEL SOFTWARE LIBERO - PROJECT WORK
 
 ### Proposte
 
-## Dati su scuole
+## Dati già pubblicati sulle scuole
 
 ### Problema
 
+Molti dati provenienti da diverse fonti, ma difficili da mettere in relazione per avere una visione a tutto tondo del mondo dell'istruzione.
+
 ### Situazione attuale
 
-### Proposte
+Analizzata brevemente in (altro documento)[DatiScuole.md].
+
+### Percorso di lavoro
+
+1. Verificare coerenza tra i dati pubblicati dai diversi enti.
+2. Sperimentare e proporre percorsi di interoperabilità, anche evidenziando le incoerenze riscontrate per proporre le verifiche del caso sui dati pubblicati.
+3. Per gli enti coinvolti (MIUR, Regione, Comune di Torino), provare a strutturare i dati già pubblicati usando *ontologie* comuni.
 
 # ASPETTI GIURIDICI 
 
