@@ -22,6 +22,22 @@ MASTER IN MANAGEMENT DEL SOFTWARE LIBERO - PROJECT WORK
 
 # ASPETTI TECNICI
 
+## Dati trasparenza
+
+### Problema
+
+### Situazione attuale
+
+### Proposte
+
+## Dati su scuole
+
+### Problema
+
+### Situazione attuale
+
+### Proposte
+
 # ASPETTI GIURIDICI 
 
 ## Privacy
