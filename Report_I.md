@@ -38,7 +38,7 @@ Molti dati provenienti da diverse fonti, ma difficili da mettere in relazione pe
 
 ### Situazione attuale
 
-Analizzata brevemente in (altro documento)[DatiScuole.md].
+Analizzata brevemente in [altro documento](DatiScuole.md).
 
 ### Percorso di lavoro
 
