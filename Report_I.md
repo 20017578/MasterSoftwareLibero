@@ -45,6 +45,25 @@ Analizzata brevemente in (altro documento)[DatiScuole.md].
 1. Verificare coerenza tra i dati pubblicati dai diversi enti.
 2. Sperimentare e proporre percorsi di interoperabilità, anche evidenziando le incoerenze riscontrate per proporre le verifiche del caso sui dati pubblicati.
 3. Per gli enti coinvolti (MIUR, Regione, Comune di Torino), provare a strutturare i dati già pubblicati usando *ontologie* comuni.
+4. Collegare anche i [dati che seguono](#dati-della-regione-piemonte-sugli-edifici-scolastici)...
+
+## Dati della Regione Piemonte sugli edifici scolastici
+
+### Problema
+
+La regione raccoglie da anni dati molto dettagliati sulle aree scolastiche e sugli edifici. Esiste una pubblicazione degli stessi tramite il geoportale regionale, ma tecnicamente il riuso risulta molto difficoltoso.
+
+### Situazione attuale
+
+I dati sono immagazzinati sotto forma di Shapefile o di Geo-DataBase?
+
+### Proposte
+
+A parte gli aspetti *politici*/organizzativi, tecnicamente possono essere analizzati i seguenti punti:
+
+1. Verificare l'esistenza di formati liberi che permettano di esportare tutti gli aspetti di questa raccolta dati.
+2. Analizzare quali di questi dati possono essere resi facilmente interoperabili con quelli analizzati nei [punti precedenti](#dati-gia-pubblicati-sulle-scuole).
+3. Costruire con almeno un sottoinsieme di questi dati una struttura di tipo Linked Open Data.
 
 # ASPETTI GIURIDICI 
 
