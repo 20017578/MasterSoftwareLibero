@@ -104,7 +104,7 @@ Punti di forza:
 [ampliare questo concetto fino ai temi legati alla "programmazione", al piano del dimensionameto scolastico inteso non solo come numero di studenti per autonomia ma come strumeno di analisi territoriale per definire autonomie e sedi scolastiche, etc etc ]
  
 
-# Ad oggi si sta cercando di far scaricare direttamente questi 3 layer direttamente dal geoportale, ma, a breve, la pubblicazione tra i "data set" dell'Open Data regionale dovrebbe essere un'operazione già programmata.
+ Ad oggi si sta cercando di far scaricare direttamente questi 3 layer direttamente dal geoportale, ma, a breve, la pubblicazione tra i "data set" dell'Open Data regionale dovrebbe essere un'operazione già programmata.
 
 ???Oppure potrebbe essere utile capire se viene fornito anche un servizio WMS pubblico. -> ci si sta attrezzando per farlo!
 
@@ -118,7 +118,7 @@ Verificare chi è titolare di questi dati e cercare un percorso che porti alla p
 
 Punti ancora da chiarire:
 Assenza totale del "codice edificio MIUR" CEM da tutti i dataset esistenti. 
-Assenza di un codice MIUR che differenzi un punto di erogazione del servizio e la sua eventuale succursuale (in Regione si è  dovuto procedere ad una nuova codifica che tenga conto di tale assenza). 
+Assenza di un codice MIUR che differenzi un punto di erogazione del servizio e la sua eventuale succursuale (in Regione si è  dovuto procedere ad una nuova codifica che tenesse conto di tale assenza). 
 
 
 
