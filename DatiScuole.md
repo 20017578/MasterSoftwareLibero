@@ -95,7 +95,7 @@ Punti di forza:
  * Presenta dati geografici abbastanza precisi e più specificatamente secondi i seguenti items:
  * PUNTI-localizzazione baricentrica sull'edificio scolastico definito "Principale"
  * PUNTI-localizzazione baricentrica sull'edificio scolastico definito "Subordinato"
- * POLYGON-localizzazione areale sull'area interessata dagli edifici scolastici afferenti
+ * POLYGON-localizzazione areale sulla superficie interessata dagli edifici scolastici afferenti cocetto di area di pertinenza) diverso dal concetto catastale di area ad uso pertinenziale.
  * specificare meglio e dettagliare le geometrie sopradescritte vantaggio di un approccio areale che conteggi oltre ai punti di erogazione specifici anche la vicinanza tra essi al fine di riassumere dati non di un'unica sciola ma di più punti di erogazione insieme- concetto di "Analisi territoriale" interrogazione, tematizzazione e non solo Elenco dati di punti di erogazione del servizio isolati anche se confinanti. ( ampliare questo concetto fino all'obiettivo di "programmazione", di piano del dimensionameto scolastico inteso non solo come numero di studenti per autonomia ma come strumeno di analisi territoriale per definire autonomie e sedi scolastiche.  
  
 se serve posso caricare un documento che tratta l'approccio metodologico utilizzato per recuperare le informazioni, i rapporti intercorsi con gli enti locali proprietari e/o gestori di edifici scolastici, l'acquisizione effettuata mediante la localizzazione di tutti i contributi richiesti per le opere di manutenzione straordinaria in funzione di tutti bandi regionali attivi.
