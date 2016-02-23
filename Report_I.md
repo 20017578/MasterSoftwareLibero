@@ -26,9 +26,17 @@ MASTER IN MANAGEMENT DEL SOFTWARE LIBERO - PROJECT WORK
 
 ### Problema
 
+Gli obblighi di legge obbligano la pubblicazione di dati in formato "open", che per come è definito e anche accettato il PDF. Il significato dei dati deve essere ricavato dalla normativa andando ad interpretare le tabelle pubblicate con formati e formattazioni diverse. I dati di amministrazioni diverse potrebbero essere di difficile comparazione ed analisi anche alla luce del fatto che la normativa indica talvolta i temi generali oggetto del decreto senza specificare il dettaglio e il formato del singolo dato.
+
 ### Situazione attuale
 
+I dati, organizzati in cartelle come dettato dal decreto, sono frutto di estrazioni da diversi db o documenti singoli e quindi difficilmente interoperanti tra loro
+
 ### Proposte
+
+Occorre creare una procedura che a seconda dell'articolo del decreto permetta all'amministrazione di formattare i dati secondo formati internazionalmente riconosciuti dando loro un valore aggiunto fornito da grammatiche condivise anche a livello di metadati.
+Quali grammatiche ? Partiamo dallo studio di qualcuna di queste ? Come si sta muovendo l'AGID ?
+Come ambiti di studio si propongono: affiti attivi e affitti passivi, dati sulle partecipate, dati sui lavori pubblici ...
 
 ## Dati già pubblicati sulle scuole
 
