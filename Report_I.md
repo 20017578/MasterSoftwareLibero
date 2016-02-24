@@ -18,6 +18,36 @@ MASTER IN MANAGEMENT DEL SOFTWARE LIBERO - PROJECT WORK
 
 ## CONSIDERAZIONI INTRODUTTIVE
 
+**Perché promuovere open data e open source?**
+
+Perché la condivisione delle informazioni, oltre a garantire risparmio di denaro, contribuisce alla 
+nascita di nuove opportunità per creare nuovi prodotti o servizi a beneficio delle imprese e della 
+collettività.
+I dati che le PA producono, raccolgono, organizzano e utilizzano nello svolgimento dei loro compiti 
+istituzionali hanno un valore intrinseco che va oltre l'assolvimento dei compiti istituzionali 
+dell'Amministrazione. 
+Per questo, l'accesso ai dati pubblici deve essere libero e gratuito per tutti, senza restrizioni che ne 
+limitino la riproduzione e l'accesso.
+Inoltre, i dati pubblici sono utili se raccolti in modo efficiente e organizzato. Da qui, l’opportunità 
+di prevedere la creazione di database facili da trovare e da usare, che garantiscano la possibilità 
+all’utente di ricavare informazioni specifiche in settori determinati.
+L' Open Government rappresenta un modello di amministrazione aperto e trasparente da parte degli 
+enti e delle istituzioni pubbliche verso i cittadini.
+
+**Licenze**
+
+Esistono due tipi li licenze con cui è possibile pubblicare i dati: “closet” e “open”.
+Le licenze chiuse consentono di riservare tutti i diritti, utilizzando il simbolo c che viene usato per 
+indicare il titolare del copyright sull’opera. Un dato pubblico reso disponibile con una licenza 
+chiusa non rispetta il diritto di ricusabilità tipico dell’Open data, io quanto senza il consenso di chi 
+detiene i diritti non può essere copiato, ripubblicato o modificato; il dato potrebbe solo essere 
+consultabile.
+Le licenze aperte tutelano l’autore del dato, attribuendogli la paternità del dato stesso ed evitando 
+che quanto pubblicato possa subire alterazione senza un controllo e senza l’impostazione di regole 
+ben precise.
+Allo stesso tempo garantiscono una serie di diritti a chi entra in possesso del dato permettendo di 
+ridistribuirlo liberamente e in alcuni casi anche manipolarlo al fine di creare opere derivate.
+
 ## DESCRIZIONE ANALITICA
 
 # ASPETTI TECNICI
@@ -74,6 +104,28 @@ A parte gli aspetti *politici*/organizzativi, tecnicamente possono essere analiz
 3. Costruire con almeno un sottoinsieme di questi dati una struttura di tipo Linked Open Data.
 
 # ASPETTI GIURIDICI 
+
+Riferimenti normativi (tratti da “Linee guida per l’inserimento ed il riuso di programmi informatici o parti di essi”, Digit PA):
+
+- Direttiva del Ministro per l’Innovazione e le tecnologie del 4 gennaio 2005 – Linee guida in materia di digitalizzazione dell’amministrazione;
+- Art. 68, comma 1, lett. B) e comma 2 bis, art. 70, comma 1 – D.Lgs 82/2005 (CAD)
+- Artt. 1  e 2 DPCM 31 maggio 2005, Razionalizzazione in merito all’uso  delle applicazioni informatiche e servizi ex art. 1, commi 92 , 193 e 194 della Legge 311/2004 (finanziaria 2005)
+- Artt. 192 e 195  Legge 311/2004 (finanziaria 2005);
+- Artt. 3, 5 e 7 Direttiva del Ministro per l’Innovazione e le tecnologie 19 dicembre 2003, Sviluppo ed utilizzazione dei programmi informatici da parte delle PA;
+- Art. 26, comma 2 Legge 289/2002 (Finanziaria 2003);
+- Art. 25 Legge 340/2000, Disposizioni per la delegificazione di norme e per la semplificazione di procedimenti amministrativi;
+- Art. 2 D.Lgs. 39/93 Norme in materia di sistemi informativi automatizzati delle Amministrazioni pubbliche;
+- Art. 1 Legge 241/90 Nuove norme in materia di procedimento amministrativo e di diritto di accesso ai documenti amministrativi;
+- Art. 11 legge 633/41 Protezione del diritto d’autore e di altri diritti connessi al suo esercizio.
+
+Da aggiungere:
+
+- Direttiva 2003/98/CE 17 novembre 2003
+- D.Lgs 196/2003 Codice in materia di protezione di dati personali;
+- D.Lgs 36/2006 Attuazione della direttiva 2003/98/CE relativa al riutilizzo nel settore pubblico;
+- Direttiva 2007/2/CE 
+- l.r. Regione Piemonte  24/2011
+- DGR n. 36-1109 del 30 novembre 2010 Approvazione Linee guida relative al riutilizzo e all’interscambio del Patrimonio Informativo regionale”.
 
 ## Privacy
 
