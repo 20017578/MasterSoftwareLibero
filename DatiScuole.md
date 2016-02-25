@@ -99,8 +99,8 @@ Punti di forza:
  
 [se serve posso caricare un documento che tratta l'approccio metodologico utilizzato per recuperare le informazioni, i rapporti intercorsi con gli enti locali proprietari e/o gestori di edifici scolastici, l'acquisizione effettuata mediante la localizzazione di tutti i contributi richiesti per le opere di manutenzione straordinaria in funzione di tutti bandi regionali attivi.]
  
-* specificare meglio e dettagliare le geometrie sopradescritte ponendo l'accento sul vantaggio di un approccio areale che conteggi oltre ai punti di erogazione specifici anche la vicinanza tra essi al fine di riassumere dati non di un'unica s ede ma di più punti di erogazione insieme - proporre e suggerire il concetto di "Analisi territoriale", di interrogazione spaziale, tematizzazione e non solo , come fino ad ora è accaduto, di un elenco di punti di erogazione del servizio isolati anche se vicini e confinanti. 
-[ampliare questo concetto fino ai temi legati alla "programmazione", al piano del dimensionameto scolastico inteso non solo come numero di studenti per autonomia ma come strumeno di analisi territoriale per definire autonomie e sedi scolastiche, etc etc ]
+* specificare meglio e dettagliare le geometrie sopradescritte ponendo l'accento sul vantaggio di un approccio areale che conteggi oltre ai punti di erogazione specifici anche la vicinanza tra essi al fine di riassumere dati non di un'unica sede ma di più punti di erogazione insieme - proporre e suggerire il concetto di "Analisi territoriale", di interrogazione spaziale, tematizzazione e non solo, come fino ad ora è accaduto, di un elenco di punti di erogazione del servizio isolati anche se vicini e confinanti.
+[ampliare questo concetto fino ai temi legati alla "programmazione", al piano del dimensionameto scolastico inteso non solo come numero di studenti per autonomia ma come strumento di analisi territoriale per definire autonomie e sedi scolastiche, etc etc ]
  
 Ad oggi si sta cercando di far scaricare direttamente questi 3 layer direttamente dal geoportale, ma, a breve, la pubblicazione tra i "data set" dell'Open Data regionale dovrebbe essere un'operazione già programmata.
 
@@ -116,11 +116,9 @@ Verificare chi è titolare di questi dati e cercare un percorso che porti alla p
 [se il titolare è il sottoscritto dovremmo riuscire in tempi brevi ad ottenere una base dati sufficientemente affidabile.]
 
 Punti ancora da chiarire:
-Assenza totale del "codice edificio MIUR" CEM da tutti i dataset esistenti. 
-Assenza di un codice MIUR che differenzi un punto di erogazione del servizio e la sua eventuale succursuale (in Regione si è  dovuto procedere ad una nuova codifica che tenesse conto di tale assenza). 
 
-
-
+* Assenza totale del "codice edificio MIUR" CEM da tutti i dataset esistenti.
+* Assenza di un codice MIUR che differenzi un punto di erogazione del servizio e la sua eventuale succursale (in Regione si è dovuto procedere ad una nuova codifica che tenesse conto di tale assenza).
 
 ### Portale aperTO, dati sulle [scuole](http://aperto.comune.torino.it/?q=node/129)
 

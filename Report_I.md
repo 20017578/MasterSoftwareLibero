@@ -18,7 +18,7 @@ MASTER IN MANAGEMENT DEL SOFTWARE LIBERO - PROJECT WORK
 
 ## CONSIDERAZIONI INTRODUTTIVE
 
-**Perché promuovere open data e open source?**
+###Perché promuovere open data e open source?
 
 Perché la condivisione delle informazioni, oltre a garantire risparmio di denaro, contribuisce alla 
 nascita di nuove opportunità per creare nuovi prodotti o servizi a beneficio delle imprese e della 
@@ -34,12 +34,12 @@ all’utente di ricavare informazioni specifiche in settori determinati.
 L' Open Government rappresenta un modello di amministrazione aperto e trasparente da parte degli 
 enti e delle istituzioni pubbliche verso i cittadini.
 
-**Licenze**
+###Licenze
 
 Esistono due tipi li licenze con cui è possibile pubblicare i dati: “closet” e “open”.
 Le licenze chiuse consentono di riservare tutti i diritti, utilizzando il simbolo c che viene usato per 
 indicare il titolare del copyright sull’opera. Un dato pubblico reso disponibile con una licenza 
-chiusa non rispetta il diritto di ricusabilità tipico dell’Open data, io quanto senza il consenso di chi 
+chiusa non rispetta il diritto di riusabilità tipico dell’Open data, io quanto senza il consenso di chi
 detiene i diritti non può essere copiato, ripubblicato o modificato; il dato potrebbe solo essere 
 consultabile.
 Le licenze aperte tutelano l’autore del dato, attribuendogli la paternità del dato stesso ed evitando 
@@ -65,8 +65,8 @@ I dati, organizzati in cartelle come dettato dal decreto, sono frutto di estrazi
 ### Proposte
 
 Occorre creare una procedura che a seconda dell'articolo del decreto permetta all'amministrazione di formattare i dati secondo formati internazionalmente riconosciuti dando loro un valore aggiunto fornito da grammatiche condivise anche a livello di metadati.
-Quali grammatiche ? Partiamo dallo studio di qualcuna di queste ? Come si sta muovendo l'AGID ?
-Come ambiti di studio si propongono: affiti attivi e affitti passivi, dati sulle partecipate, dati sui lavori pubblici ...
+Quali grammatiche? Partiamo dallo studio di qualcuna di queste? Come si sta muovendo l'AGID?
+Come ambiti di studio si propongono: affitti attivi e affitti passivi, dati sulle partecipate, dati sui lavori pubblici...
 
 ## Dati già pubblicati sulle scuole
 
@@ -181,12 +181,12 @@ Num|Nome|Pro|Contro|Licenza|Note
 ---|----|---|------|-------|----
 1|ESRI-Shapefile|diffuso, gestibile anche con software liberi|informazioni suddivise su diversi file|da verificare|Si veda anche paragrafo 6.2.2 del [documento AgID](http://www.agid.gov.it/sites/default/files/linee_guida/patrimoniopubblicolg2014_v0.7finale.pdf)
 2|xls|diffuso,molte librerie libere lo leggono|vecchio e con alcune limitazioni|chiusa|*superato* da xlsx
-2|xlsx|abbastanza diffuso, meglio documentato di xls||da verificare|successore di xls
+2|xlsx|abbastanza diffuso, meglio documentato di xls| |da verificare|successore di xls
 
 ## Tabella possibili formati analizzati
 
 Num|Nome|Pro|Contro|Licenza|Note
 ---|----|---|------|-------|----
-1|GeoJSON|Facilmente importabile anche da web-app||standard aperto|
+1|GeoJSON|Facilmente importabile anche da web-app| |standard aperto|
 2|CSV|essenziale|non auto-descrittivo: quale separatore? quale codifica?|nessuna (libera)|il più *portabile* per tabelle semplici
-2|ODS|standard ISO, oggi leggibile anche da Suite Office non libere||standard aperto|
+2|ODS|standard ISO, oggi leggibile anche da Suite Office non libere| |standard aperto|
