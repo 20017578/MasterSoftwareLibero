@@ -41,13 +41,13 @@ except:
 
 print len (grafo_AgID)
 
-URI_amministrazione = URIRef ("http://spcdata.digitpa.gov.it/Amministrazione")
-URI_pec = URIRef ('http://spcdata.digitpa.gov.it/PEC')
-URI_mail = URIRef ('http://xmlns.com/foaf/0.1/mbox')
+URI_amministrazione = rdflib.URIRef ("http://spcdata.digitpa.gov.it/Amministrazione")
+URI_pec = rdflib.URIRef ('http://spcdata.digitpa.gov.it/PEC')
+URI_mail = rdflib.URIRef ('http://xmlns.com/foaf/0.1/mbox')
 
 listaMeccanograficiAgID = []
 conto = 0
-for amministrazione in grafo_AgID.subjects (predicate=RDF.type, object=URI_amministrazione):
+for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=URI_amministrazione):
     meccanograficoScuola = ''
     conto += 1
     if conto % 1000 == 0:
@@ -62,7 +62,7 @@ for amministrazione in grafo_AgID.subjects (predicate=RDF.type, object=URI_ammin
                 meccanograficoScuola = str (mail).split ('@')[0]
     if meccanograficoScuola != '':
         if len(meccanograficoScuola) != 10:
-            print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(str(amm), scuola)
+            print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(str(amministrazione), meccanograficoScuola)
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
 
 grafo_AgID = ''
