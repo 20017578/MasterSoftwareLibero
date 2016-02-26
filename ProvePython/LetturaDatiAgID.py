@@ -56,11 +56,13 @@ for amministrazione in grafo_AgID.subjects (predicate=RDF.type, object=URI_ammin
     for pec in grafo_AgID.objects (amministrazione, URI_pec):
         if str (pec).upper ().find ('ISTRUZIONE.IT') != -1:
             meccanograficoScuola = str (pec).split ('@')[0]
-    if meccanograficoScuola != '':  # Cerca ancora solo se non trovata prima
+    if len(meccanograficoScuola) != 10:  # Cerca ancora solo se non trovata prima
         for mail in grafo_AgID.objects (amministrazione, URI_mail):
             if str (mail).upper ().find ('ISTRUZIONE.IT') != -1:
                 meccanograficoScuola = str (mail).split ('@')[0]
     if meccanograficoScuola != '':
+        if len(meccanograficoScuola) != 10
+            print "%s presumibilmente è una scuola, ma il codice %s non sembra un meccanografico"%(str(amm), scuola)
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
 
 grafo_AgID = ''
