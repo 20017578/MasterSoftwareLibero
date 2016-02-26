@@ -14,7 +14,7 @@ nomeFileDati = 'DatiAgID.nt'
 formatoDati = 'nt'
 URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.nt'
 try:
-    grafo_AgID.parse (file=nomeFileDati, format=formatoDati)
+    grafo_AgID.parse (file=open(nomeFileDati), format=formatoDati)
     print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
 except:
     # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
@@ -52,7 +52,7 @@ for amministrazione in grafo_AgID.subjects (predicate=RDF.type, object=URI_ammin
     conto += 1
     if conto % 1000 == 0:
         print 'Analizzate ', conto, ' amministrazioni, trovate ', len (listaMeccanograficiAgID), ' possibili scuole'
-    # cerca se la PEC è nel dominio istruzione.it
+    # cerca se la PEC ha dominio istruzione.it
     for pec in grafo_AgID.objects (amministrazione, URI_pec):
         if str (pec).upper ().find ('ISTRUZIONE.IT') != -1:
             meccanograficoScuola = str (pec).split ('@')[0]
@@ -61,8 +61,8 @@ for amministrazione in grafo_AgID.subjects (predicate=RDF.type, object=URI_ammin
             if str (mail).upper ().find ('ISTRUZIONE.IT') != -1:
                 meccanograficoScuola = str (mail).split ('@')[0]
     if meccanograficoScuola != '':
-        if len(meccanograficoScuola) != 10
-            print "%s presumibilmente è una scuola, ma il codice %s non sembra un meccanografico"%(str(amm), scuola)
+        if len(meccanograficoScuola) != 10:
+            print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(str(amm), scuola)
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
 
 grafo_AgID = ''
