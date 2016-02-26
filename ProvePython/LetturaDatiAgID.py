@@ -3,24 +3,41 @@
 # apt-get install python-rdflib python-requests
 #
 
-import requests
 from rdflib import Graph
-
-# Imposta il proxy, da mettere a 0 se si lavora da fuori dai computer della Regione
-da_regione = 1
-
-if da_regione == 1:
-    proxies = {
-        'http' : 'http://10.102.162.8:80',
-        'https' : 'http://10.102.162.8:80',
-    }
-else:
-    proxies = {}
-
-dati_da_AgID = requests.get('http://spcdata.digitpa.gov.it/data/amm.nt', proxies=proxies)
+import sys
 
 grafo_AgID = Graph()
-grafo_AgID.parse(data = dati_da_AgID.text , format="nt")
+
+fonteDati = 'AgID'
+nomeFileDati = 'DatiAgID.nt'
+formatoDati ='nt'
+URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.nt'
+try:
+    grafo_AgID.parse(file = nomeFileDati , format=formatoDati)
+    print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
+except:
+    # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
+    print 'File ', nomeFileDati, ' non trovato, provo da rete'
+    import requests
+    try:
+        # Proviamo a scaricare i dati dall'URL
+        datiDaRete = requests.get(URL_Dati)
+        print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati
+    except:
+        # Se non siamo riusciti, forse serve impostare il proxy della della Regione
+        print '... provo col proxy'
+        proxies = {
+            'http' : 'http://10.102.162.8:80',
+            'https' : 'http://10.102.162.8:80',
+        }
+        try:
+            datiDaRete = requests.get(URL_Dati, proxies=proxies)
+            print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
+        except:
+            print "Impossibile scaricare i dati da AgID, termino."
+            sys.exit(1)
+    grafo_AgID.parse(data = datiDaRete.text , format=formatoDati)
+    datiDaRete='' # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
 print len(grafo_AgID)
 
@@ -47,5 +64,4 @@ for amm in grafo_AgID.subjects(predicate=RDF.type, object=URI_amministrazione):
     if scuola != '':
         print "%s presumibilmente è una scuola, con meccanografico %s"%(str(amm), scuola)
 
-dati_da_AgID = ''
 grafo_AgID = ''
