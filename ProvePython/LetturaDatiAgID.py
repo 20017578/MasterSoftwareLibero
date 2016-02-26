@@ -43,16 +43,18 @@ print len(grafo_AgID)
 
 from rdflib.namespace import RDF
 from rdflib import URIRef
+
 URI_amministrazione = URIRef("http://spcdata.digitpa.gov.it/Amministrazione")
 URI_pec = URIRef('http://spcdata.digitpa.gov.it/PEC')
 URI_mail = URIRef('http://xmlns.com/foaf/0.1/mbox')
 
+lista = []
 conto = 0
 for amm in grafo_AgID.subjects(predicate=RDF.type, object=URI_amministrazione):
     scuola = ''
     conto += 1
     if conto % 1000 == 0:
-        print conto
+        print 'Analizzate ', conto, ' amministrazioni, trovate ', len(lista), ' possibili scuole'
     # cerca se la PEC è nel dominio istruzione.it
     for pec in grafo_AgID.objects(amm,URI_pec):
         if str(pec).upper().find('ISTRUZIONE.IT') != -1:
@@ -62,6 +64,7 @@ for amm in grafo_AgID.subjects(predicate=RDF.type, object=URI_amministrazione):
             if str(mail).upper().find('ISTRUZIONE.IT') != -1:
                 scuola = str(mail).split('@')[0]
     if scuola != '':
-        print "%s presumibilmente è una scuola, con meccanografico %s"%(str(amm), scuola)
+        # print "%s presumibilmente è una scuola, con meccanografico %s"%(str(amm), scuola)
+        lista.append (scuola)
 
 grafo_AgID = ''
