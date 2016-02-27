@@ -60,6 +60,8 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
         if str (pec).upper ().find ('ISTRUZIONE.IT') != -1:
             meccanograficoScuola = str (pec).split ('@')[0]
     if len(meccanograficoScuola) != 10:  # Cerca ancora solo se non trovata prima
+        if meccanograficoScuola != '':
+            print "%s sembra una scuola, ma la pec %s non sembra indicare un meccanografico, cerco la e-mail"%(str(amministrazione), meccanograficoScuola)
         for mail in grafo_AgID.objects (amministrazione, URI_mail):
             if str (mail).upper ().find ('ISTRUZIONE.IT') != -1:
                 meccanograficoScuola = str (mail).split ('@')[0]
@@ -67,25 +69,33 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
         if len(meccanograficoScuola) != 10:
             print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(str(amministrazione), meccanograficoScuola)
         else:
+            codiceCatastaleComune = '';
             for Comune in grafo_AgID.objects(amministrazione,URI_locatedIn):
                 codiceCatastaleComune = str(Comune).split('/')[-1];
                 if codiceCatastaleComune in listaScuolePerComune:
                     listaScuolePerComune[codiceCatastaleComune].append(meccanograficoScuola.upper ())
                 else:
                     listaScuolePerComune[codiceCatastaleComune] = [meccanograficoScuola.upper ()]
+            if codiceCatastaleComune == '':
+                print "Non trovato il comune, stampo quel che so su questa amministrazione"
+                for p,o in grafo_AgID.predicate_objects(amministrazione):
+                    print str(p), str(o)
+                    for lab in grafo_AgID.objects(o,URI_label):
+                        print ':::: label', str(lab)
+
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
+        unaScuola = amministrazione
 
 print 'Su ', conto, ' amministrazioni, ho trovato', len (listaMeccanograficiAgID), ' presunte scuole, distribuite su ', len (listaScuolePerComune), 'comuni'
 
-print "Stampo quello che so sull'ultima scuola trovata."
+sommaScuoleConComune = 0
+numeroScuolePerComune = {}
+for i in listaScuolePerComune:
+    numeroScuolePerComune[i] = len(listaScuolePerComune[i])
+    sommaScuoleConComune += numeroScuolePerComune[i]
 
-for p,o in grafo_AgID.predicate_objects(unaScuola):
-    print str(p), str(o)
-    for lab in grafo_AgID.objects(o,URI_label):
-        print ':::: label', str(lab)
+print 'Trovate in tutto', sommaScuoleConComune, ' distribuit nei seguenti comuni:', listaScuolePerComune.keys()
 
-print 'Lista dei comuni', listaScuolePerComune.keys()
-
-print 'Lista delle ', len(listaScuolePerComune['L219']), 'scuole trovate nel comune di Torino', listaScuolePerComune['L219']
+print 'Lista delle ', numeroScuolePerComune['L219'], 'scuole trovate nel comune di Torino', listaScuolePerComune['L219']
 
 grafo_AgID = ''
