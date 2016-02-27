@@ -10,9 +10,9 @@ import sys
 grafo_AgID = rdflib.Graph ()
 
 fonteDati = 'AgID'
-nomeFileDati = 'DatiAgID.nt'
-formatoDati = 'nt'
-URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.nt'
+nomeFileDati = 'DatiAgID.ttl'
+formatoDati = 'n3'
+URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.ttl'
 try:
     grafo_AgID.parse (file=open(nomeFileDati), format=formatoDati)
     print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
