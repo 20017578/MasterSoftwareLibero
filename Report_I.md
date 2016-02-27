@@ -28,18 +28,18 @@ istituzionali hanno un valore intrinseco che va oltre l'assolvimento dei compiti
 dell'Amministrazione. 
 Per questo, l'accesso ai dati pubblici deve essere libero e gratuito per tutti, senza restrizioni che ne 
 limitino la riproduzione e l'accesso.
-Inoltre, i dati pubblici sono utili se raccolti in modo efficiente e organizzato. Da qui, l’opportunità 
+Inoltre, i dati pubblici sono utili se raccolti in modo efficiente e organizzato. Da qui, l'opportunità
 di prevedere la creazione di database facili da trovare e da usare, che garantiscano la possibilità 
-all’utente di ricavare informazioni specifiche in settori determinati.
-L' Open Government rappresenta un modello di amministrazione aperto e trasparente da parte degli 
+all'utente di ricavare informazioni specifiche in settori determinati.
+L'Open Government rappresenta un modello di amministrazione aperto e trasparente da parte degli
 enti e delle istituzioni pubbliche verso i cittadini.
 
 ###Licenze
 
 Esistono due tipi li licenze con cui è possibile pubblicare i dati: “closet” e “open”.
 Le licenze chiuse consentono di riservare tutti i diritti, utilizzando il simbolo c che viene usato per 
-indicare il titolare del copyright sull’opera. Un dato pubblico reso disponibile con una licenza 
-chiusa non rispetta il diritto di riusabilità tipico dell’Open data, io quanto senza il consenso di chi
+indicare il titolare del copyright sull'opera. Un dato pubblico reso disponibile con una licenza
+chiusa non rispetta il diritto di riusabilità tipico dell'Open data, io quanto senza il consenso di chi
 detiene i diritti non può essere copiato, ripubblicato o modificato; il dato potrebbe solo essere 
 consultabile.
 Le licenze aperte tutelano l’autore del dato, attribuendogli la paternità del dato stesso ed evitando 
