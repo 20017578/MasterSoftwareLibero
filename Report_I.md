@@ -36,7 +36,7 @@ enti e delle istituzioni pubbliche verso i cittadini.
 
 ###Licenze
 
-Esistono due tipi li licenze con cui è possibile pubblicare i dati: “closet” e “open”.
+Esistono due tipi li licenze con cui è possibile pubblicare i dati: “closed” e “open”.
 Le licenze chiuse consentono di riservare tutti i diritti, utilizzando il simbolo c che viene usato per 
 indicare il titolare del copyright sull'opera. Un dato pubblico reso disponibile con una licenza
 chiusa non rispetta il diritto di riusabilità tipico dell'Open data, io quanto senza il consenso di chi
