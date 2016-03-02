@@ -53,6 +53,7 @@ ridistribuirlo liberamente e in alcuni casi anche manipolarlo al fine di creare 
 # ASPETTI TECNICI
 
 ## Dati trasparenza
+Pubblicità: 
 
 ### Problema
 
