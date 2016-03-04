@@ -23,7 +23,6 @@ try:
     grafo_AgID.parse (file=open(nomeFileDati), format=formatoDati)
     print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
 except:
-    # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
     print 'File ', nomeFileDati, ' non trovato, provo da rete'
     try:
         # Proviamo a scaricare i dati dall'URL
@@ -42,6 +41,10 @@ except:
         except:
             print "Impossibile scaricare i dati da AgID, termino."
             sys.exit (1)
+    # TODO: le righe successive sono state commentate, danno errorri a causa di caratteri non ascii, se possibile risolvere
+    # f = open (nomeFileDati, 'w')
+    # f.write (datiDaRete.text)
+    # f.close ()
     grafo_AgID.parse (data=datiDaRete.text, format=formatoDati)
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
@@ -141,9 +144,9 @@ except:
             print "Impossibile scaricare i dati da AgID, termino."
             sys.exit (1)
     # TODO: Forse scrivere il file su disco ed aprirlo?
-    print 'Non so bene cosa fare dopo aver scaricato il file...'
-    sys.exit (1)
-    # Le due righe che seguono potrebbero anche essere commentate
+    f = open (nomeFileDati, 'w')
+    f.write (datiDaRete.text)
+    f.close ()
     letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
