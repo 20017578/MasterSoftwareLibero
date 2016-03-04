@@ -60,12 +60,12 @@ URI_label = rdflib.URIRef ('http://www.w3.org/2000/01/rdf-schema#label')
 
 listaMeccanograficiAgID = []
 listaScuolePerComune = {}
-conto = 0
+contoAgID = 0
 for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=URI_amministrazione):
     meccanograficoScuola = ''
-    conto += 1
-    if conto % 1000 == 0:
-        print 'Analizzate ', conto, ' amministrazioni, trovate ', len (listaMeccanograficiAgID), ' possibili scuole'
+    contoAgID += 1
+    if contoAgID % 1000 == 0:
+        print 'Analizzate ', contoAgID, ' amministrazioni, trovate ', len (listaMeccanograficiAgID), ' possibili scuole'
     # cerca se la PEC ha dominio istruzione.it
     for pec in grafo_AgID.objects (amministrazione, URI_pec):
         if str (pec).upper ().find ('ISTRUZIONE.IT') != -1:
@@ -96,7 +96,7 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
         unaScuola = amministrazione
 
-print 'Su ', conto, ' amministrazioni, ho trovato', len (listaMeccanograficiAgID), ' presunte scuole, distribuite su ', len (listaScuolePerComune), 'comuni'
+print 'Su ', contoAgID, ' amministrazioni, ho trovato', len (listaMeccanograficiAgID), ' presunte scuole, distribuite su ', len (listaScuolePerComune), 'comuni'
 
 sommaScuoleConComune = 0
 numeroScuolePerComune = {}
@@ -148,14 +148,20 @@ except:
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
 for riga in letturaRighe:
-    print "Controlliamo il terzo elemento:", riga[3], "; e il quinto:", riga[5]
+    print "Controlliamo solo il quinto elemento:", riga[4], "; che viee ripetuto per ogni ", riga[2]
     break # fermatri subito (ha senso aver usato un for, per la sola prima riga???)
 
-listaMeccanograficiMIUR = []
-for riga in letturaRighe:
-    # se il meccanigrafico (riga[3]) coincide con quello dell'istituzione principale (riga[5])...
-    if riga[3] == riga[5]:
-        listaMeccanograficiMIUR.append()
+catalogoMeccanograficiMIUR = {}
 
+contoMIUR = 0
+for riga in letturaRighe:
+    contoMIUR += 1
+    # se il meccanigrafico (riga[2]) coincide con quello dell'istituzione principale (riga[4])...
+    if riga[4] in catalogoMeccanograficiMIUR:
+        catalogoMeccanograficiMIUR[riga[4]] += 1
+    else:
+        catalogoMeccanograficiMIUR[riga[4]] = 1
+
+print 'Su ', contoMIUR, ' scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
 
 grafo_AgID = ''
