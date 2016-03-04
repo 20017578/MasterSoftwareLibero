@@ -6,6 +6,7 @@
 import rdflib
 import requests
 import sys
+import csv
 
 #
 # Lettura dei dati di AgID
@@ -107,5 +108,46 @@ for i in listaScuolePerComune:
 print 'Trovate in tutto', sommaScuoleConComune, ' distribuit nei seguenti comuni:', listaScuolePerComune.keys()
 
 print 'Lista delle ', numeroScuolePerComune['L219'], 'scuole trovate nel comune di Torino', listaScuolePerComune['L219']
+
+#
+# Lettura dei dati da MIUR
+# TODO: Rendere anche questa porzione una funzione!
+#
+
+fonteDati = 'MIUR'
+nomeFileDati = 'DatiMIUR.csv'
+separatoreDati = ';'
+URL_Dati = 'http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv'
+try:
+    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
+    print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
+except:
+    # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
+    print 'File ', nomeFileDati, ' non trovato, provo da rete'
+    try:
+        # Proviamo a scaricare i dati dall'URL
+        datiDaRete = requests.get (URL_Dati)
+        print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati
+    except:
+        # Se non siamo riusciti, forse serve impostare il proxy della della Regione
+        print '... provo col proxy della Regione'
+        proxies = {
+            'http': 'http://10.102.162.8:80',
+            'https': 'http://10.102.162.8:80',
+        }
+        try:
+            datiDaRete = requests.get (URL_Dati, proxies=proxies)
+            print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
+        except:
+            print "Impossibile scaricare i dati da AgID, termino."
+            sys.exit (1)
+    # TODO: Forse scrivere il file su disco ed aprirlo?
+    print 'Non so bene cosa fare dopo aver scaricato il file...'
+    sys.exit (1)
+    # Le due righe che seguono potrebbero anche essere commentate
+    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
+    datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+
+
 
 grafo_AgID = ''
