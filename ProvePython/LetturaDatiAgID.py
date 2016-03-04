@@ -7,6 +7,11 @@ import rdflib
 import requests
 import sys
 
+#
+# Lettura dei dati di AgID
+# TODO: rendere questa porzione di codice una funzione!!
+#
+
 grafo_AgID = rdflib.Graph ()
 
 fonteDati = 'AgID'
@@ -39,7 +44,12 @@ except:
     grafo_AgID.parse (data=datiDaRete.text, format=formatoDati)
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
-print len (grafo_AgID)
+# print len (grafo_AgID)
+
+#
+# Qualche manipolazione sul grafo AgID
+# TODO: Oltre a visualizzare qualche statistica, forse converrebbe creare un sotto-grafo con le sole scuole, per gli usi successivi
+#
 
 URI_amministrazione = rdflib.URIRef ("http://spcdata.digitpa.gov.it/Amministrazione")
 URI_pec = rdflib.URIRef ('http://spcdata.digitpa.gov.it/PEC')
