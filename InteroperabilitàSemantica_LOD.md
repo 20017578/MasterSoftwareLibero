@@ -14,7 +14,6 @@
  * Direttiva 2013/37/eu
  * Linee guida per l’interoperabilità semantica attraverso i LOD ( Normativa di riferimento: Cap. 3.1)
 
-
 #Enti coinvolti#
 
 Tra i vari ambiziosi progetto della [Commissione Europea](http://ec.europa.eu/index_it.htm) (organo esecutivo della Comunità europea) nel 2010 è stata adottata la strategia denominata “[Europa 2020](http://ec.europa.eu/europe2020/index_it.htm)” che nel suo intento più generale punta a riattualizzare nell’arco di 10 anni lo sviluppo economico dell’area interessata.
