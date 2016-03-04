@@ -156,7 +156,6 @@ catalogoMeccanograficiMIUR = {}
 contoMIUR = 0
 for riga in letturaRighe:
     contoMIUR += 1
-    # se il meccanigrafico (riga[2]) coincide con quello dell'istituzione principale (riga[4])...
     if riga[4] in catalogoMeccanograficiMIUR:
         catalogoMeccanograficiMIUR[riga[4]] += 1
     else:
@@ -164,4 +163,21 @@ for riga in letturaRighe:
 
 print 'Su ', contoMIUR, ' scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
 
-grafo_AgID = ''
+contoAgID_noMIUR = 0
+for unaScuola in listaMeccanograficiAgID:
+    if unaScuola in catalogoMeccanograficiMIUR:
+        if catalogoMeccanograficiMIUR[unaScuola] == 0:
+            print 'Strano, per', unaScuola, 'non riultano plessi, forse duplicato su AgID?'
+        else:
+            catalogoMeccanograficiMIUR[unaScuola] = 0
+    else:
+        contoAgID_noMIUR += 1
+
+contoMIUR_noAgID = 0
+for unaScuola in catalogoMeccanograficiMIUR:
+    if catalogoMeccanograficiMIUR[unaScuola] != 0:
+        contoMIUR_noAgID += 1
+
+print 'Trovate ', len (listaMeccanograficiAgID), 'scuole su AgID e', len (catalogoMeccanograficiMIUR), 'su MIUR'
+print 'Su AgID ci sono ', contoAgID_noMIUR, 'istituzioni non presenti su MIUR'
+print 'Su MIUR ci sono ', contoMIUR_noAgID, 'istituzioni non presenti su AgID'
