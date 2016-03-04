@@ -93,7 +93,6 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
                     print str(p), str(o)
                     for lab in grafo_AgID.objects(o,URI_label):
                         print ':::: label', str(lab)
-
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
         unaScuola = amministrazione
 
@@ -148,6 +147,15 @@ except:
     letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
+for riga in letturaRighe:
+    print "Controlliamo il terzo elemento:", riga[3], "; e il quinto:", riga[5]
+    break # fermatri subito (ha senso aver usato un for, per la sola prima riga???)
+
+listaMeccanograficiMIUR = []
+for riga in letturaRighe:
+    # se il meccanigrafico (riga[3]) coincide con quello dell'istituzione principale (riga[5])...
+    if riga[3] == riga[5]:
+        listaMeccanograficiMIUR.append()
 
 
 grafo_AgID = ''
