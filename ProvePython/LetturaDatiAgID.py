@@ -6,6 +6,12 @@
 import rdflib
 import requests
 import sys
+import csv
+
+#
+# Lettura dei dati di AgID
+# TODO: rendere questa porzione di codice una funzione!!
+#
 
 grafo_AgID = rdflib.Graph ()
 
@@ -39,7 +45,12 @@ except:
     grafo_AgID.parse (data=datiDaRete.text, format=formatoDati)
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
-print len (grafo_AgID)
+# print len (grafo_AgID)
+
+#
+# Qualche manipolazione sul grafo AgID
+# TODO: Oltre a visualizzare qualche statistica, forse converrebbe creare un sotto-grafo con le sole scuole, per gli usi successivi
+#
 
 URI_amministrazione = rdflib.URIRef ("http://spcdata.digitpa.gov.it/Amministrazione")
 URI_pec = rdflib.URIRef ('http://spcdata.digitpa.gov.it/PEC')
@@ -82,7 +93,6 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
                     print str(p), str(o)
                     for lab in grafo_AgID.objects(o,URI_label):
                         print ':::: label', str(lab)
-
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
         unaScuola = amministrazione
 
@@ -97,5 +107,55 @@ for i in listaScuolePerComune:
 print 'Trovate in tutto', sommaScuoleConComune, ' distribuit nei seguenti comuni:', listaScuolePerComune.keys()
 
 print 'Lista delle ', numeroScuolePerComune['L219'], 'scuole trovate nel comune di Torino', listaScuolePerComune['L219']
+
+#
+# Lettura dei dati da MIUR
+# TODO: Rendere anche questa porzione una funzione!
+#
+
+fonteDati = 'MIUR'
+nomeFileDati = 'DatiMIUR.csv'
+separatoreDati = ';'
+URL_Dati = 'http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv'
+try:
+    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
+    print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
+except:
+    # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
+    print 'File ', nomeFileDati, ' non trovato, provo da rete'
+    try:
+        # Proviamo a scaricare i dati dall'URL
+        datiDaRete = requests.get (URL_Dati)
+        print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati
+    except:
+        # Se non siamo riusciti, forse serve impostare il proxy della della Regione
+        print '... provo col proxy della Regione'
+        proxies = {
+            'http': 'http://10.102.162.8:80',
+            'https': 'http://10.102.162.8:80',
+        }
+        try:
+            datiDaRete = requests.get (URL_Dati, proxies=proxies)
+            print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
+        except:
+            print "Impossibile scaricare i dati da AgID, termino."
+            sys.exit (1)
+    # TODO: Forse scrivere il file su disco ed aprirlo?
+    print 'Non so bene cosa fare dopo aver scaricato il file...'
+    sys.exit (1)
+    # Le due righe che seguono potrebbero anche essere commentate
+    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
+    datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+
+for riga in letturaRighe:
+    print "Controlliamo il terzo elemento:", riga[3], "; e il quinto:", riga[5]
+    break # fermatri subito (ha senso aver usato un for, per la sola prima riga???)
+
+listaMeccanograficiMIUR = []
+for riga in letturaRighe:
+    # se il meccanigrafico (riga[3]) coincide con quello dell'istituzione principale (riga[5])...
+    if riga[3] == riga[5]:
+        listaMeccanograficiMIUR.append()
+
 
 grafo_AgID = ''
