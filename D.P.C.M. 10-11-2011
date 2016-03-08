@@ -1,0 +1,3158 @@
+PRESIDENZA DEL CONSIGLIO DEI MINISTRI
+DECRETO 10 novembre 2011
+
+Regole tecniche per la definizione del contenuto del Repertorio
+nazionale dei dati territoriali, nonché delle modalità di prima
+costituzione e di aggiornamento dello stesso.
+(Gazzetta Ufficiale n. 48 del 27/02/2012 - Supplemento ordinario n. 37).
+IL MINISTRO PER LA PUBBLICA AMMINISTRAZIONE E L'INNOVAZIONE
+di concerto con
+IL MINISTRO DELL'AMBIENTE E DELLA TUTELA DEL TERRITORIO E DEL MARE
+Visto il decreto legislativo 7 marzo 2005, n. 82, recante Codice
+dell'amministrazione digitale, cosi' come modificato con il decreto
+legislativo 30 dicembre 2010, n. 235;
+Visti, in particolare, l'articolo 59, comma 5, del decreto
+legislativo 7 marzo 2005, n. 82, concernente l'emanazione di un
+decreto recante regole tecniche per la definizione del contenuto del
+Repertorio nazionale dei dati territoriali, nonche' delle modalita'
+di prima costituzione e di aggiornamento dello stesso, e l'articolo
+60;
+Visto il decreto legislativo 30 marzo 2001, n. 165, e successive
+modificazioni;
+Visto il decreto del Ministro per l'innovazione e le tecnologie in
+data 2 maggio 2006, n. 237, regolamento recante composizione e
+funzionamento del Comitato per le regole tecniche sui dati
+territoriali delle pubbliche amministrazioni di cui all'articolo 59,
+comma 2, del decreto legislativo 7 marzo 2005, n. 82;
+Visto il decreto del Presidente del Consiglio dei Ministri del 30
+agosto 2007 con il quale e' stato costituito il suddetto Comitato per
+le regole tecniche sui dati territoriali delle pubbliche
+amministrazioni;
+Visto il decreto legislativo 24 gennaio 2006, n. 36, recante
+attuazione della direttiva 2003/98/CE relativa al riutilizzo di
+documenti nel settore pubblico;
+Visto il decreto del Presidente della Repubblica in data 7 maggio
+2008, con il quale l'on. prof. Renato Brunetta e' stato nominato
+Ministro senza portafoglio;
+Visto il decreto del Presidente del Consiglio dei Ministri dell'8
+maggio 2008, con il quale al predetto Ministro senza portafoglio e'
+stato conferito l'incarico per la pubblica amministrazione e
+l'innovazione;
+Visto il decreto del Presidente del Consiglio dei ministri 13
+giugno 2008, recante delega di funzioni del Presidente del Consiglio
+dei Ministri in materia pubblica amministrazione ed innovazione al
+Ministro senza portafoglio on. prof. Renato Brunetta;
+Visto il Regolamento (CE) n. 1205/2008 della Commissione del 3
+dicembre 2008 recante attuazione della direttiva 2007/2/CE del
+Parlamento europeo e del Consiglio per quanto riguarda i metadati;
+Visto il decreto legislativo 1° dicembre 2009, n. 177 recante
+riorganizzazione del Centro nazionale per l'informatica nella
+pubblica amministrazione, a norma dell'articolo 24 della legge 18
+giugno 2009, n. 69;
+Visto il decreto legislativo 27 gennaio 2010, n. 32 recante
+attuazione della direttiva 2007/2/CE, che istituisce
+un'infrastruttura per l'informazione territoriale nella Comunita'
+europea (INSPIRE);
+Sentito il Comitato per le regole tecniche sui dati territoriali
+delle pubbliche amministrazioni di cui all'articolo 59, comma 2, del
+decreto legislativo 7 marzo 2005, n. 82;
+Sentita la Conferenza Unificata di cui all'articolo 8 del decreto
+legislativo 28 agosto 1997, n. 281, nella seduta del 29 ottobre 2009;
+Espletata la procedura di notifica alla Commissione europea di cui
+alla direttiva 98/34/CE del Parlamento europeo e del Consiglio, del
+22 giugno 1998, modificata dalla direttiva 98/48/CE del Parlamento
+europeo e del Consiglio, del 20 luglio 1998, attuata con decreto
+legislativo 23 novembre 2000, n. 427;
+Di concerto con il Ministro dell'ambiente e della tutela del
+territorio e del mare per i profili relativi ai dati ambientali;
+Decreta:
+#Art. 1
+Oggetto e definizioni
+1. Il presente decreto stabilisce le regole tecniche per la
+definizione del contenuto del Repertorio nazionale dei dati
+territoriali, nonche' delle modalita' di prima costituzione e di
+successivo aggiornamento dello stesso.
+2. Ai fini del presente decreto si intende per:
+a) Comitato: il Comitato per le regole tecniche sui dati
+territoriali delle pubbliche amministrazioni, istituito ai sensi
+dell'articolo 59, comma 2, del decreto legislativo 7 marzo 2005, n.
+82;
+b) dati territoriali: qualunque informazione geograficamente
+localizzata, cosi' come definito dall'articolo 59, comma 1, del
+decreto legislativo 7 marzo 2005, n. 82;
+c) dati territoriali di interesse generale: i dati territoriali
+individuati come dati di interesse generale da parte del Comitato per
+le finalita' di pubblicazione nel Repertorio, previste dell'articolo
+59, comma 3, del decreto legislativo 7 marzo 2005, n. 82 e riportati
+nell'allegato 1, che costituisce parte integrante del presente
+decreto;
+d) direttiva INSPIRE: la direttiva 2007/2/CE del Parlamento
+europeo e del Consiglio del 14 marzo 2007, che istituisce
+un'infrastruttura per l'informazione territoriale nella Comunita'
+europea, cui si e' data attuazione con il decreto legislativo 27
+gennaio 2010, n. 32;
+e) metadati: informazioni che descrivono i dati territoriali e i
+servizi ad essi relativi e che consentono di registrare, ricercare e
+utilizzare tali dati e servizi;
+f) Repertorio: il Repertorio nazionale dei dati territoriali
+istituito presso DigitPA (gia' Centro nazionale per l'informatica
+nella pubblica amministrazione - CNIPA), ai sensi dell'articolo 59,
+comma 3, del decreto legislativo 7 marzo 2005, n. 82;
+g) servizi relativi ai dati territoriali: le operazioni che
+possono essere eseguite, con un'applicazione informatica, sui dati
+territoriali in questione o sui metadati connessi;
+h) Geoportale nazionale: un sito internet, o equivalente, che
+fornisce accesso a livello nazionale ai servizi di cui all'articolo 7
+del decreto legislativo n. 32 del 2010;
+i) amministrazione titolare del dato: la pubblica
+amministrazione, di cui all'articolo 1, comma 2, del decreto
+legislativo n. 165 del 2001, che produce e detiene il dato originale,
+ovvero la versione di riferimento da cui derivano eventuali copie e
+che ne puo' disporre liberamente.
+Art. 2
+Principi generali e funzioni del Repertorio
+1. Il Repertorio di cui all'articolo 59, comma 3, del decreto
+legislativo n. 82 del 2005, costituisce il catalogo nazionale dei
+metadati riguardanti i dati territoriali ed i servizi ad essi
+relativi, disponibili presso le pubbliche amministrazioni.
+2. Il Repertorio eroga i servizi di ricerca di cui all'articolo 7,
+comma 1, lettera a) del decreto legislativo 27 gennaio 2010, n. 32.
+3. Il Repertorio costituisce parte integrante dell'infrastruttura
+nazionale per l'informazione territoriale e del monitoraggio
+ambientale di cui all'articolo 3, comma 1, del decreto legislativo 27
+gennaio 2010, n. 32, relativamente alla raccolta dei metadati per i
+dati territoriali ed i relativi servizi.
+Art. 3
+Contenuto del Repertorio
+1. Il Repertorio contiene i metadati relativi ai dati territoriali
+di interesse generale individuati dal Comitato ed elencati
+nell'allegato 1 del presente decreto.
+2. Il Repertorio contiene altresi' i metadati relativi ai dati
+territoriali che l'amministrazione titolare degli stessi reputi
+opportuno documentare.
+Art. 4
+Efficacia della pubblicazione nel Repertorio
+1. La pubblicazione dei metadati nel Repertorio certifica
+l'esistenza del relativo dato e assicura il rispetto degli
+adempimenti di cui al Regolamento (CE) n. 1205/2008 della Commissione
+e al decreto legislativo n. 32 del 2010.
+2. L'amministrazione titolare dei dati territoriali resta
+responsabile della correttezza, della tenuta, della gestione e
+dell'aggiornamento dei dati medesimi. E' altresi' responsabile della
+correttezza e dell'aggiornamento dei relativi metadati pubblicati nel
+Repertorio.
+Art. 5
+Prima costituzione del Repertorio
+1. Entro il termine di dodici mesi dalla data di entrata in vigore
+del presente decreto, le amministrazioni che sono titolari o che
+gestiscono dati territoriali di interesse generale, e servizi ad essi
+relativi, provvedono ad inserire nel Repertorio i relativi metadati
+con le modalita' di cui all'articolo 7.
+2. Ai fini di cui all'articolo 10, entro il termine di sei mesi
+dalla data di pubblicazione del presente decreto sulla Gazzetta
+Ufficiale, le amministrazioni provvedono a inserire nel Repertorio i
+metadati relativi ai dati territoriali di interesse generale che
+prevedono di acquisire.
+Art. 6
+Aggiornamento del Repertorio
+1. Entro tre mesi dall'acquisizione di nuovi dati territoriali di
+interesse generale, e servizi ad essi relativi, le amministrazioni
+titolari provvedono alla pubblicazione dei relativi metadati nel
+Repertorio.
+2. Ai fini di cui all'articolo 10, le amministrazioni provvedono,
+altresi', ad inserire nel Repertorio, almeno con cadenza annuale, i
+metadati relativi ai dati che prevedono di acquisire.
+Art. 7
+Modalita' di sviluppo del Repertorio
+1. Le amministrazioni provvedono ad incrementare e aggiornare il
+Repertorio in conformita' alle specifiche tecniche per la formazione
+e l'alimentazione del Repertorio di cui all'allegato 2, che
+costituisce parte integrante del presente decreto.
+2. Le specifiche tecniche di cui all'allegato 2 e l'elenco dei dati
+di interesse generale di cui all'allegato 1 sono aggiornati
+periodicamente con decisione del Comitato, anche su proposta delle
+amministrazioni interessate e sono approvate con decreto del Ministro
+delegato per la pubblica amministrazione e l'innovazione, di concerto
+con il Ministro dell'ambiente e della tutela del territorio e del
+mare per i profili relativi ai dati ambientali e sono pubblicati sul
+sito istituzionale di DigitPA e sul Geoportale nazionale.
+3. Previa comunicazione a DigitPA e, ferma restando la
+responsabilita' diretta dell'amministrazione titolare, per tutte le
+attivita' di incremento e aggiornamento del Repertorio, le
+amministrazioni titolari dei dati, e dei relativi servizi, possono
+avvalersi di altra pubblica amministrazione ovvero di altro soggetto
+individuato ai sensi della normativa vigente.
+Art. 8
+Gestione del Repertorio
+1. Nel rispetto delle decisioni e degli indirizzi forniti dal
+Comitato, DigitPA cura la progettazione, la realizzazione, lo
+sviluppo e la gestione organizzativa e tecnologica del Repertorio in
+coerenza con le disposizioni che disciplinano il sistema pubblico di
+connettivita'.
+2. Per tutte le attivita' di realizzazione e gestione del
+Repertorio, DigitPA puo' avvalersi di soggetti terzi.
+3. Agli oneri finanziari per la gestione del Repertorio si provvede
+ai sensi dell'articolo 59, comma 7, del decreto legislativo n. 82 del
+2005.
+Art. 9
+Accesso al Repertorio
+1. L'accesso al Repertorio, limitatamente ai metadati di cui
+all'articolo 3, e' pubblico e gratuito.
+Art. 10
+Pianificazione
+1. I metadati contenuti nel Repertorio costituiscono la base
+informativa attraverso la quale le amministrazioni verificano
+l'eventuale esistenza di esigenze comuni o analoghe e pianificano
+l'attivita' di acquisizione dei dati in maniera congiunta, con
+l'obiettivo di minimizzare i costi sostenuti dalle singole
+Amministrazioni, informandone il Comitato.
+2. Nella relazione di cui all'articolo 4 del decreto del Presidente
+del Consiglio dei Ministri del 30 agosto 2007 il Comitato espone i
+risultati dell'attivita' di cui al comma 1 evidenziando, in
+particolare, le economie raggiunte.
+3. Il Comitato concorda con le amministrazioni interessate la
+definizione di proposte per un eventuale reinvestimento delle
+economie realizzate con le attivita' di cui al comma 1 in progetti di
+interesse nel settore dell'informazione geografica.
+Il presente decreto e' inviato ai competenti organi di controllo ed
+e' pubblicato sulla Gazzetta Ufficiale della Repubblica italiana.
+Roma, 10 novembre 2011
+Il Ministro per la pubblica
+amministrazione e l'innovazione
+Brunetta
+Il Ministro dell'ambiente
+e della tutela del territorio
+e del mare
+Prestigiacomo
+Registrato alla Corte dei conti il 28 dicembre 2011
+Registro n. 2, Presidenza del Consiglio dei Ministri, foglio n. 86
+#Allegato 1
+Elenco dei dati territoriali di interesse generale di cui all’articolo 59,
+comma 3, del decreto legislativo 7 marzo 2005, n. 82.
+Allegato 2
+Specifiche tecniche per la formazione e l’alimentazione del Repertorio
+Nazionale dei Dati Territoriali
+DECRETO 10 novembre 2011
+Regole tecniche per la definizione del contenuto del Repertorio nazionale dei dati
+territoriali, nonchè delle modalità di prima costituzione e di aggiornamento dello stesso.
+(Gazzetta Ufficiale n. 48 del 27/02/2012 - Supplemento ordinario n. 37).
+Allegato 1
+Elenco dei dati territoriali di interesse generale di cui all’articolo 59, comma 3,
+del decreto legislativo 7 marzo 2005, n. 82.
+Pagina 2 di 7
+Nella seguente tabella sono elencati i dati di interesse generale (con le relative definizioni) che le
+Amministrazioni titolari sono tenute a documentare nel Repertorio Nazionale dei Dati Territoriali
+secondo le regole tecniche definite nell’allegato 2 del presente decreto.
+ID Dati di interesse generale
+1 Data Base degli strati prioritari
+Database realizzato secondo le specifiche Intesa Stato, Regioni, Enti Locali sui Sistemi Informativi Geografici
+(IntesaGIS). Composto dai livelli informativi Viabilità stradale, Viabilità ferroviaria, Idrografia, Ambiti
+amministrativi e Centri abitati.
+2 Data Base topografici a grande e grandissima scala
+Database realizzati secondo le specifiche IntesaGIS e simili. Gli strati informativi trattati sono: informazioni
+geodetiche, fotogrammetriche e metainformazione; viabilità, mobilità e trasporti; immobili ed antropizzazioni;
+gestione viabilità e indirizzi; idrografia; orografia; vegetazione; reti tecnologiche; località significative e scritte
+cartografiche; ambiti amministrativi; aree di pertinenza.
+3 Data Base topografici a media scala (1:25.000 – 1:50.000)
+Database cartografici realizzati su specifiche IGM. Gli strati informativi tipicamente trattati sono: trasporti,
+idrografia, limiti amministrativi e naturali, elementi edificati, vegetazione, elementi geomorfologici, industrie,
+servizi, elementi altimetrici e qualità di dati, omogenei per tematismo, che descrivono i particolari geografici
+con i corrispondenti attributi.
+4 Data Base Oceanografico
+Condizioni fisiche degli oceani (correnti, salinità, altezza delle onde, ecc.) e dei mari e dei corpi idrici salmastri
+suddivisi in regioni e sottoregioni con caratteristiche comuni.
+5 Carta tecnica regionale numerica
+Carta topografica di dettaglio basata su archivi di coordinate che descrivono la geometria degli oggetti
+cartografati e di codifiche che ne individuano la tipologia. Rappresenta la cartografia di base ufficiale alla
+grande scala la cui competenza è in capo alle Regioni e alle Province Autonome secondo le rispettive leggi.
+6 Carte topografiche - IGM
+Rappresentazione del territorio realizzata dall’IGM che costituisce la cartografia ufficiale italiana alla scala
+1:25.000 e alle scale 1:50.000 e 1:100.000, derivate dai rilievi alla scala 1:25 000
+7 Carte corografiche – IGM
+Rappresentazioni di regioni e/o di territori estesi a scale comprese tra 1: 100 000 a 1:1.000.000. Es. la “Carta
+d’Italia” è la carta corografica prodotta dall’IGM alla scala 1:250.000, La Carta “Il Mondo 1404” serie 500, La
+carta “Serie 1000DB - Il Mondo 1301-1
+8 Sistemi di coordinate
+Sistemi per referenziare univocamente le informazioni territoriali nello spazio come un insieme di coordinate
+(x, y, z) e/o latitudine, longitudine e quota, basate su un datum geodetico orizzontale e verticale.
+9 Reti geodetiche e monografie di elementi geodetici
+Reti di punti con coordinate note relative a un sistema di riferimento geodetico comune, utilizzati per il corretto
+dimensionamento ed orientamento del rilevamento topo – cartografico di un'estesa area terrestre, e relative
+monografie. Comprendono sia le reti di inquadramento (es. rete IGM95) che quelle di raffittimento (es. reti
+regionali).
+10 Frame campionamento griglie
+Frame per selezione di campioni di punti da sottoporre ad indagine campionaria o per la produzione di
+informazioni statistiche territoriali
+11 DB grid
+Griglia regolare di fondali con passo definito e costante dipendente dalla scala del rilievo
+12 Griglie di inquadramento
+Reticolo uniforme a maglie regolari utile per l’inquadramento e la trasformazione di coordinate da un sistema
+di riferimento ad un altro.
+13 Repertorio toponomastica
+Archivio con i toponimi (nomi dei luoghi geografici).
+14 Limiti amministrativi
+Confini territoriali entro i quali viene esercitata la giurisdizione relativa ad una data funzione amministrativa,
+individuati dalla Costituzione Italiana e dal D. Lgs. 267/2000: Regioni, Province, Comuni, Città metropolitane,
+Comunità Montane, Comunità Isolane e Unioni di Comuni ed eventuali unità di decentramento sub comunale
+(es. circoscrizioni e/o municipi).
+Pagina 3 di 7
+15 Acque territoriali e linea di base
+Acque territoriali: ambito territoriale soggetto alla giurisdizione statale e che concorre insieme alle Regioni a
+comporre lo Stato. Linea di base: indica genericamente la linea dalla quale è misurata l’ampiezza delle acque
+territoriali (cfr DPR 816/77).
+Comprende le carte costiere alle diverse scale e le carte dei litorali.
+16 Limiti Autorità di bacino
+Ripartizione del territorio nazionale in bacini idrografici, classificati di rilievo nazionale, interregionale e
+regionale (legge 183/89)
+17 Limiti Consorzi di bonifica
+Delimitazione dei Consorzi di Bonifica, istituiti con specifici provvedimenti regionali, secondo l’art.59 del
+R.D. 13 febbraio 1933 n 215.
+18 Limiti ASL e distretti sanitari
+Delimitazione dell’ambito territoriale delle Aziende Sanitarie Locali e dei distretti sanitari.
+19 Indirizzi e numeri civici
+Localizzazione degli accessi basati su identificatori di indirizzo, in genere nome della via e relativa codifica
+nello stradario comunale, numero civico, ed eventuale numero interno collegato relativo all’accesso alle singole
+unità immobiliari.
+20 Stradari
+Elenco delle vie o delle piazze di una località con le relativa rappresentazione geografica.
+21 Particelle catastali
+Porzione continua di terreno o fabbricato, individuata geometricamente, situata in un medesimo comune,
+appartenente ad uno stesso possessore e caratterizzata da una medesima destinazione d’uso con il relativo
+reddito.
+22 Reti di trasporto
+Reti che consentono lo spostamento di persone e merci suddivise in reti di tipo stradale, ferroviaria, fluviale,
+aerea, marittima. In particolare comprende la rappresentazione geografica (grafo) con le relative infrastrutture.
+Comprende anche le carte dei porti e delle rade.
+23 Reticolo idrografico
+L'insieme delle linee di impluvio e dei corsi d'acqua presenti all'interno di un bacino. Comprende sia i reticoli
+idrografici naturali che quelli artificiali.
+24 Bacini idrografici
+Superficie di territorio, delimitata da una cintura montuosa o collinare che funge da spartiacque, al cui interno
+scorrono tutte le acque superficiali attraverso una serie di torrenti, fiumi ed eventualmente laghi per sfociare al
+mare in un'unica foce, a estuario o delta.
+25 Specchi d’acqua
+Delimitazione e/o caratteristiche dei corpi idrici superficiali interni fermi (Lago, Stagno, Palude/ acquitrino,
+Laguna, Invasi artificiali). Comprende anche le carte dei laghi alle diverse scale.
+26 Sorgenti
+Emergenze naturali dell’acqua, di portata rilevante, che affiora in un materiale permeabile per il fatto che la
+superficie piezometrica della falda interseca la superficie topografica.
+27 Ghiacciai
+Rappresentazione della superficie dei ghiacciai, depositi di ghiaccio che si formano in alta montagna o alle alte
+latitudini, per accumulo e successiva ricristallizzazione della neve.
+28 Acque sotterranee
+Tutte le acque che si trovano sotto la superficie del suolo nella zona di saturazione permanente e a contatto
+diretto con il suolo o il sottosuolo (Direttiva 2000/60/CE).
+29 Annali idrologici
+Archivi di monografie che riportano informazioni inerenti gli elementi idrologici o manufatti di interesse
+idrologico.
+30 Siti di Importanza Comunitaria, Zone di Protezione Speciale
+SIC: siti individuati al fine di mantenere o ripristinare un tipo di habitat naturale o una specie ai sensi della
+Direttiva Habitat 92/43/CE.
+ZPS: i territori più idonei alla conservazione delle specie, individuati ai sensi della Direttiva Uccelli
+79/409/CEE.
+Comprende anche le aree e le zone di interesse proposte dalle regioni (pSIC e pZPS).
+31 Parchi e Aree protette
+Delimitazione della superficie delle aree protette come classificate nella legge quadro 394/91. Sono compresi:
+parchi nazionali, parchi naturali regionali, riserve naturali (terrestri, fluviali, lacuali o marine) e tutte le aree
+protette classificate in base a leggi regionali.
+32 Siti archeologici e/o paleontologici
+Pagina 4 di 7
+Siti caratterizzati dalla presenza di resti di natura fossile o di manufatti o strutture preistorici o di età antica (cfr
+D. Lgs 22 gennaio 2004, n. 42).
+33 Beni culturali ambientali
+Cose immobili e mobili che presentano interesse artistico, storico, archeologico, etnoantropologico, archivistico
+e bibliografico e le altre cose individuate dalla legge o in base alla legge quali testimonianze aventi valore di
+civiltà.. (cfr D. Lgs 22 gennaio 2004, n. 42).
+34 Modelli digitali di elevazione
+Rappresentazione della morfologia del suolo in formato digitale. Comprendono rappresentazioni tipo DTM,
+DEM, DSM, DTED e simili.
+35 Dati orografici
+Rappresentazione dei rilievi di un territorio, sia quelli della superficie sia quelli sottomarini del tipo: Curve di
+livello e punti quotati, batimetria ecc.
+36 Carte di copertura ed uso del suolo
+Rappresentazione delle caratteristiche di copertura e uso del suolo. Comprende le carte riferite al progetto
+CORINE Land Cover.
+37 Carte tematiche di copertura vegetale
+Cartografie di rappresentazione delle differenti tipologie di vegetazione, quali ad esempio: Carta della
+Vegetazione, Carta Forestale, Carta degli Alberi e simili.
+38 Ortofoto aeree
+Prodotto proveniente da procedure di raddrizzamento di immagini telerilevate da piattaforma aerea.
+39 Ortofoto satellitari
+Prodotto proveniente da procedure di raddrizzamento di immagini telerilevate da piattaforma satellitare.
+40 Immagini non ortorettificate
+Immagini non ortorettificate della superficie terrestre rilevate da piattaforma aerea, satellitare, o da telesensori.
+41 Altri dati da telerilevamento
+Dati territoriali relativi alla superficie terrestre rilevati da piattaforma aerea, satellitare, o da tele sensori.
+42 Carta Geologica
+Rappresentazione cartografica delle informazioni inerenti la posizione stratigrafica, l’età, le caratteristiche
+petrografiche delle formazioni geologiche investigate, in relazione alla genesi e ai rapporti con le rocce
+adiacenti, attraverso l’utilizzo di simboli e colori convenzionali sulla corrispondente base topografica.
+43 Carte Geotematiche
+Comprende le carte geomorfologiche, geolitologiche e idrogeologiche.
+44 Modello strutturale
+Rappresentazione cartografica schematica delle unità strutturali a scala regionale e dei principali elementi
+tettonici.
+45 Monografie carotaggi geologici
+Archivi di monografie che riportano la stratigrafia dei sondaggi geologici con profondità superiore ai 30m.
+46 Sezioni di censimento
+Porzione di territorio comunale che identifica l’unità territoriale minima per la raccolta dei dati censuari.
+47 Località abitata
+Area più o meno vasta di territorio, conosciuta di norma con un nome proprio, sulla quale sono situate una o
+più case raggruppate o sparse.
+48 Località produttiva
+Area in ambito extraurbano non compresa nei centri o nuclei abitati nella quale siano presenti, generalmente,
+unità locali in numero superiore a 10, o il cui numero totale di addetti sia superiore a 200, contigue o vicine con
+interposte strade, piazze e simili, o comunque brevi soluzioni di continuità non superiori a 200 metri.
+49 Frame campionamento griglie
+Frame per selezione di campioni di punti da sottoporre ad indagine campionaria o per la produzione di
+informazioni statistiche territoriali.
+50 Altre unità statistiche
+Altre tipologie di unità, diverse dalle Sezioni di Censimento e dalle Località, in riferimento alle quali vengono
+condotte analisi statistiche.
+51 Edifici
+Corpo costruito che non presenta soluzioni di continuità, ha un’unica tipologia edilizia e può avere più
+categorie d’uso. La localizzazione geografica dell’edificio viene rappresentata o attraverso punti o il poligono
+di ingombro al suolo.
+52 Carta dei suoli
+Carta che rappresenta il documento di sintesi dell'indagine pedologica; strumento di base che fornisce le prime
+indicazioni di massima sulle attitudini dei terreni.
+Pagina 5 di 7
+53 Carta delle esposizioni, clivometria, delle pendenze
+Rappresentazione delle varie informazioni relative all’esposizione, alle pendenze e ad altre caratteristiche della
+forma ed orientamento della superficie.
+54 Carta dell’utilizzazione del suolo
+Carta con la classificazione d’uso primaria di terreni raggruppati secondo caratteristiche simili (industriale,
+residenziale, commerciale etc.).
+55 Zonazione urbanistico territoriale
+Suddivisione dell’area urbana in zone destinate a diversi impieghi e funzioni in base agli strumenti di
+pianificazione urbanistica e territoriale.
+56 Depuratori e collettori
+Localizzazione di impianti e infrastrutture atti alla raccolta e/o alla depurazione delle acque.
+57 Centri di rottamazione
+Localizzazione dei siti atti alla messa in sicurezza, la demolizione, il recupero dei materiali e la rottamazione.
+58 Strutture ospedaliere
+Localizzazione delle strutture attrezzate per il ricovero e la cura degli ammalati e dei feriti.
+59 Strutture e distretti sanitari
+Localizzazione delle strutture che provvedono ad organizzare l'assistenza sanitaria nel proprio ambito
+territoriale, assicurando l'erogazione di servizi specialistici e prestazioni sanitarie.
+60 Farmacie
+Localizzazione delle strutture dove si vendono farmaci.
+#61 Scuole
+#Localizzazione delle istituzioni finalizzate all'istruzione e all'educazione.
+62 Reti tecnologiche marine
+Localizzazione dei manufatti sottomarini per la distribuzione e l’approvvigionamento di energia, gas e per le
+telecomunicazioni.
+63 Reti tecnologiche terrestri
+Localizzazione dei manufatti per la distribuzione e l’approvvigionamento di energia, gas, acqua e
+telecomunicazioni.
+64 Siti protezione civile
+Localizzazione delle strutture per la direzione, il coordinamento e l’espletamento dei servizi di soccorso e di
+assistenza alla popolazione in caso di emergenze.
+65 Sedi istituzionali
+Localizzazione delle sedi delle Amministrazioni Pubbliche.
+66 Impianti e strutture ricettive
+Localizzazione di strutture stabili o temporanee, atte alla ospitalità e/o alla somministrazione di vitto.
+67 Impianti e strutture ricreative e sportive
+Localizzazione di strutture riservate alle attività ricreative e/o sportive.
+68 Stazioni e reti di monitoraggio e rilevazione ambientale
+Stazioni e reti dove si misurano, qualitativamente o quantitativamente, la presenza, l'effetto o il livello degli
+inquinanti presenti nell'aria o nell'acqua, del rumore, delle radiazioni, della subsidenza o i cambiamenti della
+vegetazione.
+69 Dati del monitoraggio ambientale
+Archivi di osservazioni e misure relativi al monitoraggio ambientale.
+70 Rete accelero metrica nazionale
+Stazioni e reti dove si misurano e si registrano terremoti di media ed elevata intensità (accelerazioni del suolo).
+71 Rete sismica nazionale
+Stazioni e reti dove si misura e si registra l’attività sismica in corso (spostamenti del suolo).
+72 Impianti di sondaggio per acqua e idrocarburi
+Localizzazione di strutture per il sondaggio di acqua e idrocarburi di carattere industriale.
+73 Impianti a rischio di incidente rilevante
+Localizzazione degli impianti industriali suscettibili di incidenti rilevanti, la cui probabilità può essere bassa,
+ma il cui verificarsi comporterebbe effetti disastrosi.
+74 Piattaforme
+Localizzazione delle strutture marine atte alla estrazione e/o al trattamento di materie prime (idrocarburi, gas,
+ecc.).
+75 Aziende agricole
+Localizzazione dei possedimenti e relative caratteristiche, in cui soggetti pubblici e privati esercitano attività
+agricole, agroalimentari, forestali e zootecniche destinate alla commercializzazione.
+76 Risorse idriche per agricoltura
+Pagina 6 di 7
+Localizzazione e caratteristiche degli impianti per l’irrigazione.
+77 Aree Vinicole, DOC, IGT
+Localizzazione e caratteristiche delle aree di produzione vitivinicola, comprese quelle che rispettano specifici
+disciplinari.
+78 Impianti di pesca, maricoltura
+Localizzazione e caratteristiche relative a impianti dedicati alle attività della pesca, dell’acquacoltura e simili.
+79 Dati aggregati della popolazione su unità amministrative e/o statistiche
+Archivi di dati e studi di tipo statistico e demografico effettuati in riferimento a porzioni di territorio fino alla
+unità minima prevista dalla normativa vigente.
+80 Vincolo idrogeologico
+Rappresentazione dell’area sottoposta a vincolo idrogeologico. R.D.L. 3267/23 e leggi forestali regionali.
+81 Vincoli paesaggistico, archeologico ed architettonico
+Rappresentazione delle aree sottoposte a vincolo con riferimento al D.L. 42/2004 e sue modifiche 156/2006.
+82 Vincolo ambientale
+Rappresentazione delle aree sottoposte a vincolo con riferimento alla L. 431/85.
+83 Aree percorse da incendio sottoposte a vincolo
+Rappresentazione delle aree percorse da incendio con riferimento alla L. 353/ 2000 (catasto incendi)
+84 Classificazione sismica dei comuni italiani
+Elenco dei comuni con la relativa attribuzione ad una delle 4 zone sismiche soggette all’applicazione di speciali
+norme per le costruzioni di cui all’ordinanza del Presidente del Consiglio dei Ministri n. 3274 del 20 marzo
+2003 e successivi recepimenti regionali.
+85 Discariche
+Aree adibite allo smaltimento dei rifiuti di varia natura. L 101/2008.
+86 Altre aree vincolate o regolamentate
+Aree assoggettate a vincolo o regolamentazione in base a specifici provvedimenti normativi.
+87 Zonizzazione acustica
+Rappresentazione dell’inquinamento acustico in riferimento al Piano. L. 447/95 e sue modifiche, leggi
+regionali.
+88 Pericolosità e rischio idrogeologico (alluvioni, frane, esondazioni, ecc.)
+Rappresentazione della pericolosità e del rischio idrogeologico con riferimenti ai Piani per l’Assetto
+Idrogeologico. L 180/98e sue modifiche ed integrazioni.
+89 Parametri di identificazione sismica di norma (ag, F0,Tc)
+Nuove norme tecniche per le costruzioni decreto 14.01.2008.
+90 Carte della Pericolosità sismica di riferimento per il territorio nazionale
+Rappresentazioni illustranti i valori di accelerazione di picco orizzontale del suolo (ag) e i valori spettrali per
+vari periodi di ritorno (approvati con l’Ordinanza PCM 3519 del 28 aprile 2006, All. 1b) da utilizzare nelle
+nuove norme tecniche per le costruzioni approvate con decreto ministeriale del 14.01.2008).
+91 Carta di Pericolosità sismica disaggregata secondo la Magnitudo e la distanza dei comuni italiani
+Rappresentazione dei valori medi e modali ottenuti a seguito della disaggregazione della pericolosità con
+periodi di ritorno di 475 anni.
+92 Carte di rischio sismico dei comuni italiani
+Rappresentazioni illustranti la stima delle perdite annue attese.
+93 Carte di vulnerabilità sismica dei comuni italiani
+Rappresentazioni illustranti il numero di abitazioni e relativa popolazione residente per classe di vulnerabilità
+sismica.
+94 Zone di allertamento per il rischio idrogeologico e idraulico
+Ambiti territoriali ottimali caratterizzati da una risposta meteo-idrologica omogenea in occasione
+dell’insorgenza di una determinata tipologia di rischio.
+95 Rischio vulcanico
+Rappresentazione delle zone a differente grado di rischio vulcanico, nell’ambito della Pianificazione Nazionale
+di Emergenza.
+96 Erosione costiera
+Delimitazione di aree a rischio di mareggiata e di progressiva rimozione del materiale da una costa mediante
+l'azione del mare.
+97 Rischio incendio
+Delimitazione di aree a rischio di incendio sulla base delle statistiche pregresse e delle caratteristiche territoriali
+correlate alla vulnerabilità connessa alla presenza antropica (persone e beni) sul territorio.
+98 Valanghe
+Rappresentazione su base topografica delle aree di massima estensione dei fenomeni valanghivi (rapidi
+movimenti a valle di neve e ghiaccio nelle zone montuose e ripide) verificatisi nel tempo in un dato territorio.
+Pagina 7 di 7
+99 Stazioni meteo, sensori, radar, punti di misurazione, ecc
+Inventario delle stazioni meteo, sensori, radar, punti di misurazione finalizzati alla misura delle condizioni
+fisiche dell’atmosfera.
+100 Stazioni di rilevamento idrometeorologiche
+Localizzazione e archivi di misure relative ad atmosfera, climatologia e meteorologia.
+101 Unità fisiografiche
+Rappresentazione delle unità in cui i materiali costituenti il litorale presentano movimenti confinati all'interno
+dell'unità stessa o presentano scambi con l'esterno in misura non influenzata da quanto accade al restante
+litorale.
+102 Habitat
+Rappresentazioni dei luoghi caratterizzati dalle condizioni ambientali necessarie per la vita degli animali o delle
+piante.
+103 Repertorio naturalistico
+Banca dati delle specie, habitat e fitocenosi di interesse conservazionistico.
+104 Archivio forestale
+Inventario di monografie relative a indagini realizzate per conoscere l´entità e la qualità delle risorse forestali.
+105 Aree e specie faunistiche
+Rappresentazioni della distribuzione delle specie animali sul territorio.
+106 Aree e Specie Vegetali
+Rappresentazioni della distribuzione delle specie vegetali sul territorio.
+107 Atlante eolico
+Archivi dati ed informazioni sulla distribuzione delle risorse eoliche sul territorio utili per individuare le aree
+dove tali risorse possono essere interessanti per lo sfruttamento energetico.
+108 Cave e miniere
+Localizzazione e caratteristiche di impianti e siti per l'estrazione dei minerali che si presentano in natura allo
+stato solido.
+109 Cartografie storiche
+Riproduzione in formato digitale di carte e stampe antiche. Comprendono piante di città, carte degli stati
+preunitari, tavole di atlanti e carte generali dell'Italia.
+110 Cartografie storiche militari
+Riproduzione in formato digitale di carte e stampe militari antiche.
+DECRETO 10 novembre 2011
+Regole tecniche per la definizione del contenuto del Repertorio nazionale dei dati
+territoriali, nonché delle modalità di prima costituzione e di aggiornamento dello stesso.
+(Gazzetta Ufficiale n. 48 del 27/02/2012 - Supplemento ordinario n. 37).
+Allegato 2
+Specifiche tecniche per la formazione e l’alimentazione del
+Repertorio Nazionale dei Dati Territoriali
+Pagina 2 di 42
+INDICE
+1 PREMESSA ................................................................................................................................ 3
+2 TERMINI E DEFINIZIONI ..................................................................................................... 3
+3 CONTENUTO DEL REPERTORIO ....................................................................................... 4
+3.1 Metadati per i dati territoriali ............................................................................................... 4
+3.1.1 Struttura dei metadati .................................................................................................. 5
+3.1.2 Metadati comuni a tutte le tipologie di dati territoriali ................................................ 5
+3.1.3 Metadati supplementari per immagini e modelli digitali del terreno ........................... 7
+3.2 Metadati per i servizi............................................................................................................ 8
+3.3 Metadati per le nuove acquisizioni di dati territoriali .......................................................... 9
+3.4 Dizionari dei dati ................................................................................................................ 10
+3.4.1 Glossario dei campi del dizionario ............................................................................. 10
+3.4.2 Dizionario dei metadati relativi ai dati territoriali ..................................................... 12
+3.4.3 Liste dei valori ed enumerazioni per i dati territoriali ............................................... 21
+3.4.4 Dizionario dei metadati relativi ai servizi .................................................................. 32
+3.4.5 Liste dei valori per i servizi........................................................................................ 33
+3.4.6 Dizionario dei metadati relativi alle nuove acquisizioni di dati ................................. 35
+3.4.7 Liste dei valori per le nuove acquisizioni .................................................................. 36
+3.4.8 Corrispondenze .......................................................................................................... 37
+4 ACCESSO, MODALITA’ DI COMUNICAZIONE E ALIMENTAZIONE DEL
+REPERTORIO ................................................................................................................................. 40
+4.1 Accesso e consultazione del Repertorio ............................................................................. 40
+4.2 Accreditamento delle Amministrazioni Pubbliche ............................................................ 40
+4.3 Alimentazione del Repertorio ............................................................................................ 41
+4.3.1 XML e schemi XSD ................................................................................................... 41
+4.3.2 Trasmissione dei file XML ........................................................................................ 41
+4.4 Integrazione del Repertorio con INSPIRE ......................................................................... 42
+Pagina 3 di 42
+1 PREMESSA
+Il presente documento descrive le regole tecniche per la definizione del contenuto del Repertorio
+Nazionale dei Dati Territoriali e per la prima costituzione, l’alimentazione e il successivo
+aggiornamento dello stesso.
+Esso definisce, inoltre, le modalità operative di accesso, comunicazione e popolamento del
+Repertorio da parte delle Pubbliche Amministrazioni, anche in coerenza con la direttiva 2007/2/CE
+(INSPIRE) e il Regolamento (CE) n. 1205/2008 della Commissione Europea del 3 dicembre 2008.
+Le presenti regole fanno riferimento ai seguenti standard internazionali:
+- UNI EN ISO 19115:2005, Geographic Information – Metadata
+- UNI EN ISO 19119:2006, Geographic Information – Services
+- ISO TS 19139:2007 – Geographic Information - Metadata – XML Schema Implementation
+- OGC, OpenGIS Catalogue Services Specification 2.0.2 – ISO Metadata Application Profile,
+Version 1.0.0, 2007
+2 TERMINI E DEFINIZIONI
+In aggiunta alle definizioni riportate all’articolo 1 del presente decreto si applicano anche le
+seguenti definizioni:
+classe class Insieme di oggetti simili dotati di proprietà comuni.
+dataset dataset Collezione identificabile di dati.
+dizionario dei
+dati
+data
+dictionary
+Enumerazione informale in linguaggio corrente delle
+descrizioni degli oggetti.
+elemento di
+metadati
+metadata
+element
+Unità distinta di metadati per la quale la definizione,
+l’identificazione, la descrizione e i valori ammessi sono
+specificati tramite un insieme di attributi [ISO 15046-3].
+entità di
+metadati
+metadata
+entity
+Insieme di elementi di metadati che descrivono uno stesso
+specifico aspetto dei dati.
+enumerazione enumeration Elenco bloccato di valori.
+lista di valori codelist Elenco non bloccato di valori. Può essere considerata una
+enumerazione flessibile.
+profilo profile Insieme di uno o più standard di base e, dove applicabile,
+l’identificazione di clausole, opzioni, e parametri degli
+standard di base che sono necessari per particolari
+funzionalità.
+Pagina 4 di 42
+schema schema Descrizione di un modello attraverso un linguaggio formale.
+schema di
+metadati
+metadata
+schema
+Schema concettuale che descrive i metadati.
+schema XML XML schema Modalità per definire la struttura, il contenuto e la semantica
+dei documenti XML [ISO 19139].
+serie di dataset dataset series Collezione di dataset che condividono le stesse specifiche di
+prodotto.
+sezione tile Sottoinsieme di un dataset.
+spazio di nomi namespace Collezione di nomi, identificata da un riferimento URI, che
+sono utilizzati nei documenti XML come nomi degli
+elementi e degli attributi [ISO 19139].
+UML UML Linguaggio di modellazione unificato (Unified Modeling
+Language)
+XML XML Extensible Markup Language. Formato di interscambio e
+trasferimento dei dati.
+3 CONTENUTO DEL REPERTORIO
+Nel presente capitolo, sono individuati:
+- l’insieme minimo di metadati comune a tutte le tipologie di dati territoriali. Per le immagini
+(foto aeree, ortofoto, immagini da telerilevamento, ecc.) e i modelli digitali del terreno
+(DTM, DEM, ecc.) sono inoltre individuati alcuni metadati supplementari;
+- il set di metadati necessario per documentare i servizi;
+- il set di metadati necessario per documentare le nuove acquisizioni ovvero i dati territoriali
+che una Pubblica Amministrazione prevede di acquisire.
+3.1 Metadati per i dati territoriali
+In questo paragrafo sono definiti i metadati da utilizzare per descrivere i dati territoriali nel
+Repertorio. Tali metadati sono un sottoinsieme di quelli previsti nello standard ISO 19115:2003,
+Geographic Information – Metadata. Nel “Dizionario dei metadati relativi ai dati territoriali” (§
+3.4.2), per ogni metadato, è specificata la definizione, il corrispondente elemento ISO, il tipo, il
+dominio, il livello di obbligatorietà e la molteplicità.
+Al paragrafo 3.1.2 sono individuati i metadati che si applicano a tutte le tipologie di dati territoriali.
+Al paragrafo 3.1.3 sono individuati i metadati supplementari che si applicano alle immagini ed ai
+modelli digitali del terreno.
+Pagina 5 di 42
+3.1.1 Struttura dei metadati
+La documentazione delle diverse tipologie e categorie tematiche di dati territoriali nel Repertorio
+Nazionale si può generalizzare nel modo seguente:
+_ ogni singolo elemento (in genere l’unità minima di fornitura del prodotto) è descritto, in
+termini di metadati, a livello di sezione;
+_ ogni lotto di produzione o ogni strato informativo è descritto a livello di dataset;
+_ l’intero prodotto è descritto a livello di serie.
+La scelta della modulazione dei dati territoriali nei livelli gerarchici indicati è comunque lasciata
+alla singola Amministrazione.
+La figura seguente illustra il diagramma UML che rappresenta le classi di informazioni territoriali a
+cui possono essere applicati i metadati.
+Figura 1 - classi di applicazione dei metadati
+Tale diagramma rappresenta un’estensione del diagramma UML previsto nello Standard ISO
+19115, rispetto al quale è stata introdotta una nuova classe, DS_TiledDataset, che rappresenta una
+classe specializzata (sottoclasse) della superclasse DS_Dataset e che può essere considerata
+un’aggregazione di sezioni (tiles).
+3.1.2 Metadati comuni a tutte le tipologie di dati territoriali
+Informazioni sui metadati
+1 Identificatore del file
+2 Lingua dei metadati
+3 Set dei caratteri dei metadati
+4 Id file precedente
+Pagina 6 di 42
+5 Livello gerarchico
+6 Responsabile dei metadati
+6.1 - Nome dell’Ente
+6.2 - Ruolo
+6.3 - Informazioni per contattare l’Ente
+6.3.1 - Sito web
+6.3.2 - Telefono
+6.3.3 - E-mail
+7 Data dei metadati
+8 Nome dello Standard
+9 Versione dello Standard
+Identificazione dei dati
+10 Titolo
+11 Data
+11.1 - Data
+11.2 - Tipo data
+12 Formato di presentazione
+13 Responsabile
+13.1 - Nome dell’Ente
+13.2 - Ruolo
+13.3 - Informazioni per contattare l’Ente
+13.3.1 - Sito web
+13.3.2 - Telefono
+13.3.3 - E-mail
+14 Identificatore
+15 Id livello superiore
+16 Altri dettagli
+17 Descrizione
+18 Parole chiave
+18.1 - Parola chiave
+18.2 - Thesaurus
+19 Punto di contatto
+19.1 - Nome dell’Ente
+19.2 - Ruolo
+19.3 - Informazioni per contattare l’Ente
+19.3.1 - Sito web
+19.3.2 - Telefono
+19.3.3 - E-mail
+20 Tipo di rappresentazione spaziale
+21 Risoluzione spaziale
+21.1 - Scala equivalente
+21.2 - Distanza
+22 Lingua
+23 Set di caratteri
+24 Categoria tematica
+25 Informazioni supplementari
+Vincoli sui dati
+26 Limitazione d’uso
+27 Vincoli di accesso
+28 Vincoli di fruibilità
+29 Altri vincoli
+30 Vincoli di sicurezza
+Estensione dei dati
+31 Localizzazione geografica
+31.1 - Longitudine Ovest
+31.2 - Longitudine Est
+31.3 - Latitudine Sud
+31.4 - Latitudine Nord
+32 Estensione verticale
+32.1 - Quota minima
+32.2 - Quota massima
+32.3 - Unità di misura
+32.4 - Datum verticale
+33 Estensione temporale
+33.1 - Data inizio
+33.2 - Data fine
+Qualità dei dati
+34 Livello di qualità
+35 Accuratezza posizionale
+35.1 - Unità di misura
+35.2 – Valore
+Pagina 7 di 42
+36 Genealogia
+37 Conformità: specifiche
+37.1 – Titolo
+37.2 – Data
+37.3 - Tipo data
+38 Conformità: grado
+Sistema di riferimento
+39 Sistema di riferimento spaziale
+Distribuzione dei dati
+40 Formato di distribuzione
+40.1 - Nome formato
+40.2 - Versione formato
+41 Distributore
+41.1 - Nome dell’ente
+41.2 – Ruolo
+41.3 - Informazioni per contattare l’Ente
+41.3.1 - Sito web
+41.3.2 - Telefono
+41.3.3 - E-mail
+42 Risorsa on line
+Gestione dei dati
+43 Frequenza di aggiornamento
+Tabella I – Metadati comuni a tutte le tipologie di dati territoriali
+3.1.3 Metadati supplementari per immagini e modelli digitali del terreno
+Per le immagini (foto aeree, ortofoto, immagini da telerilevamento, ecc.) e i modelli digitali del
+terreno (DTM, DEM, ecc.), oltre all’insieme minimo di metadati definito al punto precedente, è
+necessario documentare gli elementi di metadati riportati nelle tabelle seguenti.
+Lo Standard ISO individua due grandi gruppi per le immagini e i dati raster in generale: i dati
+“georeferenziabili” per i quali è utile conoscere i punti di controllo e altri parametri allo scopo di
+processarli per essere georettificati, e i dati georettificati. I metadati comuni ad ambedue le
+categorie (che quindi vanno documentati sempre in caso di dati raster) sono riportati nella tabella II,
+nella quale, i metadati relativi al contenuto si riferiscono specificatamente alle ortofoto; i metadati
+relativi ai dati raster georettificati sono riportati nella tabella III, quelli per i dati raster
+georeferenziabili sono riportati nella tabella IV.
+Riepilogando, per la documentazione di immagini e DTM devono essere documentati i metadati
+riportati in tabella II (i primi quattro si riferiscono alle ortofoto) e, a seconda se si tratta di dati
+georettificati o georeferenziabili, rispettivamente, i metadati delle tabelle III o IV.
+Contenuto dei dati raster
+1 Descrizione degli attributi
+2 Tipo di contenuto
+3 Risoluzione radiometrica
+4 Triangolazione aerea
+Rrappresentazione spaziale dei dati raster
+5 Numero di dimensioni
+6 Proprietà dimensioni
+6.1 - Nome dimensione
+6.2 - Misura dimensione
+6.3 - Risoluzione
+7 Geometria della cella
+8 Disponibilità coefficienti della trasformazione
+Tabella II – Metadati supplementari comuni per tutti i dati raster
+Pagina 8 di 42
+Rappresentazione spaziale dei dati raster georettificati
+1 Disponibilità dei check-points
+2 Descrizione check-points
+3 Coordinate dei vertici
+4 Punto del pixel
+Tabella III – Metadati supplementari per i dati raster georettificati
+Rappresentazione spaziale dei dati raster “georeferenziabili”
+1 Disponibilità dei punti di controllo
+2 Disponibilità dei parametri di orientamento
+3 Parametri per la georefernziazione
+Tabella IV – Metadati supplementari per i dati raster “georeferenziabili”
+3.2 Metadati per i servizi
+In questo paragrafo sono definiti i metadati da utilizzare per descrivere i servizi nel Repertorio. Nel
+“Dizionario dei metadati relativi ai servizi” (§ 3.4.4), per ogni metadato, è specificata la definizione,
+il corrispondente elemento ISO, il tipo, il dominio, il livello di obbligatorietà e la molteplicità.
+Informazioni sui metadati
+1 Identificatore del file
+2 Lingua dei metadati
+3 Set dei caratteri dei metadati
+4 Id file precedente
+5 Livello gerarchico
+6 Responsabile dei metadati
+6.1 - Nome dell’Ente
+6.2 - Ruolo
+6.3 - Informazioni per contattare l’Ente
+6.3.1 - Sito web
+6.3.2 - Telefono
+6.3.3 - E-mail
+7 Data dei metadati
+8 Nome dello Standard
+9 Versione dello Standard
+Identificazione dei servizi
+10 Titolo
+11 Data
+11.1 - Data
+11.2 - Tipo data
+12 Responsabile
+12.1 - Nome dell’Ente
+12.2 - Ruolo
+12.3 - Informazioni per contattare l’Ente
+12.3.1 - Sito web
+12.3.2 - Telefono
+12.3.3 - E-mail
+13 Identificatore
+14 Descrizione
+15 Parole chiave
+15.1 - Parola chiave
+15.2 - Thesaurus
+16 Punto di contatto
+16.1 - Nome dell’Ente
+16.2 - Ruolo
+16.3 - Informazioni per contattare l’Ente
+16.3.1 - Sito web
+16.3.2 - Telefono
+16.3.3 - E-mail
+17 Tipo di servizio
+18 Tipo di aggancio
+19 Risorsa accoppiata
+Pagina 9 di 42
+20 Operazioni
+20.1 - Nome operazione
+20.2 - DCP
+20.3 - Punto di connessione
+21 Risorsa on line
+Vincoli sui servizi
+22 Limitazione d’uso
+23 Vincoli di accesso
+24 Vincoli di fruibilità
+25 Altri vincoli
+26 Vincoli di sicurezza
+Estensione dei servizi
+27 Localizzazione geografica
+27.1 - Longitudine Ovest
+27.2 - Longitudine Est
+27.3 - Latitudine Sud
+27.4 - Latitudine Nord
+28 Estensione temporale
+28.1 - Data inizio
+28.2 - Data fine
+Qualità dei servizi
+29 Livello di qualità
+30 Conformità: specifiche
+29.1 - Titolo
+29.2 - Data
+29.3 - Tipo data
+31 Conformità: grado
+Tabella V – Metadati per i servizi
+3.3 Metadati per le nuove acquisizioni di dati territoriali
+In questo paragrafo sono definiti i metadati da utilizzare per descrivere nel Repertorio i dati
+territoriali che una Pubblica Amministrazione prevede di acquisire.
+Nel “Dizionario dei metadati relativi alle nuove acquisizioni di dati ” (§ 3.4.6), per ogni metadato, è
+specificata la definizione, il tipo, il dominio, il livello di obbligatorietà e la molteplicità.
+Informazioni sui metadati
+1 Identificatore del file
+2 Lingua dei metadati
+3 Responsabile dei metadati
+3.1 - Nome dell’Ente
+3.2 - Ruolo
+3.3 - Informazioni per contattare l’Ente
+3.3.1 - Sito web
+3.3.2 - Telefono
+3.3.3 - E-mail
+4 Data dei metadati
+Identificazione dei dati
+5 Titolo
+6 Data di presunta disponibilità
+7 Formato di presentazione
+8 Responsabile
+8.1 - Nome dell’Ente
+8.2 - Ruolo
+8.3 - Informazioni per contattare l’Ente
+8.3.1 - Sito web
+8.3.2 - Telefono
+8.3.3 - E-mail
+9 Identificatore
+10 Altri dettagli
+11 Descrizione
+12 Status
+Pagina 10 di 42
+13 Tipo di rappresentazione spaziale
+14 Risoluzione spaziale: Scala equivalente
+15 Categoria tematica
+16 Localizzazione geografica
+16.1 - Longitudine Ovest
+16.2 - Longitudine Est
+16.3 - Latitudine Sud
+16.4 - Latitudine Nord
+17 Limite amministrativo
+18 Informazioni supplementari
+19 Servizi previsti
+19.1 - Tipo servizio
+19.2 - Data di presunta disponibilità
+Vincoli sui dati
+20 Limitazione d’uso
+Sistema di riferimento
+21 Sistema di riferimento spaziale
+Programmazione
+22 Costo previsto
+23 Copertura finanziaria
+24 Grado di copertura
+25 Modalità di acquisizione
+Tabella VI – Metadati per le nuove acquisizioni di dati territoriali
+3.4 Dizionari dei dati
+Di seguito sono riportati i dizionari con le descrizioni delle caratteristiche dei metadati definiti ai
+paragrafi 3.1, 3.2 e 3.3. Oltre al corrispondente termine dello Standard ISO (espresso come il
+numero dell’elemento inserito nello Standard), ogni dizionario riporta anche il livello di
+obbligatorietà, la molteplicità, la tipologia e il dominio dei metadati.
+Sono riportate anche le liste dei valori e le enumerazioni, che costituiscono il dominio dei metadati.
+Inoltre, al paragrafo 3.4.8, sono riportate le corrispondenze tra:
+- il set di metadati previsto da INSPIRE e quello definito nel presente allegato;
+- le categorie tematiche del Repertorio, le topic category definite nello Standard ISO e i temi
+di INSPIRE;
+- i sistemi di riferimento spaziale riportati nella lista MD_ReferenceSystemCode e i codici
+EPSG1.
+3.4.1 Glossario dei campi del dizionario
+· Nome
+Il nome è un’etichetta assegnata all’elemento.
+· Numero ISO
+Viene riportato il corrispondente elemento dello Standard ISO indicato con il numero
+riportato nello Standard o con il path relativo.
+· Definizione
+Descrizione degli elementi di metadati.
+1 European Petroleum Survey Group, oggi OGP Surveying and Positioning Committee - www.epsg.org
+Pagina 11 di 42
+· Livello di obbligatorietà
+Indica se un elemento deve essere sempre documentato o se può essere omesso. Il campo
+può assumere i valori: obbligatorio (O), che indica che l’elemento deve essere documentato
+sempre, opzionale (Op) che indica che quell’elemento può essere anche omesso,
+condizionato (C), che indica che l’elemento è obbligatorio sotto determinate condizioni
+(rappresenta una scelta tra due o più opzioni e uno diventa obbligatorio, è obbligatorio se
+qualche altro elemento assume un determinato valore, ….). Nell’ultimo caso, se non
+diversamente indicato nel dizionario, si fa riferimento alle condizioni riportate nello
+Standard ISO 19115.
+NOTA - L’indicazione del livello di obbligatorietà, come riportato nei dizionari, vale per
+una struttura “flat” dei metadati, in riferimento, quindi, ad un unico livello gerarchico, che,
+di default, è il dataset.
+Nel caso in cui per la documentazione dei metadati si utilizzi la struttura gerarchica di cui al
+§ 3.1.1, le obbligatorietà possono essere distribuite nei diversi livelli gerarchici, in coerenza
+con le strutture previste negli XSD (§ 4.3.1). In generale, si può scegliere il livello
+opportuno in cui riportare il valore del metadato, ma se esso è obbligatorio, deve comunque
+essere riportato almeno in uno dei livelli previsti (serie, dataset o sezione).
+· Occorrenza massima (max)
+Specifica il numero massimo di istanze che gli elementi e/o le entità dei metadati possono
+avere. Una singola occorrenza è indicata con “1”; più occorrenze sono indicate con “N”.
+· Tipo di dato
+Specifica l’insieme di valori per rappresentare l’elemento dei metadati (es. intero, reale,
+stringa,…).
+· Dominio
+Il dominio indica i valori possibili per l’elemento.
+Pagina 12 di 42
+3.4.2 Dizionario dei metadati relativi ai dati territoriali
+Nome
+Num.
+ISO
+19115
+Descrizione Tipo di dato Dominio Liv. obblig.
+Max
+Classe
+Informazioni sui metadati
+Definisce i metadati sulla risorsa Classe O 1
+Identificatore del file
+2
+Identificatore univoco del file dei
+metadati
+CharacterString Testo libero O 1
+Lingua dei metadati
+3
+Linguaggio nel quale sono espressi i
+metadati
+CharacterString
+ISO 639-2/B
+(utilizzare solo i
+codici a tre lettere
+come definito su
+http://www.loc.gov
+/standards/iso639-
+2/ )
+O 1
+Set dei caratteri dei metadati
+4
+Nome dello standard del set di
+caratteri utilizzato per i metadati Classe
+CodeList
+MD_CharacterSet-
+Code
+C 1
+Id file precedente
+5
+Identificatore univoco del file di
+metadati dell’ eventuale trasmissione
+precedente a cui il file corrente è
+relazionato.
+CharacterString Testo libero O 1
+Livello gerarchico
+6
+Categoria di informazione cui
+vengono applicati metadati (es:
+“dataset”)
+Classe
+CodeList
+MD_ScopeCode
+O 1
+Responsabile
+dei metadati
+Soggetto responsabile della creazione
+e della manutenzione dei metadati
+Classe O N
+Nome dell’Ente
+8.376
+Nome dell’organizzazione
+responsabile
+CharacterString Testo libero O 1
+Ruolo
+8.379
+Ruolo rappresentato dal soggetto
+responsabile
+Classe
+CodeList
+CI_RoleCode
+O 1
+Info: Telefono
+8.378.388.
+408
+Numero telefonico a cui è possibile
+contattare il soggetto responsabile CharacterString Testo libero
+C / documentare
+alternativamente a
+“Info: Sito web”
+1
+Info: Sito web
+8.378.390.
+397
+Indirizzo per l’accesso online
+espresso secondo lo schema Uniform
+Resource Locator (URL).
+Classe
+URL
+(IETF RFC1738
+IETF RFC2056)
+C / documentare
+alternativamente a
+“Info: Telefono”
+1
+Info: E-mail 8.378.389.
+386
+Indirizzo di posta elettronica del
+soggetto responsabile
+CharacterString Testo libero O N
+Pagina 13 di 42
+Data dei metadati
+9
+Data di creazione o di ultima modifica
+dei metadati
+Classe Date - ISO 8601 O 1
+Nome dello Standard
+10
+Nome dello standard (incluso il nome
+del profilo) di metadati utilizzato
+CharacterString Testo libero O 1
+Versione dello Standard
+11
+Versione dello standard/profilo di
+metadati utilizzato
+CharacterString Testo libero O 1 Identificazione dei dati
+Informazioni di base utili per
+identificare la risorsa cui vengono
+applicati i metadati
+1
+Titolo
+15.24.360
+Nome caratteristico e spesso unico
+con il quale la risorsa è conosciuta.
+CharacterString Testo libero O 1
+Data O N
+Data 15.24.362.
+394
+Data di riferimento dei dati
+Classe ISO 8601 O 1
+Tipo data
+15.24.362.
+395
+Evento relativo alla data di
+riferimento. È obbligatorio almeno un
+tipo di data tra “creazione”,
+“pubblicazione” e “revisione”.
+Classe
+CodeList
+CI_DateTypeCode
+O 1
+Formato di presentazione
+15.24.368
+Modalità in cui la risorsa è
+rappresentata. Classe
+CodeList
+CI_Presentation-
+FormCode
+O N
+Responsabile Soggetto titolare dei dati O N
+Nome dell’Ente 15.24.367.
+376
+Nome dell’organizzazione
+responsabile
+CharacterString Testo libero O 1
+Ruolo 15.24.367.
+379
+Ruolo rappresentato dal soggetto
+responsabile
+Classe
+CodeList
+CI_RoleCode
+O 1
+Info: Telefono 15.24.367.
+378.388.
+408
+Numero telefonico a cui è possibile
+contattare il soggetto responsabile CharacterString Testo libero
+C / documentare
+alternativamente a
+“Info: Sito web”
+1
+Info: Sito web 15.24.367.
+378.390.
+397
+Indirizzo per l’accesso online
+espresso secondo lo schema Uniform
+Resource Locator (URL).
+Classe
+URL
+(IETF RFC1738
+IETF RFC2056)
+C / documentare
+alternativamente a
+“Info: Telefono”
+1
+Info: E-mail 15.24.367.
+378.389.
+386
+Indirizzo di posta elettronica del
+soggetto responsabile CharacterString Testo libero O N
+Identificatore
+15.24.365.
+207
+Riferimento univoco che identifica la
+risorsa nel livello gerarchico
+specificato.
+CharacterString Testo libero O 1
+Pagina 14 di 42
+Id livello superiore
+15.24.369.
+405
+Riferimento univoco relativo alla
+serie di cui il dataset è parte. Se si sta
+documentando una sezione l’elemento
+assume il valore dell’idenitificativo
+del dataset a cui quella sezione
+appartiene.
+CharacterString Testo libero O 1
+Altri dettagli
+15.24.370
+Ulteriori informazioni di citazione
+CharacterString Testo libero Op 1
+Descrizione
+15.25
+Breve testo di descrizione del
+contenuto della risorsa CharacterString Testo libero O 1
+Parole chiave Parole chiave e fonte di riferimento O N
+Parola chiave 15.33.53 Parola formalizzata o utilizzata
+comunemente per descrivere la
+risorsa. In caso di dati, si dovrà
+fornire almeno una parola chiave del
+Thesaurus Generale Multilingue
+dell’Ambiente (GEMET) che descriva
+la categoria tematica dei dati
+territoriali pertinenti, secondo le
+definizioni degli allegati I, II o III
+della direttiva 2007/2/CE. In caso di
+servizi, dovrà essere fornita almeno
+una parola chiave tratta dall’elenco
+riportato alla parte D.4 del
+Regolamento (CE) n. 1205/2008.
+CharacterString Testo libero O N
+Thesaurus
+Op 1
+Titolo
+15.33.55.
+360
+Nome del thesaurus formalmente
+registrato, fonte delle parole chiave
+CharacterString Testo libero O 1
+Data
+15.33.55.
+362.394
+Data di riferimento del thesaurus
+Classe ISO 8601 O N
+Tipo Data
+15.33.55.
+362.395
+Evento relativo alla data di
+riferimento. È obbligatorio almeno un
+tipo di data tra “creazione”,
+“pubblicazione” e “revisione”.
+Classe
+CodeList
+CI_DateTypeCode
+O N
+Punto di contatto Soggetto che è possibile contattare
+per avere informazioni sulla risorsa
+O N
+Nome dell’Ente 15.29.376 Nome dell’organizzazione da
+contattare
+CharacterString Testo libero O 1
+Ruolo 15.29.379 Ruolo rappresentato dal soggetto
+responsabile (di default: punto di
+contatto)
+Classe
+CodeList
+CI_RoleCode
+O 1
+Pagina 15 di 42
+Info: Telefono 15.29.378.
+388.408
+Numero telefonico a cui è possibile
+contattare il punto di contatto CharacterString Testo libero
+C / documentare
+alternativamente a
+“Info: Sito web”
+1
+Info: Sito web 15.29. 378.
+390.397
+Indirizzo per l’accesso online
+espresso secondo lo schema Uniform
+Resource Locator (URL).
+Classe
+URL
+(IETF RFC1738
+IETF RFC2056)
+C / documentare
+alternativamente a
+“Info: Telefono”
+1
+Info: E-mail 15.29.378.
+389.386
+Indirizzo di posta elettronica del
+punto di contatto
+CharacterString Testo libero O N
+Tipo di rappresentazione spaziale 15.37 Metodo di rappresentazione spaziale
+dei dati (es: vettoriale) Classe
+CodeList
+MD_SpatialRepresentationTypeCode
+O N
+Risoluzione spaziale Fattore che fornisce la comprensione
+generale della densità dei dati nel
+dataset
+O N
+Scala equivalente 15.38.60.57 Livello di dettaglio espresso come la
+scala di un’equivalente mappa
+cartacea
+Integer Integer > 0 C 1
+Distanza 15.38.61 Risoluzione geometrica al suolo Classe Distance C 1
+Lingua 15.39 Linguaggio utilizzato per i dati
+CharacterString
+ISO 639-2/B
+(utilizzare solo
+codici a tre lettere
+come definito su
+http://www.loc.gov
+/standards/iso639-
+2/ )
+O N
+Set dei caratteri 15.40 Nome dello standard del set di
+caratteri utilizzato per i dati Classe
+CodeList
+MD_CharacterSet-
+Code
+C N
+Categoria tematica 15.41 Tema principale cui si riferiscono i
+dati Classe
+Enumeration
+MD_TopicCategoryCode
+O N
+Informazioni supplementari 15.46 Informazioni descrittive
+supplementari sui dati
+CharacterString Testo libero Op 1
+Vincoli sui dati
+Classe di informazioni sui vincoli di
+accesso e utilizzo dei dati
+O N
+Limitazione d’uso 15.35.68 Restrizioni di utilizzo dei dati. Questo
+elemento fornisce anche delle
+informazioni sugli eventuali canoni da
+corrispondere per l’accesso e l’uso
+della risorsa, se del caso, o fa
+riferimento a un localizzatore unico di
+risorsa (URL) dove si possono
+reperire informazioni sui canoni.
+CharacterString Testo libero O 1
+Pagina 16 di 42
+Vincoli di accesso 15.35.70 Vincoli di accesso a dati per
+assicurare la protezione della privacy
+o della proprietà intellettuale e ogni
+altra restrizione o limitazione ad
+ottenere la risorsa (l’accesso
+comprende la visualizzazione, la
+stampa o la riproduzione del dato, non
+comprende l’elaborazione del dato). Il
+dato può essere pubblico ovvero
+conoscibile da chiunque oppure a
+conoscibilità limitata (cfr. art. 1
+Codice A. D.)
+Classe
+CodeList
+MD_Restrinction-
+Code
+O N
+Vincoli di fruibilità 15.35.71 Cfr. art. 1 Codice A.D. Vincoli sulla
+possibilità di utilizzare il dato,
+derivanti da regolamenti e norme
+nazionali ed europee (protezione della
+privacy, proprietà intellettuale, altre
+restrizioni)
+Classe
+CodeList
+MD_Restrinction-
+Code
+O N
+Altri vincoli 15.35.72 Altri vincoli e prerequisiti legali per
+l’accesso e l’utilizzo della risorsa
+CharacterString Testo libero C N
+Vincoli di sicurezza 15.35.74 Restrizioni imposte ai dati per
+questioni di sicurezza Classe
+CodeList
+MD_Classification
+Code
+O 1
+Estensione dei dati
+Informazioni sull’estensione spaziale
+e temporale dei dati
+O 1
+Localizzazione
+geografica
+Estensione della risorsa nello spazio
+geografico fornita sotto forma di un
+riquadro di delimitazione.
+O 1
+Longitudine Ovest 15.45.336.
+344
+Coordinata più ad ovest
+dell’estensione dei dati, data dal
+valore di longitudine espresso in gradi
+decimali, con una precisione di
+almeno due decimali.
+Classe
+Angolo
+Si veda ISO/TS
+19103
+O 1
+Longitudine Est 15.45.336.
+345
+Coordinata più ad est dell’estensione
+dei dati, data dal valore di longitudine
+espresso in gradi decimali, con una
+precisione di almeno due decimali.
+Classe
+Angolo
+Si veda ISO/TS
+19103
+O 1
+Latitudine Sud 15.45.336.
+346
+Coordinata più a sud dell’estensione
+dei dati, data dal valore di latitudine
+espresso in gradi decimali, con una
+precisione di almeno due decimali.
+Classe
+Angolo
+Si veda ISO/TS
+19103
+O 1
+Latitudine Nord 15.45.336.
+347
+Coordinata più a nord dell’estensione
+dei dati, data dal valore di latitudine
+espresso in gradi decimali, con una
+precisione di almeno due decimali.
+Classe
+Angolo
+Si veda ISO/TS
+19103
+O 1
+Pagina 17 di 42
+Estensione verticale Dominio verticale dei dati Op 1
+Quota minima 15.45.338.
+355
+Valore di quota minimo dei dati
+Real Real O 1
+Quota massima 15.45.338.
+356
+Valore di quota massimo dei dati
+Real Real O 1
+Unità di misura 15.45.338.
+357
+Unità di misura dei valori di quota
+Classe UomLenght O 1
+Datum verticale 15.45.338.
+358.207.
+Informazioni sul sistema di
+riferimento verticale dei dati Classe
+CodeList
+MD_ReferenceSystemCode
+O 1
+Estensione temporale Periodo di tempo coperto dal
+contenuto della risorsa.
+Op N
+Data inizio 15.45.337.
+351
+Data iniziale della copertura
+temporale
+Classe ISO 8601 O 1
+Data fine 15.45.337.
+351
+Data finale della copertura temporale
+Classe ISO 8601 Op 1
+Qualità dei dati
+Classe di informazioni sulla qualità
+dei dati
+O 1
+Livello di qualità 18.79.139 Livello cui sono applicate le
+informazioni di qualità
+Classe
+CodeList
+MD_ScopeCode
+O 1
+Accuratezza
+posizionale
+Informazioni per la descrizione
+dell’accuratezza posizionale dei dati O 1
+Unità di misura 18.80.117.
+107.135
+Unità di misura dei valori di qualità
+dei dati Classe
+UnitOfMeasure
+Si veda ISO/TS
+19103
+O 1
+Valore 18.80.117.
+107.137
+Valore quantitativo dell’accuratezza
+posizionale dei dati
+Classe Record O 1
+Genealogia 18.81.83 Testo descrittivo sulla storia del
+processo e/o la qualità generale del set
+di dati. Dove necessario, può
+includere una dichiarazione che indica
+se l’insieme di dati è stato convalidato
+o sottoposto a un controllo di qualità.
+CharacterString Testo libero O 1
+Conformità: specifiche Citazione delle specifiche INSPIRE
+(adottate a norma dell’art. 7 par. 1
+della direttiva 2007/2/CE) cui la
+risorsa si conforma.
+C / documentare se
+il metadata è di
+interesse per
+Inspire
+1
+Titolo 18.80.107.
+130.360
+Titolo delle specifiche
+CharacterString Testo libero O 1
+Data 18.80.107.
+130.394
+Data di riferimento delle specifiche
+Classe ISO 8601 O 1
+Pagina 18 di 42
+Tipo data 18.80.107.
+130.395
+Evento (es. pubblicazione) associato
+alla data di riferimento delle
+specifiche. E’ obbligatorio almeno un
+tipo di data tra “creazione”,
+“pubblicazione” e “revisione”.
+Classe
+CodeList
+CI_DateTypeCode
+O 1
+Conformità: grado 18.80.107.
+132
+Indicazione del grado di conformità
+alle specifiche INSPIRE (adottate a
+norma dell’art. 7 par. 1 della direttiva
+2007/2/CE).
+Boolean
+True/1 = conforme
+False/0 = non
+conforme
+Nessun valore =
+non valutato
+O 1
+Sistema di
+riferimento
+O N
+Sistema di riferimento spaziale 13.187.207 Sistema di riferimento dei dati
+Classe
+CodeList
+MD_ReferenceSystemCode
+O 1
+Distribuzione dei dati
+Informazioni sul distributore e su
+come ottenere la risorsa
+O 1
+Formato di
+distribuzione
+Descrizione del formato con cui i dati
+sono distribuiti
+O N
+Nome formato 17.271.285 Nome del formato dei dati CharacterString Testo libero O 1
+Versione formato 17.271.286 Versione del formato dei dati CharacterString Testo libero O 1
+Distributore Informazioni sull’Ente che
+distribuisce i dati
+O N
+Nome dell’Ente 17.272.280.
+376
+Nome dell’organizzazione che
+distribuisce i dati
+CharacterString Testo libero O 1
+Ruolo 17.272.280.
+379
+Ruolo rappresentato dal soggetto
+responsabile (di default: distributore)
+Classe
+CodeList
+CI_RoleCode
+O 1
+Info: Telefono 17.272.280.
+378.388.
+408
+Numero telefonico a cui è possibile
+contattare il distributore CharacterString Testo libero
+C / documentare
+alternativamente a
+“Info: Sito web”
+1
+Info: Sito web 17.272.280.
+378.390.
+397
+Indirizzo per l’accesso online
+espresso secondo lo schema Uniform
+Resource Locator (URL).
+Classe
+URL
+(IETF RFC1738
+IETF RFC2056)
+C / documentare
+alternativamente a
+“Info: Telefono”
+1
+Pagina 19 di 42
+Info: E-mail 17.272.280.
+378.389.
+386
+Indirizzo di posta elettronica del
+distributore CharacterString Testo libero O N
+Risorsa on line 17.273.277.
+397
+Informazioni sulle fonti online
+attraverso le quali la risorsa può
+essere ottenuta. Indirizzo per
+l’accesso online espresso secondo lo
+schema Uniform Resource Locator
+(URL).
+Classe
+URL
+(IETF RFC1738
+IETF RFC2056)
+Op N
+Gestione
+dei dati
+Op N
+Frequenza di aggiornamento 15.30.143 Frequenza con la quale sono
+registrati gli aggiornamenti dei
+dati
+Classe
+CodeList
+MD_Maintenance-
+FrequencyCode
+O 1
+Contenuto dei dati raster
+Informazioni sul contenuto della cella
+di dati raster
+C / documentare in
+caso di immagini e
+DTM
+1
+Descrizione degli attributi 16.240 Descrizione dell’attributo descritto
+dal valore di misura
+Classe RecordType O 1
+Tipo di contenuto 16.241 Tipo di informazione rappresentato
+dal valore della cella Classe
+CodeList
+MD_Coverage-
+ContentTypeCode
+O 1
+Risoluzione radiometrica 16.242.264 Numero massimo di bit significativi
+in cui può essere rappresentata
+l’intensità radiometrica di ogni pixel
+Integer Integer Op 1
+Triangolazione aerea 16.251 Indicazione se la triangolazione aerea
+è stata effettuata o meno
+Boolean
+1 = sì
+0 = no
+Op 1
+Rappresentazione spaziale dei
+dati raster
+Classe di informazioni sulla
+rappresentazione spaziale dei dati di
+tipo raster
+C / documentare in
+caso di immagini e
+DTM
+1
+Numero di dimensioni 12.158 Numero degli assi spaziali-temporali
+indipendenti
+Integer Integer O 1
+Proprietà dimensioni
+Informazioni sulle proprietà degli assi
+spaziali-temporali
+O N
+Nome dimensione 12.159.180 Nome degli assi
+Classe
+CodeList
+MD_Dimension-
+NameTypeCode
+O 1
+Misura dimensione 12.159.181 Numero degli elementi lungo gli assi Integer Integer O 1
+Risoluzione 12.159.182 Grado di dettaglio dei dati Classe Measure Op 1
+Geometria della cella 12.160 Identificazione dei dati raster come
+punti o celle Classe
+CodeList
+MD_CellGeometry
+Code
+O 1
+Pagina 20 di 42
+Disponibilità coefficienti della trasformazione 12.161 Indicazione se esistono o meno i
+coefficienti della trasformazione
+affine per il passaggio da coordinate
+immagine a coordinate terreno
+Boolean
+1 = sì
+0 = no
+O 1
+Disponibilità dei check-points 12.163 Indicazione sulla disponibilità dei
+check-point
+Boolean
+1 = sì
+0 = no
+O 1
+Descrizione check-points 12.164 Descrizione dei check-point CharacterString Testo libero C 1
+Coordinate dei vertici 12.165 Coordinate dei vertici della griglia
+espresse nel proprio sistema di
+riferimento spaziale. Sono richiesti
+almeno il vertice origine della griglia
+e quello opposto lungo la diagonale.
+Sequenza GM_Point O N
+Punto del pixel 12.167 Punto del pixel a cui si riferiscono le
+coordinate Classe
+Enumeration
+MD_PixelOrientationCode
+O 1
+Disponibilità dei punti di controllo 12.171 Indicazione se esistono o meno punti
+di controllo
+Boolean
+1 = sì
+0 = no
+O 1
+Disponibilità dei parametri di orientamento 12.172 Indicazione se sono disponibili o
+meno i parametri di orientamento
+Boolean
+1 = sì
+0 = no
+O 1
+Parametri per la georefernziazione 12.174 Termini che supportano la
+georeferenziazione dei dati
+Classe Record O 1
+Pagina 21 di 42
+3.4.3 Liste dei valori ed enumerazioni per i dati territoriali
+Di seguito sono riportate le liste dei valori (codelist) e le enumerazioni (enumeration) che
+rappresentano il dominio di alcuni metadati come riportato nel dizionario al paragrafo 3.4.2.
+3.4.3.1 Lista dei valori CI_DateTypeCode
+Nome
+Elemento
+corrispondente
+ISO19115:2003
+Codice
+dominio
+Definizione
+1. CI_DateTypeCode CI_DateTypeCode DateTypCd Identificazione di quando un evento succede
+2. Creazione creation 001 Data che identifica quando la risorsa è stata creata
+3. Pubblicazione publication 002 Data che identifica quando la risorsa è stata pubblicata
+4. Revisione revision
+003
+Data che identifica quando la risorsa è stata esaminata o
+riesaminata e migliorata o emendata
+5. Rilievo ---------- 004 Data che identifica l’osservazione del fenomeno (es. volo).
+3.4.3.2 Lista dei valori CI_PresentationFormCode
+Nome
+Elemento
+corrispondente
+ISO19115:2003
+Codice
+dominio Definizione
+1. CI_PresentationFormCode CI_PresentationFormCode PresFormCd Modalità in cui sono presentati i
+dati.
+2. Documento digitale documentDigital
+001
+Rappresentazione digitale di un
+testo (può contenere anche
+illustrazioni)
+3. Documento cartaceo documentHardcopy
+002
+Rappresentazione di un testo (può
+contenere anche illustrazioni) su
+carta, materiale fotografico o altri
+supporti.
+4. Immagine digitale imageDigital 003 Immagine in formato digitale
+5. Immagine cartacea imageHardcopy
+004
+Immagine riprodotta su carta,
+materiale fotografico o altri
+supporti per uso diretto.
+6. Mappa digitale mapDigital
+005
+Mappa in formato raster o
+vettoriale
+7. Mappa cartacea mapHardcopy
+006
+Mappa stampata su carta, materiale
+fotografico o altri supporti per uso
+diretto
+8. Modello digitale modelDigital
+007
+Rappresentazione digitale
+multidimensionale di un
+particolare, un processo, …
+9. Modello fisico modelHardcopy 008 Modello fisico tridimensionale
+10. Profilo digitale profileDigital
+009
+Sezione verticale (stratigrafia) in
+formato digitale
+11. Profilo cartaceo profileHardcopy
+010
+Sezione verticale (stratigrafia)
+stampata su carta o su altro
+supporto
+Pagina 22 di 42
+12. Tabella digitale tableDigital
+011
+Rappresentazione digitale di fatti e
+cifre presentate im modo
+sistematico, specialmente in
+colonne
+13. Tabella cartacea tableHardcopy
+012
+Rappresentazione di fatti e cifre
+presentate im modo sistematico,
+specialmente in colonne, stampate
+su carta, materiale fotografico, o
+altri supporti.
+14. Video digitale videoDigital 013 Registrazione video digitale
+15. Video analogico videoHardcopy 014 Registrazione video su pellicola
+3.4.3.3 Lista dei valori CI_RoleCode
+Nome
+Elemento
+corrispondente
+ISO19115:2003
+Codice
+dominio
+Definizione
+1. CI_RoleCode CI_RoleCode RoleCd Funzione rappresentata dall’Ente responsabile dei
+dati
+2. Fornitore della
+risorsa
+resourceProvider
+001
+Soggetto che fornisce la risorsa
+3. Custode custodian
+002
+Soggetto responsabile della conservazione della
+risorsa
+4. Proprietario owner 003 Soggetto proprietario della risorsa
+5. Utente user 004 Soggetto che utilizza la risorsa
+6. Distributore distributor 005 Soggetto che distribuisce la risorsa
+7. Ideatore originator 006 Soggetto che ha progettato la risorsa
+8. Punto di contatto pointOfContact
+007
+Soggetto che può essere contattato per avere
+informazioni o acquisire la risorsa
+9. Responsabile
+principale delle
+ricerche
+principalInvestigator
+008
+Soggetto che raccoglie informazioni e conduce
+ricerche
+10. Responsabile del
+trattamento
+processor
+009
+Soggetto che ha elaborato i dati, modificandoli
+11. Editore publisher 010 Soggetto che ha pubblicato la risorsa
+12. Autore author 011 Soggetto che ha realizzato la risorsa
+3.4.3.4 Lista dei valori MD_CellGeometryCode
+Nome Elemento corrispondente ISO
+19115:2003
+Codice
+dominio
+Definizione
+1. MD_CellGeometryCode MD_CellGeometryCode CellGeoCd Indica se i dati della griglia
+sono punti o aree
+2. Punto point
+001
+Ogni cella rappresenta un
+punto
+3. Area area
+002
+Ogni cella rappresenta
+un’area
+Pagina 23 di 42
+3.4.3.5 Lista dei valori MD_CharacterSetCode
+Nome
+Codice
+dominio Definizione
+1. MD_CharacterSetCode CharSetCd Nome dello standard di codifica dei caratteri utilizzati per la
+risorsa
+2. ucs2
+001
+Universal Character Set a dimensione fissa di 32 bit, basato
+sullo standard ISO/IEC 10646
+3. ucs4
+002
+Universal Character Set a dimensione fissa di 16 bit, basato
+sullo standard ISO/IEC 10646
+4. utf7
+003
+Formato di trasferimento di UCS a dimensione variabile a 7
+bit, basato sullo standard ISO/IEC 10646
+5. utf8
+004
+Formato di trasferimento di UCS a dimensione variabile a 8
+bit, basato sullo standard ISO/IEC 10646
+6. utf16
+005
+Formato di trasferimento di UCS a dimensione variabile a
+16 bit, basato sullo standard ISO/IEC 10646
+7. 8859part1
+006
+ISO/IEC 8859-1 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 1: Latin alphabet No. 1
+8. 8859part2
+007
+ISO/IEC 8859-2 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 2: Latin alphabet No. 2
+9. 8859part3
+008
+ISO/IEC 8859-3 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 3: Latin alphabet No. 3
+10. 8859part4
+009
+ISO/IEC 8859-4 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 4: Latin alphabet No. 4
+11. 8859part5
+010
+ISO/IEC 8859-5 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 5: Latin/Cyrillic alphabet
+12. 8859part6
+011
+ISO/IEC 8859-6, Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 6: Latin/Arabic alphabet
+13. 8859part7
+012
+ISO/IEC 8859-7 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 7: Latin/Greek alphabet
+14. 8859part8
+013
+ISO/IEC 8859-8 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 8: Latin/Hebrew alphabet
+15. 8859part9
+014
+ISO/IEC 8859-9 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 9: Latin alphabet No. 5
+16. 8859part10
+015
+ISO/IEC 8859-10 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 10: Latin alphabet No. 6
+17. 8859part11
+016
+ISO/IEC 8859-11 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 11: Latin/Thai alphabet
+18. (reserved for future use)
+017
+Un futuro insieme codificato di caratteri grafici di un
+singolo byte a 8 bit ISO/IEC 8859-1 (possibilmente 8859
+part 12)
+19. 8859part13
+018
+ISO/IEC 8859-13 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 13: Latin alphabet No. 7
+20. 8859part14
+019
+ISO/IEC 8859-14 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 14: Latin alphabet No. 8 (Celtic)
+Pagina 24 di 42
+21. 8859part15
+020
+ISO/IEC 8859-15 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 15: Latin alphabet No. 9
+22. 8859part16
+021
+ISO/IEC 8859-16 , Information Technology – insieme
+codificato di caratteri grafici di un singolo byte a 8 bit –
+Part 16: Latin/Thai alphabet No. 10
+23. jis 022 Codice giapponese utilizzato per la trasmissione elettronica
+24. shiftJIS
+023
+Codice giapponese utilizzato su macchine basate su MSDOS
+3.4.3.6 Lista dei valori MD_ClassificationCode
+Nome
+Elemento
+corrispondente
+ISO19115:2003
+Codice
+dominio Definizione
+1. MD_ClassificationCode MD_ClassificationCode ClasscationCd Restrizioni sui dati
+2. Non classificato unclassified
+001
+Dati disponibili per la divulgazione
+generale
+3. Riservato restricted
+002
+Dati non disponibili per la
+divulgazione generale
+4. Riservatissimo confidential
+003
+Dati disponibili solo per pochi
+soggetti
+5. Segreto secret
+004
+Dati tenuti o destinati ad essere
+privati, sconosciuti, o nascosti a
+tutti, tranne che ad un gruppo
+selezionato di persone
+6. Segretissimo topSecret 005 Dati soggetti a segretezza assoluta
+3.4.3.7 Lista dei valori MD_CoverageContentTypeCode
+Nome
+Elemento corrispondente
+ISO 19115:2003
+Codice
+dominio Definizione
+1. MD_CoverageContent
+TypeCode
+MD_CoverageContentTypeCode ContentTypCd Tipo di informazione
+rappresentato nella cella
+2. Immagine image
+001
+Rappresentazione numerica
+significativa di un parametro
+fisico che non è il suo valore
+reale
+3. Classificazione
+tematica
+thematicClassification
+002
+Valore codificato senza
+significato quantitativo usato
+per rappresentare una quantità
+fisica
+4. Misura fisica physicalMeasurement
+003
+Valore in unità fisiche della
+quantità misurata
+Pagina 25 di 42
+3.4.3.8 Lista dei valori MD_DimensionNameTypeCode
+Nome
+Elemento corrispondente ISO
+19115:2003
+Codice
+dominio Definizione
+1. MD_DimensionName
+TypeCode
+MD_DimensionName
+TypeCode
+DimNameTypCd Nome della
+dimensione
+2. Riga row
+001
+Asse delle ordinate
+(y)
+3. Colonna column
+002
+Asse delle ascisse
+(x)
+4. Verticale (quota) vertical 003 Asse verticale (z)
+3.4.3.9 Lista dei valori MD_MaintenanceFrequencyCode
+Nome
+Elemento corrispondente
+ISO19115:2003
+Codice
+dominio Definizione
+1. MD_MaintenanceFrequencyCode MD_MaintenanceFrequencyCode MaintFreqCd Frequenza con la
+quale vengono
+memorizzati gli
+aggiornamenti dei
+dati
+2. In maniera continua continual
+001
+I dati sono aggiornati
+ripetutamente e
+frequentemente
+3. Giornalmente daily
+002
+I dati sono aggiornati
+ogni giorno
+4. Settimanalmente weekly
+003
+I dati sono aggiornati
+settimanalmente
+5. Ogni quindici giorni fortnightly
+004
+I dati sono aggiornati
+ogni due settimane
+6. Mensilmente monthly
+005
+I dati sono aggiornati
+ogni mese
+7. Trimestralmente quarterly
+006
+I dati sono aggiornati
+ogni tre mesi
+8. Due volte all’anno biannually
+007
+I dati sono aggiornati
+due volte all’anno
+9. Annualmente annually
+008
+I dati sono aggiornati
+ogni anno
+10. Quando necessario asNeeded
+009
+I dati sono aggiornati
+quando ritenuto
+necessario
+11. Irregolarmente irregular
+010
+I dati sono aggiornati
+a intervalli non
+regolari
+12. Non pianificato notPlanned
+011
+Gli aggiornamenti dei
+dati non sono
+pianificati.
+13. Sconosciuto unknown
+012
+La frequenza di
+aggiornamento dei
+dati non è nota.
+Pagina 26 di 42
+3.4.3.10 Enumerazione MD_PixelOrientationCode
+Nome
+Elemento
+corrispondente ISO
+19115:2003
+Codice
+dominio
+Definizione
+1. MD_PixelOrientationCode MD_PixelOrientationCode PixOrientCd Punto in un pixel corrispondente
+alla localizzazione sul terreno del
+pixel
+2. Centro center
+001
+Punto posto a metà tra il punto più
+in basso a sinistra e quello più in
+alto a destra del pixel
+3. In basso a sinistra lowerLeft
+002
+Il vertice del pixel più vicino
+all’origine; se due vertici hanno la
+stessa distanza dall’origine, allora
+si considera quello con il valore
+delle x più piccolo.
+4. In basso a destra lowerRight
+003
+Il vertice successivo, in senso
+antiorario, a quello più in basso a
+sinistra
+5. In alto a destra upperRight
+004
+Il vertice successivo, in senso
+antiorario, a quello più in basso a
+destra
+6. In alto a sinistra upperLeft
+005
+Il vertice successivo, in senso
+antiorario, a quello più in alto a
+destra
+3.4.3.11 Lista dei valori MD_ReferenceSystemCode
+Nome Codice
+dominio
+Definizione
+1. MD_ReferenceSystemCode RefSysCd
+2. WGS84 001 Coordinate geografiche espresse rispetto al sistema WGS84
+3. ETRS89
+002
+European Terrestrial Reference System - sistema di
+riferimento Europeo, solidale con la placca euro-asiatica,
+definito e mantenuto dall’EUREF (European Reference
+Frame) coincidente con ITRS all’epoca 1989.
+4. ETRS89/ETRS-LAEA
+003
+Coordinate cartografiche espresse nel sistema ETRS89 con
+la rappresentazione Azimutale Equal Area di Lambert
+5. ETRS89/ETRS-LCC
+004
+Coordinate cartografiche espresse nel sistema ETRS89 con
+la rappresentazione Conforme Conica di Lambert
+6. ETRS89/ETRS-TM32
+005
+Coordinate cartografiche espresse nel sistema ETRS89 con
+la rappresentazione Trasversa di Mercatore (zona 32)
+7. ETRS89/ETRS-TM33
+006
+Coordinate cartografiche espresse nel sistema ETRS89 con
+la rappresentazione Trasversa di Mercatore (zona 33)
+8. ETRS89/UTM-zone32N
+031
+Coordinate cartografiche espresse nel sistema ETRS89 con
+la rappresentazione UTM (zona 32N)
+9. ETRS89/UTM-zone33N
+032
+Coordinate cartografiche espresse nel sistema ETRS89 con
+la rappresentazione UTM (zona 33N)
+10. ROMA40/EST
+007
+Coordinate cartografiche nella rappresentazione di Gauss-
+Boaga (fuso EST) [Ellissoide di Hayford – Orientamento:
+Roma Monte Mario 1940]
+11. ROMA40/OVEST
+008
+Coordinate cartografiche nella rappresentazione di Gauss-
+Boaga (fuso OVEST) [Ellissoide di Hayford –
+Orientamento: Roma Monte Mario 1940]
+12. ED50/UTM 32N
+009
+Coordinate cartografiche espresse nel sistema ED50 (zona
+32N)
+Pagina 27 di 42
+13. ED50/UTM 33N
+010
+Coordinate cartografiche espresse nel sistema ED50 (zona
+33N)
+14. IGM95/UTM 32N
+011
+Coordinate cartografiche espresse nel sistema IGM95 (zona
+32N). (Raffittimento nazionale del sistema ETRS89)
+15. IGM95/UTM 33N
+012
+Coordinate cartografiche espresse nel sistema IGM95 (zona
+33N) (Raffittimento nazionale del sistema ETRS89)
+16. WGS84/UTM 32N
+013
+Coordinate cartografiche espresse nel sistema WGS84
+(zona 32N)
+17. WGS84/UTM 33N
+014
+Coordinate cartografiche espresse nel sistema WGS84
+(zona 33N)
+18. WGS84/UTM 34N
+015
+Coordinate cartografiche espresse nel sistema WGS84
+(zona 34N)
+19. BESSEL/Cassini-Soldner
+016
+Coordinate cartografiche nella rappresentazione di Cassini-
+Soldner [Ellissoide di Bessel 1841 - Orientamento: Genova
+(Osservatorio), Monte Mario (Roma), Castanea delle Furie
+(Messina)]
+20. BESSEL/Sanson-Flamsteed
+017
+Coordinate cartografiche nella rappresentazione di Sanson-
+Flamsteed [Ellissoide di Bessel 1841 - Orientamento:
+Genova (Osservatorio)]
+21. CATASTO / Locale 018 Coordinate cartografiche assenti
+22. ROMA40
+019
+Coordinate geografiche espresse nel sistema ROMA40
+(Primo meridiano Greenwich)
+23. ROMA40/ROMA
+020
+Coordinate geografiche espresse nel sistema ROMA40
+(Primo meridiano Roma Monte Mario)
+24. ED50 021 Coordinate geografiche espresse nel sistema ED50
+25. IGM95
+022
+Realizzazione (o materializzazione) per l’Italia del sistema
+ETRS89, tramite compensazione di una rete di rete di punti
+geodetici a livello nazionale.
+26. Rete Altimetrica Nazionale 023 Quote ortometriche
+27. WGS84/3D 024 Quote ellissoidiche
+28. Livello medio delle basse maree
+sizigiali
+033
+Media delle basse maree sizigiali in un determinato periodo
+29. Livello medio delle alte maree
+sizigiali
+034
+Media delle alte maree sizigiali in un determinato periodo
+30. Livello medio lago
+035
+E’ il livello medio del lago misurato in un certo periodo di
+tempo. Il livello medio lago è quotato rispetto alla Rete
+Altimetrica Nazionale.
+31. ITRS
+025
+International Terrestrial Reference System - sistema di
+riferimento internazionale geocentrico definito dallo IERS
+(International Earth Rotation and Reference System
+Service), orientamento iniziale coincidente con
+l’orientamento del Bureau International de l’Heure del
+1984, il sistema è utilizzabile tramite le sue realizzazioni
+(ITRF).
+32. ITRFxx
+026
+International Terrestrial Reference Frame - realizzazione (o
+materializzazione) all’epoca xx (epoca dell’elaborazione
+dati) del sistema di riferimento ITRS tramite
+compensazione e stima di coordinate e relative velocità di
+una rete di punti geodetici (reti di stazioni SLR-Satellite
+Laser Ranging, VLBI-Very Long Baseline Interferometry e
+GPS) distribuita a livello mondiale.
+33. IGSxx
+027
+Realizzazione (o materializzazione) all’anno xx del sistema
+di riferimento geodetico internazionale ITRS, ottenuta
+mediante compensazione di una rete di stazioni GNSS
+distribuita a livello mondiale.
+34. IGb00
+028
+Realizzazione (o materializzazione) iniziale del sistema
+IGSxx.
+35. ETRF89
+029
+Realizzazione (o materializzazione) del sistema ETRS89,
+definita mediante compensazione e stima di coordinate e
+relative velocità di una Rete di Stazioni GNSS Europeo.
+Pagina 28 di 42
+36. ETRF00
+030
+Nuova realizzazione (o materializzazione) del sistema
+ETRS89 all’epoca 2000. La realizzazione italiana del
+sistema ETRF00, traslato temporalmente all’epoca 2008, è
+basata sulla compensazione di una rete di stazioni
+permanenti GNSS distribuita sul territorio italiano
+denominata RDN (Rete Dinamica Nazionale).
+3.4.3.12 Lista dei valori MD_RestrictionCode
+Nome
+Elemento
+corrispondente
+ISO19115:2003
+Codice
+dominio Definizione
+1. MD_RestrictionCode MD_RestrictionCode RestrinctCd Limitazioni all’accesso o all’uso dei
+dati
+2. Proprietà intellettuale dei
+dati
+copyright
+001
+Diritto esclusivo alla pubblicazione,
+produzione o vendita dei diritti di
+un lavoro letterario, artistico,
+musicale, o dell’uso di una stampa
+commerciale, assegnato dalla legge
+per un determinato periodo di
+tempo ad un autore, compositore,
+artista, distributore (tutela ai sensi
+della legge 633/41 e successive
+modifiche e integrazioni e delle
+Direttive europee 2001/29/EC,
+96/9/EC, 93/98/EEC).
+3. Brevetto patent
+002
+Diritto esclusivo a produrre,
+vendere, usare o autorizzare
+un’invenzione o una scoperta
+4. In attesa di brevetto patentPending
+003
+Informazioni prodotte o vendute in
+attesa di brevetto.
+5. Marchio registrato trademark
+004
+Nome, simbolo o altro dispositivo
+che identifica un prodotto, registrato
+ufficialmente e limitato legalmente
+all’uso del proprietario o fornitore.
+6. Licenza license 005 Permesso formale a fare qualcosa.
+7. Sfruttamento economico
+della proprietà intellettuale
+intellectualPropertyRights
+006
+Diritti al beneficio finanziario e al
+controllo della distribuzione di una
+proprietà non tangibile che è il
+risultato della creatività
+8. Dato a conoscibilità
+limitata
+restricted
+007
+Dato la cui conoscibilità è riservata
+per legge o regolamento a specifici
+soggetti o categorie di soggetti (cfr.
+art. 1 Codice A.D.)
+9. Altri vincoli otherRestrictions 008 Limitazioni non riportate nella lista
+10. Dato pubblico -----
+009
+Dato formato o comunque trattato
+da una Pubblica Amministrazione
+conoscibile da chiunque (cfr. art. 1
+Codice A.D.)
+Pagina 29 di 42
+3.4.3.13 Lista dei valori MD_ScopeCode
+Nome
+Elemento
+corrispondente
+ISO19115:2003
+Codice
+dominio
+Definizione
+1. MD_ScopeCode MD_ScopeCode ScopeCd Classe di informazioni alle quali si applica l’entità di
+riferimento
+2. Dataset dataset 005 Le informazioni descrivono le caratteristiche di un dataset
+3. Serie series
+006
+Le informazioni descrivono le caratteristiche di una serie di
+dataset
+4. Servizio service 014 Le informazioni descrivono le caratterisitche di un servizio
+5. Sezione tile 016 Le informazioni descrivono le caratteristiche di un subset di dati
+3.4.3.14 Lista dei valori MD_SpatialRepresentationTypeCode
+Nome
+Elemento
+corrispondente
+ISO19115:2003
+Codice
+dominio Definizione
+1. MD_SpatialRepresentation
+TypeCode
+MD_SpatialRepresentation
+TypeCode
+SpatRepTypCd Metodo utilizzato per rappresentare
+le informazioni geografiche nel
+dataset
+2. Dati vettoriali vector
+001
+I dati vettoriali sono utilizzati per
+rappresentare i dati territoriali
+3. Dati raster grid
+002
+I dati raster sono utilizzati per
+rappresentare i dati territoriali
+4. Tabella di dati
+alfanumerici
+textTable
+003
+Le tabelle di dati alfanumerici sono
+utilizzati per rappresentare i dati
+territoriali
+5. TIN tin
+004
+Triangulated Irregular Network
+(Rete irregolare triangolata)
+3.4.3.15 Enumerazione MD_TopicCategoryCode
+Categoria tematica
+Elemento corrispondente
+ISO 19115:2003
+Codice
+dominio Definizione
+1. MD_TopicCategoryCode MD_TopicCategoryCode TopicCatCd Classificazione tematica di
+alto livello dei dati territoriali,
+utile nella catalogazione e
+nella ricerca dei dataset
+geografici disponibili. Può
+essere utilizzata anche per
+raggruppare le parole-chiave.
+Gli esempi riportati non sono
+esaustivi. NOTA – Tra le
+categorie generali ci sono,
+ovviamente, delle
+sovrapposizioni, per cui
+l’utente dovrà scegliere la
+categoria più appropriata.
+2. Agricoltura farming
+001
+Allevamento di animali e/o
+coltivazione di piante
+Esempi: agricoltura,
+Pagina 30 di 42
+irrigazioni, acquacoltura,
+piantagioni, parassiti e
+malattie che interessano i
+raccolti e il bestiame
+3. Biota biota
+002
+Flora e/o fauna nell’ambiente
+naturale
+Esempi: fauna selvatica,
+vegetazione, scienze
+biologiche, ecologia, habitat
+4. Confini boundaries
+003
+Descrizione legale del
+territorio
+Esempi: limiti politici e
+amministrativi
+5. Climatologia –
+Meteorologia - Atmosfera
+climatologyMeteorologyAtmosphere
+004
+Processi e fenomeni
+dell’atmosfera
+Esempi: annuvolamento,
+clima, condizioni
+atmosferiche, cambiamenti
+climatici, precipitazioni
+6. Economia economy
+005
+Attività economiche
+Esempi: produzione, lavoro,
+commercio, reddito,
+industria, turismo ed
+ecoturismo, silvicoltura,
+pesca, esplorazione e
+sfruttamento delle risorse
+come minerali, petrolio e gas.
+7. Elevazione elevation
+006
+Quote sopra o sotto il livello
+del mare
+Esempi: altitudine, DEM,
+batimetria, pendenze e
+prodotti derivati
+8. Ambiente environment
+007
+Risorse ambientali,
+protezione e conservazione
+dell’ambiente
+Esempi: inquinamento
+ambientale, trattamento dei
+rifiuti, valutazione di impatto
+ambientale, monitoraggio del
+rischio ambientale, riserve
+naturali, paesaggio
+9. Informazioni
+geoscientifiche
+geoscientificInformation
+008
+Informazioni riguardanti le
+Scienze della Terra
+Esempi: entità e processi
+geofisici,geologia, minerali,
+struttura e origine delle rocce
+terrestri, rischi di terremoti,
+attività vulcanica, suoli,
+idrogeologia, erosione.
+10. Salute Health
+009
+Salute, servizi sanitari,
+ecologia umana e sicurezza
+Esempi: malattie, fattori che
+interessano la salute, igiene,
+abuso di sostanze, salute
+fisica e mentale, servizi
+sanitari
+11. Mappe di base –
+Immagini – Copertura
+terrestre
+imageryBaseMapsEarthCover
+010
+Mappe di base
+Esempi: copertura
+territoriale, carte
+topografiche, immagini
+12. Intelligence – Settore intelligenceMilitary 011 Basi, strutture e attività
+Pagina 31 di 42
+militare militari
+Esempi: addestramento,
+trasporto militare, raccolta di
+informazioni
+13. Acque interne inlandWaters
+012
+Caratteristiche delle acque
+interne, sistemi di drenaggio e
+loro caratteristiche
+Esempi: fiumi e ghiacciai,
+laghi salati, piani di
+utilizzazione dell’acqua,
+dighe, correnti, inondazioni,
+qualità dell’acqua
+14. Localizzazione location
+013
+Informazioni e servizi sulla
+localizzazione
+Esempi: indirizzi, reti
+geodetiche, punti di controllo,
+zone e servizi postali,
+toponimi
+15. Acque marine - Oceani oceans
+014
+Entità e caratteristiche dei
+corpi d’acqua salata (escluse
+le acque interne)
+Esempi: maree, informazioni
+sulle linee di costa
+16. Pianificazione - Catasto planningCadastre
+015
+Pianificazione del territorio
+Esempi: carte dell’uso del
+suolo, carte di zonizzazione,
+indagini catastali, proprietà
+terriere
+17. Società society
+016
+Caratteristiche sociali e
+culturali
+Esempi: antropologia,
+archeologia, educazione,
+costumi, dati demografici,
+aree e attività per la
+ricreazione, valutazione di
+impatto sociale, giustizia,
+informazioni fiscali
+18. Strutture structure
+017
+Costruzioni, manufatti
+Esempi: palazzi, musei,
+chiese, fabbriche, monumenti,
+negozi, torri
+19. Trasporti transportation
+018
+Mezzi e servizi per il
+trasporto delle persone e/o
+delle merci
+Esempi: strade, aeroporti,
+carte nautiche, posizione dei
+veicoli, carte aeronautiche,
+ferrovie
+20. Servizi di pubblica utilità
+- Comunicazione
+utilitiesCommunication
+019
+Energia, acqua e sistemi dei
+rifiuti, infrastrutture e servizi
+di comunicazione
+Esempi: idro-elettricità,
+sorgenti di energia
+geotermica, solare e
+nucleare, potabilizzazione e
+distribuzione dell’acqua,
+distribuzione dell’elettricità e
+del gas, comunicazioni di
+dati, telecomunicazioni,radio,
+reti di comunicazioni.
+Pagina 32 di 42
+3.4.4 Dizionario dei metadati relativi ai servizi
+Di seguito il dizionario dei metadati dei servizi relativi ai dati territoriali elencati sinteticamente nella tabella V. In esso sono riportati solo i metadati
+specifici per i servizi, mentre per quelli comuni ai dati si rimanda al dizionario riportato al paragrafo 3.4.2, avendo cura di sostituire i riferimenti ai
+dati con i riferimenti ai servizi.
+Nome Rif. ISO Descrizione
+Tipo di
+dato Dominio
+Liv.
+obblig.
+Max
+Classe
+Identificazione dei servizi
+Informazioni di base utili per identificare
+i servizi
+O 1
+Tipo di servizio identificationInfo/*/serviceType Nome del tipo di servizio da un registro
+di servizi.
+GenericName Lista ServiceType
+fornita al § 3.4.5.1
+O 1
+Tipo di aggancio identificationInfo/*/couplingType Tipo di aggancio tra il servizio e i dati
+associati (se esistono).
+Classe CodeList
+SV_CouplingType
+O 1
+Risorsa accoppiata identificationInfo/*/operatesOn/*/
+identifier
+Riferimento (identificatore) univoco del
+set di dati agganciati dal servizio
+CharacterString Testo libero
+Op N
+Operazioni identificationInfo/*/
+containsOperations
+Informazioni sulle operazioni che
+compongono il servizio.
+O N
+Nome
+operazione
+identificationInfo/*/operationName Identificativo univoco per l’interfaccia. CharacterString Testo libero
+O 1
+DCP identificationInfo/*/DCP “Distributed Computing Platform” sulla
+quale il servizio è stato implementato
+Classe CodeList
+DCPList
+O N
+Punto di
+connessione
+identificationInfo/*/connectPoint Riferimento per l’accesso all’interfaccia
+del servizio
+Classe URL
+(IETF RFC1738
+IETF RFC2056)
+O N
+Nome richiesta identificationInfo/*/invocationName Nome utilizzato per richiamare
+l’interfaccia nel contesto del DCP. Il
+nome è identico per tutti i DCP.
+CharacterString Testo libero
+Op 1
+Pagina 33 di 42
+3.4.5 Liste dei valori per i servizi
+Di seguito sono riportate le liste dei valori che rappresentano il dominio di alcuni metadati come
+riportato nel dizionario al paragrafo 3.4.4.
+3.4.5.1 Lista dei valori ServiceType
+Nome Name
+Codice
+dominio
+Descrizione
+1. ServiceType ServiceType ServiceTypeCd
+2. Servizio di ricerca Discovery Service 001
+Servizi che consentono di ricercare i set di dati
+territoriali e i servizi ad essi relativi in base al
+contenuto dei metadati corrispondenti e di
+visualizzare il contenuto dei metadati (art. 11,
+comma 1, lettera a) Direttiva INSPIRE)
+3. Servizio di consultazione View Service 002
+Servizi che rendono possibile eseguire almeno le
+seguenti operazioni: visualizzazione, navigazione,
+variazione della scala di visualizzazione (zoom in
+e zoom out), variazione della porzione di territorio
+inquadrata (pan), sovrapposizione dei set di dati
+territoriali consultabili e visualizzazione delle
+informazioni contenute nelle legende e
+qualsivoglia contenuto pertinente dei metadati
+(art. 11, comma 1, lettera b) Direttiva INSPIRE)
+4. Servizio di scaricamento Download Service 003
+Servizi che consentono di scaricare copie di set di
+dati territoriali o di una parte di essi e, ove
+fattibile, di accedervi direttamente (art. 11,
+comma 1, lettera c) Direttiva INSPIRE)
+5. Servizio di conversione
+Transformation
+Service
+004
+Servizi che consentono di trasformare i set di dati
+territoriali, onde conseguire l'interoperabilità (art.
+11, comma 1, lettera d) Direttiva INSPIRE)
+6.
+Servizio di richiesta dei
+servizi
+Invoke Spatial
+Data Service
+005
+Servizi che consentono di richiamare servizi sui
+dati territoriali (art. 11, comma 1, lettera e)
+Direttiva INSPIRE)
+7. Altri servizi Other services 006 Altri tipi di servizi non riportati nell’elenco
+3.4.5.2 Lista dei valori SV_CouplingType
+Nome
+Elemento
+corrispondente
+ISO19119:2006
+Codice
+dominio Definizione
+1. SV_CouplingType SV_CouplingType CouplingTypeCd Classe di informazione alla quale si applica
+l’entità di riferimento
+2. svincolato
+loose 001
+Il servizio è sganciato dai dati, ovvero non
+strettamente legato ad un tipo di dato.
+3. misto
+mixed 002
+Il servizio è agganciato ad alcuni dati ma
+può operare anche con altri dati.
+4. vincolato
+tight 003
+Il servizio è strettamente agganciato a un
+tipo di dato.
+Pagina 34 di 42
+3.4.5.3 Lista dei valori DCPList
+Nome
+Codice
+dominio
+1. DCPList
+2. XML 001
+3. CORBA 002
+4. JAVA 003
+5. COM 004
+6. SQL 005
+7. WebServices 006
+Pagina 35 di 42
+3.4.6 Dizionario dei metadati relativi alle nuove acquisizioni di dati
+Di seguito il dizionario dei metadati relativi alle nuove acquisizioni riportati sinteticamente nella tabella VI. Anche in questo caso, in esso sono
+riportati solo i metadati specifici per le nuove acquisizioni, mentre per quelli comuni ai dati già disponibili si rimanda al dizionario riportato al
+paragrafo 3.4.2.
+Nome
+Descrizione Tipo di dato Dominio Liv. obblig.
+Max
+Classe
+Identificazione dei
+dati
+Informazioni di base utili per identificare la risorsa
+cui vengono applicati i metadati
+O 1
+Data di presunta disponibilità Data probabile di disponibilità dei dati Classe ISO 8601 O 1
+Status Fase di programmazione/realizzazione Classe CodeList
+MD_Stato
+O 1
+Servizi previsti Informazioni sui servizi che si prevede di realizzare Op N
+Tipo servizio Tipologia di servizio che si prevede di realizzare CharacterString Testo libero O 1
+Data di presunta
+disponibilità
+Data in cui si presume sia attivo il servizio che si
+prevede di realizzare
+Classe ISO 8601
+Op 1
+Limite amministrativo Area geografica interessata dai dati CharacterString Testo libero O 1
+Programmazione
+Classe di informazioni sulla qualità dei dati O 1
+Costo previsto Stima indicativa del costo previsto Integer Integer > 0 Op 1
+Copertura finanziaria Copertura finanziaria dell’iniziativa Classe CodeList
+MD_Finanziamento
+O 1
+Grado di copertura Percentuale di copertura finanziaria rispetto al costo
+indicativo previsto
+Integer Integer > 0
+C 1
+Modalità di acquisizione Modalità amministrative di selezione del fornitore o
+di acquisizione in proprio
+Classe CodeList
+MD_Acquisizione O 1
+Pagina 36 di 42
+3.4.7 Liste dei valori per le nuove acquisizioni
+Di seguito sono riportate le liste dei valori che rappresentano il dominio di alcuni metadati come
+riportato nel dizionario al paragrafo 3.4.6.
+3.4.7.1 Lista dei valori MD_Acquisizione
+Nome
+Codice
+dominio Definizione
+1. MD_ Acquisizione modAcquisCd Classe di informazioni sulle modalità amministrative di
+acquisizione
+2. proceduraAperta
+001
+Procedura in cui ogni operatore economico interessato può
+presentare un’offerta
+3. proceduraRistretta
+002
+Procedura in cui ogni operatore economico può chiedere di
+partecipare e in cui possono presentare un'offerta soltanto gli
+operatori economici invitati dalle stazioni appaltanti, con le
+modalità stabilite dal Codice dei contratti pubblici do lavori,
+servizi, forniture
+4. proceduraNegoziata
+003
+Procedura in cui le stazioni appaltanti consultano gli operatori
+economici da loro scelti e negoziano con uno o più di essi le
+condizioni dell'appalto
+5. accordoQuadro
+004
+Accordo concluso tra una o più stazioni appaltanti e uno o più
+operatori economici e il cui scopo e' quello di stabilire le
+clausole relative agli appalti da aggiudicare durante un dato
+periodo, in particolare per quanto riguarda i prezzi e, se del
+caso, le quantità previste
+6. altraProcedura 005 Procedura diversa da quelle precedentemente elencate
+7. insourcing 006 Acquisizione mediante personale interno
+8. daDefinire 007 Modalità di acquisizione ancora non definita
+3.4.7.2 Lista dei valori MD_Finanziamento
+Nome
+Codice
+dominio Definizione
+1. MD_ Finanziamento copFinanzCd Classe di informazioni sulla copertura finanziaria dell’iniziativa
+2. completa 001 Copertura finanziaria totale
+3. parziale 002 Copertura finanziaria parziale
+4. daDefinire 003 Fondi in fase di individuazione
+3.4.7.3 Lista dei valori MD_Stato
+Nome Codice
+dominio
+Definizione
+1. MD_Stato statoCd Classe di informazioni sulla fase di
+programmazione/realizzazione
+2. programmazioneIniziale 001 Fase iniziale di definizione dell’esigenza
+Pagina 37 di 42
+3. definizioneAcquisizione 002 Definizione dei prodotti e delle modalità di acquisizione
+4. avvioProcedureAmministrative 003 Pubblicazione del bando
+5. avvioLavori 004 Avvio della realizzazione
+6. realizzazione 005 Realizzazione in corso
+7. collaudoVerifica 006 Collaudo o verifica del prodotto
+3.4.8 Corrispondenze
+3.4.8.1 Metadati Repertorio – Metadati INSPIRE
+Nella tabella seguente è riportata la corrispondenza tra i metadati per dati e servizi definiti nel
+presente allegato e quelli riportati nel Regolamento (CE) n. 1205/2008. I metadati definiti nel
+presente allegato sono identificati dal numero ordinale della tabella e dal numero del singolo
+elemento (es. I-1 per indicare il metadato n. 1 della tabella I) oltre che dal nome del metadato stesso
+come riportati nelle relative tabelle nei § 3.1 e 3.2. I metadati INSPIRE sono riportati con il numero
+e il nome indicati nella parte B dell’allegato al Regolamento (CE) citato.
+Metadati Repertorio Metadati INSPIRE
+Informazioni sui metadati
+I-1/V-1 Identificatore del file -
+I-2/V-2 Lingua dei metadati 10.3 Lingua dei metadati
+I-3/V-3 Set dei caratteri dei metadati -
+I-4/V-4 Id file precedente -
+I-5/V-5 Livello gerarchico 1.3 Tipo di risorsa
+I-6/V-6 Responsabile dei metadati 10.1 Punto di contatto dei metadati
+I-7/V-7 Data dei metadati 10.2 Data dei metadati
+I-8/V-8 Nome dello Standard -
+I-9/V-9 Versione dello Standard -
+Identificazione dei dati
+I-10/V-10 Titolo 1.1 Titolo della risorsa
+I-11.1/V-11.1
+I-11.2/V-11.2
+Data
+Tipo data
+5.2
+5.3
+5.4
+Data di pubblicazione
+Data dell’ultima revisione
+Data di creazione
+I-12 Formato di presentazione -
+I-13/V-12 Responsabile -
+I-14/V-13 Identificatore 1.5 Identificatore univoco della risorsa
+I-15 Id livello superiore -
+I-16 Altri dettagli -
+I-17/V-14 Descrizione 1.2 Breve descrizione della risorsa
+I-18.1/V-15.1 Parola chiave 3.1 Valore della parola chiave
+I-18.2/V-15.2 Thesaurus 3.2 Vocabolario controllato di origine
+I-19/V-16
+Punto di contatto
+9.1
+9.2
+Parte responsabile
+Ruolo della parte responsabile
+I-20 Tipo di rappresentazione spaziale -
+I-21 Risoluzione spaziale 6.2 Risoluzione spaziale
+I-22 Lingua 1.7 Lingua della risorsa
+I-23 Set di caratteri -
+I-24 Categoria tematica 2.1 Categoria di argomento
+I-25 Informazioni supplementari -
+Vincoli sui dati
+I-26/V-22 Limitazione d’uso 8.1 Condizioni applicabili all’accesso e all’uso
+Pagina 38 di 42
+I-27/V-23 Vincoli di accesso 8.2 Vincoli per l’accesso pubblico
+I-28/V-24 Vincoli di fruibilità -
+I-29/V-25 Altri vincoli 8.2 Vincoli per l’accesso pubblico
+I-30/V-26 Vincoli di sicurezza 8.2 Vincoli per l’accesso pubblico
+Estensione dei dati
+I-31/V-27 Localizzazione geografica 4.1 Riquadro di delimitazione geografica
+I-32 Estensione verticale -
+I-33/V-28 Estensione temporale 5.1 Estensione temporale
+Qualità dei dati
+I-34/V-29 Livello di qualità -
+I-35 Accuratezza posizionale -
+I-36 Genealogia 6.1 - Genealogia
+I-37/V-30 Conformità: specifiche 7.1 - Specifica
+I-38/V-31 Conformità: grado 7.2 - Grado
+Sistema di riferimento
+I-39 Sistema di riferimento spaziale -
+I-40 Formato di distribuzione -
+I-41 Distributore -
+I-42/V-21 Risorsa on line 1.4 Localizzatore della risorsa
+Gestione dei dati
+I-43 Frequenza di aggiornamento -
+Contenuto dei dati raster
+II-1 Descrizione degli attributi -
+II-2 Tipo di contenuto -
+II-3 Risoluzione radiometrica -
+II-4 Triangolazione aerea -
+Rappresentazione spaziale dei dati
+II-5 Numero di dimensioni -
+II-6 Proprietà dimensioni -
+II-7 Geometria della cella -
+II-8 Disponibilità coefficienti della trasformazione -
+Rappresentazione spaziale dei dati raster georeferenziati
+III-1 Disponibilità dei check-points -
+III-2 Descrizione check-points -
+III-3 Punto del pixel -
+III-4 Coordinate dei vertici -
+Rappresentazione spaziale dei dati raster georeferenziabili
+IV-1 Disponibilità dei punti di controllo -
+IV-2 Disponibilità dei parametri di orientamento -
+IV-3 Parametri per la georeferenziazione -
+Informazioni specifiche sui servizi
+V-17 Tipo di servizio 2.2 Tipo di servizio di dati territoriali
+V-18 Tipo di aggancio -
+V-19 Risorsa accoppiata 1.6 Risorsa accoppiata
+V-20 Operazioni -
+Pagina 39 di 42
+3.4.8.2 Categorie tematiche Repertorio – Topic Category ISO – Allegati
+INSPIRE
+Categoria tematica
+Repertorio
+Topic Category ISO Temi allegati INSPIRE
+1. MD_TopicCategory Code MD_TopicCategoryCode Da Allegati I, II e III
+2. Agricoltura farming Impianti agricoli e di agricoltura
+3. Biota biota - Regioni biogeografiche
+- Habitat e biotopi
+- Distribuzione delle specie
+4. Confini boundaries - Unità amministrative
+- Unità statistiche
+5. Climatologia – Meteorologia -
+Atmosfera
+climatologyMeteorologyAtmosphere - Condizioni atmosferiche
+-Elementi geografici meteorologici
+6. Economia economy - Risorse energetiche
+- Risorse minerarie
+7. Elevazione elevation Elevazione
+8. Ambiente environment Siti protetti
+9. Informazioni geoscientifiche geoscientificInformation - Suolo
+- Geologia
+- Zone a rischio naturale
+10. Salute Health Salute umana e sicurezza
+11. Mappe di base – Immagini –
+Copertura terrestre
+imageryBaseMapsEarthCover - Orto immagini
+- Copertura del suolo
+12. Intelligence – Settore militare intelligenceMilitary
+13. Acque interne inlandWaters Idrografia
+14. Localizzazione location - Nomi geografici
+- Indirizzi
+15. Acque marine - Oceani oceans - Regioni marine
+- Elementi geografici oceanografici
+16. Pianificazione - Catasto planningCadastre - Particelle catastali
+- Uso del suolo
+- Zone sottoposte a
+gestione/limitazioni/regolamentazione
+e unità con obbligo di comunicare
+dati
+17. Società society Distribuzione della popolazione -
+demografia
+18. Strutture structure - Edifici
+- Produzione e impianti industriali
+- Impianti di monitoraggio ambientale
+19. Trasporti transportation Reti di trasporto
+20. Servizi di pubblica utilità -
+Comunicazione
+utilitiesCommunication Servizi di pubblica utilità e servizi
+amministrativi
+3.4.8.3MD_ReferenceSystemCode – Codici EPSG
+Nella tabella seguente sono riportati solo i sistemi di riferimento della lista
+MD_ReferenceSystemCode (§ 3.4.3.11) che hanno una corrispondenza nel database di EPSG.
+Pagina 40 di 42
+Nome Repertorio
+Codice
+dominio
+Codice
+EPSG Nome EPSG
+1. MD_ReferenceSystemCode refSysCd
+2 wgs84 001 4326 wgs84
+3 etrs89 002 4258 etrs89
+4 etrs89/etrs-laea 003 3035 etrs89/etrs-laea
+5 etrs89/etrs-lcc 004 3034 etrs89/etrs-lcc
+6 etrs89/etrs-tm32 005 3044 etrs89/etrs-tm32
+7 etrs89/etrs-tm33 006 3045 etrs89/etrs-tm33
+8 roma40/est 007 3004 monte mario/italy zone 2
+9 roma40/ovest 008 3003 monte mario/italy zone 1
+10 ed50/utm 32n 009 23032 ed50/utm zone 32n
+11 ed50/utm 33n 010 23033 ed50/utm zone 33n
+12 igm95/utm 32n 011 3064 igm95/utm zone 32n
+13 igm95/utm 33n 012 3065 igm95/utm zone 33n
+14 wgs84/utm 32n 013 32632 wgs84/utm zone 32n
+15 wgs84/utm 33n 014 32633 wgs84/utm zone 33n
+16 wgs84/utm 34n 015 32634 wgs84/utm zone 34n
+17 roma40 020 4265 monte mario
+18 roma40/roma 021 4806 monte mario (rome)
+19 ed50 022 4230 ed50
+20 igm95 023 4670 igm95
+21 wgs84/3d 025 4979 wgs84
+22 etrs89/utm-zone32N 031 25832 etrs89/utm zone 32N
+23 etrs89/utm-zone33N 032 25833 etrs89/utm zone 33N
+4 ACCESSO, MODALITA’ DI COMUNICAZIONE E ALIMENTAZIONE
+DEL REPERTORIO
+4.1 Accesso e consultazione del Repertorio
+La consultazione del Repertorio avviene tramite l’accesso attraverso il sito di DigitPA.
+Le informazioni, in termini di metadati, relative ai dati territoriali e ai servizi di cui sono titolari le
+Pubbliche Amministrazioni sono liberamente consultabili sul Repertorio, anche da parte dei privati,
+come previsto dall’art. 9 del presente decreto.
+Le informazioni relative alle nuove acquisizioni di dati sono consultabili solo dalle Pubbliche
+Amministrazioni accreditate e sono gestite in un’area riservata.
+4.2 Accreditamento delle Amministrazioni Pubbliche
+Per essere abilitate alla alimentazione del Repertorio e per accedere all’area riservata del portale, le
+amministrazioni devono preventivamente accreditarsi attraverso l’iscrizione all’IPA2 (Indice della
+2 La relativa documentazione è disponibile sul sito www.indicepa.gov.it
+Pagina 41 di 42
+Pubblica Amministrazione), secondo quanto stabilito dal comma 1 dell’art. 19 dell’allegato A del
+DPCM 1 aprile 20083.
+4.3 Alimentazione del Repertorio
+4.3.1 XML e schemi XSD
+L’alimentazione e l’aggiornamento del Repertorio utilizza il formato XML.
+Le regole di codifica XML utilizzate fanno riferimento allo Standard ISO TS 19139 e alle
+Specifiche OGC CSW2 AP ISO.
+Gli schemi XSD e relativa documentazione tecnica, necessari per descrivere, validare e
+interscambiare i metadati definiti in questo documento, sono pubblicati sul sito di DigitPA (già
+CNIPA).
+Tali schemi, basati sugli Standard citati, sono stati adattati in funzione degli elementi obbligatori e
+della gerarchia serie/dataset/sezione descritti nel presente documento (capitolo 3). Gli elementi di
+ISO modificati sono stati inseriti in un nuovo namespace, che si aggiunge a quelli definiti da ISO.
+Nel Repertorio possono essere caricati sia file XML conformi agli schemi XSD ISO sia file XML
+conformi agli schemi XSD specifici per il Repertorio.
+Nel caso si utilizzino file XML conformi a ISO, devono in ogni caso essere rispettati i requisiti di
+obbligatorietà specificati nei dizionari di cui al precedente capitolo.
+4.3.2 Trasmissione dei file XML
+La trasmissione, al Repertorio, dei file XML, contenenti i metadati relativi ai dati territoriali e ai
+servizi, prodotti dalle Pubbliche Amministrazioni in conformità agli schemi XSD di cui al paragrafo
+precedente, avviene in modalità di cooperazione applicativa nel rispetto delle regole tecniche e di
+sicurezza per per il funzionamento del Sistema Pubblico di Connettività, definite con il DPCM 1
+aprile 2008. Tale trasmissione costituisce invio documentale valido ad ogni effetto di legge ai sensi
+dell’art. 76 del Codice dell’Amministrazione Digitale.
+Le Amministrazioni Pubbliche che ancora non dispongono delle infrastrutture idonee per cooperare
+in conformità con le suddette regole tecniche del SPC, possono transitoriamente avvalersi delle
+funzioni di utility (validazione, caricamento, editor) rese disponibili dal Repertorio, per la
+compilazione e/o la trasmissione dei file. Tali funzionalità riguardano:
+- editor, strumento per l’acquisizione e l’aggiornamento dei metadati attraverso la
+compilazione di “form” guidate e conformi al modello di metadati del Repertorio. L’editor
+crea automaticamente un file XML conforme agli schemi XSD di cui al paragrafo 4.3.1;
+- validazione, funzione che verifica la conformità dei file XML agli schemi XSD;
+- trasmissione, funzione che permette di trasmettere a DigitPA, per la successiva
+pubblicazione nel Repertorio, i file XML di metadati, previa verifica di conformità agli
+schemi XSD e alle indicazioni contenute in questo allegato.
+3 DPCM 1 aprile 2008, Regole tecniche e di sicurezza per il funzionamento del Sistema pubblico di connettività previste
+dall'articolo 71, comma 1-bis del decreto legislativo 7 marzo 2005, n. 82, recante il «Codice dell'amministrazione
+digitale», Gazzetta Ufficiale n. 144 del 21 giugno 2008
+Pagina 42 di 42
+4.3.2.1 Identificatori univoci dei metadati e delle risorse documentate
+Le trasmissioni, al Repertorio, dei file XML dei metadati da parte delle Amministrazioni sono
+gestite attraverso due identificatori univoci in relazione tra di loro, mediante i quali vengono
+registrati il primo impianto e i successivi eventuali aggiornamenti dei metadati.
+Sono previsti, inoltre, altri due identificatori univoci, sempre in relazione tra di loro, che permettono
+di gestire le relazioni tra i livelli gerarchici individuati nel presente allegato e, quindi,
+l’identificazione univoca della risorsa documentata.
+Entrambe le coppie di identificatori sono descritte nel dizionario di cui al § 3.4.2; la loro struttura
+prevede l’inserimento, da parte dell’Amministrazione, del codice IPA come prefisso degli
+identificatori.
+4.3.2.2 Operazioni sui metadati
+Nella trasmissione dei metadati al Repertorio è necessario indicare l’operazione che si chiede di
+effettuare su ciascun insieme di metadati. Le operazioni possibili sono:
+- inserimento: si chiede di inserire nel Repertorio, per la prima volta, un set di metadati,
+strutturato secondo quanto riportato nel presente allegato, che descrive una certa risorsa
+informativa;
+- aggiornamento: si chiede di effettuare una modifica/aggiornamento di un set di metadati,
+relativo ad uno o più determinati livelli gerarchici di una risorsa, già pubblicato nel
+Repertorio;
+- cancellazione: si chiede la rimozione di un set di metadati, relativo ad uno o più determinati
+livelli gerarchici di una risorsa, già pubblicato nel Repertorio.
+4.4 Integrazione del Repertorio con INSPIRE
+Nella trasmissione dei metadati al Repertorio l’amministrazione indica, insieme all’operazione,
+anche se la risorsa documentata è di interesse o meno per la direttiva INSPIRE, secondo quanto
+previsto negli schemi XSD di cui al § 4.3.1.
+Il Repertorio provvede a rendere disponibili i metadati ricevuti secondo le modalità individuate per
+l’applicazione della direttiva INSPIRE.
