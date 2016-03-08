@@ -1,0 +1,142 @@
+Ente PA
+Ente  	Regione Piemonte (r_piemon)
+Identificazione
+Titolo  	AREE SCOLASTICHE - SERVIZIO WEBGIS
+Formato di presentazione  	Mappa digitale: Mappa in formato raster o vettoriale
+Identificatore  	r_piemon:f97d3ac6-7e94-4ac9-98ea-09108a011db8
+Id livello superiore  	r_piemon:f97d3ac6-7e94-4ac9-98ea-09108a011db8
+Descrizione  	Localizzazione Edifici Scolastici ubicati all'interno di Aree Scolastiche presenti nella Regione Piemonte
+Tipo di rappresentazione spaziale  	Dati vettoriali: I dati vettoriali sono utilizzati per rappresentare dati territoriali
+Lingua della risorsa  	Italiano
+Set dei caratteri  	UTF8: Formato di trasferimento di UCS a dimensione variabile a 8 bit, basato sullo standard ISO/IEC 10646
+Categoria Tematica
+Tema  	
+
+Servizi di pubblica utilità -
+
+Comunicazione
+
+Data
+Data  	2014-01-01
+Tipo data  	Creazione: Data che identifica quando la risorsa è stata creata
+Responsabile
+Nome dell'Ente  	Regione Piemonte - A1506A - Settore Programmazione e Monitoraggio Strutture Scolastiche
+Ruolo  	Fornitore della risorsa: Soggetto che fornisce la risorsa
+	
+Telefono  	0113422684
+E-mail  	gianbruno.verda@regione.piemonte.it
+Risorsa online  	Aree Scolastiche
+(http://www.regione.piemonte.it/governo/org/A15.htm)
+Parole chiave & Temi INSPIRE
+Parole chiave
+Parola chiave  	scuola
+Parole chiave
+Parola chiave  	didattica
+Parole chiave
+Parola chiave  	paritaria
+Parole chiave
+Parola chiave  	scolastiche
+Parole chiave
+Parola chiave  	infanzia
+Parole chiave
+Parola chiave  	primaria
+Parole chiave
+Parola chiave  	secondaria
+Parole chiave
+Parola chiave  	statale
+Parole chiave
+Parola chiave  	scuole
+Parole chiave
+Parola chiave  	edifici scolastici
+Parole chiave
+Parola chiave  	aree scolastiche
+Parole chiave
+Parola chiave  	plessi
+Parole chiave
+Parola chiave  	grado scolastico
+Parole chiave
+Parola chiave  	scolastica
+Parole chiave
+Parola chiave  	RNDT
+Punto di contatto
+Nome dell'Ente  	Regione Piemonte - A1506A - Settore Programmazione e Monitoraggio Strutture Scolastiche
+Ruolo  	Autore: Gruppo autore della risorso
+	
+Telefono  	011-342-2684
+E-mail  	gianbruno.verda@regione.piemonte.it
+Risorsa online  	Sito web
+(http://www.regione.piemonte.it/governo/org/A15.htm)
+Scala equivalente
+Denominatore  	5000
+Vincoli relativi all'accesso e all'uso
+Vincoli sulla risorsa
+Limitazione d'uso  	Licenza d'uso - CC-BY 2.5
+Vincoli sulla risorsa
+Vincoli di accesso  	Dato a conoscibilità limitata : Dato la cui conoscibilità è riservata per legge o regolamento a specifici soggetti o categorie di soggetti (cfr. art. 1 Codice A.D.)
+Vincoli di fruibilità  	Altri vincoli: Limitazioni non riportate nella lista
+Altri vincoli  	Dato pubblico
+Vincoli sulla risorsa
+Vincoli di sicurezza  	Non riservato: Disponibile per la divulgazione generale
+Estensione dei dati
+Localizzazione geografica
+WGS 84  Google Mercator  
+	Latitudine Nord
+	
+Longitudine Ovest
+	
+	Longitudine Est
+	Latitudine Sud
+	
+Elemento verticale
+Quota minima  	NaN
+Quota massima  	NaN
+CRS verticale  	
+  	http://www.epsg-registry.org/export.htm?gml=urn:ogc:def
+:crs:EPSG::4326
+Elemento temporale
+Estensione temporale
+Data di inizio  	2014-01-01
+Data di fine  	9999-01-01
+Qualità e validità
+Livello di qualità  	Dataset: Le informazioni si applicano ad un dataset
+Genealogia  	raccolta dati provenienti da enti locali, e geolocalizzazione puntuale su mappe di inquadramento cartografico di progetti presentati per richiesta di contributi
+Accuratezza posizionale
+Unità di misura  	m
+Valore  	5000
+Conformità
+Titolo  	REGOLAMENTO (UE) N. 1089/2010 DELLA COMMISSIONE del 23 novembre 2010 recante attuazione della direttiva 2007/2/CE del Parlamento europeo e del Consiglio per quanto riguarda l'interoperabilità dei set di dati territoriali e dei servizi di dati territoriali
+Data  	2010-12-08
+Tipo data  	Pubblicazione: Data che identifica quando la risorsa è stata pubblicata
+Grado di conformità: 	non valutato
+Sistema di riferimento
+Identificatore  	WGS84/UTM 32N
+Distribuzione dei dati
+Formato  	OGC:OWS Context
+Distributore
+Nome dell'Ente  	Regione Piemonte - A1506A-DIREZIONE COESIONE SOCIALE
+Telefono  	0114322684
+E-mail  	gianbruno.verda@regione.piemonte.it
+Risorsa online  	http://www.regione.piemonte.it/governo/org/A15.htm
+(http://www.regione.piemonte.it/governo/org/A15.htm)
+Ruolo  	Distributore: Soggetto che distribuisce la risorsa
+Risorsa on-line
+Mappa interattiva  	Aree scolastiche localizzazione delle aree scolastiche su cui insiste uno o più edifici in cui si svolgono attività didattiche.
+(OGC-WMS Server: http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione)
+Gestione dei dati
+Frequenza di aggiornamento  	Secondo necessità: I dati vengono aggiornati se/quando ritenuto necessario
+Metadati
+Identificatore del file  	r_piemon:f97d3ac6-7e94-4ac9-98ea-09108a011db8
+Lingua dei metadati  	Italiano
+Nome dello Standard  	DM - Regole tecniche RNDT
+Versione dello standard  	10 novembre 2011
+Set dei caratteri dei metadati  	UTF8: Formato di trasferimento di UCS a dimensione variabile a 8 bit, basato sullo standard ISO/IEC 10646
+Livello gerarchico  	Dataset: Le informazioni si applicano ad un dataset
+Data dei metadati  	2016-01-11
+Responsabile dei metadati
+Nome dell'Ente  	Regione Piemonte - A1506A - Programmazione e Monitoraggio Strutture Scolastiche
+Ruolo  	Autore: Gruppo autore della risorso
+	
+Telefono  	0114322684
+E-mail  	gianbruno.verda@regione.piemonte.it
+Risorsa online  	Aree Scolastiche
+(http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione) 
