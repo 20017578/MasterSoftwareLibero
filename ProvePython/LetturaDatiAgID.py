@@ -177,7 +177,7 @@ else:
     print 'La voce', voceDaConteggiare, 'non si trova...'
 
 print 'Su', contoMIUR, 'scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
-print 'Per', voceDaFiltrare, 'pari a', valoreDaCercare, 'ho trovato i seguenti valori per', voceDaSalvare, ':', valoriTrovati
+print 'Per', voceDaFiltrare, 'pari a', valoreDaCercare, 'ho trovato i seguenti', len (valoriTrovati), 'valori per', voceDaSalvare, ':', valoriTrovati
 
 contoAgID_noMIUR = 0
 for unaScuola in listaMeccanograficiAgID:
@@ -197,3 +197,56 @@ for unaScuola in catalogoMeccanograficiMIUR:
 print 'Trovate ', len (listaMeccanograficiAgID), 'scuole su AgID e', len (catalogoMeccanograficiMIUR), 'su MIUR'
 print 'Su AgID ci sono ', contoAgID_noMIUR, 'istituzioni non presenti su MIUR'
 print 'Su MIUR ci sono ', contoMIUR_noAgID, 'istituzioni non presenti su AgID'
+
+#
+# Lettura dei dati da Comune di Torino
+# TODO: Rendere anche questa porzione una funzione!
+#
+
+fonteDati = 'Torino'
+nomeFileDati = 'DatiTorino.csv'
+separatoreDati = ';'
+URL_Dati = 'http://aperto.comune.torino.it/sites/default/files/scuole_0.csv'
+try:
+    letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
+    print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
+except:
+    # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
+    print 'File', nomeFileDati, 'non trovato, provo da rete'
+    try:
+        # Proviamo a scaricare i dati dall'URL
+        datiDaRete = requests.get (URL_Dati)
+        print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati
+    except:
+        # Se non siamo riusciti, forse serve impostare il proxy della della Regione
+        print '... provo col proxy della Regione'
+        proxies = {
+            'http': 'http://10.102.162.8:80',
+            'https': 'http://10.102.162.8:80',
+        }
+        try:
+            datiDaRete = requests.get (URL_Dati, proxies=proxies)
+            print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
+        except:
+            print 'Impossibile scaricare i dati da AgID, termino.'
+            sys.exit (1)
+    # TODO: Forse scrivere il file su disco ed aprirlo?
+    f = open (nomeFileDati, 'w')
+    f.write (datiDaRete.text)
+    print 'Ho scritto i dati sul file', nomeFileDati
+    f.close ()
+    letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
+    datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+
+voceDaFiltrare = 'EMAIL'
+
+meccanograficiComune = 0
+
+if voceDaFiltrare in letturaRighe.fieldnames:
+    for riga in letturaRighe:
+        if str (riga[voceDaFiltrare]).upper ().find ('ISTRUZIONE.IT') != -1:
+            meccanograficiComune += 1;
+else:
+    print 'La voce', voceDaConteggiare, 'non si trova...'
+
+print 'Di', meccanograficiComune, 'scuole catalogate dal comune si riesce ad ipotizzare il meccanografico'
