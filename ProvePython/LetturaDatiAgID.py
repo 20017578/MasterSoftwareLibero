@@ -123,7 +123,7 @@ nomeFileDati = 'DatiMIUR.csv'
 separatoreDati = ';'
 URL_Dati = 'http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv'
 try:
-    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
+    letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
     print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
 except:
     # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
@@ -149,22 +149,22 @@ except:
     f = open (nomeFileDati, 'w')
     f.write (datiDaRete.text)
     f.close ()
-    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
+    letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
-for riga in letturaRighe:
-    print "Controlliamo solo il quinto elemento:", riga[4], "; che viee ripetuto per ogni ", riga[2]
-    break # fermatri subito (ha senso aver usato un for, per la sola prima riga???)
+#for riga in letturaRighe:
+#    print "Controlliamo solo il quinto elemento:", riga[4], "; che viee ripetuto per ogni ", riga[2]
+#    break # fermatri subito (ha senso aver usato un for, per la sola prima riga???)
 
 catalogoMeccanograficiMIUR = {}
 
 contoMIUR = 0
 for riga in letturaRighe:
     contoMIUR += 1
-    if riga[4] in catalogoMeccanograficiMIUR:
-        catalogoMeccanograficiMIUR[riga[4]] += 1
+    if riga['ISTITUTO PRINCIPALE'] in catalogoMeccanograficiMIUR:
+        catalogoMeccanograficiMIUR[riga['ISTITUTO PRINCIPALE']] += 1
     else:
-        catalogoMeccanograficiMIUR[riga[4]] = 1
+        catalogoMeccanograficiMIUR[riga['ISTITUTO PRINCIPALE']] = 1
 
 print 'Su ', contoMIUR, ' scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
 
