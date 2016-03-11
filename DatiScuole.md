@@ -147,7 +147,7 @@ Punti di debolezza:
 Comandi per scaricare la base dati in formato csv. Da shell:
 
 ```shell
-$ curl "http://aperto.comune.torino.it/sites/default/files/scuole.csv"| tee aperto_comune_scuole.csv |wc -l
+$ curl "http://aperto.comune.torino.it/sites/default/files/scuole_0.csv"| tee aperto_comune_scuole.csv |wc -l
 614
 ```
 
