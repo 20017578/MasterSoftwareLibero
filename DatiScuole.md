@@ -28,17 +28,19 @@ Punti di forza:
 
 Punti di debolezza:
 
- * Al momento della consultazione, **22 gennaio 2016**, risulta come data di ultimo aggiornamento il **25 maggio 2015**, quindi i dati sono vecchi di più di sei mesi; con l'aggravante, per il mondo scolastico, che all'inizio di settembre ha effetto il *dimensionamento* delle scuole, che può sopprimere/fondere/creare istituzioni scolastiche; anche le scuole non *dimensionate* possono comunque cambiare dirigente. 
+ * Al momento della consultazione, **22 gennaio 2016**, risulta come data di ultimo aggiornamento il **25 maggio 2015**, quindi i dati sono vecchi di più di sei mesi; con l'aggravante, per il mondo scolastico, che all'inizio di settembre ha effetto il *dimensionamento* delle scuole, che può sopprimere/fondere/creare istituzioni scolastiche; anche le scuole non *dimensionate* possono comunque cambiare dirigente.
  * Non contiene dati sulle scuole non statali.
  * Contiene dati sulle *istituzioni*, quindi sulle sedi amministrative, collegati alle quali possiamo avere molti diversi *punti di erogazione* del servizio scolastico, distribuito su diversi edifici (anche diversi comuni) e diverse tipologie (anche ordine) di insegnamento.
 
 Comandi per scaricare la base dati in formato csv e prime verifiche. Da shell:
 
 ```shell
-$ curl "http://spcdata.digitpa.gov.it/data/amm.csv" | grep "Istruzione Statale" | tee spcdata_digitpa_amm.csv | wc -l
+$ curl "http://spcdata.digitpa.gov.it/data/amm.csv" |
+  grep $'\tIstituti di Istruzione Statale di Ogni Ordine e Grado\t' |
+  tee spcdata_digitpa_amm.csv | wc -l
 9017
-$ grep Piemonte spcdata_digitpa_amm.csv| wc -l
-611
+$ grep $'\tPiemonte\t' spcdata_digitpa_amm.csv| wc -l
+602
 ```
 
 Oltre a scaricare i dati (nel file spcdata_digitpa_amm.csv), i comandi suggeriti filtrano a priori gli istituti di *Istruzione Statale* e li contano. I valori di 9017 in tutta Italia e di 611 nel solo Piemonte, sembrano in realtà leggermente eccessivi.
@@ -96,12 +98,12 @@ Punti di forza:
   * PUNTI-localizzazione baricentrica sull'edificio scolastico definito "Principale"
   * PUNTI-localizzazione baricentrica sull'edificio scolastico definito "Subordinato"
   * POLYGON-localizzazione areale sulla superficie interessata dagli edifici scolastici afferenti; concetto di area di pertinenza diverso dal concetto catastale di area ad uso pertinenziale.!
- 
+
 [se serve posso caricare un documento che tratta l'approccio metodologico utilizzato per recuperare le informazioni, i rapporti intercorsi con gli enti locali proprietari e/o gestori di edifici scolastici, l'acquisizione effettuata mediante la localizzazione di tutti i contributi richiesti per le opere di manutenzione straordinaria in funzione di tutti bandi regionali attivi.]
- 
+
 * specificare meglio e dettagliare le geometrie sopradescritte ponendo l'accento sul vantaggio di un approccio areale che conteggi oltre ai punti di erogazione specifici anche la vicinanza tra essi al fine di riassumere dati non di un'unica sede ma di più punti di erogazione insieme - proporre e suggerire il concetto di "Analisi territoriale", di interrogazione spaziale, tematizzazione e non solo, come fino ad ora è accaduto, di un elenco di punti di erogazione del servizio isolati anche se vicini e confinanti.
 [ampliare questo concetto fino ai temi legati alla "programmazione", al piano del dimensionameto scolastico inteso non solo come numero di studenti per autonomia ma come strumento di analisi territoriale per definire autonomie e sedi scolastiche, etc etc ]
- 
+
 Ad oggi si sta cercando di far scaricare direttamente questi 3 layer direttamente dal geoportale, ma, a breve, la pubblicazione tra i "data set" dell'Open Data regionale dovrebbe essere un'operazione già programmata.
 
 ???Oppure potrebbe essere utile capire se viene fornito anche un servizio WMS pubblico. -> ci si sta attrezzando per farlo!
@@ -112,7 +114,7 @@ Punti di debolezza:
 * Attualmente non permette di scaricare i dati, né di interrogare la base dati in maniera automatizzata
 * Attualmente joinare il codice meccanografico del punto di erogazione del servizio con l'edificio è in via di definizione.
 
-Verificare chi è titolare di questi dati e cercare un percorso che porti alla pubblicazione. 
+Verificare chi è titolare di questi dati e cercare un percorso che porti alla pubblicazione.
 [se il titolare è il sottoscritto dovremmo riuscire in tempi brevi ad ottenere una base dati sufficientemente affidabile.]
 
 Punti ancora da chiarire:
