@@ -148,25 +148,36 @@ except:
     # TODO: Forse scrivere il file su disco ed aprirlo?
     f = open (nomeFileDati, 'w')
     f.write (datiDaRete.text)
+    print 'Ho scritto i dati sul file', nomeFileDati
     f.close ()
     letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
-#for riga in letturaRighe:
-#    print "Controlliamo solo il quinto elemento:", riga[4], "; che viee ripetuto per ogni ", riga[2]
-#    break # fermatri subito (ha senso aver usato un for, per la sola prima riga???)
-
 catalogoMeccanograficiMIUR = {}
 
-contoMIUR = 0
-for riga in letturaRighe:
-    contoMIUR += 1
-    if riga['ISTITUTO PRINCIPALE'] in catalogoMeccanograficiMIUR:
-        catalogoMeccanograficiMIUR[riga['ISTITUTO PRINCIPALE']] += 1
-    else:
-        catalogoMeccanograficiMIUR[riga['ISTITUTO PRINCIPALE']] = 1
+voceDaConteggiare = 'ISTITUTO PRINCIPALE'
+voceDaFiltrare = 'COMUNE'
+voceDaSalvare = 'PLESSO/SCUOLA'
+valoreDaCercare = 'TORINO'
 
-print 'Su ', contoMIUR, ' scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
+contoMIUR = 0
+valoriTrovati = []
+
+if voceDaConteggiare in letturaRighe.fieldnames:
+    for riga in letturaRighe:
+        contoMIUR += 1
+        if riga[voceDaConteggiare] in catalogoMeccanograficiMIUR:
+            catalogoMeccanograficiMIUR[riga[voceDaConteggiare]] += 1
+        else:
+            catalogoMeccanograficiMIUR[riga[voceDaConteggiare]] = 1
+        if voceDaSalvare in letturaRighe.fieldnames and voceDaFiltrare in letturaRighe.fieldnames:
+            if riga[voceDaFiltrare] == valoreDaCercare:
+                valoriTrovati.append (riga[voceDaSalvare])
+else:
+    print 'La voce', voceDaConteggiare, 'non si trova...'
+
+print 'Su ', contoMIUR, 'scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
+print 'Per ', voceDaFiltrare, 'pari a', valoreDaCercare, 'ho trovato i seguenti valori per', voceDaSalvare, ':', valoriTrovati
 
 contoAgID_noMIUR = 0
 for unaScuola in listaMeccanograficiAgID:
