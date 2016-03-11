@@ -39,7 +39,7 @@ except:
             datiDaRete = requests.get (URL_Dati, proxies=proxies)
             print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
         except:
-            print "Impossibile scaricare i dati da AgID, termino."
+            print 'Impossibile scaricare i dati da AgID, termino.'
             sys.exit (1)
     # TODO: le righe successive sono state commentate, danno errorri a causa di caratteri non ascii, se possibile risolvere
     # f = open (nomeFileDati, 'w')
@@ -68,7 +68,7 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
     meccanograficoScuola = ''
     contoAgID += 1
     if contoAgID % 1000 == 0:
-        print 'Analizzate ', contoAgID, ' amministrazioni, trovate ', len (listaMeccanograficiAgID), ' possibili scuole'
+        print 'Analizzate', contoAgID, 'amministrazioni, trovate', len (listaMeccanograficiAgID), 'possibili scuole'
     # cerca se la PEC ha dominio istruzione.it
     for pec in grafo_AgID.objects (amministrazione, URI_pec):
         if str (pec).upper ().find ('ISTRUZIONE.IT') != -1:
@@ -99,7 +99,7 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
         unaScuola = amministrazione
 
-print 'Su ', contoAgID, ' amministrazioni, ho trovato', len (listaMeccanograficiAgID), ' presunte scuole, distribuite su ', len (listaScuolePerComune), 'comuni'
+print 'Su', contoAgID, 'amministrazioni, ho trovato', len (listaMeccanograficiAgID), 'presunte scuole, distribuite su', len (listaScuolePerComune), 'comuni'
 
 sommaScuoleConComune = 0
 numeroScuolePerComune = {}
@@ -109,9 +109,9 @@ for i in listaScuolePerComune:
 
 comuniOrdinatiPerNumeroScuole = sorted (numeroScuolePerComune, key = lambda x:numeroScuolePerComune[x])
 
-print 'Trovate in tutto', sommaScuoleConComune, ' distribuit nei seguenti comuni:', [(x,numeroScuolePerComune[x]) for x in comuniOrdinatiPerNumeroScuole]
+print 'Trovate in tutto', sommaScuoleConComune, 'scuole distribuite nei seguenti comuni:', [(x,numeroScuolePerComune[x]) for x in comuniOrdinatiPerNumeroScuole]
 
-print 'Lista delle ', numeroScuolePerComune['L219'], 'scuole trovate nel comune di Torino', listaScuolePerComune['L219']
+print 'Lista delle', numeroScuolePerComune['L219'], 'scuole trovate nel comune di Torino', listaScuolePerComune['L219']
 
 #
 # Lettura dei dati da MIUR
@@ -124,14 +124,14 @@ separatoreDati = ';'
 URL_Dati = 'http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv'
 try:
     letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
-    print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
+    print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
 except:
     # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
-    print 'File ', nomeFileDati, ' non trovato, provo da rete'
+    print 'File', nomeFileDati, 'non trovato, provo da rete'
     try:
         # Proviamo a scaricare i dati dall'URL
         datiDaRete = requests.get (URL_Dati)
-        print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati
+        print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati
     except:
         # Se non siamo riusciti, forse serve impostare il proxy della della Regione
         print '... provo col proxy della Regione'
@@ -143,7 +143,7 @@ except:
             datiDaRete = requests.get (URL_Dati, proxies=proxies)
             print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
         except:
-            print "Impossibile scaricare i dati da AgID, termino."
+            print 'Impossibile scaricare i dati da AgID, termino.'
             sys.exit (1)
     # TODO: Forse scrivere il file su disco ed aprirlo?
     f = open (nomeFileDati, 'w')
@@ -176,8 +176,8 @@ if voceDaConteggiare in letturaRighe.fieldnames:
 else:
     print 'La voce', voceDaConteggiare, 'non si trova...'
 
-print 'Su ', contoMIUR, 'scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
-print 'Per ', voceDaFiltrare, 'pari a', valoreDaCercare, 'ho trovato i seguenti valori per', voceDaSalvare, ':', valoriTrovati
+print 'Su', contoMIUR, 'scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
+print 'Per', voceDaFiltrare, 'pari a', valoreDaCercare, 'ho trovato i seguenti valori per', voceDaSalvare, ':', valoriTrovati
 
 contoAgID_noMIUR = 0
 for unaScuola in listaMeccanograficiAgID:
