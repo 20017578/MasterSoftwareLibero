@@ -107,7 +107,9 @@ for i in listaScuolePerComune:
     numeroScuolePerComune[i] = len(listaScuolePerComune[i])
     sommaScuoleConComune += numeroScuolePerComune[i]
 
-print 'Trovate in tutto', sommaScuoleConComune, ' distribuit nei seguenti comuni:', listaScuolePerComune.keys()
+comuniOrdinatiPerNumeroScuole = sorted (numeroScuolePerComune, key = lambda x:numeroScuolePerComune[x])
+
+print 'Trovate in tutto', sommaScuoleConComune, ' distribuit nei seguenti comuni:', [(x,numeroScuolePerComune[x]) for x in comuniOrdinatiPerNumeroScuole]
 
 print 'Lista delle ', numeroScuolePerComune['L219'], 'scuole trovate nel comune di Torino', listaScuolePerComune['L219']
 
