@@ -240,13 +240,18 @@ except:
 
 voceDaFiltrare = 'EMAIL'
 
-meccanograficiComune = 0
+meccanograficiComune = []
 
 if voceDaFiltrare in letturaRighe.fieldnames:
     for riga in letturaRighe:
-        if str (riga[voceDaFiltrare]).upper ().find ('ISTRUZIONE.IT') != -1:
-            meccanograficiComune += 1;
+        meccanograficoScuola = ''
+        if riga[voceDaFiltrare].upper ().find ('ISTRUZIONE.IT') != -1:
+            meccanograficoScuola = riga[voceDaFiltrare].split ('@')[0]
+            if len(meccanograficoScuola) != 10:
+                print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(riga[voceDaFiltrare], meccanograficoScuola)
+            else:
+                meccanograficiComune.append (meccanograficoScuola.upper ())
 else:
-    print 'La voce', voceDaConteggiare, 'non si trova...'
+    print 'La voce', voceDaFiltrare, 'non si trova...'
 
-print 'Di', meccanograficiComune, 'scuole catalogate dal comune si riesce ad ipotizzare il meccanografico'
+print 'Di', len (meccanograficiComune), 'scuole catalogate dal comune si riesce ad ipotizzare il meccanografico (con doppioni!):', sorted (meccanograficiComune)
