@@ -66,7 +66,8 @@ L'art. 10 del D.Lgs 33/13 definisce le misure, i modi e le iniziative volte all'
 
 I documenti e le informazioni oggetto di pubblicazione obbligatoria ai sensi del Decreto 33 sono pubblicati in formato di tipo aperto - ai sensi dell'art. 68 del CAD e sono riutilizzabili senza particolari restrizioni, se non quella dell'obbligo di citare la fonte e di rispettarne l'integrità.
 
-Rapporto tra Trasparenza e Privacy
+Rapporto tra Trasparenza e Privacy.
+
 Molto delicato è il rapporto tra il principio generale di conoscibilità dell'azione amministrativa e il concetto di libertà individuale e di garanzia della stessa (con particolare riferimento alla riservatezza, all'identità personale, e al diritto alla protezione dei dati personali). 
 La pubblica amministrazione rappresenta certamente il più importante settore di trattamento dati in Italia (come più volte evidenziato dalla stessa Autorità Garante della Trasparenza). Le attività messe in campo dalla p.a., infatti, in genere riguardano anche le persone: i dipendenti e collaboratori a vario titolo, gli Amministratori e i titolari di incarichi politici e tutti coloro che comunque sono destinatari di atti e provvedimenti.
 
