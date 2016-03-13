@@ -244,7 +244,6 @@ meccanograficiComune = []
 
 if voceDaFiltrare in letturaRighe.fieldnames:
     for riga in letturaRighe:
-        meccanograficoScuola = ''
         if riga[voceDaFiltrare].upper ().find ('ISTRUZIONE.IT') != -1:
             meccanograficoScuola = riga[voceDaFiltrare].split ('@')[0]
             if len(meccanograficoScuola) != 10:
