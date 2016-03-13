@@ -240,24 +240,22 @@ except:
 
 voceDaFiltrare = 'EMAIL'
 
-meccanograficiComune = []
-
+meccanograficiComune = set()
+contoComune = 0
+contoIstruzione = 0
 if voceDaFiltrare in letturaRighe.fieldnames:
     for riga in letturaRighe:
+        contoComune += 1
         if riga[voceDaFiltrare].upper ().find ('ISTRUZIONE.IT') != -1:
             meccanograficoScuola = riga[voceDaFiltrare].split ('@')[0]
             if len(meccanograficoScuola) != 10:
                 print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(riga[voceDaFiltrare], meccanograficoScuola)
             else:
-                meccanograficiComune.append (meccanograficoScuola.upper ())
+                contoIstruzione += 1
+                meccanograficiComune.add (meccanograficoScuola.upper ())
 else:
     print 'La voce', voceDaFiltrare, 'non si trova...'
 
-#Ordina la lista senza crearne una nuova
-meccanograficiComune.sort()
-print 'Di', len (meccanograficiComune), 'scuole catalogate dal comune si riesce ad ipotizzare il meccanografico'
+print 'Su', contoComune, 'scuole catalogate dal comune, per ', contoIstruzione, 'si riesce ad ipotizzare il meccanografico'
 
-#costruisce un insieme dalla lista precedente, ovverosia elimina i doppioni
-insiemeMeccanograficiComune = set (meccanograficiComune)
-
-print 'Tolti i doppioni, i codici sono', len (insiemeMeccanograficiComune), ':', list(insiemeMeccanograficiComune)
+print 'Tolti i doppioni, i codici sono', len (meccanograficiComune), ':', list(meccanograficiComune)
