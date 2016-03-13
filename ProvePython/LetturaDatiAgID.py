@@ -254,4 +254,11 @@ if voceDaFiltrare in letturaRighe.fieldnames:
 else:
     print 'La voce', voceDaFiltrare, 'non si trova...'
 
-print 'Di', len (meccanograficiComune), 'scuole catalogate dal comune si riesce ad ipotizzare il meccanografico (con doppioni!):', sorted (meccanograficiComune)
+#Ordina la lista senza crearne una nuova
+meccanograficiComune.sort()
+print 'Di', len (meccanograficiComune), 'scuole catalogate dal comune si riesce ad ipotizzare il meccanografico'
+
+#costruisce un insieme dalla lista precedente, ovverosia elimina i doppioni
+insiemeMeccanograficiComune = set (meccanograficiComune)
+
+print 'Tolti i doppioni, i codici sono', len (insiemeMeccanograficiComune), ':', list(insiemeMeccanograficiComune)
