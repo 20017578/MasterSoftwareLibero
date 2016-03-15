@@ -68,7 +68,7 @@ La dodicesima colonna contiene `Comuni e loro Consorzi e Associazioni`, nel file
 
 Il problema probabilmente deriva da un banale troncamento. La categoria [L33](http://spcdata.digitpa.gov.it/CategoriaAmministrazione/L33) ha come `label` la dicitura `Istituti di Istruzione Statale di Ogni Ordine e Grad`, senza la **`o`** finale!
 
-Problema probabilmente analogo si presenta per alcune scuole con l'indicazione del comune di appartenenza. Per la maggioranza assoluta delle scuole trovate nei dati dell'AgID, è presente la tripla `<...scuola...> geonames:locatedIn <http://spcdata.digitpa.gov.it/Comune/...>'. Laddove manca, il nome del comune è comunque indicato nel file CSV, ma potrebbe esservi stata qualche incongruenza nella scrittura esatta&hellip;
+Problema probabilmente analogo si presenta per alcune scuole con l'indicazione del comune di appartenenza. Per la maggioranza assoluta delle scuole trovate nei dati dell'AgID, è presente la tripla `<...scuola...> geonames:locatedIn <http://spcdata.digitpa.gov.it/Comune/...>`. Laddove manca, il nome del comune è comunque indicato nel file CSV, ma potrebbe esservi stata qualche incongruenza nella scrittura esatta&hellip;
 
 ### Il portale [Scuola in Chiaro](http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/)
 Contiene dati specifici sulle scuole, pubblicati direttamente dal MIUR.
