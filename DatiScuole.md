@@ -28,7 +28,7 @@ Punti di forza:
 
 Punti di debolezza:
 
- * Al momento della consultazione, **22 gennaio 2016**, risulta come data di ultimo aggiornamento il **25 maggio 2015**, quindi i dati sono vecchi di più di sei mesi; con l'aggravante, per il mondo scolastico, che all'inizio di settembre ha effetto il *dimensionamento* delle scuole, che può sopprimere/fondere/creare istituzioni scolastiche; anche le scuole non *dimensionate* possono comunque cambiare dirigente.
+ * Al momento della consultazione, **15 marzo 2016**, risulta come data di ultimo aggiornamento il **25 maggio 2015**, quindi i dati sono vecchi di più di nove mesi; con l'aggravante, per il mondo scolastico, che all'inizio di settembre ha effetto il *dimensionamento* delle scuole, che può sopprimere/fondere/creare istituzioni scolastiche; anche le scuole non *dimensionate* possono comunque cambiare dirigente.
  * Non contiene dati sulle scuole non statali.
  * Contiene dati sulle *istituzioni*, quindi sulle sedi amministrative, collegati alle quali possiamo avere molti diversi *punti di erogazione* del servizio scolastico, distribuito su diversi edifici (anche diversi comuni) e diverse tipologie (anche ordine) di insegnamento.
 
@@ -43,7 +43,7 @@ $ grep $'\tPiemonte\t' spcdata_digitpa_amm.csv| wc -l
 602
 ```
 
-Oltre a scaricare i dati (nel file spcdata_digitpa_amm.csv), i comandi suggeriti filtrano a priori gli istituti di *Istruzione Statale* e li contano. I valori di 9017 in tutta Italia e di 611 nel solo Piemonte, sembrano in realtà leggermente eccessivi.
+Oltre a scaricare i dati (nel file spcdata_digitpa_amm.csv), i comandi suggeriti filtrano a priori gli istituti di *Istruzione Statale* e li contano. I valori di 9017 in tutta Italia e di 602 nel solo Piemonte, sembrano in realtà leggermente eccessivi.
 
  * Nota, il file csv **non contiene** una riga di intestazioni.
 
