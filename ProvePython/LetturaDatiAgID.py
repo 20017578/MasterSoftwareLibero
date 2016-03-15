@@ -162,6 +162,7 @@ valoreDaCercare = 'TORINO'
 
 contoMIUR = 0
 valoriTrovati = []
+istitutiTrovati = set ()
 
 if voceDaConteggiare in letturaRighe.fieldnames:
     for riga in letturaRighe:
@@ -173,6 +174,7 @@ if voceDaConteggiare in letturaRighe.fieldnames:
         if voceDaSalvare in letturaRighe.fieldnames and voceDaFiltrare in letturaRighe.fieldnames:
             if riga[voceDaFiltrare] == valoreDaCercare:
                 valoriTrovati.append (riga[voceDaSalvare])
+                istitutiTrovati.add (riga[voceDaConteggiare])
 else:
     print 'La voce', voceDaConteggiare, 'non si trova...'
 
@@ -240,18 +242,23 @@ except:
 
 voceDaFiltrare = 'EMAIL'
 
-meccanograficiComune = []
-
+meccanograficiComune = set ()
+contoComune = 0
+contoIstruzione = 0
 if voceDaFiltrare in letturaRighe.fieldnames:
     for riga in letturaRighe:
-        meccanograficoScuola = ''
+        contoComune += 1
         if riga[voceDaFiltrare].upper ().find ('ISTRUZIONE.IT') != -1:
             meccanograficoScuola = riga[voceDaFiltrare].split ('@')[0]
             if len(meccanograficoScuola) != 10:
                 print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(riga[voceDaFiltrare], meccanograficoScuola)
             else:
-                meccanograficiComune.append (meccanograficoScuola.upper ())
+                contoIstruzione += 1
+                meccanograficiComune.add (meccanograficoScuola.upper ())
 else:
     print 'La voce', voceDaFiltrare, 'non si trova...'
 
-print 'Di', len (meccanograficiComune), 'scuole catalogate dal comune si riesce ad ipotizzare il meccanografico (con doppioni!):', sorted (meccanograficiComune)
+print 'Su', contoComune, 'scuole catalogate dal comune, per ', contoIstruzione, 'si riesce ad ipotizzare il meccanografico'
+print 'Tolti i doppioni, i codici sono', len (meccanograficiComune), ':', list(meccanograficiComune)
+print 'Di questi, i seguenti non appaiono (vecchi?) tra i codici MIUR:', meccanograficiComune - set(catalogoMeccanograficiMIUR)
+print 'In compenso,', len(istitutiTrovati - meccanograficiComune), 'istituti che MIUR localizza in Torino, non vengono trovati in questa lista (probabilmente per e-mail differente)'

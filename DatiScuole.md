@@ -28,14 +28,14 @@ Punti di forza:
 
 Punti di debolezza:
 
- * Al momento della consultazione, **22 gennaio 2016**, risulta come data di ultimo aggiornamento il **25 maggio 2015**, quindi i dati sono vecchi di più di sei mesi; con l'aggravante, per il mondo scolastico, che all'inizio di settembre ha effetto il *dimensionamento* delle scuole, che può sopprimere/fondere/creare istituzioni scolastiche; anche le scuole non *dimensionate* possono comunque cambiare dirigente.
+ * Al momento della consultazione, **15 marzo 2016**, risulta come data di ultimo aggiornamento il **25 maggio 2015**, quindi i dati sono vecchi di più di nove mesi; con l'aggravante, per il mondo scolastico, che all'inizio di settembre ha effetto il *dimensionamento* delle scuole, che può sopprimere/fondere/creare istituzioni scolastiche; anche le scuole non *dimensionate* possono comunque cambiare dirigente.
  * Non contiene dati sulle scuole non statali.
  * Contiene dati sulle *istituzioni*, quindi sulle sedi amministrative, collegati alle quali possiamo avere molti diversi *punti di erogazione* del servizio scolastico, distribuito su diversi edifici (anche diversi comuni) e diverse tipologie (anche ordine) di insegnamento.
 
 Comandi per scaricare la base dati in formato csv e prime verifiche. Da shell:
 
 ```shell
-$ curl "http://spcdata.digitpa.gov.it/data/amm.csv" |
+$ curl "http://spcdata.digitpa.gov.it/data/amm.csv" | tee amm.csv |
   grep $'\tIstituti di Istruzione Statale di Ogni Ordine e Grado\t' |
   tee spcdata_digitpa_amm.csv | wc -l
 9017
@@ -43,9 +43,32 @@ $ grep $'\tPiemonte\t' spcdata_digitpa_amm.csv| wc -l
 602
 ```
 
-Oltre a scaricare i dati (nel file spcdata_digitpa_amm.csv), i comandi suggeriti filtrano a priori gli istituti di *Istruzione Statale* e li contano. I valori di 9017 in tutta Italia e di 611 nel solo Piemonte, sembrano in realtà leggermente eccessivi.
+Oltre a scaricare i dati (nel file spcdata_digitpa_amm.csv), i comandi suggeriti filtrano a priori gli istituti di *Istruzione Statale* e li contano. I valori di 9017 in tutta Italia e di 602 nel solo Piemonte, sembrano in realtà leggermente eccessivi.
 
  * Nota, il file csv **non contiene** una riga di intestazioni.
+
+#### Identificazione scuole su dati AgID
+
+Ci sono alcune una incongruenze tra i dati pubblicati dall'AgID in formato CSV ([http://spcdata.digitpa.gov.it/data/amm.csv](http://spcdata.digitpa.gov.it/data/amm.csv)) e quelli pubblicati nei formati per LinkedOpenData come ad esempio Turtle ([http://spcdata.digitpa.gov.it/data/amm.ttl](http://spcdata.digitpa.gov.it/data/amm.ttl)).
+
+Tali incongruenze sembrano dovute a piccoli errori di riconoscimento, dovuti a errate digitazioni o troncamenti, con l'*aggravante*, per i dati sulle scuole, di presentare anche un errore sistematico per troncamento.
+
+Nei file CSV, per tutte le scuole risulta presente, nella dodicesima colonna, (descritta nei [metadati](http://spcdata.digitpa.gov.it/data/Metadati_Open_Data.pdf) come `tipologia_istat`) la dicitura filtrata nell'esempio precedente: `Istituti di Istruzione Statale di Ogni Ordine e Grado`; tuttavia nei file Turtle tale dato non compare.
+
+Vediamo come esempio il comune di Torino:
+
+```shell
+$ grep c_l219 amm.csv
+c_l219	Comune di Torino	Torino	Piero Franco Rodolfo	Fassino	10122	TO	Piemonte	www.comune.torino.it	Piazza Palazzo Di Citta' 1	Sindaco	Comuni e loro Consorzi e Associazioni	Pubbliche Amministrazioni		S	00514490010	protocollogenerale@cert.comune.torino.it	pec	null	null	null	null	null	null	null	null	https://www.facebook.com/cittaditorino	https://twitter.com/twitorino		http://www.youtube.com/youtorino0
+$ grep c_l219 amm.csv|cut -f12
+Comuni e loro Consorzi e Associazioni
+```
+
+La dodicesima colonna contiene `Comuni e loro Consorzi e Associazioni`, nel file Turtle, tra le triple con *soggetto* il comune, troviamo `org:classification <http://spcdata.digitpa.gov.it/CategoriaAmministrazione/L6>`. Ci aspetteremo dunque, per le scuole, di trovare `org:classification <http://spcdata.digitpa.gov.it/CategoriaAmministrazione/L33>`.
+
+Il problema probabilmente deriva da un banale troncamento. La categoria [L33](http://spcdata.digitpa.gov.it/CategoriaAmministrazione/L33) ha come `label` la dicitura `Istituti di Istruzione Statale di Ogni Ordine e Grad`, senza la **`o`** finale!
+
+Problema probabilmente analogo si presenta per alcune scuole con l'indicazione del comune di appartenenza. Per la maggioranza assoluta delle scuole trovate nei dati dell'AgID, è presente la tripla `<...scuola...> geonames:locatedIn <http://spcdata.digitpa.gov.it/Comune/...>`. Laddove manca, il nome del comune è comunque indicato nel file CSV, ma potrebbe esservi stata qualche incongruenza nella scrittura esatta&hellip;
 
 ### Il portale [Scuola in Chiaro](http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/)
 Contiene dati specifici sulle scuole, pubblicati direttamente dal MIUR.
