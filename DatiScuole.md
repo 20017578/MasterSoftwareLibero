@@ -54,7 +54,7 @@ Tipo di informazioni che possono essere reperite da questo insieme di dati:
 
  * denominazione;
  * indirizzo postale;
- * collegamento tra isitituti;
+ * collegamento tra istituti;
  * coordinate geografiche;
  * dati su alunni, classi, esiti, personale...
 
