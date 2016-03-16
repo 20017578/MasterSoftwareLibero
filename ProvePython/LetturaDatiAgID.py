@@ -71,13 +71,13 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
         print 'Analizzate', contoAgID, 'amministrazioni, trovate', len (listaMeccanograficiAgID), 'possibili scuole'
     # cerca se la PEC ha dominio istruzione.it
     for pec in grafo_AgID.objects (amministrazione, URI_pec):
-        if str (pec).upper ().find ('ISTRUZIONE.IT') != -1:
+        if 'ISTRUZIONE.IT' in str (pec).upper ():
             meccanograficoScuola = str (pec).split ('@')[0]
     if len(meccanograficoScuola) != 10:  # Cerca ancora solo se non trovata prima
         if meccanograficoScuola != '':
             print "%s sembra una scuola, ma la pec %s non sembra indicare un meccanografico, cerco la e-mail"%(str(amministrazione), meccanograficoScuola)
         for mail in grafo_AgID.objects (amministrazione, URI_mail):
-            if str (mail).upper ().find ('ISTRUZIONE.IT') != -1:
+            if 'ISTRUZIONE.IT' in str (mail).upper ():
                 meccanograficoScuola = str (mail).split ('@')[0]
     if meccanograficoScuola != '':
         if len(meccanograficoScuola) != 10:
@@ -248,7 +248,7 @@ contoIstruzione = 0
 if voceDaFiltrare in letturaRighe.fieldnames:
     for riga in letturaRighe:
         contoComune += 1
-        if riga[voceDaFiltrare].upper ().find ('ISTRUZIONE.IT') != -1:
+        if 'ISTRUZIONE.IT' in riga[voceDaFiltrare].upper ():
             meccanograficoScuola = riga[voceDaFiltrare].split ('@')[0]
             if len(meccanograficoScuola) != 10:
                 print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(riga[voceDaFiltrare], meccanograficoScuola)
