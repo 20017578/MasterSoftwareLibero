@@ -175,3 +175,7 @@ $ curl "http://aperto.comune.torino.it/sites/default/files/scuole.csv"| tee aper
 ```
 
  * Nota, il file csv **contiene** una riga di intestazioni.
+
+### Dati RDF da [dati.piemonte](http://www.dati.piemonte.it/rdf.html)
+
+Leggere in particolare i dati su http://id-dati.piemonte.it/resource/scuole/scuole-piemonte.html
