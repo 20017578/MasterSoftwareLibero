@@ -147,7 +147,7 @@ Punti ancora da chiarire:
 
 ### Portale aperTO, dati sulle [scuole](http://aperto.comune.torino.it/?q=node/129)
 
-Tipo di informazioni che possono essere reperiti da questo insieme di dati:
+Tipo di informazioni che possono essere reperite da questo insieme di dati:
 
  * denominazione;
  * indirizzo postale;
@@ -178,4 +178,40 @@ $ curl "http://aperto.comune.torino.it/sites/default/files/scuole.csv"| tee aper
 
 ### Dati RDF da [dati.piemonte](http://www.dati.piemonte.it/rdf.html)
 
-Leggere in particolare i dati su http://id-dati.piemonte.it/resource/scuole/scuole-piemonte.html
+Analisi in particolare dei dati su http://id-dati.piemonte.it/resource/scuole/scuole-piemonte.html
+
+Tipo di informazioni che possono essere reperite da questo insieme di dati:
+
+* Quasi nulla, non molto olre ad una struttura per le scuole
+* Un grafo contenente comuni e province della regione
+
+Licenza: non trovata, "open by default"?
+
+Punti di forza:
+
+* Il formato RDF si presta ad essere riutilizzato e riferito in altri LOD
+* L'ontologia include il "codMIURscuola" che indica il codice meccanografico usato dal MIUR per riferirsi alle scuole
+
+Punti di debolezza:
+
+* gli URI sono fasulli e non indicano effettive pagine web visitabili
+* la struttura regge ma sostanzialmente vuota, ma il contenuto praticamente non veicola informazione
+
+Comandi per scaricare la base dati. Da shell:
+
+```shell
+$ curl "http://id-dati.piemonte.it/resource/scuole/scuole-piemonte.rdf"| tee dati_piemonte_scuole.rdf|grep rponto.codMIURscuola|wc -l
+4466
+```
+
+Il numero pari a 4466 sembra elevato rispetto a lle 3850 conteggiate nei dati MIUT, le scuole per le quali il codice meccanografico risulta mancante o errato sono comunque poche. Possiamo comunque verificare quali codici si ripetono il maggior numero di volte:
+
+```shell
+$ grep rponto.codMIURscuola dati_piemonte_scuole.rdf|sort|uniq -c|sort -n|tail -4
+      6 	<rponto:codMIURscuola>topc020003</rponto:codMIURscuola>
+      6 	<rponto:codMIURscuola>torc060005</rponto:codMIURscuola>
+      8 	<rponto:codMIURscuola>-</rponto:codMIURscuola>
+      8 	<rponto:codMIURscuola>torc05000e</rponto:codMIURscuola>
+```
+
+da cui si vede che oltre al meccanografico vuoto `-`, risulta ripetuto parecchie volte il codice `torc05000e`.
