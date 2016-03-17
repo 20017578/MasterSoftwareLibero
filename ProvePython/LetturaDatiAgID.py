@@ -20,7 +20,7 @@ nomeFileDati = 'DatiAgID.ttl'
 formatoDati = 'n3'
 URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.ttl'
 try:
-    grafo_AgID.parse (file=open(nomeFileDati), format=formatoDati)
+    grafo_AgID.parse (file=open (nomeFileDati), format=formatoDati)
     print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
 except:
     print 'File ', nomeFileDati, ' non trovato, provo da rete'
@@ -37,15 +37,13 @@ except:
         }
         try:
             datiDaRete = requests.get (URL_Dati, proxies=proxies)
-            print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
+            print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati, 'usando il proxy'
         except:
-            print 'Impossibile scaricare i dati da AgID, termino.'
+            print 'Impossibile scaricare i dati da', fonteDati, ', termino.'
             sys.exit (1)
-    # TODO: le righe successive sono state commentate, danno errorri a causa di caratteri non ascii, se possibile risolvere
-    # f = open (nomeFileDati, 'w')
-    # f.write (datiDaRete.text)
-    # f.close ()
     grafo_AgID.parse (data=datiDaRete.text, format=formatoDati)
+    grafo_AgID.serialize (destination=open (nomeFileDati, 'w'), format=formatoDati)
+    print 'Dati salvati su', nomeFileDati, 'per usi futuri'
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
 # print len (grafo_AgID)
