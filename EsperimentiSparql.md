@@ -12,18 +12,22 @@ Su quel sevizio, per avere la lista dei comuni del Piemonte (limitata a 100 risu
 
 ```SPARQL
 select distinct ?c ?n where {
-?c <http://www.geonames.org/ontology#locatedIn> ?p.
-?p <http://www.geonames.org/ontology#locatedIn> <http://spcdata.digitpa.gov.it/Regione/1>.
-?c <http://www.w3.org/2000/01/rdf-schema#label> ?n.
+ ?c <http://www.geonames.org/ontology#locatedIn> ?p.
+ ?p <http://www.geonames.org/ontology#locatedIn> ?r.
+ ?r a <http://spcdata.digitpa.gov.it/Regione>;
+    <http://www.w3.org/2000/01/rdf-schema#label> 'Piemonte'.
+ ?c <http://www.w3.org/2000/01/rdf-schema#label> ?n.
 } LIMIT 100
 ```
 
 La lista delle categorie di amministrazione
 
 ```SPARQL
-select distinct ?x ?o where {?x a
-<http://spcdata.digitpa.gov.it/CategoriaAmministrazione>. ?x
-<http://www.w3.org/2000/01/rdf-schema#label> ?o.}
+select distinct ?x ?o
+where {
+  ?x a <http://spcdata.digitpa.gov.it/CategoriaAmministrazione>;
+    <http://www.w3.org/2000/01/rdf-schema#label> ?o.
+}
 ```
 
 La categoria delle scuole sembrerebbe essere: http://spcdata.digitpa.gov.it/CategoriaAmministrazione/L33 ma non sembra usata...
