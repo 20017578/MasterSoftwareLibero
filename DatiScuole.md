@@ -217,3 +217,21 @@ $ grep rponto.codMIURscuola dati_piemonte_scuole.rdf|sort|uniq -c|sort -n|tail -
 ```
 
 da cui si vede che oltre al meccanografico vuoto `-`, risulta ripetuto parecchie volte il codice `torc05000e`.
+
+### Dati da ISTAT?
+
+L'[*end-point* SPARQL dell'ISTAT](http://datiopen.istat.it/sparql) prevede la classe <http://datiopen.istat.it/odi/ontologia/territorio/SCH>, potremmo controllare se e quanto è usata&hellip;
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ter: <http://datiopen.istat.it/odi/ontologia/territorio/>
+PREFIX cen: <http://datiopen.istat.it/odi/ontologia/censimento/>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+SELECT ?s ?p
+WHERE {
+?s ?p ter:SCH
+} LIMIT 100
+```
+
+restituisce [poche cose](http://datiopen.istat.it/sparql/oracle?query=PREFIX+ORACLE_SEM_FS_NS%3A+%3Chttp%3A%2F%2Foracle.com%2Fsemtech%23timeout%3D600%2Callow_dup%3Dt%2Cstrict_default%3Df%3EPREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+ter%3A+%3Chttp%3A%2F%2Fdatiopen.istat.it%2Fodi%2Fontologia%2Fterritorio%2F%3E%0APREFIX+cen%3A+%3Chttp%3A%2F%2Fdatiopen.istat.it%2Fodi%2Fontologia%2Fcensimento%2F%3E%0APREFIX+qb%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fcube%23%3E%0ASELECT+%3Fs+%3Fp%0AWHERE+{%0A%3Fs+%3Fp+ter%3ASCH%0A}+LIMIT+100%0A&stylesheet=/sparql/xml-to-html.xsl)
