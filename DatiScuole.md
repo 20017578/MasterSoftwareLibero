@@ -147,7 +147,7 @@ Punti ancora da chiarire:
 
 ### Portale aperTO, dati sulle [scuole](http://aperto.comune.torino.it/?q=node/129)
 
-Tipo di informazioni che possono essere reperiti da questo insieme di dati:
+Tipo di informazioni che possono essere reperite da questo insieme di dati:
 
  * denominazione;
  * indirizzo postale;
@@ -175,3 +175,63 @@ $ curl "http://aperto.comune.torino.it/sites/default/files/scuole_0.csv"| tee ap
 ```
 
  * Nota, il file csv **contiene** una riga di intestazioni.
+
+### Dati RDF da [dati.piemonte](http://www.dati.piemonte.it/rdf.html)
+
+Analisi in particolare dei dati su http://id-dati.piemonte.it/resource/scuole/scuole-piemonte.html
+
+Tipo di informazioni che possono essere reperite da questo insieme di dati:
+
+* Quasi nulla, non molto olre ad una struttura per le scuole
+* Un grafo contenente comuni e province della regione
+
+Licenza: non trovata, "open by default"?
+
+Punti di forza:
+
+* Il formato RDF si presta ad essere riutilizzato e riferito in altri LOD
+* L'ontologia include il "codMIURscuola" che indica il codice meccanografico usato dal MIUR per riferirsi alle scuole
+
+Punti di debolezza:
+
+* Non contiene alcuna data di aggiornamento, quindi non si capisce se e quando i dati sono aggiornati
+* In considerazione di ciò probabilmente non ha senso neppure usare l'elenco di comuni/province, meglio ISTAT o AgID&hellip;
+* gli URI sono fasulli e non indicano effettive pagine web visitabili
+* la struttura regge ma sostanzialmente vuota, il contenuto è quasi inesistente
+
+Comandi per scaricare la base dati. Da shell:
+
+```shell
+$ curl "http://id-dati.piemonte.it/resource/scuole/scuole-piemonte.rdf"| tee dati_piemonte_scuole.rdf|grep rponto.codMIURscuola|wc -l
+4466
+```
+
+Il numero pari a 4466 sembra elevato rispetto a lle 3850 conteggiate nei dati MIUT, le scuole per le quali il codice meccanografico risulta mancante o errato sono comunque poche. Possiamo comunque verificare quali codici si ripetono il maggior numero di volte:
+
+```shell
+$ grep rponto.codMIURscuola dati_piemonte_scuole.rdf|sort|uniq -c|sort -n|tail -4
+      6 	<rponto:codMIURscuola>topc020003</rponto:codMIURscuola>
+      6 	<rponto:codMIURscuola>torc060005</rponto:codMIURscuola>
+      8 	<rponto:codMIURscuola>-</rponto:codMIURscuola>
+      8 	<rponto:codMIURscuola>torc05000e</rponto:codMIURscuola>
+```
+
+da cui si vede che oltre al meccanografico vuoto `-`, risulta ripetuto parecchie volte il codice `torc05000e`.
+
+### Dati da ISTAT?
+
+L'[*end-point* SPARQL dell'ISTAT](http://datiopen.istat.it/sparql) prevede la classe <http://datiopen.istat.it/odi/ontologia/territorio/SCH>, potremmo controllare se e quanto è usata&hellip;
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ter: <http://datiopen.istat.it/odi/ontologia/territorio/>
+PREFIX cen: <http://datiopen.istat.it/odi/ontologia/censimento/>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+SELECT ?s ?p
+WHERE {
+?s ?p ter:SCH
+} LIMIT 100
+```
+
+restituisce [poche cose](http://datiopen.istat.it/sparql/oracle?query=PREFIX+ORACLE_SEM_FS_NS%3A+%3Chttp%3A%2F%2Foracle.com%2Fsemtech%23timeout%3D600%2Callow_dup%3Dt%2Cstrict_default%3Df%3EPREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+ter%3A+%3Chttp%3A%2F%2Fdatiopen.istat.it%2Fodi%2Fontologia%2Fterritorio%2F%3E%0APREFIX+cen%3A+%3Chttp%3A%2F%2Fdatiopen.istat.it%2Fodi%2Fontologia%2Fcensimento%2F%3E%0APREFIX+qb%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fcube%23%3E%0ASELECT+%3Fs+%3Fp%0AWHERE+{%0A%3Fs+%3Fp+ter%3ASCH%0A}+LIMIT+100%0A&stylesheet=/sparql/xml-to-html.xsl)

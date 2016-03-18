@@ -20,7 +20,7 @@ nomeFileDati = 'DatiAgID.ttl'
 formatoDati = 'n3'
 URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.ttl'
 try:
-    grafo_AgID.parse (file=open(nomeFileDati), format=formatoDati)
+    grafo_AgID.parse (file=open (nomeFileDati), format=formatoDati)
     print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
 except:
     print 'File ', nomeFileDati, ' non trovato, provo da rete'
@@ -37,15 +37,13 @@ except:
         }
         try:
             datiDaRete = requests.get (URL_Dati, proxies=proxies)
-            print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
+            print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati, 'usando il proxy'
         except:
-            print 'Impossibile scaricare i dati da AgID, termino.'
+            print 'Impossibile scaricare i dati da', fonteDati, ', termino.'
             sys.exit (1)
-    # TODO: le righe successive sono state commentate, danno errorri a causa di caratteri non ascii, se possibile risolvere
-    # f = open (nomeFileDati, 'w')
-    # f.write (datiDaRete.text)
-    # f.close ()
     grafo_AgID.parse (data=datiDaRete.text, format=formatoDati)
+    grafo_AgID.serialize (destination=open (nomeFileDati, 'w'), format=formatoDati)
+    print 'Dati salvati su', nomeFileDati, 'per usi futuri'
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
 # print len (grafo_AgID)
@@ -71,13 +69,13 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
         print 'Analizzate', contoAgID, 'amministrazioni, trovate', len (listaMeccanograficiAgID), 'possibili scuole'
     # cerca se la PEC ha dominio istruzione.it
     for pec in grafo_AgID.objects (amministrazione, URI_pec):
-        if str (pec).upper ().find ('ISTRUZIONE.IT') != -1:
+        if 'ISTRUZIONE.IT' in str (pec).upper ():
             meccanograficoScuola = str (pec).split ('@')[0]
     if len(meccanograficoScuola) != 10:  # Cerca ancora solo se non trovata prima
         if meccanograficoScuola != '':
             print "%s sembra una scuola, ma la pec %s non sembra indicare un meccanografico, cerco la e-mail"%(str(amministrazione), meccanograficoScuola)
         for mail in grafo_AgID.objects (amministrazione, URI_mail):
-            if str (mail).upper ().find ('ISTRUZIONE.IT') != -1:
+            if 'ISTRUZIONE.IT' in str (mail).upper ():
                 meccanograficoScuola = str (mail).split ('@')[0]
     if meccanograficoScuola != '':
         if len(meccanograficoScuola) != 10:
@@ -248,7 +246,7 @@ contoIstruzione = 0
 if voceDaFiltrare in letturaRighe.fieldnames:
     for riga in letturaRighe:
         contoComune += 1
-        if riga[voceDaFiltrare].upper ().find ('ISTRUZIONE.IT') != -1:
+        if 'ISTRUZIONE.IT' in riga[voceDaFiltrare].upper ():
             meccanograficoScuola = riga[voceDaFiltrare].split ('@')[0]
             if len(meccanograficoScuola) != 10:
                 print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(riga[voceDaFiltrare], meccanograficoScuola)
