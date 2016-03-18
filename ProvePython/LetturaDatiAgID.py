@@ -39,7 +39,7 @@ except:
             datiDaRete = requests.get (URL_Dati, proxies=proxies)
             print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
         except:
-            print "Impossibile scaricare i dati da AgID, termino."
+            print 'Impossibile scaricare i dati da AgID, termino.'
             sys.exit (1)
     # TODO: le righe successive sono state commentate, danno errorri a causa di caratteri non ascii, se possibile risolvere
     # f = open (nomeFileDati, 'w')
@@ -68,7 +68,7 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
     meccanograficoScuola = ''
     contoAgID += 1
     if contoAgID % 1000 == 0:
-        print 'Analizzate ', contoAgID, ' amministrazioni, trovate ', len (listaMeccanograficiAgID), ' possibili scuole'
+        print 'Analizzate', contoAgID, 'amministrazioni, trovate', len (listaMeccanograficiAgID), 'possibili scuole'
     # cerca se la PEC ha dominio istruzione.it
     for pec in grafo_AgID.objects (amministrazione, URI_pec):
         if str (pec).upper ().find ('ISTRUZIONE.IT') != -1:
@@ -99,7 +99,7 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
         unaScuola = amministrazione
 
-print 'Su ', contoAgID, ' amministrazioni, ho trovato', len (listaMeccanograficiAgID), ' presunte scuole, distribuite su ', len (listaScuolePerComune), 'comuni'
+print 'Su', contoAgID, 'amministrazioni, ho trovato', len (listaMeccanograficiAgID), 'presunte scuole, distribuite su', len (listaScuolePerComune), 'comuni'
 
 sommaScuoleConComune = 0
 numeroScuolePerComune = {}
@@ -107,9 +107,11 @@ for i in listaScuolePerComune:
     numeroScuolePerComune[i] = len(listaScuolePerComune[i])
     sommaScuoleConComune += numeroScuolePerComune[i]
 
-print 'Trovate in tutto', sommaScuoleConComune, ' distribuit nei seguenti comuni:', listaScuolePerComune.keys()
+comuniOrdinatiPerNumeroScuole = sorted (numeroScuolePerComune, key = lambda x:numeroScuolePerComune[x])
 
-print 'Lista delle ', numeroScuolePerComune['L219'], 'scuole trovate nel comune di Torino', listaScuolePerComune['L219']
+print 'Trovate in tutto', sommaScuoleConComune, 'scuole distribuite nei seguenti comuni:', [(x,numeroScuolePerComune[x]) for x in comuniOrdinatiPerNumeroScuole]
+
+print 'Lista delle', numeroScuolePerComune['L219'], 'scuole trovate nel comune di Torino', listaScuolePerComune['L219']
 
 #
 # Lettura dei dati da MIUR
@@ -121,15 +123,15 @@ nomeFileDati = 'DatiMIUR.csv'
 separatoreDati = ';'
 URL_Dati = 'http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv'
 try:
-    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
-    print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
+    letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
+    print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
 except:
     # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
-    print 'File ', nomeFileDati, ' non trovato, provo da rete'
+    print 'File', nomeFileDati, 'non trovato, provo da rete'
     try:
         # Proviamo a scaricare i dati dall'URL
         datiDaRete = requests.get (URL_Dati)
-        print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati
+        print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati
     except:
         # Se non siamo riusciti, forse serve impostare il proxy della della Regione
         print '... provo col proxy della Regione'
@@ -141,30 +143,43 @@ except:
             datiDaRete = requests.get (URL_Dati, proxies=proxies)
             print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
         except:
-            print "Impossibile scaricare i dati da AgID, termino."
+            print 'Impossibile scaricare i dati da AgID, termino.'
             sys.exit (1)
     # TODO: Forse scrivere il file su disco ed aprirlo?
     f = open (nomeFileDati, 'w')
     f.write (datiDaRete.text)
+    print 'Ho scritto i dati sul file', nomeFileDati
     f.close ()
-    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
+    letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
     datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
-
-for riga in letturaRighe:
-    print "Controlliamo solo il quinto elemento:", riga[4], "; che viee ripetuto per ogni ", riga[2]
-    break # fermatri subito (ha senso aver usato un for, per la sola prima riga???)
 
 catalogoMeccanograficiMIUR = {}
 
-contoMIUR = 0
-for riga in letturaRighe:
-    contoMIUR += 1
-    if riga[4] in catalogoMeccanograficiMIUR:
-        catalogoMeccanograficiMIUR[riga[4]] += 1
-    else:
-        catalogoMeccanograficiMIUR[riga[4]] = 1
+voceDaConteggiare = 'ISTITUTO PRINCIPALE'
+voceDaFiltrare = 'COMUNE'
+voceDaSalvare = 'PLESSO/SCUOLA'
+valoreDaCercare = 'TORINO'
 
-print 'Su ', contoMIUR, ' scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
+contoMIUR = 0
+valoriTrovati = []
+istitutiTrovati = set ()
+
+if voceDaConteggiare in letturaRighe.fieldnames:
+    for riga in letturaRighe:
+        contoMIUR += 1
+        if riga[voceDaConteggiare] in catalogoMeccanograficiMIUR:
+            catalogoMeccanograficiMIUR[riga[voceDaConteggiare]] += 1
+        else:
+            catalogoMeccanograficiMIUR[riga[voceDaConteggiare]] = 1
+        if voceDaSalvare in letturaRighe.fieldnames and voceDaFiltrare in letturaRighe.fieldnames:
+            if riga[voceDaFiltrare] == valoreDaCercare:
+                valoriTrovati.append (riga[voceDaSalvare])
+                istitutiTrovati.add (riga[voceDaConteggiare])
+else:
+    print 'La voce', voceDaConteggiare, 'non si trova...'
+
+print 'Su', contoMIUR, 'scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
+print 'Per', voceDaFiltrare, 'pari a', valoreDaCercare, 'ho trovato i seguenti', len (valoriTrovati), 'valori per', voceDaSalvare, ':', valoriTrovati
 
 contoAgID_noMIUR = 0
 for unaScuola in listaMeccanograficiAgID:
@@ -184,3 +199,66 @@ for unaScuola in catalogoMeccanograficiMIUR:
 print 'Trovate ', len (listaMeccanograficiAgID), 'scuole su AgID e', len (catalogoMeccanograficiMIUR), 'su MIUR'
 print 'Su AgID ci sono ', contoAgID_noMIUR, 'istituzioni non presenti su MIUR'
 print 'Su MIUR ci sono ', contoMIUR_noAgID, 'istituzioni non presenti su AgID'
+
+#
+# Lettura dei dati da Comune di Torino
+# TODO: Rendere anche questa porzione una funzione!
+#
+
+fonteDati = 'Torino'
+nomeFileDati = 'DatiTorino.csv'
+separatoreDati = ';'
+URL_Dati = 'http://aperto.comune.torino.it/sites/default/files/scuole_0.csv'
+try:
+    letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
+    print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
+except:
+    # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
+    print 'File', nomeFileDati, 'non trovato, provo da rete'
+    try:
+        # Proviamo a scaricare i dati dall'URL
+        datiDaRete = requests.get (URL_Dati)
+        print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati
+    except:
+        # Se non siamo riusciti, forse serve impostare il proxy della della Regione
+        print '... provo col proxy della Regione'
+        proxies = {
+            'http': 'http://10.102.162.8:80',
+            'https': 'http://10.102.162.8:80',
+        }
+        try:
+            datiDaRete = requests.get (URL_Dati, proxies=proxies)
+            print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
+        except:
+            print 'Impossibile scaricare i dati da AgID, termino.'
+            sys.exit (1)
+    # TODO: Forse scrivere il file su disco ed aprirlo?
+    f = open (nomeFileDati, 'w')
+    f.write (datiDaRete.text)
+    print 'Ho scritto i dati sul file', nomeFileDati
+    f.close ()
+    letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
+    datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+
+voceDaFiltrare = 'EMAIL'
+
+meccanograficiComune = set ()
+contoComune = 0
+contoIstruzione = 0
+if voceDaFiltrare in letturaRighe.fieldnames:
+    for riga in letturaRighe:
+        contoComune += 1
+        if riga[voceDaFiltrare].upper ().find ('ISTRUZIONE.IT') != -1:
+            meccanograficoScuola = riga[voceDaFiltrare].split ('@')[0]
+            if len(meccanograficoScuola) != 10:
+                print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(riga[voceDaFiltrare], meccanograficoScuola)
+            else:
+                contoIstruzione += 1
+                meccanograficiComune.add (meccanograficoScuola.upper ())
+else:
+    print 'La voce', voceDaFiltrare, 'non si trova...'
+
+print 'Su', contoComune, 'scuole catalogate dal comune, per ', contoIstruzione, 'si riesce ad ipotizzare il meccanografico'
+print 'Tolti i doppioni, i codici sono', len (meccanograficiComune), ':', list(meccanograficiComune)
+print 'Di questi, i seguenti non appaiono (vecchi?) tra i codici MIUR:', meccanograficiComune - set(catalogoMeccanograficiMIUR)
+print 'In compenso,', len(istitutiTrovati - meccanograficiComune), 'istituti che MIUR localizza in Torino, non vengono trovati in questa lista (probabilmente per e-mail differente)'
