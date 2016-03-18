@@ -194,8 +194,10 @@ Punti di forza:
 
 Punti di debolezza:
 
+* Non contiene alcuna data di aggiornamento, quindi non si capisce se e quando i dati sono aggiornati
+* In considerazione di ciò probabilmente non ha senso neppure usare l'elenco di comuni/province, meglio ISTAT o AgID&hellip;
 * gli URI sono fasulli e non indicano effettive pagine web visitabili
-* la struttura regge ma sostanzialmente vuota, ma il contenuto praticamente non veicola informazione
+* la struttura regge ma sostanzialmente vuota, il contenuto è quasi inesistente
 
 Comandi per scaricare la base dati. Da shell:
 
