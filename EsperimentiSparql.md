@@ -54,3 +54,22 @@ WHERE
  FILTER (?Popolazione > 700000)
 } ORDER BY (?Popolazione)
 ```
+
+LinkedGeoData
+-------------
+
+Un esperimento, tanto per gioco, anche su http://linkedgeodata.org/sparql :
+
+```SPARQL
+PREFIX lgdr:<http://linkedgeodata.org/triplify/>
+PREFIX lgdo:<http://linkedgeodata.org/ontology/>
+PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?nome ?lat ?lon {
+ ?s a lgdo:School;
+  geo:lat ?lat;
+  geo:long ?lon;
+  rdfs:label ?nome.
+ FILTER (?lat > 45 AND ?lat < 46 AND ?lon > 7 AND ?lon < 8)
+}
+```
