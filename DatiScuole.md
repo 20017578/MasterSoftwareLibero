@@ -90,7 +90,7 @@ Punti di forza:
 
 Punti di debolezza:
 
- * mancanza di uniformità tra i dati riguardanti le scuole statali e quelle non statali, che hanno oblighi ed interessi diversi nell'alimentare il sistema informativo del MIUR
+ * mancanza di uniformità tra i dati riguardanti le scuole statali e quelle non statali, che hanno obblighi ed interessi diversi nell'alimentare il sistema informativo del MIUR
  * dati geografici piuttosto approssimativi
 
 Comandi per scaricare la base dati in formato csv e prime verifiche. Da shell:
@@ -182,7 +182,7 @@ Analisi in particolare dei dati su http://id-dati.piemonte.it/resource/scuole/sc
 
 Tipo di informazioni che possono essere reperite da questo insieme di dati:
 
-* Quasi nulla, non molto olre ad una struttura per le scuole
+* Quasi nulla, non molto oltre ad una struttura per le scuole
 * Un grafo contenente comuni e province della regione
 
 Licenza: non trovata, "open by default"?
@@ -204,7 +204,7 @@ $ curl "http://id-dati.piemonte.it/resource/scuole/scuole-piemonte.rdf"| tee dat
 4466
 ```
 
-Il numero pari a 4466 sembra elevato rispetto a lle 3850 conteggiate nei dati MIUT, le scuole per le quali il codice meccanografico risulta mancante o errato sono comunque poche. Possiamo comunque verificare quali codici si ripetono il maggior numero di volte:
+Il numero pari a 4466 sembra elevato rispetto alle 3850 conteggiate nei dati MIUR, le scuole per le quali il codice meccanografico risulta mancante o errato sono comunque poche. Possiamo comunque verificare quali codici si ripetono il maggior numero di volte:
 
 ```shell
 $ grep rponto.codMIURscuola dati_piemonte_scuole.rdf|sort|uniq -c|sort -n|tail -4
