@@ -190,7 +190,7 @@ Licenza: non trovata, "open by default"?
 Punti di forza:
 
 * Il formato RDF si presta ad essere riutilizzato e riferito in altri LOD
-* L'ontologia include il "codMIURscuola" che indica il codice meccanografico usato dal MIUR per riferirsi alle scuole
+* L'ontologia include [rponto:codMIURscuola](http://id-dati.piemonte.it/ontology/v1/rponto.html#codMIURscuola) che indica il codice meccanografico usato dal MIUR per riferirsi alle scuole
 
 Punti di debolezza:
 
