@@ -21,13 +21,13 @@ formatoDati = 'n3'
 URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.ttl'
 try:
     grafo_AgID.parse (file=open (nomeFileDati), format=formatoDati)
-    print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
+    print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
 except:
-    print 'File ', nomeFileDati, ' non trovato, provo da rete'
+    print 'File', nomeFileDati, 'non trovato, provo da rete'
     try:
         # Proviamo a scaricare i dati dall'URL
         datiDaRete = requests.get (URL_Dati)
-        print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati
+        print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati
     except:
         # Se non siamo riusciti, forse serve impostare il proxy della della Regione
         print '... provo col proxy della Regione'
@@ -139,7 +139,7 @@ except:
         }
         try:
             datiDaRete = requests.get (URL_Dati, proxies=proxies)
-            print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
+            print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati, 'usando il proxy'
         except:
             print 'Impossibile scaricare i dati da AgID, termino.'
             sys.exit (1)
@@ -195,8 +195,8 @@ for unaScuola in catalogoMeccanograficiMIUR:
         contoMIUR_noAgID += 1
 
 print 'Trovate ', len (listaMeccanograficiAgID), 'scuole su AgID e', len (catalogoMeccanograficiMIUR), 'su MIUR'
-print 'Su AgID ci sono ', contoAgID_noMIUR, 'istituzioni non presenti su MIUR'
-print 'Su MIUR ci sono ', contoMIUR_noAgID, 'istituzioni non presenti su AgID'
+print 'Su AgID ci sono', contoAgID_noMIUR, 'istituzioni non presenti su MIUR'
+print 'Su MIUR ci sono', contoMIUR_noAgID, 'istituzioni non presenti su AgID'
 
 #
 # Lettura dei dati da Comune di Torino
@@ -226,7 +226,7 @@ except:
         }
         try:
             datiDaRete = requests.get (URL_Dati, proxies=proxies)
-            print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati, ' usando il proxy'
+            print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati, 'usando il proxy'
         except:
             print 'Impossibile scaricare i dati da AgID, termino.'
             sys.exit (1)
@@ -256,7 +256,7 @@ if voceDaFiltrare in letturaRighe.fieldnames:
 else:
     print 'La voce', voceDaFiltrare, 'non si trova...'
 
-print 'Su', contoComune, 'scuole catalogate dal comune, per ', contoIstruzione, 'si riesce ad ipotizzare il meccanografico'
+print 'Su', contoComune, 'scuole catalogate dal comune, per', contoIstruzione, 'si riesce ad ipotizzare il meccanografico'
 print 'Tolti i doppioni, i codici sono', len (meccanograficiComune), ':', list(meccanograficiComune)
 print 'Di questi, i seguenti non appaiono (vecchi?) tra i codici MIUR:', meccanograficiComune - set(catalogoMeccanograficiMIUR)
 print 'In compenso,', len(istitutiTrovati - meccanograficiComune), 'istituti che MIUR localizza in Torino, non vengono trovati in questa lista (probabilmente per e-mail differente)'

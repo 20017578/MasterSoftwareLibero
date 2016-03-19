@@ -9,13 +9,13 @@ formatoDati = 'n3'
 URL_Dati = 'http://id-dati.piemonte.it/resource/scuole/scuole-piemonte.rdf'
 try:
     grafo_DatiPiemonte.parse (file=open (nomeFileDati), format=formatoDati)
-    print 'Ho letto i dati ', fonteDati, ' dal file ', nomeFileDati
+    print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
 except:
-    print 'File ', nomeFileDati, ' non trovato, provo da rete'
+    print 'File', nomeFileDati, 'non trovato, provo da rete'
     try:
         # Proviamo a scaricare i dati dall'URL
         grafo_DatiPiemonte.parse (URL_Dati)
-        print 'Ho scaricato i dati ', fonteDati, ' da ', URL_Dati
+        print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati
     except:
         print 'Impossibile scaricare i dati da', fonteDati, ', termino.'
         sys.exit (1)
