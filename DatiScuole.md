@@ -222,12 +222,8 @@ da cui si vede che oltre al meccanografico vuoto `-`, risulta ripetuto parecchie
 
 L'[*end-point* SPARQL dell'ISTAT](http://datiopen.istat.it/sparql) prevede la classe <http://datiopen.istat.it/odi/ontologia/territorio/SCH>, potremmo controllare se e quanto è usata&hellip;
 
-```sparql
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+```SPARQL
 PREFIX ter: <http://datiopen.istat.it/odi/ontologia/territorio/>
-PREFIX cen: <http://datiopen.istat.it/odi/ontologia/censimento/>
-PREFIX qb: <http://purl.org/linked-data/cube#>
 SELECT ?s ?p
 WHERE {
 ?s ?p ter:SCH
