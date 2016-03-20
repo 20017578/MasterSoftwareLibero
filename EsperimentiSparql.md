@@ -70,6 +70,6 @@ SELECT ?nome ?lat ?lon {
   geo:lat ?lat;
   geo:long ?lon;
   rdfs:label ?nome.
- FILTER (?lat > 45 AND ?lat < 46 AND ?lon > 7 AND ?lon < 8)
+ FILTER (?lat > 44 AND ?lat < 46.5 AND ?lon > 6.6 AND ?lon < 9.3)
 }
 ```
