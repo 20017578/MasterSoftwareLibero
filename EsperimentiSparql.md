@@ -35,7 +35,7 @@ La categoria delle scuole sembrerebbe essere: http://spcdata.digitpa.gov.it/Cate
 Richieste all'ISTAT
 -------------------
 
-La richiesta seguente all'[*end-point* SPARQL dell'ISTAT](http://datiopen.istat.it/sparql), permette di richiedere i comuni la cui popolazione supera le 700mila unitÃ :
+La richiesta seguente all'[*end-point* SPARQL dell'ISTAT](http://datiopen.istat.it/sparql), permette di richiedere i comuni la cui popolazione supera le 700mila unitÃƒÂ :
 
 ```SPARQL
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -95,4 +95,16 @@ SELECT distinct ?nodo ?nome ?WKT {
 }
 ```
 
-Si tenga conto che http://www.opengis.net/ont/geosparql#asWKT è in stato **deprecated**, inoltre la richiesta qui sopra trova la geometria solo se uno dei suoi punti è anche geometria *a sé*, con latitudine e longitudine esplicitati e non *nascosti* nel WKT&hellip; Questo certamente non è il modo più efficiente di estrarre geometrie da [OSM](http://www.openstreetmap.org/)&hellip;
+Si tenga conto che http://www.opengis.net/ont/geosparql#asWKT Ã¨ in stato **deprecated**, inoltre la richiesta qui sopra trova la geometria solo se uno dei suoi punti Ã¨ anche geometria *a sÃ©*, con latitudine e longitudine esplicitati e non *nascosti* nel WKT&hellip; Questo certamente non Ã¨ il modo piÃ¹ efficiente di estrarre geometrie da [OSM](http://www.openstreetmap.org/)&hellip;
+
+Sempre la lista dei comuni del Piemonte
+
+```SPARQL
+Prefix lgdr:<http://linkedgeodata.org/triplify/>
+Prefix lgdo:<http://linkedgeodata.org/ontology/>
+Prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+Select * {
+ ?s lgdo:isIn "Torino, Piemonte, Italy";
+    rdfs:label ?l .
+} Limit 1000
+```
