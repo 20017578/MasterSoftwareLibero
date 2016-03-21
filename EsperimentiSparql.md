@@ -73,3 +73,26 @@ SELECT ?nome ?lat ?lon {
  FILTER (?lat > 44 AND ?lat < 46.5 AND ?lon > 6.6 AND ?lon < 9.3)
 }
 ```
+
+Un tentativo di estrarre "aree":
+
+```SPARQL
+PREFIX lgdr:<http://linkedgeodata.org/triplify/>
+PREFIX lgdo:<http://linkedgeodata.org/ontology/>
+PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+SELECT distinct ?nodo ?nome ?WKT {
+ ?nodo a lgdo:School;
+    <http://geovocab.org/geometry#geometry> ?o;
+  rdfs:label ?nome.
+ ?o <http://www.opengis.net/ont/geosparql#asWKT> ?WKT;
+    <http://linkedgeodata.org/ontology/posSeq> ?s.
+ ?s [] ?n.
+ ?p <http://geovocab.org/geometry#geometry> ?n;
+    geo:lat ?lat;
+    geo:long ?lon.
+ FILTER (?lat > 44 AND ?lat < 46.5 AND ?lon > 6.6 AND ?lon < 9.3)
+}
+```
+
+Si tenga conto che http://www.opengis.net/ont/geosparql#asWKT è in stato **deprecated**, inoltre la richiesta qui sopra trova la geometria solo se uno dei suoi punti è anche geometria *a sé*, con latitudine e longitudine esplicitati e non *nascosti* nel WKT&hellip; Questo certamente non è il modo più efficiente di estrarre geometrie da [OSM](http://www.openstreetmap.org/)&hellip;
