@@ -97,7 +97,7 @@ SELECT distinct ?nodo ?nome ?WKT {
 
 Si tenga conto che http://www.opengis.net/ont/geosparql#asWKT è in stato **deprecated**, inoltre la richiesta qui sopra trova la geometria solo se uno dei suoi punti è anche geometria *a sé*, con latitudine e longitudine esplicitati e non *nascosti* nel WKT&hellip; Questo certamente non è il modo più efficiente di estrarre geometrie da [OSM](http://www.openstreetmap.org/)&hellip;
 
-Sempre la lista dei comuni del Piemonte
+La lista dei comuni(?) della città metropolitana di Torino
 
 ```SPARQL
 Prefix lgdr:<http://linkedgeodata.org/triplify/>
