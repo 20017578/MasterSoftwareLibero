@@ -110,6 +110,26 @@ Oltre a scaricare i dati (nel file cercalatuascuola_istruzione_ASS_201516.csv), 
 
  * Nota, il file csv **contiene** una riga di intestazioni.
 
+#### Transizione verso i **LOD**
+
+Il file CSV coi [dati principali sulle scuole statali del MIUR](http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv) contiene le seguenti colonne, che possono essere riferite a diverse ontologie:
+
+Intestazione colonna|possibile predicato
+----------------------------------------
+REGIONE|<http://www.geonames.org/ontology#locatedIn> come AgID?
+PROVINCIA|<http://www.geonames.org/ontology#locatedIn> come AgID?
+PLESSO/SCUOLA|<http://id-dati.piemonte.it/ontology/v1/rponto.html#codMIURscuola> ??? meglio crearne una nuova
+DENOMINAZIONE|<http://www.w3.org/2000/01/rdf-schema#label>
+ISTITUTO PRINCIPALE|<http://www.w3.org/ns/org#unitOf> ?
+DENOMINAZIONE ISTITUTO PRINCIPALE|*Ridondante, va indicato nell'istituto principale*
+INDIRIZZO|<http://www.w3.org/ns/locn#address>, ma l'indirizzo va in altro nodo come <http://www.w3.org/ns/locn#fullAddress>
+CAP|nel nodo dell'indirizzo, come <http://www.w3.org/ns/locn#postCode>
+COMUNE|<http://www.geonames.org/ontology#locatedIn> come AgID!
+CARATTERISTICA|da creare nuova
+TIPO ISTITUZIONE|da creare nuova
+LATITUDINE|<http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+LONGITUDINE|<http://www.w3.org/2003/01/geo/wgs84_pos#long>
+
 ### I dati di [geolocalizzazione](http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione/) della Regione Piemonte
 Contiene dati geografici dettagliati sugli edifici scolastici.
 
