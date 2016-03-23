@@ -123,12 +123,17 @@ DENOMINAZIONE|<http://www.w3.org/2000/01/rdf-schema#label>
 ISTITUTO PRINCIPALE|<http://www.w3.org/ns/org#unitOf> ?
 DENOMINAZIONE ISTITUTO PRINCIPALE|*Ridondante, va indicato nell'istituto principale*
 INDIRIZZO|<http://www.w3.org/ns/locn#address>, ma l'indirizzo va in altro nodo come <http://www.w3.org/ns/locn#fullAddress>
-CAP|nel nodo dell'indirizzo, come <http://www.w3.org/ns/locn#postCode>
+CAP|nel nodo dell'indirizzo, come <http://www.w3.org/ns/locn#postCode> (Vedi anche http://www.dmi.unict.it/~longo/comunect/#luoghi )
 COMUNE|<http://www.geonames.org/ontology#locatedIn> come AgID!
-CARATTERISTICA|da creare nuova
-TIPO ISTITUZIONE|da creare nuova
+CARATTERISTICA|da creare nuova (circa 20 valori diversi rilevati)
+TIPO ISTITUZIONE|da creare nuova (circa 35 valori diversi rilevati)
 LATITUDINE|<http://www.w3.org/2003/01/geo/wgs84_pos#lat>
 LONGITUDINE|<http://www.w3.org/2003/01/geo/wgs84_pos#long>
+
+A parte i nodi per descrivere caratteristiche e tipi istruzione e ai nodi di tipo <http://www.w3.org/ns/locn#Address> si userebbero nodi di due classi:
+
+ - Una per le istituzioni principali, sedi di segreteria: il tipo di amministrazione definito dall'AgID? <http://spcdata.digitpa.gov.it/CategoriaAmministrazione/L6> ... forse non va bene, perché non è concepito come una classe di oggetti...
+ - Una per le sedi/plessi. Per la quale temporaneamente si potrebbe usare l'ontologia definita dalla Regione Piemonte: <http://id-dati.piemonte.it/ontology/v1/rponto.html#scuola>
 
 ### I dati di [geolocalizzazione](http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione/) della Regione Piemonte
 Contiene dati geografici dettagliati sugli edifici scolastici.
