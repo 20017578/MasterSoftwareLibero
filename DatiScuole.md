@@ -135,6 +135,20 @@ A parte i nodi per descrivere caratteristiche e tipi istruzione e ai nodi di tip
  - Una per le istituzioni principali, sedi di segreteria: il tipo di amministrazione definito dall'AgID? <http://spcdata.digitpa.gov.it/CategoriaAmministrazione/L6> ... forse non va bene, perché non è concepito come una classe di oggetti...
  - Una per le sedi/plessi. Per la quale temporaneamente si potrebbe usare l'ontologia definita dalla Regione Piemonte: <http://id-dati.piemonte.it/ontology/v1/rponto.html#scuola>
 
+Lo stesso sito riporta anche un file CSV coi [dati principali sulle scuole paritarie](http://www.istruzione.it/scuolainchiaro_dati/9-Anagrafe_Centri_Formazione_Professionale_201516.csv), che contiene le seguenti colonne, che possono essere riferite a ontologie simili alle precedenti:
+
+REGIONE|<http://www.geonames.org/ontology#locatedIn> come AgID?
+PROVINCIA|<http://www.geonames.org/ontology#locatedIn> come AgID?
+PLESSO/SCUOLA|<http://id-dati.piemonte.it/ontology/v1/rponto.html#codMIURscuola> ??? meglio crearne una nuova
+DENOMINAZIONE|<http://www.w3.org/2000/01/rdf-schema#label>
+INDIRIZZO|<http://www.w3.org/ns/locn#address>, ma l'indirizzo va in altro nodo come <http://www.w3.org/ns/locn#fullAddress>
+CAP|nel nodo dell'indirizzo, come <http://www.w3.org/ns/locn#postCode> (Vedi anche http://www.dmi.unict.it/~longo/comunect/#luoghi )
+COMUNE|<http://www.geonames.org/ontology#locatedIn> come AgID!
+TIPO ISTITUZIONE|da creare nuova (usando la stessa delle statali, ma meno valori)
+LATITUDINE|<http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+LONGITUDINE|<http://www.w3.org/2003/01/geo/wgs84_pos#long>
+
+
 ### I dati di [geolocalizzazione](http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione/) della Regione Piemonte
 Contiene dati geografici dettagliati sugli edifici scolastici.
 
