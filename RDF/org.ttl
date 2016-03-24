@@ -108,7 +108,7 @@ org:subOrganizationOf a owl:ObjectProperty, rdf:Property;
     rdfs:subPropertyOf  org:transitiveSubOrganizationOf;
 
     rdfs:comment """Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization. Inverse of `org:hasSubOrganization`."""@en;
-    rdfs:comment """Rappresenta un contenimento gerarchico di una Organization o di una OrganizationalUnit. È l'inverso di `org:hasSubOrganization`. Ha nome come nome alternativo hasSubOrg."""@it;
+    rdfs:comment """Rappresenta un contenimento gerarchico di una Organization o di una OrganizationalUnit. È l'inverso di `org:hasSubOrganization`."""@it;
     rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
     .
 
