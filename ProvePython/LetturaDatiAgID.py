@@ -44,25 +44,70 @@ except:
     grafo_AgID.parse (data=datiDaRete.text, format=formatoDati)
     grafo_AgID.serialize (destination=open (nomeFileDati, 'w'), format=formatoDati)
     print 'Dati salvati su', nomeFileDati, 'per usi futuri'
-    datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+    datiDaRete = None  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
 # print len (grafo_AgID)
+
+nomeFileDati = 'DatiAgID.csv'
+separatoreDati = '\t'
+URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.csv'
+try:
+    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
+    print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
+except:
+    # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
+    print 'File', nomeFileDati, 'non trovato, provo da rete'
+    try:
+        # Proviamo a scaricare i dati dall'URL
+        datiDaRete = requests.get (URL_Dati)
+        print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati
+    except:
+        # Se non siamo riusciti, forse serve impostare il proxy della della Regione
+        print '... provo col proxy della Regione'
+        proxies = {
+            'http': 'http://10.102.162.8:80',
+            'https': 'http://10.102.162.8:80',
+        }
+        try:
+            datiDaRete = requests.get (URL_Dati, proxies=proxies)
+            print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati, 'usando il proxy'
+        except:
+            print 'Impossibile scaricare i dati da AgID, termino.'
+            sys.exit (1)
+    # TODO: Forse scrivere il file su disco ed aprirlo?
+    f = open (nomeFileDati, 'w')
+    f.write (datiDaRete.text)
+    print 'Ho scritto i dati sul file', nomeFileDati
+    f.close ()
+    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
+    datiDaRete = None  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+
+# Legge dal CSV quali sono le scuole ed aggiunge la tripla corretta al grafo
+spcdata_catAmm = rdflib.Namespace('http://spcdata.digitpa.gov.it/Categoriaamministrazione/')
+URI_scuola = spcdata_catAmm.L33
+IRI_orgClassif = rdflib.URIRef ('http://www.w3.org/ns/org#classification')
+pref_amministrazione = 'http://spcdata.digitpa.gov.it/Amministrazione/'
+
+contoScuole = 0
+for riga in letturaRighe:
+    if riga [11] == 'Istituti di Istruzione Statale di Ogni Ordine e Grado':
+        grafo_AgID.set ( (rdflib.URIRef (pref_amministrazione + riga[0]), IRI_orgClassif, URI_scuola) )
+        contoScuole += 1
 
 #
 # Qualche manipolazione sul grafo AgID
 # TODO: Oltre a visualizzare qualche statistica, forse converrebbe creare un sotto-grafo con le sole scuole, per gli usi successivi
 #
 
-URI_amministrazione = rdflib.URIRef ("http://spcdata.digitpa.gov.it/Amministrazione")
 URI_pec = rdflib.URIRef ('http://spcdata.digitpa.gov.it/PEC')
-URI_mail = rdflib.URIRef ('http://xmlns.com/foaf/0.1/mbox')
+URI_mail = rdflib.namespace.FOAF.mbox
 URI_locatedIn = rdflib.URIRef ('http://www.geonames.org/ontology#locatedIn')
 URI_label = rdflib.URIRef ('http://www.w3.org/2000/01/rdf-schema#label')
 
 listaMeccanograficiAgID = []
 listaScuolePerComune = {}
 contoAgID = 0
-for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=URI_amministrazione):
+for amministrazione in grafo_AgID.subjects (predicate=IRI_orgClassif, object=URI_scuola):
     meccanograficoScuola = ''
     contoAgID += 1
     if contoAgID % 1000 == 0:
@@ -96,8 +141,10 @@ for amministrazione in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=UR
                         print ':::: label', str(lab)
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
         unaScuola = amministrazione
+    else:
+        print 'Scuola di cui non si trova un meccanografico ...'
 
-print 'Su', contoAgID, 'amministrazioni, ho trovato', len (listaMeccanograficiAgID), 'presunte scuole, distribuite su', len (listaScuolePerComune), 'comuni'
+print 'Su', contoAgID, 'scuole, ho trovato', len (listaMeccanograficiAgID), 'probabili meccanografici, distribuiti su', len (listaScuolePerComune), 'comuni'
 
 sommaScuoleConComune = 0
 numeroScuolePerComune = {}
@@ -149,7 +196,7 @@ except:
     print 'Ho scritto i dati sul file', nomeFileDati
     f.close ()
     letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
-    datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+    datiDaRete = None # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
 catalogoMeccanograficiMIUR = {}
 
@@ -236,7 +283,7 @@ except:
     print 'Ho scritto i dati sul file', nomeFileDati
     f.close ()
     letturaRighe = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
-    datiDaRete = ''  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+    datiDaRete = None  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
 
 voceDaFiltrare = 'EMAIL'
 
