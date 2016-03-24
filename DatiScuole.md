@@ -2,14 +2,14 @@ Analisi sui dati esistenti che riguardano le scuole
 ===================================================
 Obiettivi dell'analisi
 ----------------------
- * Consistenza dei dati esistenti, per capire quali dati sono gi√† pubblici e quali potrebbero essere aggiunti
+ * Consistenza dei dati esistenti, per capire quali dati sono gi‡ pubblici e quali potrebbero essere aggiunti
  * Riconoscere i tipi di informazioni ed eventualmente arricchirle con migliori classificazioni
  * Verificare incoerenze tra i dati pubblicati, eventualmente per segnalare gli errori rilevati
 
 Verifiche sui dati esistenti
 ----------------------------
 
-### I dati RDF del [Sistema Pubblico di Connettivit√†](http://spcdata.digitpa.gov.it/data.html)
+### I dati RDF del [Sistema Pubblico di Connettivit‡(http://spcdata.digitpa.gov.it/data.html)
 L'*Indice della Pubblica Amministrazione* Contiene dati su tutte le amministrazioni, quindi anche sulle scuole.
 
 Tipo di informazioni che possono essere reperite da questo insieme di dati:
@@ -28,7 +28,7 @@ Punti di forza:
 
 Punti di debolezza:
 
- * Al momento della consultazione, **15 marzo 2016**, risulta come data di ultimo aggiornamento il **25 maggio 2015**, quindi i dati sono vecchi di pi√π di nove mesi; con l'aggravante, per il mondo scolastico, che all'inizio di settembre ha effetto il *dimensionamento* delle scuole, che pu√≤ sopprimere/fondere/creare istituzioni scolastiche; anche le scuole non *dimensionate* possono comunque cambiare dirigente.
+ * Al momento della consultazione, **15 marzo 2016**, risulta come data di ultimo aggiornamento il **25 maggio 2015**, quindi i dati sono vecchi di pi˘ di nove mesi; con l'aggravante, per il mondo scolastico, che all'inizio di settembre ha effetto il *dimensionamento* delle scuole, che puÚ sopprimere/fondere/creare istituzioni scolastiche; anche le scuole non *dimensionate* possono comunque cambiare dirigente.
  * Non contiene dati sulle scuole non statali.
  * Contiene dati sulle *istituzioni*, quindi sulle sedi amministrative, collegati alle quali possiamo avere molti diversi *punti di erogazione* del servizio scolastico, distribuito su diversi edifici (anche diversi comuni) e diverse tipologie (anche ordine) di insegnamento.
 
@@ -43,7 +43,7 @@ $ grep $'\tPiemonte\t' spcdata_digitpa_amm.csv| wc -l
 602
 ```
 
-Oltre a scaricare i dati (nel file spcdata_digitpa_amm.csv), i comandi suggeriti filtrano a priori gli istituti di *Istruzione Statale* e li contano. I valori di 9017 in tutta Italia e di 602 nel solo Piemonte, sembrano in realt√† leggermente eccessivi.
+Oltre a scaricare i dati (nel file spcdata_digitpa_amm.csv), i comandi suggeriti filtrano a priori gli istituti di *Istruzione Statale* e li contano. I valori di 9017 in tutta Italia e di 602 nel solo Piemonte, sembrano in realt‡ leggermente eccessivi.
 
  * Nota, il file csv **non contiene** una riga di intestazioni.
 
@@ -68,7 +68,7 @@ La dodicesima colonna contiene `Comuni e loro Consorzi e Associazioni`, nel file
 
 Il problema probabilmente deriva da un banale troncamento. La categoria [L33](http://spcdata.digitpa.gov.it/CategoriaAmministrazione/L33) ha come `label` la dicitura `Istituti di Istruzione Statale di Ogni Ordine e Grad`, senza la **`o`** finale!
 
-Problema probabilmente analogo si presenta per alcune scuole con l'indicazione del comune di appartenenza. Per la maggioranza assoluta delle scuole trovate nei dati dell'AgID, √® presente la tripla `<...scuola...> geonames:locatedIn <http://spcdata.digitpa.gov.it/Comune/...>`. Laddove manca, il nome del comune √® comunque indicato nel file CSV, ma potrebbe esservi stata qualche incongruenza nella scrittura esatta&hellip;
+Problema probabilmente analogo si presenta per alcune scuole con l'indicazione del comune di appartenenza. Per la maggioranza assoluta delle scuole trovate nei dati dell'AgID, Ë presente la tripla `<...scuola...> geonames:locatedIn <http://spcdata.digitpa.gov.it/Comune/...>`. Laddove manca, il nome del comune Ë comunque indicato nel file CSV, ma potrebbe esservi stata qualche incongruenza nella scrittura esatta&hellip;
 
 ### Il portale [Scuola in Chiaro](http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/)
 Contiene dati specifici sulle scuole, pubblicati direttamente dal MIUR.
@@ -90,7 +90,7 @@ Punti di forza:
 
 Punti di debolezza:
 
- * mancanza di uniformit√† tra i dati riguardanti le scuole statali e quelle non statali, che hanno obblighi ed interessi diversi nell'alimentare il sistema informativo del MIUR
+ * mancanza di uniformit‡ tra i dati riguardanti le scuole statali e quelle non statali, che hanno obblighi ed interessi diversi nell'alimentare il sistema informativo del MIUR
  * dati geografici piuttosto approssimativi
 
 Comandi per scaricare la base dati in formato csv e prime verifiche. Da shell:
@@ -115,7 +115,7 @@ Oltre a scaricare i dati (nel file cercalatuascuola_istruzione_ASS_201516.csv), 
 Il file CSV coi [dati principali sulle scuole statali del MIUR](http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv) contiene le seguenti colonne, che possono essere riferite a diverse ontologie:
 
 Intestazione colonna|possibile predicato
-----------------------------------------
+--------------------|-------------------
 REGIONE|<http://www.geonames.org/ontology#locatedIn> come AgID?
 PROVINCIA|<http://www.geonames.org/ontology#locatedIn> come AgID?
 PLESSO/SCUOLA|<http://id-dati.piemonte.it/ontology/v1/rponto.html#codMIURscuola> ??? meglio crearne una nuova
@@ -137,6 +137,8 @@ A parte i nodi per descrivere caratteristiche e tipi istruzione e ai nodi di tip
 
 Lo stesso sito riporta anche un file CSV coi [dati principali sulle scuole paritarie](http://www.istruzione.it/scuolainchiaro_dati/9-Anagrafe_Centri_Formazione_Professionale_201516.csv), che contiene le seguenti colonne, che possono essere riferite a ontologie simili alle precedenti:
 
+Intestazione colonna|possibile predicato
+--------------------|-------------------
 REGIONE|<http://www.geonames.org/ontology#locatedIn> come AgID?
 PROVINCIA|<http://www.geonames.org/ontology#locatedIn> come AgID?
 PLESSO/SCUOLA|<http://id-dati.piemonte.it/ontology/v1/rponto.html#codMIURscuola> ??? meglio crearne una nuova
@@ -156,33 +158,33 @@ Licenza, secondo i [metadati presenti sul geoportale](http://www.geoportale.piem
 
 Punti di forza:
 
-* Presenta dati geografici abbastanza precisi e pi√π specificatamente secondi i seguenti items:
+* Presenta dati geografici abbastanza precisi e pi˘ specificatamente secondi i seguenti items:
   * PUNTI-localizzazione baricentrica sull'edificio scolastico definito "Principale"
   * PUNTI-localizzazione baricentrica sull'edificio scolastico definito "Subordinato"
   * POLYGON-localizzazione areale sulla superficie interessata dagli edifici scolastici afferenti; concetto di area di pertinenza diverso dal concetto catastale di area ad uso pertinenziale.!
 
 [se serve posso caricare un documento che tratta l'approccio metodologico utilizzato per recuperare le informazioni, i rapporti intercorsi con gli enti locali proprietari e/o gestori di edifici scolastici, l'acquisizione effettuata mediante la localizzazione di tutti i contributi richiesti per le opere di manutenzione straordinaria in funzione di tutti bandi regionali attivi.]
 
-* specificare meglio e dettagliare le geometrie sopradescritte ponendo l'accento sul vantaggio di un approccio areale che conteggi oltre ai punti di erogazione specifici anche la vicinanza tra essi al fine di riassumere dati non di un'unica sede ma di pi√π punti di erogazione insieme - proporre e suggerire il concetto di "Analisi territoriale", di interrogazione spaziale, tematizzazione e non solo, come fino ad ora √® accaduto, di un elenco di punti di erogazione del servizio isolati anche se vicini e confinanti.
+* specificare meglio e dettagliare le geometrie sopradescritte ponendo l'accento sul vantaggio di un approccio areale che conteggi oltre ai punti di erogazione specifici anche la vicinanza tra essi al fine di riassumere dati non di un'unica sede ma di pi˘ punti di erogazione insieme - proporre e suggerire il concetto di "Analisi territoriale", di interrogazione spaziale, tematizzazione e non solo, come fino ad ora Ë accaduto, di un elenco di punti di erogazione del servizio isolati anche se vicini e confinanti.
 [ampliare questo concetto fino ai temi legati alla "programmazione", al piano del dimensionameto scolastico inteso non solo come numero di studenti per autonomia ma come strumento di analisi territoriale per definire autonomie e sedi scolastiche, etc etc ]
 
-Ad oggi si sta cercando di far scaricare direttamente questi 3 layer direttamente dal geoportale, ma, a breve, la pubblicazione tra i "data set" dell'Open Data regionale dovrebbe essere un'operazione gi√† programmata.
+Ad oggi si sta cercando di far scaricare direttamente questi 3 layer direttamente dal geoportale, ma, a breve, la pubblicazione tra i "data set" dell'Open Data regionale dovrebbe essere un'operazione gi‡ programmata.
 
 ???Oppure potrebbe essere utile capire se viene fornito anche un servizio WMS pubblico. -> ci si sta attrezzando per farlo!
 
 Punti di debolezza:
 
-* Attualmente il codice edificio (sia regionale che MIUR) non √® riportato dagli open data ministeriali, solo un riferimento √® al codice regionale nella procedura di consultazione "scuole in chiaro" nella sezione edilizia. [difficolt√† di avere un campo per fare un join]
-* Attualmente non permette di scaricare i dati, n√© di interrogare la base dati in maniera automatizzata
-* Attualmente joinare il codice meccanografico del punto di erogazione del servizio con l'edificio √® in via di definizione.
+* Attualmente il codice edificio (sia regionale che MIUR) non Ë riportato dagli open data ministeriali, solo un riferimento Ë al codice regionale nella procedura di consultazione "scuole in chiaro" nella sezione edilizia. [difficolt‡ di avere un campo per fare un join]
+* Attualmente non permette di scaricare i dati, nÈ di interrogare la base dati in maniera automatizzata
+* Attualmente joinare il codice meccanografico del punto di erogazione del servizio con l'edificio Ë in via di definizione.
 
-Verificare chi √® titolare di questi dati e cercare un percorso che porti alla pubblicazione.
-[se il titolare √® il sottoscritto dovremmo riuscire in tempi brevi ad ottenere una base dati sufficientemente affidabile.]
+Verificare chi Ë titolare di questi dati e cercare un percorso che porti alla pubblicazione.
+[se il titolare Ë il sottoscritto dovremmo riuscire in tempi brevi ad ottenere una base dati sufficientemente affidabile.]
 
 Punti ancora da chiarire:
 
 * Assenza totale del "codice edificio MIUR" CEM da tutti i dataset esistenti.
-* Assenza di un codice MIUR che differenzi un punto di erogazione del servizio e la sua eventuale succursale (in Regione si √® dovuto procedere ad una nuova codifica che tenesse conto di tale assenza).
+* Assenza di un codice MIUR che differenzi un punto di erogazione del servizio e la sua eventuale succursale (in Regione si Ë dovuto procedere ad una nuova codifica che tenesse conto di tale assenza).
 
 ### Portale aperTO, dati sulle [scuole](http://aperto.comune.torino.it/?q=node/129)
 
@@ -202,7 +204,7 @@ Punti di forza:
 
 Punti di debolezza:
 
- * Non √® chiaro se e ogni quanto verr√† aggiornato, al momento della consultazione, riporta la data **18 Settembre 2014**
+ * Non Ë chiaro se e ogni quanto verr‡ aggiornato, al momento della consultazione, riporta la data **18 Settembre 2014**
  * Limitato al solo territorio del comune di Torino.
  * Non dichiara la proiezione usata per le coordinate geografiche.
 
@@ -234,9 +236,9 @@ Punti di forza:
 Punti di debolezza:
 
 * Non contiene alcuna data di aggiornamento, quindi non si capisce se e quando i dati sono aggiornati
-* In considerazione di ci√≤ probabilmente non ha senso neppure usare l'elenco di comuni/province, meglio ISTAT o AgID&hellip;
+* In considerazione di ciÚ probabilmente non ha senso neppure usare l'elenco di comuni/province, meglio ISTAT o AgID&hellip;
 * gli URI sono fasulli e non indicano effettive pagine web visitabili
-* la struttura regge ma sostanzialmente vuota, il contenuto √® quasi inesistente
+* la struttura regge ma sostanzialmente vuota, il contenuto Ë quasi inesistente
 
 Comandi per scaricare la base dati. Da shell:
 
@@ -259,7 +261,7 @@ da cui si vede che oltre al meccanografico vuoto `-`, risulta ripetuto parecchie
 
 ### Dati da ISTAT?
 
-L'[*end-point* SPARQL dell'ISTAT](http://datiopen.istat.it/sparql) prevede la classe <http://datiopen.istat.it/odi/ontologia/territorio/SCH>, potremmo controllare se e quanto √® usata&hellip;
+L'[*end-point* SPARQL dell'ISTAT](http://datiopen.istat.it/sparql) prevede la classe <http://datiopen.istat.it/odi/ontologia/territorio/SCH>, potremmo controllare se e quanto Ë usata&hellip;
 
 ```SPARQL
 PREFIX ter: <http://datiopen.istat.it/odi/ontologia/territorio/>
