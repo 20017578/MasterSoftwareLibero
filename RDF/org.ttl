@@ -70,7 +70,7 @@ org:Organization a owl:Class, rdfs:Class;
 
     owl:hasKey (org:identifier) ;
     rdfs:comment """Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_"""@en;
-    rdfs:comment """Rappresenta una collezione di persone organizzate all'interno di una communità o di una qualche struttura sociale, commerciale o politica. Il gruppo condivide un obiettivo o una ragione d'essere che va oltre gli stessi membri appartenenti al gruppo e  può agire come un Agent. Le organizzazioni si possono spesso suddividere in strutture gerarchiche. Si raccomanda di usare le label per l'Organization mediante le proprietà di SKOS. In particolare, `skos:prefLabel` per il nome principale (possibilmente un nome legalmente riconosciuto)”, `skos:altLabel` come nome alternativo (denominazione commerciale, denominazione colloquiale) e `skos:notation` per indicare un codice di una lista di codici."""@it;
+    rdfs:comment """Rappresenta una collezione di persone organizzate all'interno di una communità o di una qualche struttura sociale, commerciale o politica. Il gruppo condivide un obiettivo o una ragione d'essere che va oltre gli stessi membri appartenenti al gruppo e può agire come un Agent. Le organizzazioni si possono spesso suddividere in strutture gerarchiche. Si raccomanda di usare le label per l'Organization mediante le proprietà di SKOS. In particolare, `skos:prefLabel` per il nome principale (possibilmente un nome legalmente riconosciuto)”, `skos:altLabel` come nome alternativo (denominazione commerciale, denominazione colloquiale) e `skos:notation` per indicare un codice di una lista di codici."""@it;
     rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
     .
 
@@ -195,7 +195,7 @@ org:classification a owl:ObjectProperty, rdf:Property;
     rdfs:range  skos:Concept;  
 
     rdfs:comment """Indicates a classification for this Organization within some classification scheme. Extension vocabularies may wish to specialize this property to have a range corresponding to a specific `skos:ConceptScheme`. This property is under discussion and may be revised or removed - in many cases organizations are best categorized by defining a sub-class hierarchy in an extension vocabulary."""@en;
-    rdfs:comment """Indica una classificazione per questa Organization all'interno di un qualche schema di classificazione. Alcuni vocabolari potrebbero voler specializzare questa proprietà per avere un codominio corrispondente a uno specifico `skos:ConceptScheme`. Si noti che la presenza di questa proprietà è ancora in fase di discussione e potrebbe  essere revisionata o rimossa."""@it;
+    rdfs:comment """Indica una classificazione per questa Organization all'interno di un qualche schema di classificazione. Alcuni vocabolari potrebbero voler specializzare questa proprietà per avere un codominio corrispondente a uno specifico `skos:ConceptScheme`. Si noti che la presenza di questa proprietà è ancora in fase di discussione e potrebbe essere revisionata o rimossa."""@it;
     rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
     .
 
@@ -253,7 +253,7 @@ org:hasMember a owl:ObjectProperty, rdf:Property;
     owl:equivalentProperty foaf:member;
 
     rdfs:comment """Indicates a person who is a member of the subject Organization. Inverse of `org:memberOf`, see that property for further clarification. Provided for compatibility with `foaf:member`."""@en;
-    rdfs:comment """Indica una persona che è membro della data Organization. È l'inverso di `org:memberOf` ed è fornita per  compatibilità con `foaf:member`."""@it;
+    rdfs:comment """Indica una persona che è membro della data Organization. È l'inverso di `org:memberOf` ed è fornita per compatibilità con `foaf:member`."""@it;
     rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
     .
 
@@ -287,7 +287,7 @@ org:Role a owl:Class, rdfs:Class;
     rdfs:comment """Indica il ruolo che una Person o un altro Agent può assumere in un'organizzazione. Le istanze di questa classe descrivono un ruolo astratto; per esprimere il ruolo che una precisa persona ricopre in un'organizzazione si usi un'istanza di `org:Membership`. È comune organizzare i ruoli in una qualche struttura tassonomica e quindi si raccomanda SKOS per questo. Altre proprietà descrittive per il Role, come salario, possono essere aggiunte mediante l'uso di altri vocabolari."""@it;
     rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
     .
-    
+
 
 org:Membership a owl:Class, rdfs:Class;
 
@@ -353,7 +353,7 @@ org:hasMembership a owl:ObjectProperty, rdf:Property;
     rdfs:range  org:Membership;
 
     rdfs:comment """Indicates a membership relationship that the Agent plays. Inverse of `org:member`."""@en;
-    rdfs:comment """Indica una relazione di appartenenza che coinvolge un Agent. È l'inverso di `org:member`."""@it;    
+    rdfs:comment """Indica una relazione di appartenenza che coinvolge un Agent. È l'inverso di `org:member`."""@it;
 
     rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
     .
@@ -366,7 +366,7 @@ org:member        owl:inverseOf org:hasMembership .
 org:memberDuring a owl:ObjectProperty, rdf:Property;
 
     rdfs:label "member During"@en;
-    rdfs:label "membro durante"@it;  
+    rdfs:label "membro durante"@it;
 
     rdfs:domain org:Membership;
 
@@ -609,7 +609,7 @@ org:originalOrganization a owl:ObjectProperty, rdf:Property;
     rdfs:subPropertyOf prov:used;
 
     rdfs:comment """Indicates one or more organizations that existed before the change event. Depending on the event they may or may not have continued to exist after the event. Inverse of `org:changedBy`."""@en;
-    rdfs:comment """Indica una o più organizzazioni pregresse rispetto a un evento di cambiamento. A seconda dell'evento, queste organizzazioni potrebbero essere esistenti dopo l'evento o  aver cessato la loro esistenza. È l'inverso di `org:changedBy`."""@it;
+    rdfs:comment """Indica una o più organizzazioni pregresse rispetto a un evento di cambiamento. A seconda dell'evento, queste organizzazioni potrebbero essere esistenti dopo l'evento o aver cessato la loro esistenza. È l'inverso di `org:changedBy`."""@it;
     rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
     .
 
@@ -644,7 +644,7 @@ org:resultedFrom a owl:ObjectProperty, rdf:Property;
     rdfs:subPropertyOf prov:wasGeneratedBy;
 
     rdfs:comment """Indicates an event which resulted in this organization. Inverse of `org:resultingOrganization`."""@en;
-    rdfs:comment """Indica l'evento che ha permesso all'organizzazione di instaurarsi. È l'inverso di `org:resultingOrganization`."""@it;   
+    rdfs:comment """Indica l'evento che ha permesso all'organizzazione di instaurarsi. È l'inverso di `org:resultingOrganization`."""@it;
     rdfs:isDefinedBy <http://www.w3.org/ns/org> ; 
     .
 
