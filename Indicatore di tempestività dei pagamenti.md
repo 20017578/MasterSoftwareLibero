@@ -10,5 +10,6 @@ SELECT ?nome, ?x, ?h, ?add where {
 }
 
 Informazioni da inserire nei LOD:
+vedere [dati.camera](http://dati.camera.it/it/download/atti-e-votazioni.html) per uniformare la descrizione dei riferimenti normativi
 <dc:publisher>G.U. n. 145 del 25 Giugno 2003</dc:publisher>
 <ocd:lex rdf:resource="http://www.normattiva.it..."/>
