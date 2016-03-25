@@ -1,5 +1,6 @@
 Estrae tutte le amministrazioni presenti sul grafo SPCData, nell'esempio filtra per le amministrazioni che contengono la stringa "Albero"
 
+```SPARQL
 SELECT ?nome, ?x, ?h, ?add where {
   ?c a <http://spcdata.digitpa.gov.it/Amministrazione>.
   ?c <http://www.w3.org/2000/01/rdf-schema#label> ?nome. 
@@ -8,6 +9,7 @@ SELECT ?nome, ?x, ?h, ?add where {
   ?c <http://www.w3.org/ns/locn#address> ?add.
   FILTER ( regex(?nome, "Albero") ) 
 }
+```
 
 Informazioni da inserire nei LOD:
 vedere [dati.camera](http://dati.camera.it/it/download/atti-e-votazioni.html) per uniformare la descrizione dei riferimenti normativi
