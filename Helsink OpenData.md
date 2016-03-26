@@ -1,6 +1,6 @@
 Relativamente all'articolo apparso su Internazionale circa gli **OpenData ad Helsinki**, provo a buttare giù alcune domande che potremmo rivolgere:
 
-1. Sia a livello locale che a livello nazionale, sono stati siglati delgi accordi, sono stati firmati **atti ufficiali**, che promuovono gli OpenData o che ne "obbligano" la condivisione e la pubblicazione ?
+1. Sia a livello locale che a livello nazionale, sono stati siglati degli accordi, sono stati firmati **atti ufficiali**, che promuovono gli OpenData o che ne "obbligano" la condivisione e la pubblicazione ?
 2. Il progetto **Helsinki region infoshare** (Hri), nasce dalla spinta delle Amministrazioni o da chi altri ?
 3. Hri ha ottenuto **fondi** di qualche tipo ? Nel caso in quale percentuale questi coprono i costi ?
 4. Sull'articolo si dice che il costo del progetto è di 60.000 Euro l'anno, questa cifra copre anche i costi del personale ? Quali sono le altre **macro-voci di spesa** ?
