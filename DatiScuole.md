@@ -272,3 +272,7 @@ WHERE {
 ```
 
 restituisce [poche cose](http://datiopen.istat.it/sparql/oracle?query=PREFIX+ORACLE_SEM_FS_NS%3A+%3Chttp%3A%2F%2Foracle.com%2Fsemtech%23timeout%3D600%2Callow_dup%3Dt%2Cstrict_default%3Df%3EPREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+ter%3A+%3Chttp%3A%2F%2Fdatiopen.istat.it%2Fodi%2Fontologia%2Fterritorio%2F%3E%0APREFIX+cen%3A+%3Chttp%3A%2F%2Fdatiopen.istat.it%2Fodi%2Fontologia%2Fcensimento%2F%3E%0APREFIX+qb%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fcube%23%3E%0ASELECT+%3Fs+%3Fp%0AWHERE+{%0A%3Fs+%3Fp+ter%3ASCH%0A}+LIMIT+100%0A&stylesheet=/sparql/xml-to-html.xsl)
+
+### Altri dati in giro&hellip;
+
+Forse vale la pena guardare cose pubblicate da altre amministrazioni grandi o piccole e raccolte da [dati.gov.it](http://www.dati.gov.it/dataset?f[0]=field_themes%3A2&f[1]=field_resources%253Afield_format%3A56)

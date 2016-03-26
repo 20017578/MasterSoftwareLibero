@@ -1,0 +1,115 @@
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/> .
+@prefix dct:        <http://purl.org/dc/terms/> .
+@prefix gr:         <http://purl.org/goodrelations/v1#> .
+@prefix owlTime:    <http://www.w3.org/2006/time#> .
+@prefix org:        <http://www.w3.org/ns/org#> .
+@prefix vcard:      <http://www.w3.org/2006/vcard/ns#> .
+@prefix prov:       <http://www.w3.org/ns/prov#> .
+
+@prefix rponto:     <http://id-dati.piemonte.it/ontology/v1/rponto.html#>
+@prefix miur:       <http://iri.fitizio.org/> .
+@prefix miurO:      <http://iri.fitizio.org/ontologia#> .
+
+# -- Meta data -----------------------------------------------------------
+
+miur:ontologia
+  a owl:Ontology;
+  owl:versionInfo "0.1";
+
+  rdfs:label "Ontologia delle istituzioni scolastiche italiane"@it;
+
+  rdfs:comment "Vocabolario per descrivere le diverse articolazioni dele istituzioni scolstiche italiane"@it;
+
+  dct:created "2016-03-25"^^xsd:date;
+
+  dct:title "Ontologia delle istituzioni scolastiche italiane"@it;
+
+  dct:contributor [foaf:name "membriGruppoPW5"; foaf:homepage <https://20017578.github.io/MasterSoftwareLibero/>]; #Non ho controllato se foaf:name possa essere un nome collettivo...
+
+# dct:license <???> ;
+# rdfs:seeAlso <???> ;
+  .
+
+# -- Struttura orgaizzativa/amministrativa ------------------------------
+
+miurO:Scuola a owl:Class, rdfs:Class;
+  rdfs:subClassOf org:Organization;
+  owl:equivalentClass rponto:scuola;
+  rdfs:label "Scuola"@it;
+
+  owl:hasKey (miurO:meccanografico) ;
+
+  rdfs:comment "Rappresenta una scuola in senso generale di organizzazione che fornisce servizi di istruzione scolastica o pre-scolastica, ma non universitaria, catalogata dal MIUR."@it;
+  rdfs:isDefinedBy miur:ontologia ;
+.
+
+miurO:Autonomia a owl:Class, rdfs:Class;
+  rdfs:subClassOf org:FormalOrganization, miur:Scuola;
+# owl:equivalentClass 
+  rdfs:label "Autonomia scolastica"@it;
+
+  rdfs:comment "Rappresenta una istituzione scolastica autonoma, sede di dirigenza."@it;
+  rdfs:isDefinedBy miur:ontologia ;
+.
+
+miurO:PuntoErogazioneServizio
+  rdfs:subClassOf org:OrganizationalUnit, miur:Scuola;
+# owl:equivalentClass 
+  rdfs:label "Punto di erogazione del servizio"@it;
+
+  rdfs:comment "Rappresenta un plesso, una scuola, una tipologia di istruzione o altra suddivisione che ha una propria identificazione all'interno della struttura scolastica."@it;
+  rdfs:isDefinedBy miur:ontologia ;
+.
+
+miurO:haIstitutoPrincipale a owl:ObjectProperty, rdf:Property;
+  rdfs:subPropertyOf org:subOrganizationOf;
+  rdfs:label "ha come istituto principale"@it;
+
+  rdfs:domain miurO:Scuola; 
+  rdfs:range  miurO:Scuola;
+  # Verrebbe da dire domain PuntoErogazioneServizio, range Autonomia,
+  # ma ci sono alcuni casi intermedi (onnicomprensivi, ad esempio...)
+  # e conviene restar generici.
+  # Se si decidesse di restringere, converrebbe definire come subPropertyOf
+  # org:unitOf (e l'inverso org:hasUnit)
+
+  rdfs:comment "Indica l'istituto principale (solitamente sede di dirigenza/segreteria) da cui la scuola dipende. Ha come inverso `miurO:istitutoPrincipaleDi`."@it;
+  owl:inverseOf miurO:istitutoPrincipaleDi ;
+  rdfs:isDefinedBy miur:ontologia ;
+.
+
+miurO:istitutoPrincipaleDi a owl:ObjectProperty, rdf:Property;
+  rdfs:subPropertyOf org:hasSubOrganization;
+  rdfs:label "costituisce l'istituto principale di"@it;
+
+  rdfs:domain miurO:Scuola; 
+  rdfs:range  miurO:Scuola;
+  # Verrebbe da dire domain Autonomia, range PuntoErogazioneServizio,
+  # ma ci sono alcuni casi intermedi (onnicomprensivi, ad esempio...)
+  # e conviene restar generici.
+  # Se si decidesse di restringere, converrebbe definire come subPropertyOf
+  # org:hasUnit (e l'inverso org:unitOf)
+
+  rdfs:comment "Indica che l'istituto principale possiede dei sotto-codici. Ha come inverso `miurO:haIstitutoPrincipale`."@it;
+  owl:inverseOf miurO:haIstitutoPrincipale ;
+  rdfs:isDefinedBy miur:ontologia ;
+.
+
+miurO:meccanografico a owl:DatatypeProperty, rdf:Property;
+  rdfs:subPropertyOf org:identifier;
+  rdfs:label "codice meccanografico"@it;
+  owl:equivalentProperty rponto:codMIURscuola;
+
+  rdfs:domain miurO:Scuola;
+  rdfs:range xsd:string; # serve essere maggiormente indicativi/restrittivi?
+# owl:cardinality 1;
+
+  rdfs:comment "Codice univoco assegnato ad ogni scuola tramite il sistema informatico del MIUR, costituito da esattmente 10 caratteri alfanumerici. Si tratta di un codice parzialmente parlante: le prime due lettere corrispondono alla sigla della provincia, le successive due alla tipologia di istituto (AA infanzia, 1A paritaria, EE-1E primaria, MM-1M primo grado, ...)."@it;
+  rdfs:isDefinedBy miur:ontologia ;
+.
+
