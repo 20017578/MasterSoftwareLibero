@@ -11,7 +11,7 @@
 @prefix vcard:      <http://www.w3.org/2006/vcard/ns#> .
 @prefix prov:       <http://www.w3.org/ns/prov#> .
 
-@prefix rponto:     <http://id-dati.piemonte.it/ontology/v1/rponto.html#>
+@prefix rponto:     <http://id-dati.piemonte.it/ontology/v1/rponto.html#> .
 @prefix miur:       <http://iri.fitizio.org/> .
 @prefix miurO:      <http://iri.fitizio.org/ontologia#> .
 
