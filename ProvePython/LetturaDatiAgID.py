@@ -91,8 +91,11 @@ pref_amministrazione = 'http://spcdata.digitpa.gov.it/Amministrazione/'
 contoScuole = 0
 for riga in letturaRighe:
     if riga [11] == 'Istituti di Istruzione Statale di Ogni Ordine e Grado':
-        grafo_AgID.set ( (rdflib.URIRef (pref_amministrazione + riga[0]), IRI_orgClassif, URI_scuola) )
-        contoScuole += 1
+        if not grafo_AgID.value (rdflib.URIRef (pref_amministrazione + riga[0]),  IRI_orgClassif):
+            grafo_AgID.set ( (rdflib.URIRef (pref_amministrazione + riga[0]), IRI_orgClassif, URI_scuola) )
+            contoScuole += 1
+        else:
+            print 'Questa scuola ha una categoria associata, non aggiungo altro'
 
 #
 # Qualche manipolazione sul grafo AgID
