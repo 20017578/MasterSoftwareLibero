@@ -96,20 +96,20 @@ for riga in letturaRighe:
         else:
             print 'Questa scuola ha una categoria associata, non aggiungo altro'
 
-comuni = set (grafo_AgID.subjects( predicate=rdflib.RDF.type, object=rdflib.URIRef ('http://spcdata.digitpa.gov.it/Comune')))
-scuole = set (grafo_AgID.subjects( predicate=IRI_orgClassif, object=IRI_scuola))
+comuni = set (grafo_AgID.subjects (predicate=rdflib.RDF.type, object=rdflib.URIRef ('http://spcdata.digitpa.gov.it/Comune')))
+scuole = set (grafo_AgID.subjects (predicate=IRI_orgClassif, object=IRI_scuola))
 
 grafo_AgID_essenziale = rdflib.Graph ()
 daAggiungere = comuni | scuole
-aggiunti = set()
+aggiunti = set ()
 while len (daAggiungere) != 0:
     dato = daAggiungere.pop ()
     aggiunti.add (dato)
-    for s, p, o in grafo_AgID.triples ( (dato, None, None) ):
-        grafo_AgID_essenziale.add ( (s, p, o) )
+    for p, o in grafo_AgID.predicate_objects (dato):
+        grafo_AgID_essenziale.add ( (dato, p, o) )
         if p not in aggiunti:
             daAggiungere.add (p)
-        if o not in aggiunti:
+        if type (o) == type (p) and o not in aggiunti:
             daAggiungere.add (o)
 
 aggiunti.clear ()
