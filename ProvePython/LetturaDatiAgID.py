@@ -74,7 +74,6 @@ except:
         except:
             print 'Impossibile scaricare i dati da AgID, termino.'
             sys.exit (1)
-    # TODO: Forse scrivere il file su disco ed aprirlo?
     f = open (nomeFileDati, 'w')
     f.write (datiDaRete.text)
     print 'Ho scritto i dati sul file', nomeFileDati
@@ -97,9 +96,26 @@ for riga in letturaRighe:
         else:
             print 'Questa scuola ha una categoria associata, non aggiungo altro'
 
+comuni = set (grafo_AgID.subjects( predicate=rdflib.RDF.type, object=rdflib.URIRef ('http://spcdata.digitpa.gov.it/Comune')))
+scuole = set (grafo_AgID.subjects( predicate=IRI_orgClassif, object=IRI_scuola))
+
+grafo_AgID_essenziale = rdflib.Graph ()
+daAggiungere = comuni | scuole
+aggiunti = set()
+while len (daAggiungere) != 0:
+    dato = daAggiungere.pop ()
+    aggiunti.add (dato)
+    for s, p, o in grafo_AgID.triples ( (dato, None, None) ):
+        grafo_AgID_essenziale.add ( (s, p, o) )
+        if p not in aggiunti:
+            daAggiungere.add (p)
+        if o not in aggiunti:
+            daAggiungere.add (o)
+
+aggiunti.clear ()
+
 #
 # Qualche manipolazione sul grafo AgID
-# TODO: Oltre a visualizzare qualche statistica, forse converrebbe creare un sotto-grafo con le sole scuole, per gli usi successivi
 #
 
 IRI_pec = rdflib.URIRef ('http://spcdata.digitpa.gov.it/PEC')
