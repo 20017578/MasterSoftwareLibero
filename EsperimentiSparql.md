@@ -103,18 +103,19 @@ SELECT ?nome ?lat ?lon {
 Un tentativo di estrarre "aree":
 
 ```SPARQL
-PREFIX lgdr:<http://linkedgeodata.org/triplify/>
+PREFIX geov:<http://geovocab.org/geometry#>
 PREFIX lgdo:<http://linkedgeodata.org/ontology/>
 PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 SELECT distinct ?nodo ?nome ?WKT {
  ?nodo a lgdo:School; rdfs:label ?nome;
-   <http://geovocab.org/geometry#geometry> [
+   geov:geometry [
      <http://www.opengis.net/ont/geosparql#asWKT> ?WKT;
-     lgdo:posSeq [ [] ?n]].
- ?p <http://geovocab.org/geometry#geometry> ?n;
-    geo:lat ?lat;
-    geo:long ?lon.
+     lgdo:posSeq [ [] [ ^geov:geometry [
+       geo:lat ?lat;
+       geo:long ?lon
+     ]]]
+   ].
  FILTER (?lat > 44 AND ?lat < 46.5 AND ?lon > 6.6 AND ?lon < 9.3)
 }
 ```
