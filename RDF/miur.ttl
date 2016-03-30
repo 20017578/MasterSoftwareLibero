@@ -29,7 +29,7 @@ miur:ontologia
 
   dct:title "Ontologia delle istituzioni scolastiche italiane"@it;
 
-  dct:contributor [foaf:name "membriGruppoPW5"; foaf:homepage <https://20017578.github.io/MasterSoftwareLibero/>]; #Non ho controllato se foaf:name possa essere un nome collettivo...
+  dct:contributor [foaf:name "membriGruppoPW5"@it; foaf:homepage <https://20017578.github.io/MasterSoftwareLibero/>]; #Non ho controllato se foaf:name possa essere un nome collettivo...
 
 # dct:license <???> ;
 # rdfs:seeAlso <???> ;
@@ -90,10 +90,7 @@ miurO:istitutoPrincipaleDi a owl:ObjectProperty, rdf:Property;
   rdfs:domain miurO:Scuola; 
   rdfs:range  miurO:Scuola;
   # Verrebbe da dire domain Autonomia, range PuntoErogazioneServizio,
-  # ma ci sono alcuni casi intermedi (onnicomprensivi, ad esempio...)
-  # e conviene restar generici.
-  # Se si decidesse di restringere, converrebbe definire come subPropertyOf
-  # org:hasUnit (e l'inverso org:unitOf)
+  # ma vedi commento a haIstitutoPrincipale
 
   rdfs:comment "Indica che l'istituto principale possiede dei sotto-codici. Ha come inverso `miurO:haIstitutoPrincipale`."@it;
   owl:inverseOf miurO:haIstitutoPrincipale ;
