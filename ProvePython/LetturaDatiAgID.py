@@ -74,7 +74,6 @@ except:
         except:
             print 'Impossibile scaricare i dati da AgID, termino.'
             sys.exit (1)
-    # TODO: Forse scrivere il file su disco ed aprirlo?
     f = open (nomeFileDati, 'w')
     f.write (datiDaRete.text)
     print 'Ho scritto i dati sul file', nomeFileDati
@@ -84,42 +83,62 @@ except:
 
 # Legge dal CSV quali sono le scuole ed aggiunge la tripla corretta al grafo
 spcdata_catAmm = rdflib.Namespace('http://spcdata.digitpa.gov.it/Categoriaamministrazione/')
-URI_scuola = spcdata_catAmm.L33
+IRI_scuola = spcdata_catAmm.L33
 IRI_orgClassif = rdflib.URIRef ('http://www.w3.org/ns/org#classification')
 pref_amministrazione = 'http://spcdata.digitpa.gov.it/Amministrazione/'
 
 contoScuole = 0
 for riga in letturaRighe:
     if riga [11] == 'Istituti di Istruzione Statale di Ogni Ordine e Grado':
-        grafo_AgID.set ( (rdflib.URIRef (pref_amministrazione + riga[0]), IRI_orgClassif, URI_scuola) )
-        contoScuole += 1
+        if not grafo_AgID.value (rdflib.URIRef (pref_amministrazione + riga[0]),  IRI_orgClassif):
+            grafo_AgID.set ( (rdflib.URIRef (pref_amministrazione + riga[0]), IRI_orgClassif, IRI_scuola) )
+            contoScuole += 1
+        else:
+            print 'Questa scuola ha una categoria associata, non aggiungo altro'
+
+comuni = set (grafo_AgID.subjects (predicate=rdflib.RDF.type, object=rdflib.URIRef ('http://spcdata.digitpa.gov.it/Comune')))
+scuole = set (grafo_AgID.subjects (predicate=IRI_orgClassif, object=IRI_scuola))
+
+grafo_AgID_essenziale = rdflib.Graph ()
+daAggiungere = comuni | scuole
+aggiunti = set ()
+while len (daAggiungere) != 0:
+    dato = daAggiungere.pop ()
+    aggiunti.add (dato)
+    for p, o in grafo_AgID.predicate_objects (dato):
+        grafo_AgID_essenziale.add ( (dato, p, o) )
+        if p not in aggiunti:
+            daAggiungere.add (p)
+        if type (o) == type (p) and o not in aggiunti:
+            daAggiungere.add (o)
+
+aggiunti.clear ()
 
 #
 # Qualche manipolazione sul grafo AgID
-# TODO: Oltre a visualizzare qualche statistica, forse converrebbe creare un sotto-grafo con le sole scuole, per gli usi successivi
 #
 
-URI_pec = rdflib.URIRef ('http://spcdata.digitpa.gov.it/PEC')
-URI_mail = rdflib.namespace.FOAF.mbox
-URI_locatedIn = rdflib.URIRef ('http://www.geonames.org/ontology#locatedIn')
-URI_label = rdflib.URIRef ('http://www.w3.org/2000/01/rdf-schema#label')
+IRI_pec = rdflib.URIRef ('http://spcdata.digitpa.gov.it/PEC')
+IRI_mail = rdflib.namespace.FOAF.mbox
+IRI_locatedIn = rdflib.URIRef ('http://www.geonames.org/ontology#locatedIn')
+IRI_label = rdflib.URIRef ('http://www.w3.org/2000/01/rdf-schema#label')
 
 listaMeccanograficiAgID = []
 listaScuolePerComune = {}
 contoAgID = 0
-for amministrazione in grafo_AgID.subjects (predicate=IRI_orgClassif, object=URI_scuola):
+for amministrazione in grafo_AgID.subjects (predicate=IRI_orgClassif, object=IRI_scuola):
     meccanograficoScuola = ''
     contoAgID += 1
     if contoAgID % 1000 == 0:
         print 'Analizzate', contoAgID, 'amministrazioni, trovate', len (listaMeccanograficiAgID), 'possibili scuole'
     # cerca se la PEC ha dominio istruzione.it
-    for pec in grafo_AgID.objects (amministrazione, URI_pec):
+    for pec in grafo_AgID.objects (amministrazione, IRI_pec):
         if 'ISTRUZIONE.IT' in str (pec).upper ():
             meccanograficoScuola = str (pec).split ('@')[0]
     if len(meccanograficoScuola) != 10:  # Cerca ancora solo se non trovata prima
         if meccanograficoScuola != '':
             print "%s sembra una scuola, ma la pec %s non sembra indicare un meccanografico, cerco la e-mail"%(str(amministrazione), meccanograficoScuola)
-        for mail in grafo_AgID.objects (amministrazione, URI_mail):
+        for mail in grafo_AgID.objects (amministrazione, IRI_mail):
             if 'ISTRUZIONE.IT' in str (mail).upper ():
                 meccanograficoScuola = str (mail).split ('@')[0]
     if meccanograficoScuola != '':
@@ -127,7 +146,7 @@ for amministrazione in grafo_AgID.subjects (predicate=IRI_orgClassif, object=URI
             print "%s sembra una scuola, ma il codice %s non sembra un meccanografico"%(str(amministrazione), meccanograficoScuola)
         else:
             codiceCatastaleComune = '';
-            for Comune in grafo_AgID.objects(amministrazione,URI_locatedIn):
+            for Comune in grafo_AgID.objects(amministrazione,IRI_locatedIn):
                 codiceCatastaleComune = str(Comune).split('/')[-1];
                 if codiceCatastaleComune in listaScuolePerComune:
                     listaScuolePerComune[codiceCatastaleComune].append(meccanograficoScuola.upper ())
@@ -137,7 +156,7 @@ for amministrazione in grafo_AgID.subjects (predicate=IRI_orgClassif, object=URI
                 print "Non trovato il comune, stampo quel che so su questa amministrazione"
                 for p,o in grafo_AgID.predicate_objects(amministrazione):
                     print str(p), str(o)
-                    for lab in grafo_AgID.objects(o,URI_label):
+                    for lab in grafo_AgID.objects(o,IRI_label):
                         print ':::: label', str(lab)
         listaMeccanograficiAgID.append (meccanograficoScuola.upper ())
         unaScuola = amministrazione

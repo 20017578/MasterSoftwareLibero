@@ -20,6 +20,17 @@ select distinct ?iriComune ?labelComune where {
 } LIMIT 100
 ```
 
+oppure
+
+```SPARQL
+PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?iriComune ?labelComune where {
+ ?iriComune gn:locatedIn [ gn:locatedIn [ a <http://spcdata.digitpa.gov.it/Regione>; rdfs:label 'Piemonte']] ;
+    rdfs:label ?labelComune.
+} LIMIT 100
+```
+
 La lista delle categorie di amministrazione
 
 ```SPARQL
@@ -41,18 +52,33 @@ La richiesta seguente all'[*end-point* SPARQL dell'ISTAT](http://datiopen.istat.
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ter: <http://datiopen.istat.it/odi/ontologia/territorio/>
 PREFIX cen: <http://datiopen.istat.it/odi/ontologia/censimento/>
-SELECT ?c ?Comune ?Popolazione
+SELECT *
 WHERE
 {
- ?c rdf:type ter:COM .
- ?c ter:haNome ?Comune .
- ?c ter:haIndicatoreCensimento ?o .
- ?o cen:haClassiEta16Categorie cen:ClasseEtaTotale16Cat .
- ?o cen:haStatoCivile cen:StatoCivile5CatTotale .
- ?o cen:haSesso <http://purl.org/linked-data/sdmx/2009/code#sex-T> .
- ?o cen:haPopolazioneResidente ?Popolazione .
+ ?c rdf:type ter:COM ;
+    ter:haNome ?Comune ;
+    ter:haIndicatoreCensimento [
+    cen:haClassiEta16Categorie cen:ClasseEtaTotale16Cat ;
+    cen:haStatoCivile cen:StatoCivile5CatTotale ;
+    cen:haSesso <http://purl.org/linked-data/sdmx/2009/code#sex-T> ;
+    cen:haPopolazioneResidente ?Popolazione ].
  FILTER (?Popolazione > 700000)
 } ORDER BY (?Popolazione)
+```
+
+Lista dei comuni, con codici ISTAT e catastale.
+
+```SPARQL
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ter: <http://datiopen.istat.it/odi/ontologia/territorio/>
+SELECT  *
+WHERE {
+?iri rdf:type ter:COM;
+     ter:haCodCatastale ?catastale;
+     ter:haCodIstat ?istat;
+     rdfs:label ?nome.
+}
 ```
 
 LinkedGeoData
@@ -77,20 +103,19 @@ SELECT ?nome ?lat ?lon {
 Un tentativo di estrarre "aree":
 
 ```SPARQL
-PREFIX lgdr:<http://linkedgeodata.org/triplify/>
+PREFIX geov:<http://geovocab.org/geometry#>
 PREFIX lgdo:<http://linkedgeodata.org/ontology/>
 PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 SELECT distinct ?nodo ?nome ?WKT {
- ?nodo a lgdo:School;
-    <http://geovocab.org/geometry#geometry> ?o;
-  rdfs:label ?nome.
- ?o <http://www.opengis.net/ont/geosparql#asWKT> ?WKT;
-    <http://linkedgeodata.org/ontology/posSeq> ?s.
- ?s [] ?n.
- ?p <http://geovocab.org/geometry#geometry> ?n;
-    geo:lat ?lat;
-    geo:long ?lon.
+ ?nodo a lgdo:School; rdfs:label ?nome;
+   geov:geometry [
+     <http://www.opengis.net/ont/geosparql#asWKT> ?WKT;
+     lgdo:posSeq [ [] [ ^geov:geometry [
+       geo:lat ?lat;
+       geo:long ?lon
+     ]]]
+   ].
  FILTER (?lat > 44 AND ?lat < 46.5 AND ?lon > 6.6 AND ?lon < 9.3)
 }
 ```
