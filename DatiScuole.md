@@ -150,6 +150,7 @@ TIPO ISTITUZIONE|da creare nuova (usando la stessa delle statali, ma meno valori
 LATITUDINE|<http://www.w3.org/2003/01/geo/wgs84_pos#lat>
 LONGITUDINE|<http://www.w3.org/2003/01/geo/wgs84_pos#long>
 
+Su tutte le scuole c'è un CSV coi [dati su alunni e classi](http://www.istruzione.it/scuolainchiaro_dati/1-Anagrafe_Nazionale_ALUNNI_CLASSI.csv). Questi sono dati *multidimensionali*, vedere se può servire l'ontologia per dati statistici https://github.com/UKGovLD/publishing-statistical-data/blob/master/specs/src/main/vocab/cube.ttl e gli intervalli di tempo come http://reference.data.gov.uk/doc/gregorian-interval/2015-09-01T00:00:00/P1Y .
 
 ### I dati di [geolocalizzazione](http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione/) della Regione Piemonte
 Contiene dati geografici dettagliati sugli edifici scolastici.
