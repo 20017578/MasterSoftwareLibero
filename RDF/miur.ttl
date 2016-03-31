@@ -2,14 +2,14 @@
 @prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:        <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:       <http://www.w3.org/2004/02/skos/core#> .
+#@prefix skos:       <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf:       <http://xmlns.com/foaf/0.1/> .
 @prefix dct:        <http://purl.org/dc/terms/> .
-@prefix gr:         <http://purl.org/goodrelations/v1#> .
-@prefix owlTime:    <http://www.w3.org/2006/time#> .
+#@prefix gr:         <http://purl.org/goodrelations/v1#> .
+#@prefix owlTime:    <http://www.w3.org/2006/time#> .
 @prefix org:        <http://www.w3.org/ns/org#> .
-@prefix vcard:      <http://www.w3.org/2006/vcard/ns#> .
-@prefix prov:       <http://www.w3.org/ns/prov#> .
+#@prefix vcard:      <http://www.w3.org/2006/vcard/ns#> .
+#@prefix prov:       <http://www.w3.org/ns/prov#> .
 
 @prefix rponto:     <http://id-dati.piemonte.it/ontology/v1/rponto.html#> .
 @prefix miur:       <http://iri.fitizio.org/> .
@@ -110,3 +110,39 @@ miurO:meccanografico a owl:DatatypeProperty, rdf:Property;
   rdfs:isDefinedBy miur:ontologia ;
 .
 
+# -- Fine dell'ontologia ------------------------------
+
+# -- Come esempio proviamo a tradurre la prima riga "Torinese" del CSV scaricato da
+# -- http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv
+
+# Altri prefissi che non servono all'ontologia, si possono mettere cammin facendo?
+@prefix locn:          <http://www.w3.org/ns/locn#> .
+@prefix geonames:      <http://www.geonames.org/ontology#> .
+@prefix spcdataComune: <http://spcdata.digitpa.gov.it/Comune/> .
+@prefix geo:           <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+# La riga da tradurre:
+# Piemonte;Torino;TOAA00401L;TO ALLIEVO SPINA 3;TOEE00400R;CD GIUSEPPE ALLIEVO;V.ORVIETO  1 INTERNO 5-7-9;10147;TORINO;;SCUOLA INFANZIA;45,091540;7,670460
+
+miur:sc_toaa00401l a miurO:PuntoErogazioneServizio ;
+  rdfs:label "TO ALLIEVO SPINA 3"@it ;
+  miurO:haIstitutoPrincipale miur:sc_toee00400r ;
+  locn:address miur:ind_sc_toaa00401l ; #
+  geonames:locatedIn spcdataComune:L219 ; # Corrisponde a TORINO su AgID, usare ISTAT?
+  geonames:locatedIn <http://spcdata.digitpa.gov.it/Provincia/TO> ; # Ridondante ?
+  geonames:locatedIn <http://spcdata.digitpa.gov.it/Regione/1> ;  # Ridondante ?!?
+  miurO:tipoIstituzione miur:tipo_ScuolaInfanzia ; # NON ANCORA DEFINITE! NÉ PRIPRIETÀ NÉ OGGETTO...
+# miurO:caratteristicaScuola  ; # NON ANCORA DEFINITO! Qui assente...
+  geo:lat "45.091540"^^xsd:float ; # Nelle coordinate stare attenti alla codifica di "punto/virgola" decimale.
+  geo:long "7.670460"^^xsd:float . # O vale la pena metter le coordinare in un locn:Geometry ?
+
+miur:sc_toee00400r a miurO:Autonomia ;
+  rdfs:label "5 CIRCOLO ALESSANDRIA"@it ;
+  miurO:istitutoPrincipaleDi miur:sc_toaa00401l . # Ridondante a dire il vero...
+
+miur:ind_sc_toaa00401l a locn:Address ; # Le prime tre righe (CAP incluso) sul calco dei dati AgID
+  locn:fullAddress "V.ORVIETO  1 INTERNO 5-7-9" ;
+  locn:postCode "10147" ;
+  locn:thoroughfare "Via Orvieto" ; # In maniera non automatizzata, si potrebbe entrare nel dettaglio...
+  locn:locatorDesignator "1 Interni 5-7-9" ;
+  locn:postName "Torino" . # Automatizzabile, ma ridondante...
