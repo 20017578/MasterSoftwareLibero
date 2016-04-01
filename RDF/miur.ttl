@@ -57,7 +57,7 @@ miurO:Autonomia a owl:Class, rdfs:Class;
   rdfs:isDefinedBy miur:ontologia ;
 .
 
-miurO:PuntoErogazioneServizio
+miurO:PuntoErogazioneServizio a owl:Class, rdfs:Class;
   rdfs:subClassOf org:OrganizationalUnit, miur:Scuola;
 # owl:equivalentClass 
   rdfs:label "Punto di erogazione del servizio"@it;
@@ -137,7 +137,7 @@ miur:sc_toaa00401l a miurO:PuntoErogazioneServizio ;
   geo:long "7.670460"^^xsd:float . # O vale la pena metter le coordinare in un locn:Geometry ?
 
 miur:sc_toee00400r a miurO:Autonomia ;
-  rdfs:label "5 CIRCOLO ALESSANDRIA"@it ;
+  rdfs:label "CD GIUSEPPE ALLIEVO"@it ;
   miurO:istitutoPrincipaleDi miur:sc_toaa00401l . # Ridondante a dire il vero...
 
 miur:ind_sc_toaa00401l a locn:Address ; # Le prime tre righe (CAP incluso) sul calco dei dati AgID
