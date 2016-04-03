@@ -13,7 +13,7 @@ Relativamente all'articolo apparso su Internazionale circa gli **OpenData ad Hel
 10. **Prima di Hri** la città di Helsinki e le città limitrofe avevano già portato avanti un lavoro di condivisione e diffusione dei propri dati ?
 11. Avete trovato **resistenze** da parte di alcuni settori a concedervi i loro dati ?
 12. Quando sono emerse **inchieste** da parte di quotidiani, derivate dall'analisi dei dati sui servizi pagati dalla città, qualche responsabile o politico ha sollevato obiezioni o perplessità sulla diffusione dei dati ?
- 
+13. Quali dati vengono richiesti maggiormente e con quali venne iniziato il progetto? 
 
 Dal sito: http://www.hri.fi/en
 
