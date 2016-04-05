@@ -1,0 +1,13 @@
+<http://spcdata.digitpa.gov.it/Amministrazione/c_l219> ns:IndiceTempestivita ns:indice.
+
+ns:indiceTempestività ns:rifNormativo "Dlgs ...." .
+
+ns:periodo1 x?x:haDate "date ...." .
+ns:periodo2 x?x:haDate "date ...." .
+[..]
+ns:periodoN x?x:haDate "date ...." .
+
+ns:indice ns:periodo1 "32" .
+ns:indice ns:periodo2 "28" .
+[..]
+ns:indice ns:periodoN "15" .
