@@ -1,6 +1,16 @@
 # Scarica tutti i file che ci servono
 
+import sys
 import urllib
+import os.path
+
+sovrascrivi = False
+
+if len(sys.argv) == 2 and sys.argv[1] == "-o":
+        sovrascrivi = True
+elif len(sys.argv) > 1:
+        sys.stderr.write("Parametro non riconosciuto.\n")
+        sys.exit(1)
 
 proxy = None
 # proxy = {'http': 'http://proxy.regione.piemonte.it:80'}
@@ -18,6 +28,8 @@ listaFile = {
 }
 
 for nome in listaFile:
-	print 'Scarico', nome, 'da', listaFile[nome]
-	accessoWeb.retrieve (listaFile[nome] , nome )
-
+        if not os.path.isfile (nome) or sovrascrivi:
+	        print 'Scarico', nome, 'da', listaFile[nome]
+	        accessoWeb.retrieve (listaFile[nome] , nome )
+        else:
+	        print nome, 'esiste, non lo sovrascrivo'
