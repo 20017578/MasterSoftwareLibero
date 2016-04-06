@@ -25,6 +25,7 @@ listaFile = {
         'DatiMIUR_alunniClassi.csv' : 'http://www.istruzione.it/scuolainchiaro_dati/1-Anagrafe_Nazionale_ALUNNI_CLASSI.csv' ,
         'DatiAgID.csv' : 'http://spcdata.digitpa.gov.it/data/amm.csv' ,
         'DatiMIUR_personale.csv' : 'http://www.istruzione.it/scuolainchiaro_dati/6-Personale_scuola.csv' ,
+        'DatiAgID_completi.ttl' : 'http://spcdata.digitpa.gov.it/data/ipa.ttl' ,
 }
 
 for nome in listaFile:

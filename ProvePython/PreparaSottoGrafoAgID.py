@@ -1,10 +1,9 @@
 #
 # Su Ubuntu/Debian i pacchetti necessari si installano con:
-# apt-get install python-rdflib python-requests
+# apt-get install python-rdflib
 #
 
 import rdflib
-import requests
 import sys
 import csv
 
@@ -18,68 +17,23 @@ grafo_AgID = rdflib.Graph ()
 fonteDati = 'AgID'
 nomeFileDati = 'DatiAgID_completi.ttl'
 formatoDati = 'n3'
-URL_Dati = 'http://spcdata.digitpa.gov.it/data/ipa.ttl'
 try:
     grafo_AgID.parse (file=open (nomeFileDati), format=formatoDati)
     print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
 except:
-    print 'File', nomeFileDati, 'non trovato, provo da rete'
-    try:
-        # Proviamo a scaricare i dati dall'URL
-        datiDaRete = requests.get (URL_Dati)
-        print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati
-    except:
-        # Se non siamo riusciti, forse serve impostare il proxy della della Regione
-        print '... provo col proxy della Regione'
-        proxies = {
-            'http': 'http://10.102.162.8:80',
-            'https': 'http://10.102.162.8:80',
-        }
-        try:
-            datiDaRete = requests.get (URL_Dati, proxies=proxies)
-            print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati, 'usando il proxy'
-        except:
-            print 'Impossibile scaricare i dati da', fonteDati, ', termino.'
-            sys.exit (1)
-    grafo_AgID.parse (data=datiDaRete.text, format=formatoDati)
-    grafo_AgID.serialize (destination=open (nomeFileDati, 'w'), format=formatoDati)
-    print 'Dati salvati su', nomeFileDati, 'per usi futuri'
-    datiDaRete = None  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+    print 'File', nomeFileDati, 'non trovato, lanciare ScaricaDatiDaRete.py'
+    sys.exit (1)
 
 # print len (grafo_AgID)
 
 nomeFileDati = 'DatiAgID.csv'
 separatoreDati = '\t'
-URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.csv'
 try:
     letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
     print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
 except:
-    # Se riesco a scaricare da rete, ha senso salvare nel nome file per avere una copia locale ed accelerare le cose?
-    print 'File', nomeFileDati, 'non trovato, provo da rete'
-    try:
-        # Proviamo a scaricare i dati dall'URL
-        datiDaRete = requests.get (URL_Dati)
-        print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati
-    except:
-        # Se non siamo riusciti, forse serve impostare il proxy della della Regione
-        print '... provo col proxy della Regione'
-        proxies = {
-            'http': 'http://10.102.162.8:80',
-            'https': 'http://10.102.162.8:80',
-        }
-        try:
-            datiDaRete = requests.get (URL_Dati, proxies=proxies)
-            print 'Ho scaricato i dati', fonteDati, 'da', URL_Dati, 'usando il proxy'
-        except:
-            print 'Impossibile scaricare i dati da AgID, termino.'
-            sys.exit (1)
-    f = open (nomeFileDati, 'w')
-    f.write (datiDaRete.text)
-    print 'Ho scritto i dati sul file', nomeFileDati
-    f.close ()
-    letturaRighe = csv.reader (open (nomeFileDati), delimiter = separatoreDati)
-    datiDaRete = None  # ha senso *cancellare* la variabile per liberare memoria? metodi migliori?
+    print 'File', nomeFileDati, 'non trovato, lanciare ScaricaDatiDaRete.py'
+    sys.exit (1)
 
 # Legge dal CSV quali sono le scuole ed aggiunge la tripla corretta al grafo
 spcdata_catAmm = rdflib.Namespace('http://spcdata.digitpa.gov.it/Categoriaamministrazione/')
