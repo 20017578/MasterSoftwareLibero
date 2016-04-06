@@ -23,7 +23,7 @@ miur:ontologia
 
   rdfs:label "Ontologia delle istituzioni scolastiche italiane"@it;
 
-  rdfs:comment "Vocabolario per descrivere le diverse articolazioni dele istituzioni scolstiche italiane"@it;
+  rdfs:comment "Vocabolario per descrivere le diverse articolazioni delle istituzioni scolastiche italiane"@it;
 
   dct:created "2016-03-25"^^xsd:date;
 
