@@ -66,18 +66,25 @@ WHERE
 } ORDER BY (?Popolazione)
 ```
 
-Lista dei comuni, con codici ISTAT e catastale.
+Lista dei comuni, con codici ISTAT, catastale ed altro, se disponibile (non si vede ragione per cui ter:haNome e rdfs:label non debbano coincidere, ma tanto vale prelevarli entrambi).
 
 ```SPARQL
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ter: <http://datiopen.istat.it/odi/ontologia/territorio/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 SELECT  *
 WHERE {
-?iri rdf:type ter:COM;
-     ter:haCodCatastale ?catastale;
+?iri rdf:type ter:COM.
+  OPTIONAL {
+  ?iri ter:haCodCatastale ?catastale;
      ter:haCodIstat ?istat;
-     rdfs:label ?nome.
+     rdfs:label ?nome;
+     ter:haNome ?Toponimo ;
+     ter:provincia_di_COM ?Prov;
+     ter:regione_di_COM ?Reg ;
+     owl:sameAs ?altriLOD .
+  }
 }
 ```
 
