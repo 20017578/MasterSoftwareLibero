@@ -110,6 +110,18 @@ miurO:meccanografico a owl:DatatypeProperty, rdf:Property;
   rdfs:isDefinedBy miur:ontologia ;
 .
 
+miurO:tipologiaIstruzione a owl:Class, rdfs:Class;
+.
+
+miur:tipo_ScuolaInfanzia a miurO:tipologiaIstruzione;
+.
+
+miurO:tipoIstituzione a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "tipologia istituzione scolastica"@it, "tipologia istituzione scolastica"@fr;
+  rdfs:domain miurO:Scuola;
+  rdfs:range miurO:tipologiaIstruzione; #
+.
+
 # -- Fine dell'ontologia ------------------------------
 
 # -- Come esempio proviamo a tradurre la prima riga "Torinese" del CSV scaricato da
