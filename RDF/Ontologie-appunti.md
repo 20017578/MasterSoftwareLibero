@@ -1,15 +1,15 @@
 Da: https://www.w3.org/TR/owl2-primer/
 
-(4.1) Le **classi** sono utilizzate per descrivere un gruppo che hanno qualcosa in comune, così da poterci riferire ad essi. 
+(4.1) Le **classi** sono utilizzate per descrivere un gruppo di oggetti che hanno qualcosa in comune, così da poterci riferire ad essi. 
 Quindi se una classe è "Dpcm-22-09-2014" allora un'**istanza** di essa potrebbe essere l'Indice di tempestività dei pagamenti
 
  :Dpcm-22-09-2014  rdf:type owl:Class .
  :IndiceDiTempestivitaDeiPagamenti rdf:type :Dpcm-22-09-2014
 
- ,dove "owl:" sta ad indicare l'ontologia al link :http://www.w3.org/2002/07/owl#. Per definire questo nell'ontologia
+ ,dove "owl:" sta ad indicare l'ontologia al link: http://www.w3.org/2002/07/owl#. Per definire questo nell'ontologia
  dobbiamo anzitutto definire dei prefissi: @prefix owl: <http://www.w3.org/2002/07/owl#>
 
-E' poi ovvio che l'appartenenza ad una classe non è esclusiva: quindi per esempio l'indice di tempestività dei pagamenti 
+È poi ovvio che l'appartenenza ad una classe non è esclusiva: quindi per esempio l'indice di tempestività dei pagamenti 
 oltre che appartenere alla classe "Dpcm 22/09/2014" potrà per esempio appartenere 
 anche ad una ipotetica classe "Finanza pubblica" oppure alla classe "Dlgs 33/2013" o altro ancora.
 
@@ -98,10 +98,10 @@ Ad esempio: l'intersezione di due classi consiste esattamente di quegli elementi
 (8.1) Molte volte vogliamo dare informazioni che descrizione un dominio. Per esempio, si potrebbero aggiungere informazioni a una classe descrivendone in linguaggio naturale il significato:
 :Dpcm-22-09-2014  rdfs:comment "Definizione degli schemi e delle modalita' per la pubblicazione su internet dei dati relativi alle entrate e alla spesa dei bilanci preventivi e consuntivi e dell'indicatore annuale di tempestivita' dei pagamenti delle pubbliche amministrazioni."^^xsd:string .
 
-(8.2) E’ poi possibile fornire un nome per l’ontologia stessa per esempio fornendo il link dove è presente il documento in rete::
+(8.2) È poi possibile fornire un nome per l’ontologia stessa per esempio fornendo il link dove è presente il documento in rete:
 <http://www.sito.it/owl/ontologiaXYZ> rdf:type owl:Ontology .
 
-Le grammatiche contengono anche informazioni che permettono di trasformare delle abbreviazioni in IRI, questo avviene indicando l'espansione-url per i prefissi. L'IRI sarà poi la concatenazione del prefisso coll riferimento.
+Le grammatiche contengono anche informazioni che permettono di trasformare delle abbreviazioni in IRI, questo avviene indicando l'espansione-url per i prefissi. L'IRI sarà poi la concatenazione del prefisso col riferimento.
 
 @prefix nostrodominio: <http://www.sito.it/owl/ontologiaXYZ/> .
 @prefix otherOnt: <http://example.org/otherOntologies/families/> .
