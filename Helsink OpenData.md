@@ -28,12 +28,11 @@ The service cooperates widely with **other owners and distributors of data mater
 
 Provo a farne una traduzione : 
 
-La parte operativa di HRI è gestita e supervisionata da un consiglio di amministrazione ed un comitato direttivo.
-Il consiglio di amministrazione è composto dai sindaci delle città dell'area metropolitana di Helsinki. Il gruppo direttivo è composto dai finanziatori, da chi esegue i lavori, da City of Helsinki Urban Facts and Forum Virium Helsinki.
-Per tutta la durata del programma Six City Strategy (6Aika), i coordinatori di Six City Strategy Open Data si sono uniti al gruppo direttivo.
-Il servizio utilizza anche un certo numero di esperti delle città di Helsinki, Espoo, Vantaa e Kauniainenin, in materia di dati e di IT in generale, allo stesso modo sono coinvolti anche esperti di aspetti legali.
+La parte operativa di HRI è gestita e supervisionata da un consiglio di amministrazione e da un comitato direttivo.
+Il consiglio di amministrazione è composto dai sindaci delle città dell'area metropolitana di Helsinki. Il comitato direttivo è composto dai finanziatori, da chi esegue i lavori, da City of Helsinki Urban Facts e da Forum Virium Helsinki.
+Per tutta la durata del programma Six City Strategy (6Aika), i coordinatori di Six City Strategy Open Data si sono aggiunti al gruppo direttivo.
+Il servizio utilizza anche un certo numero di esperti (delle città di Helsinki, Espoo, Vantaa e Kauniainenin) in materia di dati e di IT in generale, allo stesso modo sono coinvolti anche esperti in aspetti legali.
 
-Forum Virium Helsinki (FVH), una società controllata del Comune di Gruppo di Helsinki, è stata fin dall'inizio del progetto un partner fondamentale.
-Essa sviluppa servizi digitali innovativi, in collaborazione con aziende, con la Città di Helsinki, con altre organizzazioni del settore pubblico e con gli abitanti di Helsinki al fine di creare migliori servizi e nuovi business,
+Forum Virium Helsinki (FVH), una società controllata del Comune di Gruppo di Helsinki, è stata fin dall'inizio del progetto un partner fondamentale. Essa sviluppa servizi digitali innovativi in collaborazione con aziende, con la Città di Helsinki, con altre organizzazioni del settore pubblico e con gli abitanti di Helsinki al fine di creare migliori servizi e nuovi business,
  anche aperti ai mercati internazionali. FVH collabora anche con differenti fornitori di dati, quali il Ministero delle Finanze, Statistics Finland, Helsinki Regione Environmental Services Authority, Trasporti Regionali dell'area di Helsinki,  etc...
  
