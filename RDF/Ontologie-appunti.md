@@ -3,11 +3,13 @@ Da: https://www.w3.org/TR/owl2-primer/
 (4.1) Le **classi** sono utilizzate per descrivere un gruppo di oggetti che hanno qualcosa in comune, così da poterci riferire ad essi. 
 Quindi se una classe è "Dpcm-22-09-2014" allora un'**istanza** di essa potrebbe essere l'Indice di tempestività dei pagamenti
 
+```Turtle
  :Dpcm-22-09-2014  rdf:type owl:Class .
  :IndiceDiTempestivitaDeiPagamenti rdf:type :Dpcm-22-09-2014
+```
 
- ,dove "owl:" sta ad indicare l'ontologia al link: http://www.w3.org/2002/07/owl#. Per definire questo nell'ontologia
- dobbiamo anzitutto definire dei prefissi: @prefix owl: <http://www.w3.org/2002/07/owl#>
+, dove "owl:" sta ad indicare l'ontologia al link: http://www.w3.org/2002/07/owl#. Per definire questo nell'ontologia
+dobbiamo anzitutto definire dei prefissi: @prefix owl: <http://www.w3.org/2002/07/owl#>
 
 È poi ovvio che l'appartenenza ad una classe non è esclusiva: quindi per esempio l'indice di tempestività dei pagamenti 
 oltre che appartenere alla classe "Dpcm 22/09/2014" potrà per esempio appartenere 
