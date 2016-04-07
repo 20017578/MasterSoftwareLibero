@@ -14,6 +14,9 @@ Relativamente all'articolo apparso su Internazionale circa gli **OpenData ad Hel
 11. Avete trovato **resistenze** da parte di alcuni settori a concedervi i loro dati ?
 12. Quando sono emerse **inchieste** da parte di quotidiani, derivate dall'analisi dei dati sui servizi pagati dalla città, qualche responsabile o politico ha sollevato obiezioni o perplessità sulla diffusione dei dati ?
 13. Quali dati vengono richiesti maggiormente e con quali venne iniziato il progetto? 
+14. Esiste uno studio o anche solo delle analisi sulla **ricaduta economica** del progetto sul territorio ?
+
+---------------------------------------------------------
 
 Dal sito: http://www.hri.fi/en
 
@@ -22,3 +25,15 @@ The operative execution of the HRI service is managed, overseen and executed by 
 Forum Virium Helsinki (FVH) has been a **pivotal partner since the start** of the service. FVH is a subsidiary of the City of Helsinki Group. It develops new digital services in cooperation with companies, City of Helsinki, other public sector organizations and Helsinki residents. The aim is to create better services and new business, as well as open up contacts for international markets.
 
 The service cooperates widely with **other owners and distributors of data materials**. These operators include the Ministry of Finance (avoindata.fi), Statistics Finland, Helsinki Region Environmental Services Authority, Helsinki Region Transport, Uusimaa Region, other cities and international cooperation networks such as Eurocities and Open and Agile Smart Cities.
+
+Provo a farne una traduzione : 
+
+La parte operativa di HRI è gestita e supervisionata da un consiglio di amministrazione ed un comitato direttivo.
+Il consiglio di amministrazione è composto dai sindaci delle città dell'area metropolitana di Helsinki. Il gruppo direttivo è composto dai finanziatori, da chi esegue i lavori, da City of Helsinki Urban Facts and Forum Virium Helsinki.
+Per tutta la durata del programma Six City Strategy (6Aika), i coordinatori di Six City Strategy Open Data si sono uniti al gruppo direttivo.
+Il servizio utilizza anche un certo numero di esperti delle città di Helsinki, Espoo, Vantaa e Kauniainenin, in materia di dati e di IT in generale, allo stesso modo sono coinvolti anche esperti di aspetti legali.
+
+Forum Virium Helsinki (FVH), una società controllata del Comune di Gruppo di Helsinki, è stata fin dall'inizio del progetto un partner fondamentale.
+Essa sviluppa servizi digitali innovativi, in collaborazione con aziende, con la Città di Helsinki, con altre organizzazioni del settore pubblico e con gli abitanti di Helsinki al fine di creare migliori servizi e nuovi business,
+ anche aperti ai mercati internazionali. FVH collabora anche con differenti fornitori di dati, quali il Ministero delle Finanze, Statistics Finland, Helsinki Regione Environmental Services Authority, Trasporti Regionali dell'area di Helsinki,  etc...
+ 
