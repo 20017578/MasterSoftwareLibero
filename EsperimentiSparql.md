@@ -140,3 +140,17 @@ Select * {
     rdfs:label ?l .
 } Limit 1000
 ```
+
+Altri LOD sulle scuole
+----------------------
+
+Esperimento su http://data.surreycc.gov.uk/sparql , i tipi di scuole:
+
+```SPARQL
+SELECT DISTINCT *
+WHERE {
+  [] <http://data.surreycc.gov.uk/def/assets/schools/schoolType> ?t .
+}
+```
+
+Fornisce [un risultato](http://data.surreycc.gov.uk/sparql.text?query=SELECT+DISTINCT+%2A%0D%0AWHERE+%7B%0D%0A++%5B%5D+%3Chttp%3A%2F%2Fdata.surreycc.gov.uk%2Fdef%2Fassets%2Fschools%2FschoolType%3E+%3Ft%0D%0A%7D) che non contiene IRI validi...
