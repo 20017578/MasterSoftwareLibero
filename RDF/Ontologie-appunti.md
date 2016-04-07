@@ -14,7 +14,6 @@ oltre che appartenere alla classe "Dpcm 22/09/2014" potrà per esempio appartene
 anche ad una ipotetica classe "Finanza pubblica" oppure alla classe "Dlgs 33/2013" o altro ancora.
 
 :Dpcm-22-09-2014  rdf:type owl:Class .
-:Dpcm-22-09-2014  rdfs:comment "Definizione degli schemi e delle modalita' per la pubblicazione su internet dei dati relativi alle entrate e alla spesa dei bilanci preventivi e consuntivi e dell'indicatore annuale di tempestivita' dei pagamenti delle pubbliche amministrazioni."^^xsd:string .
 
 (4.2) Ora, risulta chiaro che per alcune classi definite, per esempio: ObblighiDiPubblicazione e IndiceDiTempestivitaDeiPagamenti esiste tra di loro una qualche **relazione**. Per consentire ad un sistema (parlante per le macchine) di comprendere la relazione a noi umani evidente, occorre istruirlo di questa corrispondenza. In OWL 2, questa conoscenza è data dal un cosiddetto assioma sottoclasse.
 
@@ -94,4 +93,21 @@ Ad esempio: l'intersezione di due classi consiste esattamente di quegli elementi
 (6.3)E’ possibile definire una proprietà che sia identificata da una chiave univoca (Key) reperita all’interno di un’altra classe, come per esempio il codice fiscale che supponiamo essere chiave univoca per la classe dei Cittadini.
 :Cittadino  owl:hasKey  ( :hasCF ) .
 :hasCF  rdf:type  owl:DataProperty .
+
+(8) OWL 2 permette anche di fornire informazioni aggiuntive sull'ontologia stessa. Sono informazioni che in realtà non contribuiscono alla conoscenza in genere.
+(8.1) Molte volte vogliamo dare informazioni che descrizione un dominio. Per esempio, si potrebbero aggiungere informazioni a una classe descrivendone in linguaggio naturale il significato:
+:Dpcm-22-09-2014  rdfs:comment "Definizione degli schemi e delle modalita' per la pubblicazione su internet dei dati relativi alle entrate e alla spesa dei bilanci preventivi e consuntivi e dell'indicatore annuale di tempestivita' dei pagamenti delle pubbliche amministrazioni."^^xsd:string .
+
+(8.2) E’ poi possibile fornire un nome per l’ontologia stessa per esempio fornendo il link dove è presente il documento in rete::
+<http://www.sito.it/owl/ontologiaXYZ> rdf:type owl:Ontology .
+
+Le grammatiche contengono anche informazioni che permettono di trasformare delle abbreviazioni in IRI, questo avviene indicando l'espansione-url per i prefissi. L'IRI sarà poi la concatenazione del prefisso coll riferimento.
+
+@prefix nostrodominio: <http://www.sito.it/owl/ontologiaXYZ/> .
+@prefix otherOnt: <http://example.org/otherOntologies/families/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 
