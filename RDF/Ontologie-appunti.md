@@ -63,3 +63,35 @@ Senza definire che ValoreIndice è nel dominio, cioé che è “soggetto”, del
 (5) Definite le Classi per individuare gruppi di istanze dello stesso tipo, queste, così come le istanze possono essere usate come blocchi per definire nuove classi.
 (5.1) Il linguaggio OWL fornisce gli elementi classici della logica and, or, not che corrispondono ai termini (class) intersection, (class) union e (class) complement.
 Ad esempio: l'intersezione di due classi consiste esattamente di quegli elementi che sono istanze appartenenti ad entrambe le classi; l'unione di due classi contiene ogni individuo che è contenuto in almeno una di queste e il complemento di una classe corrisponde alla negazione logica: è cioé composto da esattamente quegli oggetti che non sono membri della classe stessa.
+
+(5.2) Una restrizione sulla proprietà definisce una classe come l'insieme di tutti gli oggetti che sono collegati tramite una particolare proprietà di un altro oggetto a sua volta istanza di una certa classe. Più semplicemente se dovessimo definire la percentuale (ovviamente sarà già definita in qualche ontologia) di partecipazione dell’enteX in una SocietàPartecipata, sapendo che la percentuale dovrà rispettare la formula 0<Percentuale<=100, allora potremmo definire le restrizioni in questo modo:
+
+:EntePubblico  rdf:type owl:Class .
+:SocPartecipata    rdfs:subClassOf :EntePubblico .
+
+:haPartecipazione rdf:type owl:ObjectProperty .
+:haPartecipazione rdfs:domain  :EntePubblico ;
+                  rdfs:range   :SocPartecipata  .
+
+:PercentualePartecipazione  owl:equivalentClass
+[ rdf:type       rdfs:Datatype;
+  owl:onDatatype xsd:integer;
+  owl:withRestrictions (
+     [ xsd:minExclusive "0"^^xsd:integer ]
+     [ xsd:maxInclusive "100"^^xsd:integer ]
+  )
+] .
+
+(5.4) Un altro modo per descrivere una classe è quello di elencare direttamente tutti i componenti. Se per esempio volessimo creare una classe con all’interno tutti i ruoli politici di un comune potremmo descrivere la classe nel seguente modo::
+:Politici_comune  owl:equivalentClass  [
+   rdf:type   owl:Class ;
+   owl:oneOf  ( :Sindaco  :Assessore  :Consigliere  :Consigliere_circoscrizionale )
+ ] .
+
+(6) Alcune proprietà possono essere legate da una sorta di rapporto con altre proprietà, (6.1) come per esempio la proprietà “èSindacoDi” e “haComeSindaco”, dove se in una tripla viene specificato che “Torino” ha “Fassino” come sindaco, allora si può dedurre che “Fassino” è sindaco di “Torino”. In OWL2 è così descritto:
+:èSindacoDi owl:inverseOf :haComeSindaco .
+
+(6.3)E’ possibile definire una proprietà che sia identificata da una chiave univoca (Key) reperita all’interno di un’altra classe, come per esempio il codice fiscale che supponiamo essere chiave univoca per la classe dei Cittadini.
+:Cittadino  owl:hasKey  ( :hasCF ) .
+:hasCF  rdf:type  owl:DataProperty .
+
