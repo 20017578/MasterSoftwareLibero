@@ -126,6 +126,7 @@ miurO:meccanografico a owl:DatatypeProperty, rdf:Property;
 
 miur:sc_toaa00401l a miurO:PuntoErogazioneServizio ;
   rdfs:label "TO ALLIEVO SPINA 3"@it ;
+  miurO:meccanografico "TOEE00401L";
   miurO:haIstitutoPrincipale miur:sc_toee00400r ;
   locn:address miur:ind_sc_toaa00401l ; #
   geonames:locatedIn spcdataComune:L219 ; # Corrisponde a TORINO su AgID, usare ISTAT?
@@ -138,6 +139,7 @@ miur:sc_toaa00401l a miurO:PuntoErogazioneServizio ;
 
 miur:sc_toee00400r a miurO:Autonomia ;
   rdfs:label "5 CIRCOLO ALESSANDRIA"@it ;
+  miurO:meccanografico "TOEE00400R";
   miurO:istitutoPrincipaleDi miur:sc_toaa00401l . # Ridondante a dire il vero...
 
 miur:ind_sc_toaa00401l a locn:Address ; # Le prime tre righe (CAP incluso) sul calco dei dati AgID
