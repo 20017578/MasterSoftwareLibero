@@ -28,31 +28,6 @@ except:
 autonomie = {}
 grafo_MIUR = rdflib.Graph ()
 
-
-
-contoMIUR = 0
-valoriTrovati = []
-istitutiTrovati = set ()
-
-if voceDaConteggiare in letturaRighe.fieldnames:
-    for riga in letturaRighe:
-        contoMIUR += 1
-        if riga[voceDaConteggiare] in catalogoMeccanograficiMIUR:
-            catalogoMeccanograficiMIUR[riga[voceDaConteggiare]] += 1
-        else:
-            catalogoMeccanograficiMIUR[riga[voceDaConteggiare]] = 1
-        if voceDaSalvare in letturaRighe.fieldnames and voceDaFiltrare in letturaRighe.fieldnames:
-            if riga[voceDaFiltrare] == valoreDaCercare:
-                valoriTrovati.append (riga[voceDaSalvare])
-                istitutiTrovati.add (riga[voceDaConteggiare])
-else:
-    print 'La voce', voceDaConteggiare, 'non si trova...'
-
-print 'Su', contoMIUR, 'scuole, ho trovato', len (catalogoMeccanograficiMIUR), 'istituzoni'
-print 'Per', voceDaFiltrare, 'pari a', valoreDaCercare, 'ho trovato i seguenti', len (valoriTrovati), 'valori per', voceDaSalvare, ':', valoriTrovati
-
-grafo_MIUR = rdflib.Graph ()
-
 nomeFileDati = '../RDF/miur.ttl'
 formatoDati = 'n3'
 try:
@@ -62,6 +37,15 @@ except:
     print 'File', nomeFileDati, 'non trovato, impossibile inizializzare il grafo'
     sys.exit (1)
 
+namespace_MIUR = None
+for p, n in grafo_MIUR.namespaces ():
+    if p == '':
+        namespace_MIUR = n
 
+if namespace_MIUR == None:
+    print 'Non trovato un `namespace` di riferimento in', nomeFileDati, ', esco'
+    raise ValueError('namespace non trovato')
+
+namespace_scuole = namespace_MIUR + 'Scuola/'
 
 
