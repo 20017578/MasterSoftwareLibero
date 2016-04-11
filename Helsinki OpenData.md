@@ -1,20 +1,33 @@
 Relativamente all'articolo apparso su Internazionale circa gli **OpenData ad Helsinki**, provo a buttare giù alcune domande che potremmo rivolgere:
 
 1. Sia a livello locale che a livello nazionale, sono stati siglati degli accordi, sono stati firmati **atti ufficiali**, che promuovono gli OpenData o che ne "obbligano" la condivisione e la pubblicazione ?
+   * Both at local level and at National level, has been signed agreements or "official acts" in geenral, which promote the OpenData or that "force" the sharing and the publication of them ?
 2. Il progetto **Helsinki region infoshare** (Hri), nasce dalla spinta delle Amministrazioni o da chi altri ?
-3. Hri ha ottenuto **fondi** di qualche tipo ? Nel caso in quale percentuale questi coprono i costi ?
-   (..In the beginning, the service received support from the Finnish Innovation Fund Sitra and the Finnish Ministry of Finance through a municipality cooperation grant.)
+   * The project Helsinki region InfoShare, was born by the incentive of the Administrations or who else?
+3. Hri ha ottenuto fondi di qualche tipo ? Nel caso in quale percentuale questi coprono i costi ? (..In the beginning, the service received support from the Finnish Innovation Fund Sitra and the Finnish Ministry of Finance through a municipality cooperation grant.)
+   * We read that "..In the beginning, the service received support from the Finnish Innovation Fund Sitra and the Finnish Ministry of Finance through a municipality cooperation grant.", Hri got other funds of some kind? If what percentage these cover the costs of the project ?
 4. Sull'articolo si dice che il costo del progetto è di 60.000 Euro l'anno, questa cifra copre anche i costi del personale ? Quali sono le altre **macro-voci di spesa** ?
+   * The article we read told that the cost of the project is 60,000 euros per year, this amount of money also covers the cost of staff? What are the other macro-items of expenditure ?
 5. Il progetto Hri quando è nato e qual è il suo termine ? La città di Helsinki ha intenzione di istituire un **ufficio apposito dedicato** alla gestione specifica degli OpenData ?
-6. Quanto **tempo** nel mese/settimana il team di Hri dedica al progetto ?
+ * When The Hri project was born and which is its term? Is the city of Helsinki planning to set up a special office dedicated to the management of OpenData?
+6. Di quante persone è composto il team di Hri ? Quanto **tempo** nel mese/settimana il team di Hri dedica al progetto ?
+ * How many people works for Hri project ? How much time in the month (or week) the Hri team devotes to the project?
 7. Nel team ci sono **ruoli** ben specifici relativamente alla tipologia di OpenData?
+   * In the team there are very specific technical roles regarding the type of OpenData?
 8. Le **persone** che collaborano in Hri sono neo-assunti o sono dipendenti di Pubbliche Amministrazioni distaccati ?
+   * The people who are working for Hri are newly hired or are they employees of the public administrations relocated?
 9. Le persone del team, prima di collaborare per Hri, avevano tutti una **formazione** specifica su alcuni temi ? C'è stato un percorso di formazione ? Nel caso di che tipo ?
+   * The people of the team, before collaborating for Hri, Did they all get a specific training in these fields ? There was a training course? In the case, What kind of trining ?
 10. **Prima di Hri** la città di Helsinki e le città limitrofe avevano già portato avanti un lavoro di condivisione e diffusione dei propri dati ?
+ * Before Hri, the City of Helsinki and the neighboring cities had already carried out projects of sharing and spreading of their data?
 11. Avete trovato **resistenze** da parte di alcuni settori a concedervi i loro dati ?
+   * Did you find resistance from some departments to give their data?
 12. Quando sono emerse **inchieste** da parte di quotidiani, derivate dall'analisi dei dati sui servizi pagati dalla città, qualche responsabile o politico ha sollevato obiezioni o perplessità sulla diffusione dei dati ?
+   * When investigations derived from analysis of data on services paid by the city emerged, as we read in the article, did some manager or politician raised objections or doubts about the data dissemination?
 13. Quali dati vengono richiesti maggiormente e con quali venne iniziato il progetto? 
+   * Which data is required more and which of them was the first for the project?
 14. Esiste uno studio o anche solo delle analisi sulla **ricaduta economica** del progetto sul territorio ?
+   * Is there a study or even analysis about economic impact of the project on the territory?
 
 ---------------------------------------------------------
 
