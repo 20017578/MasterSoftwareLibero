@@ -12,8 +12,9 @@
 #@prefix prov:       <http://www.w3.org/ns/prov#> .
 
 @prefix rponto:     <http://id-dati.piemonte.it/ontology/v1/rponto.html#> .
-@prefix miur:       <http://iri.fitizio.org/> .
-@prefix miurO:      <http://iri.fitizio.org/ontologia#> .
+@prefix :    	    <http://www.example.org/MIUR/> .
+@prefix miur:  	    <http://www.example.org/MIUR/> .
+@prefix miurO:      <http://www.example.org/MIUR/ontologia#> .
 
 # -- Meta data -----------------------------------------------------------
 
@@ -49,7 +50,7 @@ miurO:Scuola a owl:Class, rdfs:Class;
 .
 
 miurO:Autonomia a owl:Class, rdfs:Class;
-  rdfs:subClassOf org:FormalOrganization, miur:Scuola;
+  rdfs:subClassOf org:FormalOrganization, miurO:Scuola;
 # owl:equivalentClass 
   rdfs:label "Autonomia scolastica"@it;
 
@@ -58,7 +59,7 @@ miurO:Autonomia a owl:Class, rdfs:Class;
 .
 
 miurO:PuntoErogazioneServizio a owl:Class, rdfs:Class;
-  rdfs:subClassOf org:OrganizationalUnit, miur:Scuola;
+  rdfs:subClassOf org:OrganizationalUnit, miurO:Scuola;
 # owl:equivalentClass 
   rdfs:label "Punto di erogazione del servizio"@it;
 
@@ -138,6 +139,7 @@ miurO:tipoIstituzione a owl:DatatypeProperty, rdf:Property;
 
 miur:sc_toaa00401l a miurO:PuntoErogazioneServizio ;
   rdfs:label "TO ALLIEVO SPINA 3"@it ;
+  miurO:meccanografico "TOEE00401L";
   miurO:haIstitutoPrincipale miur:sc_toee00400r ;
   locn:address miur:ind_sc_toaa00401l ; #
   geonames:locatedIn spcdataComune:L219 ; # Corrisponde a TORINO su AgID, usare ISTAT?
@@ -150,6 +152,7 @@ miur:sc_toaa00401l a miurO:PuntoErogazioneServizio ;
 
 miur:sc_toee00400r a miurO:Autonomia ;
   rdfs:label "CD GIUSEPPE ALLIEVO"@it ;
+  miurO:meccanografico "TOEE00400R";
   miurO:istitutoPrincipaleDi miur:sc_toaa00401l . # Ridondante a dire il vero...
 
 miur:ind_sc_toaa00401l a locn:Address ; # Le prime tre righe (CAP incluso) sul calco dei dati AgID
