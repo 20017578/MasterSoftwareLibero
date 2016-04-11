@@ -31,7 +31,7 @@ Guido Vernero - Comune di Torino
 
 MAIL TO: Tanja.Lahti@hel.fi
 
-OBJECT: 
+OBJECT: Ask for information about Helsinki Regional Infoshare
 
 Dear madam Tanja Lahti,
 we are a group of 5 students who are attending to a postgraduate master in "Free Software Managemet" at the University of Eastern Piedmont, Italy.
