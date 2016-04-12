@@ -19,7 +19,7 @@ Manuale di transizione verso gli Open-Data
 
 ###Panorama legislativo (Normativa di riferimento: obblighi/possibilità, fonti: CAD, diritti PI, privacy...)
  1. Diritto d'autore
- 2. Obblighi di pubblicazione [Normativa di riferimento](Normativa.md)
+ 2. Obblighi di pubblicazione [Normativa di riferimento](AmbitoGiuridico/Normativa.md)
  3. Privacy
  4. Le licenze adottate a livello internazionale
  5. La licenze italiane
@@ -54,7 +54,7 @@ Esempio di Open-Data interoperabili
  3. Integrazione e reperimento di altri dati o informazioni
  4. Opportunità di incrociare dati da [IPA](http://spcdata.digitpa.gov.it/data.html)
  5. Utilizzabilità dati da [Scuola in chiaro](http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/)
- 6. Oltre alle [norme generiche](Normativa.md), verificare [norme specifiche](NormativaScuola.md)
+ 6. Oltre alle [norme generiche](AmbitoGiuridico/Normativa.md), verificare [norme specifiche](AmbitoGiuridico/NormativaScuola.md)
  7. Geolocalizzazione edifici della Regione Piemonte, sul [Geoportale](http://osgis2.csi.it/webgisAtlante/qgiswebclient.html?map=Scuole/BDTRE_SCUOLE_pubblicazione/)
  8. Dati scolastici della Regione Piemonte, su [dati](http://www.dati.piemonte.it/catalogodati/dato/100654-.html)
  9. Dati scolastici presso l'[AgID](http://www.agid.gov.it/search/node/scuole)
