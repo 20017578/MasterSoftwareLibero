@@ -16,10 +16,8 @@ fonteDati = 'MIUR'
 nomeFileDati = 'DatiMIUR.csv'
 separatoreDati = ';'
 try:
-    f = open (nomeFileDati)
-    csvDatiMIUR = csv.DictReader (f, delimiter = separatoreDati)
-    print 'Ho letto i dati', fonteDati, 'dal file', nomeFileDati
-    f.close ()
+    csvDatiMIUR = csv.DictReader (open (nomeFileDati), delimiter = separatoreDati)
+    print 'Leggo i dati', fonteDati, 'dal file', nomeFileDati
 except:
     print 'File', nomeFileDati, 'non trovato, lanciare ScaricaDatiDaRete.py'
     sys.exit (1)
@@ -51,6 +49,38 @@ if namespace_MIUR == None:
     print 'Non trovato un `namespace` di riferimento in', nomeFileDati, ', esco'
     raise ValueError('namespace non trovato')
 
+#
+# Legge grafo AgID, per i comuni (per ora)
+#
+
+grafo_AgID = rdflib.Graph ()
+nomeFileDati = 'AgID.ttl'
+formatoDati = 'n3'
+try:
+    f = open (nomeFileDati)
+    grafo_AgID.parse (file = f, format = formatoDati)
+    print 'Ho inizializzato il grafo dal file', nomeFileDati
+    f.close ()
+except:
+    print 'File', nomeFileDati, 'non trovato, eseguire PreparaSottoGrafoAgID.py'
+    sys.exit (1)
+
+geonames_In = rdflib.URIRef ('http://www.geonames.org/ontology#locatedIn')
+comuniAgID = {}
+for comune in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=rdflib.URIRef ('http://spcdata.digitpa.gov.it/Comune')):
+    nomeComune = grafo_AgID.value (comune, rdflib.RDFS.label).toPython ().upper ()
+    if nomeComune in comuniAgID:
+        print 'Ci sono due comuni di nome', nomeComune
+        pv = grafo_AgID.value (grafo_AgID.value (comuniAgID[nomeComune], geonames_In),rdflib.RDFS.label).toPython ()
+        print nomeComune + ' (' + pv + ')'
+        comuniAgID[nomeComune + ' ('+ pv +')'] = comuniAgID[nomeComune]
+        del comuniAgID[nomeComune]
+        pv = grafo_AgID.value (grafo_AgID.value (comune, geonames_In), rdflib.RDFS.label).toPython ()
+        print nomeComune + ' (' + pv + ')'
+        comuniAgID[nomeComune + ' ('+ pv +')'] = comune
+    else:
+        comuniAgID[nomeComune] = comune
+
 namespace_scuole = namespace_MIUR + 'Scuola/'
 namespace_ontologia = namespace_MIUR + 'ontologia#'
 prop_latitudine = rdflib.URIRef ('http://www.w3.org/2003/01/geo/wgs84_pos#lat')
@@ -60,6 +90,7 @@ grafo_MIUR.bind ('scuola', namespace_scuole)
 
 caratteristiche = set ()
 tipiIstituzione = set ()
+comuniNonTrovati = set ()
 
 locale.setlocale( locale.LC_ALL, 'it_IT.UTF-8')
 
@@ -85,9 +116,24 @@ for rigaScuola in csvDatiMIUR:
             grafo_MIUR.add ( (namespace_scuole + meccanografico, prop_longitudine, rdflib.Literal (lon)) )
     except:
         lat = 0
+    comune = None
+    if rigaScuola['COMUNE'] in comuniAgID:
+        comune = comuniAgID[rigaScuola['COMUNE']]
+    elif (rigaScuola['COMUNE'] + ' (' + rigaScuola['PROVINCIA']+ ')') in comuniAgID:
+        comune = comuniAgID[rigaScuola['COMUNE'] + ' (' + rigaScuola['PROVINCIA']+ ')']
+    elif ('.' in rigaScuola['COMUNE']) and \
+    (rigaScuola['COMUNE'][:rigaScuola['COMUNE'].find('.') - 1] in comuniAgID):
+         comune = comuniAgID[rigaScuola['COMUNE'][:rigaScuola['COMUNE'].find('.') - 1]]
+    if comune:
+        grafo_MIUR.add ( (namespace_scuole + meccanografico, geonames_In, comune) )
+    else:
+#        print 'Comune', rigaScuola['COMUNE'], 'non trovato'
+        comuniNonTrovati |= {rigaScuola['COMUNE']}
+
 
 grafo_MIUR.serialize (destination=open ('MIUR.ttl', 'w'), format=formatoDati)
 print 'Scritto un grafo con', len (grafo_MIUR), 'terne.'
 
 print 'Caratteristiche trovate:', caratteristiche
 print 'Valori per TIPO ISTITUZIONE:', tipiIstituzione
+print 'Comuni non trovati:', comuniNonTrovati
