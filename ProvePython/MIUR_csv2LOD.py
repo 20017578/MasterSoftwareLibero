@@ -68,7 +68,7 @@ except:
 geonames_In = rdflib.URIRef ('http://www.geonames.org/ontology#locatedIn')
 comuniAgID = {}
 for comune in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=rdflib.URIRef ('http://spcdata.digitpa.gov.it/Comune')):
-    nomeComune = grafo_AgID.value (comune, rdflib.RDFS.label).toPython ().upper ()
+    nomeComune = grafo_AgID.value (comune, rdflib.RDFS.label).toPython ().upper ().replace ('-',' ')
     if nomeComune in comuniAgID:
         print 'Ci sono due comuni di nome', nomeComune
         re = grafo_AgID.value (grafo_AgID.value (grafo_AgID.value (comuniAgID[nomeComune], geonames_In), geonames_In),rdflib.RDFS.label).toPython ()
@@ -85,6 +85,7 @@ namespace_scuole = namespace_MIUR + 'Scuola/'
 namespace_ontologia = namespace_MIUR + 'ontologia#'
 prop_latitudine = rdflib.URIRef ('http://www.w3.org/2003/01/geo/wgs84_pos#lat')
 prop_longitudine = rdflib.URIRef ('http://www.w3.org/2003/01/geo/wgs84_pos#long')
+locn_CAP = rdflib.URIRef ('http://www.w3.org/ns/locn#postCode')
 
 grafo_MIUR.bind ('scuola', namespace_scuole)
 
@@ -94,7 +95,12 @@ comuniNonTrovati = {}
 
 locale.setlocale( locale.LC_ALL, 'it_IT.UTF-8')
 
-aliasComuni = { 'AGLIANO' : 'AGLIANO TERME', 'BORGONE DI SUSA' : 'BORGONE SUSA', 'CERRINA' : 'CERRINA MONFERRATO', 'CAMPIGLIONE FENILE' : 'CAMPIGLIONE-FENILE', 'CASTELLETTO TICINO' : 'CASTELLETTO SOPRA TICINO', "LENTA'" : 'LENTA',  'MOTTA DEI CONTI' : "MOTTA DE' CONTI", "MOLINO DE' TORTI" : 'MOLINO DEI TORTI', 'LEINI' : "LEINI'", 'PONT CANAVESE' : 'PONT-CANAVESE',  "REGGIO NELL'EMILIA" : "REGGIO EMILIA", 'SAN REMO' : 'SANREMO',  'IESOLO' : 'JESOLO', 'RACCUIA':'RACCUJA', 'ORTONA A MARE' : 'ORTONA','CASSANO ALLO IONIO' :"CASSANO ALL'IONIO"}
+#Piemonte
+aliasComuni = { 'AGLIANO' : 'AGLIANO TERME', 'BORGONE DI SUSA' : 'BORGONE SUSA', 'CERRINA' : 'CERRINA MONFERRATO', 'CASTELLETTO TICINO' : 'CASTELLETTO SOPRA TICINO', "LENTA'" : 'LENTA',  'MOTTA DEI CONTI' : "MOTTA DE' CONTI", "MOLINO DE' TORTI" : 'MOLINO DEI TORTI', 'LEINI' : "LEINI'"}
+#Altre Regioni
+aliasComuni |= { "REGGIO NELL'EMILIA" : "REGGIO EMILIA", 'SAN REMO' : 'SANREMO',  'IESOLO' : 'JESOLO', 'RACCUIA':'RACCUJA', 'ORTONA A MARE' : 'ORTONA','CASSANO ALLO IONIO' :"CASSANO ALL'IONIO", 'VALSAMOGGIA' : 'BAZZANO'}
+
+contoCAPimprecisi = 0
 
 for rigaScuola in csvDatiMIUR:
     meccanografico = rigaScuola['PLESSO/SCUOLA'].upper ()
@@ -119,22 +125,29 @@ for rigaScuola in csvDatiMIUR:
     except:
         lat = 0
     comune = None
-    nomeComune = rigaScuola['COMUNE']
-    nomeProvincia = rigaScuola['PROVINCIA']
-    if nomeProvincia == "L' Aquila":
-        nomeProvincia = "L'Aquila"
+    nomeComune = rigaScuola['COMUNE'].upper ().replace ('-',' ')
     nomeRegione = rigaScuola['REGIONE']
     if nomeComune in comuniAgID:
         comune = comuniAgID[nomeComune]
     elif (nomeComune + ' (' + nomeRegione + ')') in comuniAgID:
         comune = comuniAgID[nomeComune + ' (' + nomeRegione + ')']
-    elif ('.' in nomeComune) and \
-    (nomeComune[:nomeComune.find('.') - 1] in comuniAgID):
+    elif ('.' in nomeComune) and (nomeComune[:nomeComune.find('.') - 1] in comuniAgID):
         comune = comuniAgID[nomeComune[:nomeComune.find('.') - 1]]
     elif nomeComune in aliasComuni and aliasComuni[nomeComune] in comuniAgID:
         comune = comuniAgID[aliasComuni[nomeComune]]
     if comune:
         grafo_MIUR.add ( (namespace_scuole + meccanografico, geonames_In, comune) )
+        CAP_scuola = rigaScuola['CAP']
+        if CAP_scuola:
+            CAP_comune = grafo_AgID.value (comune, locn_CAP).toPython ()
+            if len (CAP_scuola) != 5:
+                CAP_scuola = ('00000' + CAP_scuola) [-5:]
+            while CAP_comune[-1:] == 'x':
+                CAP_comune = CAP_comune[:-1]
+                CAP_scuola = CAP_scuola[:-1]
+            if CAP_comune != CAP_scuola:
+                contoCAPimprecisi += 1
+#                print 'Verificare ', meccanografico, 'in', nomeComune, ', i CAP non coincidono:', CAP_scuola, '!=', CAP_comune
         re = grafo_AgID.value (grafo_AgID.value (grafo_AgID.value (comune, geonames_In), geonames_In), rdflib.RDFS.label).toPython ()
         if re[:5] != nomeRegione[:5]:
             print 'Attenzione, per il comune', nomeComune, 'la regione non corrisponde:', re, '!=', nomeRegione
@@ -149,7 +162,8 @@ for rigaScuola in csvDatiMIUR:
 
 print 'Caratteristiche trovate:', caratteristiche
 print 'Valori per TIPO ISTITUZIONE:', tipiIstituzione
-print 'Comuni non trovati:', comuniNonTrovati
+print 'Comuni non trovati (', len (comuniNonTrovati), '):', comuniNonTrovati
+print contoCAPimprecisi, 'CAP non corrispondono tra dati AgID e MIUR'
 
 grafo_MIUR.serialize (destination=open ('MIUR.ttl', 'w'), format=formatoDati)
 print 'Scritto un grafo con', len (grafo_MIUR), 'terne.'
