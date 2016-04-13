@@ -91,6 +91,7 @@ Punti di forza:
 Punti di debolezza:
 
  * mancanza di uniformità tra i dati riguardanti le scuole statali e quelle non statali, che hanno obblighi ed interessi diversi nell'alimentare il sistema informativo del MIUR
+ * l'informazione riguardante la "provincia", oltre a non tener conto delle nuove "città metropolitane" risulta spesso errato
  * dati geografici piuttosto approssimativi
 
 Comandi per scaricare la base dati in formato csv e prime verifiche. Da shell:
@@ -117,7 +118,7 @@ Il file CSV coi [dati principali sulle scuole statali del MIUR](http://www.istru
 Intestazione colonna|possibile predicato
 --------------------|-------------------
 REGIONE|<http://www.geonames.org/ontology#locatedIn> come AgID?
-PROVINCIA|<http://www.geonames.org/ontology#locatedIn> come AgID?
+PROVINCIA|**Spesso questo valore risulta errato, meglio saltarlo?**
 PLESSO/SCUOLA|<http://id-dati.piemonte.it/ontology/v1/rponto.html#codMIURscuola> ??? meglio crearne una nuova
 DENOMINAZIONE|<http://www.w3.org/2000/01/rdf-schema#label>
 ISTITUTO PRINCIPALE|<http://www.w3.org/ns/org#unitOf> ?
