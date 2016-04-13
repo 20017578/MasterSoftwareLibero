@@ -71,13 +71,13 @@ for comune in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=rdflib.URIR
     nomeComune = grafo_AgID.value (comune, rdflib.RDFS.label).toPython ().upper ()
     if nomeComune in comuniAgID:
         print 'Ci sono due comuni di nome', nomeComune
-        pv = grafo_AgID.value (grafo_AgID.value (comuniAgID[nomeComune], geonames_In),rdflib.RDFS.label).toPython ()
-        print nomeComune + ' (' + pv + ')'
-        comuniAgID[nomeComune + ' ('+ pv +')'] = comuniAgID[nomeComune]
+        re = grafo_AgID.value (grafo_AgID.value (grafo_AgID.value (comuniAgID[nomeComune], geonames_In), geonames_In),rdflib.RDFS.label).toPython ()
+        print nomeComune + ' (' + re + ')'
+        comuniAgID[nomeComune + ' ('+ re +')'] = comuniAgID[nomeComune]
         del comuniAgID[nomeComune]
-        pv = grafo_AgID.value (grafo_AgID.value (comune, geonames_In), rdflib.RDFS.label).toPython ()
-        print nomeComune + ' (' + pv + ')'
-        comuniAgID[nomeComune + ' ('+ pv +')'] = comune
+        re = grafo_AgID.value (grafo_AgID.value (grafo_AgID.value (comune, geonames_In), geonames_In),rdflib.RDFS.label).toPython ()
+        print nomeComune + ' (' + re + ')'
+        comuniAgID[nomeComune + ' ('+ re +')'] = comune
     else:
         comuniAgID[nomeComune] = comune
 
@@ -93,6 +93,8 @@ tipiIstituzione = set ()
 comuniNonTrovati = {}
 
 locale.setlocale( locale.LC_ALL, 'it_IT.UTF-8')
+
+aliasComuni = { 'AGLIANO' : 'AGLIANO TERME', 'BORGONE DI SUSA' : 'BORGONE SUSA', 'CERRINA' : 'CERRINA MONFERRATO', 'CAMPIGLIONE FENILE' : 'CAMPIGLIONE-FENILE', 'CASTELLETTO TICINO' : 'CASTELLETTO SOPRA TICINO', "LENTA'" : 'LENTA',  'MOTTA DEI CONTI' : "MOTTA DE' CONTI", "MOLINO DE' TORTI" : 'MOLINO DEI TORTI', 'LEINI' : "LEINI'", 'PONT CANAVESE' : 'PONT-CANAVESE',  "REGGIO NELL'EMILIA" : "REGGIO EMILIA", 'SAN REMO' : 'SANREMO',  'IESOLO' : 'JESOLO', 'RACCUIA':'RACCUJA', 'ORTONA A MARE' : 'ORTONA','CASSANO ALLO IONIO' :"CASSANO ALL'IONIO"}
 
 for rigaScuola in csvDatiMIUR:
     meccanografico = rigaScuola['PLESSO/SCUOLA'].upper ()
@@ -121,28 +123,33 @@ for rigaScuola in csvDatiMIUR:
     nomeProvincia = rigaScuola['PROVINCIA']
     if nomeProvincia == "L' Aquila":
         nomeProvincia = "L'Aquila"
+    nomeRegione = rigaScuola['REGIONE']
     if nomeComune in comuniAgID:
         comune = comuniAgID[nomeComune]
-    elif (nomeComune + ' (' + nomeProvincia + ')') in comuniAgID:
-        comune = comuniAgID[nomeComune + ' (' + nomeProvincia + ')']
+    elif (nomeComune + ' (' + nomeRegione + ')') in comuniAgID:
+        comune = comuniAgID[nomeComune + ' (' + nomeRegione + ')']
     elif ('.' in nomeComune) and \
     (nomeComune[:nomeComune.find('.') - 1] in comuniAgID):
-         comune = comuniAgID[nomeComune[:nomeComune.find('.') - 1]]
+        comune = comuniAgID[nomeComune[:nomeComune.find('.') - 1]]
+    elif nomeComune in aliasComuni and aliasComuni[nomeComune] in comuniAgID:
+        comune = comuniAgID[aliasComuni[nomeComune]]
     if comune:
         grafo_MIUR.add ( (namespace_scuole + meccanografico, geonames_In, comune) )
-        pv = grafo_AgID.value (grafo_AgID.value (comune, geonames_In), rdflib.RDFS.label).toPython ()
-        if pv[:5] != nomeProvincia[:5]:
-            print 'Attenzione, per il comune', nomeComune, 'la provincia non corrisponde:', pv, '!=', nomeProvincia
+        re = grafo_AgID.value (grafo_AgID.value (grafo_AgID.value (comune, geonames_In), geonames_In), rdflib.RDFS.label).toPython ()
+        if re[:5] != nomeRegione[:5]:
+            print 'Attenzione, per il comune', nomeComune, 'la regione non corrisponde:', re, '!=', nomeRegione
     else:
-#        print 'Comune', nomeComune, 'non trovato'
+        if nomeRegione == 'Piemonte':
+            print 'Comune', nomeComune, 'non trovato!!'
+        nomeComune += ' (' + nomeRegione + ')'
         if nomeComune in comuniNonTrovati:
             comuniNonTrovati[nomeComune] += 1
         else:
             comuniNonTrovati[nomeComune] = 1
 
-grafo_MIUR.serialize (destination=open ('MIUR.ttl', 'w'), format=formatoDati)
-print 'Scritto un grafo con', len (grafo_MIUR), 'terne.'
-
 print 'Caratteristiche trovate:', caratteristiche
 print 'Valori per TIPO ISTITUZIONE:', tipiIstituzione
 print 'Comuni non trovati:', comuniNonTrovati
+
+grafo_MIUR.serialize (destination=open ('MIUR.ttl', 'w'), format=formatoDati)
+print 'Scritto un grafo con', len (grafo_MIUR), 'terne.'
