@@ -90,7 +90,7 @@ grafo_MIUR.bind ('scuola', namespace_scuole)
 
 caratteristiche = set ()
 tipiIstituzione = set ()
-comuniNonTrovati = set ()
+comuniNonTrovati = {}
 
 locale.setlocale( locale.LC_ALL, 'it_IT.UTF-8')
 
@@ -117,19 +117,28 @@ for rigaScuola in csvDatiMIUR:
     except:
         lat = 0
     comune = None
-    if rigaScuola['COMUNE'] in comuniAgID:
-        comune = comuniAgID[rigaScuola['COMUNE']]
-    elif (rigaScuola['COMUNE'] + ' (' + rigaScuola['PROVINCIA']+ ')') in comuniAgID:
-        comune = comuniAgID[rigaScuola['COMUNE'] + ' (' + rigaScuola['PROVINCIA']+ ')']
-    elif ('.' in rigaScuola['COMUNE']) and \
-    (rigaScuola['COMUNE'][:rigaScuola['COMUNE'].find('.') - 1] in comuniAgID):
-         comune = comuniAgID[rigaScuola['COMUNE'][:rigaScuola['COMUNE'].find('.') - 1]]
+    nomeComune = rigaScuola['COMUNE']
+    nomeProvincia = rigaScuola['PROVINCIA']
+    if nomeProvincia == "L' Aquila":
+        nomeProvincia = "L'Aquila"
+    if nomeComune in comuniAgID:
+        comune = comuniAgID[nomeComune]
+    elif (nomeComune + ' (' + nomeProvincia + ')') in comuniAgID:
+        comune = comuniAgID[nomeComune + ' (' + nomeProvincia + ')']
+    elif ('.' in nomeComune) and \
+    (nomeComune[:nomeComune.find('.') - 1] in comuniAgID):
+         comune = comuniAgID[nomeComune[:nomeComune.find('.') - 1]]
     if comune:
         grafo_MIUR.add ( (namespace_scuole + meccanografico, geonames_In, comune) )
+        pv = grafo_AgID.value (grafo_AgID.value (comune, geonames_In), rdflib.RDFS.label).toPython ()
+        if pv[:5] != nomeProvincia[:5]:
+            print 'Attenzione, per il comune', nomeComune, 'la provincia non corrisponde:', pv, '!=', nomeProvincia
     else:
-#        print 'Comune', rigaScuola['COMUNE'], 'non trovato'
-        comuniNonTrovati |= {rigaScuola['COMUNE']}
-
+#        print 'Comune', nomeComune, 'non trovato'
+        if nomeComune in comuniNonTrovati:
+            comuniNonTrovati[nomeComune] += 1
+        else:
+            comuniNonTrovati[nomeComune] = 1
 
 grafo_MIUR.serialize (destination=open ('MIUR.ttl', 'w'), format=formatoDati)
 print 'Scritto un grafo con', len (grafo_MIUR), 'terne.'
