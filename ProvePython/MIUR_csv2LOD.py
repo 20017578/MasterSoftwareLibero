@@ -125,6 +125,10 @@ for rigaScuola in csvDatiMIUR:
         lat = 0
         lon = 0
     if lat*lon != 0:
+        # Sarebbe interessante verificare se le coordinate sono all'interno del comune
+        # in base alle forme pubblicate da ISTAT su
+        # http://www.istat.it/storage/cartografia/confini_amministrativi/non_generalizzati/2015/Limiti_2015_WGS84.zip
+        # import pyshp shapely ?
         grafo_MIUR.add ( (IRI_scuola, prop_latitudine, rdflib.Literal (lat, datatype=rdflib.XSD.float)) )
         grafo_MIUR.add ( (IRI_scuola, prop_longitudine, rdflib.Literal (lon, datatype=rdflib.XSD.float)) )
     comune = None

@@ -47,6 +47,7 @@ miurO:Scuola a owl:Class, rdfs:Class;
 
   rdfs:comment "Rappresenta una scuola in senso generale di organizzazione che fornisce servizi di istruzione scolastica o pre-scolastica, ma non universitaria, catalogata dal MIUR."@it;
   rdfs:isDefinedBy miur:ontologia ;
+  rdfs:seeAlso <http://www.geonames.org/ontology#S.SCH> ;
 .
 
 miurO:Autonomia a owl:Class, rdfs:Class;
@@ -56,6 +57,7 @@ miurO:Autonomia a owl:Class, rdfs:Class;
 
   rdfs:comment "Rappresenta una istituzione scolastica autonoma, sede di dirigenza."@it;
   rdfs:isDefinedBy miur:ontologia ;
+  rdfs:seeAlso <http://spcdata.digitpa.gov.it/Categoriaamministrazione/L33> ;
 .
 
 miurO:PuntoErogazioneServizio a owl:Class, rdfs:Class;
