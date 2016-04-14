@@ -98,34 +98,37 @@ locale.setlocale( locale.LC_ALL, 'it_IT.UTF-8')
 #Piemonte
 aliasComuni = { 'AGLIANO' : 'AGLIANO TERME', 'BORGONE DI SUSA' : 'BORGONE SUSA', 'CERRINA' : 'CERRINA MONFERRATO', 'CASTELLETTO TICINO' : 'CASTELLETTO SOPRA TICINO', "LENTA'" : 'LENTA',  'MOTTA DEI CONTI' : "MOTTA DE' CONTI", "MOLINO DE' TORTI" : 'MOLINO DEI TORTI', 'LEINI' : "LEINI'"}
 #Altre Regioni
-aliasComuni |= { "REGGIO NELL'EMILIA" : "REGGIO EMILIA", 'SAN REMO' : 'SANREMO',  'IESOLO' : 'JESOLO', 'RACCUIA':'RACCUJA', 'ORTONA A MARE' : 'ORTONA','CASSANO ALLO IONIO' :"CASSANO ALL'IONIO", 'VALSAMOGGIA' : 'BAZZANO'}
+aliasComuni.update ({ "REGGIO NELL'EMILIA" : "REGGIO EMILIA", 'SAN REMO' : 'SANREMO',  'IESOLO' : 'JESOLO', 'RACCUIA':'RACCUJA', 'ORTONA A MARE' : 'ORTONA','CASSANO ALLO IONIO' :"CASSANO ALL'IONIO", 'VALSAMOGGIA' : 'BAZZANO', "DRO'" : 'DRO', 'VO' : "VO'", 'COMUNNUOVO' : 'COMUN NUOVO', 'COSTA DI SERINA' : 'COSTA SERINA', 'LETOIANNI' : 'LETOJANNI', "FIGLINE E INCISA VALDARNO" : "FIGLINE VALDARNO", 'PIANA DI MONTEVERNA' : 'PIANA DI MONTE VERNA'})
 
 contoCAPimprecisi = 0
 
 for rigaScuola in csvDatiMIUR:
     meccanografico = rigaScuola['PLESSO/SCUOLA'].upper ()
-    grafo_MIUR.add ( (namespace_scuole + meccanografico, namespace_ontologia + 'meccanografico', rdflib.Literal (meccanografico)) )
+    IRI_scuola = namespace_scuole + meccanografico
+    grafo_MIUR.add ( (IRI_scuola, namespace_ontologia + 'meccanografico', rdflib.Literal (meccanografico)) )
     autonomia = rigaScuola['ISTITUTO PRINCIPALE'].upper ()
     if autonomia == meccanografico:
         if rigaScuola['DENOMINAZIONE'].upper () != rigaScuola['DENOMINAZIONE ISTITUTO PRINCIPALE'].upper ():
             print 'Anomalia sulla autonomia', meccanografico, 'denominazioni non coincidenti'
-        grafo_MIUR.add ( (namespace_scuole + meccanografico, rdflib.RDF.type, namespace_ontologia + 'Autonomia') )
+        grafo_MIUR.add ( (IRI_scuola, rdflib.RDF.type, namespace_ontologia + 'Autonomia') )
     else:
-        grafo_MIUR.add ( (namespace_scuole + meccanografico, rdflib.RDF.type, namespace_ontologia + 'PuntoErogazioneServizio') )
-        grafo_MIUR.add ( (namespace_scuole + meccanografico, namespace_ontologia + 'haIstitutoPrincipale', namespace_scuole + autonomia) )
-    grafo_MIUR.add ( (namespace_scuole + meccanografico, rdflib.RDFS.label, rdflib.Literal (rigaScuola['DENOMINAZIONE'])) )
+        grafo_MIUR.add ( (IRI_scuola, rdflib.RDF.type, namespace_ontologia + 'PuntoErogazioneServizio') )
+        grafo_MIUR.add ( (IRI_scuola, namespace_ontologia + 'haIstitutoPrincipale', namespace_scuole + autonomia) )
+        grafo_MIUR.add ( (namespace_scuole + autonomia, namespace_ontologia + 'istitutoPrincipaleDi', IRI_scuola) )
+    grafo_MIUR.add ( (IRI_scuola, rdflib.RDFS.label, rdflib.Literal (rigaScuola['DENOMINAZIONE'])) )
     caratteristiche |= {rigaScuola['CARATTERISTICA']}
     tipiIstituzione |= {rigaScuola['TIPO ISTITUZIONE']}
     try:
         lat = locale.atof (rigaScuola['LATITUDINE'])
         lon = locale.atof (rigaScuola['LONGITUDINE'])
-        if lat*lon != 0:
-            grafo_MIUR.add ( (namespace_scuole + meccanografico, prop_latitudine, rdflib.Literal (lat)) )
-            grafo_MIUR.add ( (namespace_scuole + meccanografico, prop_longitudine, rdflib.Literal (lon)) )
     except:
         lat = 0
+        lon = 0
+    if lat*lon != 0:
+        grafo_MIUR.add ( (IRI_scuola, prop_latitudine, rdflib.Literal (lat, datatype=rdflib.XSD.float)) )
+        grafo_MIUR.add ( (IRI_scuola, prop_longitudine, rdflib.Literal (lon, datatype=rdflib.XSD.float)) )
     comune = None
-    nomeComune = rigaScuola['COMUNE'].upper ().replace ('-',' ')
+    nomeComune = rigaScuola['COMUNE'].upper ().replace ('-',' ').replace ('   ',' ')
     nomeRegione = rigaScuola['REGIONE']
     if nomeComune in comuniAgID:
         comune = comuniAgID[nomeComune]
@@ -136,12 +139,12 @@ for rigaScuola in csvDatiMIUR:
     elif nomeComune in aliasComuni and aliasComuni[nomeComune] in comuniAgID:
         comune = comuniAgID[aliasComuni[nomeComune]]
     if comune:
-        grafo_MIUR.add ( (namespace_scuole + meccanografico, geonames_In, comune) )
+        grafo_MIUR.add ( (IRI_scuola, geonames_In, comune) )
         CAP_scuola = rigaScuola['CAP']
         if CAP_scuola:
             CAP_comune = grafo_AgID.value (comune, locn_CAP).toPython ()
             if len (CAP_scuola) != 5:
-                CAP_scuola = ('00000' + CAP_scuola) [-5:]
+                CAP_scuola = ('0000' + CAP_scuola) [-5:]
             while CAP_comune[-1:] == 'x':
                 CAP_comune = CAP_comune[:-1]
                 CAP_scuola = CAP_scuola[:-1]
