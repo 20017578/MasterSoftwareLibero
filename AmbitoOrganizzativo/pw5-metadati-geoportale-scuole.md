@@ -91,7 +91,6 @@ num ord|nome campo|tipo|nome tipo|lungh|prec|desc campo|Poss. valorizz|note
 
 n ord|nome campo|tipo|nome tipo|lungh|prec|desc campo|Poss. valorizz|note
 -----|----------|----|---------|-----|----|----------|--------------|----
-                                                 
 0  |uuid_pe_uins| QString|varchar| 36| -1|id univoco identificativo del poligono assegnato automaticamente dal DB|id crescente
 1  |pe_uins_ty  | QString|varchar| 50| -1|id univoco identificativo del poligono assegnato automaticamente|Struttura scolastica
 2  |pe_uins_nm  | QString|varchar| 50| -1|id univoco identificativo del poligono assegnato automaticamente
@@ -101,7 +100,6 @@ n ord|nome campo|tipo|nome tipo|lungh|prec|desc campo|Poss. valorizz|note
 6|ristat|QString|varchar|254|-1|codice istat comune anteponendo prefisso"R"|ridurre a 20 chr
 7|Toponimo_comune|QString|varchar|254|-1|nome comune||normalizzati in base all'assenza di apostrofi e lettere accentate '=ascii 096
 8| as_grado|QString|varchar|50|-1|Grado scolastico|INF, PRI, S1G, S2G, PAL, F.P
-                                         
 10|flg_statal    |QString|varchar|50 |-1|codice istat comune anteponendo prefisso"R"
 11|flg_parita    |QString|varchar|2  |-1|flag paritaria
 12|flg_privat    |QString|varchar|2  |-1|flag privata
