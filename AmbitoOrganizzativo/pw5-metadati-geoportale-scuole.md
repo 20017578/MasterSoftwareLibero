@@ -1,23 +1,23 @@
 PW5-Stato di avanzamento in merito alla parte applicativa "Scuole"
 ==================================================================
 
-Al fine di consentire di descrivere nella maniera pi˘ dettagliata possibile le tipologie di dati riferite
-alla parte pi˘ applicativa del nostro Project Work 5 il cui processo di rielaborazione, tramite i
+Al fine di consentire di descrivere nella maniera pi√π dettagliata possibile le tipologie di dati riferite
+alla parte pi√π applicativa del nostro Project Work 5 il cui processo di rielaborazione, tramite i
 linguaggi appresi durante il Master, possa contribuire all'avanzamento della parte di esempi
-operativi e che nel nostro caso riguarda i dati sulle scuole ed i dati sulla trasparenza, si Ë redatto
-questo documento che, a breve, rappresenter‡ il documento di metadatazione dei dati "scuole"
+operativi e che nel nostro caso riguarda i dati sulle scuole ed i dati sulla trasparenza, si √® redatto
+questo documento che, a breve, rappresenter√† il documento di metadatazione dei dati "scuole"
 scaricabili dal DBgeografico pubblicati sul Geoportale della Regione Piemonte.
 
 Gli shape file scaricabili dalla pubblicazione sul Geoportale Regionale si riferiscono a due livelli
 informativi geografici specifici individuati come: Aree Scolastiche e Punti.
 
-La possibilit‡ di creare dei Linked Open Data che, oltre che avvalersi delle fonti gi‡ sperimentate (AgID, Miur, Istat, dati.gov.it, etc) dovrebbe consentire di rendere sempre pi˘ realistico e esaustivo
+La possibilit√† di creare dei Linked Open Data che, oltre che avvalersi delle fonti gi√† sperimentate (AgID, Miur, Istat, dati.gov.it, etc) dovrebbe consentire di rendere sempre pi√π realistico e esaustivo
 l'esempio applicativo scelto all'interno del PW.
 
 Genesi della produzione di dati georiferiti
 -------------------------------------------
 
-Nell'arco degli ultimi anni, Ë stato attivato un progetto di impianto di un Dbgeografico su questo
+Nell'arco degli ultimi anni, √® stato attivato un progetto di impianto di un Dbgeografico su questo
 aspetto specifico attraverso il quale sono state recuperate tutte le informazioni analogiche
 (cartografie, allegate ai progetti, estratti di Mappe Catastali e/o di Piani Regolatori che nel tempo
 erano in deposito presso il Settore in quanto oggetto di trasmissione di elaborati progettuali utili alla
@@ -25,7 +25,7 @@ richiesta di contributi da parte degli enti proprietari per la manutenzione stra
 utilizzo di elenchi di dati derivanti da collaborazioni con i Comuni piemontesi e le Province
 piemontesi che in modo non omogeneo avevano comunque informazioni utili a tale riguardo, etc).
 Attraverso un lungo lavoro minuzioso di controllo e di georeferenziazione sono state caricate le
-geometrie in termini di coppie di coordinate nel sistema di riferimento regionale (**UTM-WGS84 ≠ sistema di proiezione 32632**- sistema adottato nelle linee guida D.G.R. 22-4687 del 8-10-2012
+geometrie in termini di coppie di coordinate nel sistema di riferimento regionale (**UTM-WGS84 ¬≠ sistema di proiezione 32632**- sistema adottato nelle linee guida D.G.R. 22-4687 del 8-10-2012
 art.5) tentando di associare codici univoci depositati dall'applicativo EDISCO (Anagrafe
 dell'Edilizia Scolastica)..
 
@@ -34,12 +34,12 @@ Analisi Dati
 
 A. I **punti** rappresentano la geolocalizzazione sul baricentro dell'edificio scolastico ed una serie di attributi di seguito riportati. (vedi Tab. 1)
 
-Si Ë preferito utilizzare il baricentro dell'edificio rispetto ad altre eventuali localizzazioni puntuali
+Si √® preferito utilizzare il baricentro dell'edificio rispetto ad altre eventuali localizzazioni puntuali
 (ad esempio il numero civico di accesso all'edificio) in quanto, in questa fase di primo impianto del
-progetto, il controllo delle attivit‡ in itinere era di livello "*macro*" e quindi i controlli dovevano
+progetto, il controllo delle attivit√† in itinere era di livello "*macro*" e quindi i controlli dovevano
 avvenire sulla coerenza topologica tra il punto e le aree; pertanto il punto dell'accesso stradale pur
-essendo molto utile in una successiva rielaborazione delle geometrie a livello "*micro*" ad oggi non Ë
-stato preso in considerazione e potr‡ essere presente in versioni successive.
+essendo molto utile in una successiva rielaborazione delle geometrie a livello "*micro*" ad oggi non √®
+stato preso in considerazione e potr√† essere presente in versioni successive.
 
 B. Le **aree scolastiche** che rappresentano una serie di poligoni che definiscono l'area di pertinenza dell'edificio scolastico intesa come area che accorpa eventuali altri edifici puntuali afferenti allo stesso plesso scolastico. (vedi Tab. 2).
 
@@ -47,7 +47,7 @@ Occorre a questo riguardo ricordare come il concetto di area scolastica consider
 realizzazione di questo livello informativo possa assumere indifferentemente il contorno di un
 poligono relativo al solo edificio (nel caso di un edificio inserito in un tessuto urbano densamente
 edificato) o, in caso di aree urbanisticamente destinate a servizi, il contorno di aree in cui sono
-contenuti pi˘ edifici scolastici. Nessuna relazione Ë per ora da attribuirsi alla definizione di "*area
+contenuti pi√π edifici scolastici. Nessuna relazione √® per ora da attribuirsi alla definizione di "*area
 scolastica di pertinenza*" in analogia all'area di pertinenza dell'edificio secondo una terminologia
 legata al catasto terreni (fogli di mappa, o dividenti di frazionamento).
 
@@ -104,7 +104,7 @@ n ord|nome campo|tipo|nome tipo|lungh|prec|desc campo|Poss. valorizz|note
 11|flg_parita    |QString|varchar|2  |-1|flag paritaria
 12|flg_privat    |QString|varchar|2  |-1|flag privata
 13|flg_comuna    |QString|varchar|2  |-1|flag comunale
-14|as_ceasp      |QString|varchar|50 |-1|codice edificiio area scolastica Piemonte
+14|as_ceasp      |QString|varchar|50 |-1|codice edificio area scolastica Piemonte
 15|cod_sede_par  |chr    |stringa|254|0 |P.E.S. Paritarie
 16|note_par      |Qstring|varchar|50 |-1|eventuali denominazioni P.E.S. Paritarie
 17|note_pri      |Qstring|varchar|500|-1|eventuali denominazioni P.E.S. Private
@@ -115,15 +115,15 @@ n ord|nome campo|tipo|nome tipo|lungh|prec|desc campo|Poss. valorizz|note
 Obiettivi e risultati
 ---------------------
 
-1. La strutturazione del Dbtopografico cosÏ come realizzato consente di non trattare ogni singolo punto "fine a se", infatti pur contenendo tutte le informazioni legate alle informazioni sull'edificio scolastico esse possono venire elaborate mediante tecniche G.I.S. di "overlay", al fine di estrarre tutti i punti (edifici) che insistono all'interno di una stessa area di pertinenza a carattere "scolastico" Se a questo punto le elaborazioni consentono di sommare valori che prima erano solo dell'entit‡ "Punto". (ad esempio popolazione scolastica che afferisce ad ogni punto) potrebbero venire valorizzati per ogni area e quindi partendo da un dato granulometricamente di livello base ad una generalizzazione che tenga conto degli attributi esistenti complessivamente nell'area.
-2. Altro interessante obiettivo Ë rappresentato dalla possibilit‡ di "ereditare" informazioni che sono depositate su altri livelli informativi presenti nei dataset geografici e riferita ad altre tematiche. La immediata conoscenza della localizzazione di un edificio in area ad esondazione, in aree con vincoli sismici, la stessa informazione sui dati catastali (frutto non pi˘ di un caricamento alfanumerico) ma attraverso una semplice operazione di overmapping e, non ultima, la popolazione di attributi che implementano il complesso dataset relativo alla **BDTRE** puÚ essere il giusto obiettivo di interoperabilit‡ sancita sia a livello normativo nazionale che regionale.
-3. Il risultato gi‡ conseguito Ë consistito nella possibilit‡ di utilizzare le funzioni del Geoportale per una consultazione personalizzata che consente di vedere il progetto dinamicamente in pubblicazione. A tale fine si allega una sintetica tematizzazione che consente di comprendere immediatamente le tipologie di edifici rappresentati.
+1. La strutturazione del Dbtopografico cos√¨ come realizzato consente di non trattare ogni singolo punto "fine a se", infatti pur contenendo tutte le informazioni legate alle informazioni sull'edificio scolastico esse possono venire elaborate mediante tecniche G.I.S. di "overlay", al fine di estrarre tutti i punti (edifici) che insistono all'interno di una stessa area di pertinenza a carattere "scolastico" Se a questo punto le elaborazioni consentono di sommare valori che prima erano solo dell'entit√† "Punto". (ad esempio popolazione scolastica che afferisce ad ogni punto) potrebbero venire valorizzati per ogni area e quindi partendo da un dato granulometricamente di livello base ad una generalizzazione che tenga conto degli attributi esistenti complessivamente nell'area.
+2. Altro interessante obiettivo √® rappresentato dalla possibilit√† di "ereditare" informazioni che sono depositate su altri livelli informativi presenti nei dataset geografici e riferita ad altre tematiche. La immediata conoscenza della localizzazione di un edificio in area ad esondazione, in aree con vincoli sismici, la stessa informazione sui dati catastali (frutto non pi√π di un caricamento alfanumerico) ma attraverso una semplice operazione di overmapping e, non ultima, la popolazione di attributi che implementano il complesso dataset relativo alla **BDTRE** pu√≤ essere il giusto obiettivo di interoperabilit√† sancita sia a livello normativo nazionale che regionale.
+3. Il risultato gi√† conseguito √® consistito nella possibilit√† di utilizzare le funzioni del Geoportale per una consultazione personalizzata che consente di vedere il progetto dinamicamente in pubblicazione. A tale fine si allega una sintetica tematizzazione che consente di comprendere immediatamente le tipologie di edifici rappresentati.
 
-Oltre a tenere conto che la possibilit‡ di scaricare in formato shape file (che rappresentano secondo
-le diretive INSPIRE un formato di interoperabilit‡) i due layer oggetto di queste note di
-metadatazione Ë un risultato che conclude una fase di impianto ponendo le basi per eventuali
+Oltre a tenere conto che la possibilit√† di scaricare in formato shape file (che rappresentano secondo
+le direttive INSPIRE un formato di interoperabilit√†) i due layer oggetto di queste note di
+metadatazione √® un risultato che conclude una fase di impianto ponendo le basi per eventuali
 possibili miglioramenti.
 
-Applicata all'attivit‡ del PW5 questa "ufficiale" metadatazione consente di rendere pi˘ semplice
+Applicata all'attivit√† del PW5 questa "ufficiale" metadatazione consente di rendere pi√π semplice
 l'esercitazione applicativa permettendo di ottenere del L.O.D. che possano avere una pratica
 utilizzazione.
