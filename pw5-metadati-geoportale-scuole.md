@@ -78,7 +78,7 @@ num ord|nome campo|tipo|nome tipo|lungh|prec|desc campo|Poss. valorizz|note
 18|coord_y|num|double reale|15|5|coordinata Y nel sistema di proiezione utm-wgs84 32632||Aumentare a 6 cifre decimali
 19|fi|num|double reale|15|5|coordinata LAT nel sistema di proiezione geographic 4326||Aumentare a 6 cifre decimali (in EPSG:4326, -90 <= LAT <= 90, le cifre sono quasi tutte decimali...)
 20|lambda|num|double reale|15|5|coordinata LON nel sistema di proiezione geographic 4326||Aumentare a 6 cifre decimali (in EPSG:4326, -180 <= LON <= 180, le cifre sono quasi tutte decimali...)
-21|note_gg|Qstring|varchar|500|-1|punto rappresentato dalla coppia di coordinate nel sistema geographic 4326 (nel senso WKT? POINT(xx.xxxxxx yy.yyyyy)? allora leng=50 basta...)
+21|note_gg|Qstring|varchar|500|-1|punto rappresentato dalla coppia di coordinate nel sistema geographic 4326 (nel senso WKT? "POINT(xx.xxxxxx yy.yyyyyy)"? allora lungh=45 basta...)
 22|flg_statal|Qstring|varchar|500|-1|flag statale||ridurre a 2 chr
 23|flg_parita|Qstring|varchar|500|-1|flag paritaria||ridurre a 2 chr
 24|flg_comuna|Qstring|varchar|500|-1|flag comunale||ridurre a 2 chr
@@ -99,15 +99,15 @@ n ord|nome campo|tipo|nome tipo|lungh|prec|desc campo|Poss. valorizz|note
 5|sigla_prov|Qstring|varchar|2|-1|sigla targa provincia|AL, AT, BI, CN, NO, TO, VB, VC|ridurre a 2 chr
 6|ristat|QString|varchar|254|-1|codice istat comune anteponendo prefisso"R"|ridurre a 20 chr
 7|Toponimo_comune|QString|varchar|254|-1|nome comune||normalizzati in base all'assenza di apostrofi e lettere accentate '=ascii 096
-8|as_grado|QString|varchar|50|-1|Grado scolastico|INF, PRI, S1G, S2G, PAL, F.P
+8|as_grado|QString|varchar|50|-1|Grado scolastico|INF, PRI, S1G, S2G, PAL, F.P (se le sigle son queste lungh=3 dovrebbe bastare)
 10|flg_statal|QString|varchar|50|-1|codice istat comune anteponendo prefisso"R"
-11|flg_parita|QString|varchar|2|-1|flag paritaria
+11|flg_parita|QString|varchar|2|-1|flag paritaria|(come sono individuate le statali? per esclusione?)
 12|flg_privat|QString|varchar|2|-1|flag privata
 13|flg_comuna|QString|varchar|2|-1|flag comunale
 14|as_ceasp|QString|varchar|50|-1|codice edificio area scolastica Piemonte
 15|cod_sede_par|chr|stringa|254|0|P.E.S. Paritarie
 16|note_par|Qstring|varchar|50|-1|eventuali denominazioni P.E.S. Paritarie
-17|note_pri|Qstring|varchar|500|-1|eventuali denominazioni P.E.S. Private
+17|note_pri|Qstring|varchar|500|-1|eventuali denominazioni P.E.S. Private|(come mai lungh=50 per le paritarie e 500 per le private?)
 18|note_cod|Qstring|varchar|500|-1|
 19|fk_metaope|int|Int4|-1|0|Codice aggiornatore
 20|link_scheda_as|Qstring|text|-1|-1|Campo catenato necessario per link alla tavola
