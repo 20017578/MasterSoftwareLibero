@@ -58,32 +58,32 @@ Di seguito vengono descritti i tracciati record e le sintesi descrittive.
 num ord|nome campo|tipo|nome tipo|lungh|prec|desc campo|Poss. valorizz|note
 -------|----------|----|---------|-----|----|----------|--------------|----
 0|id_progr_scuole_pt|int|Int4|-1|0|id univoco identificativo del punto assegnato manualmente|id crescente
-1|fk_uuid_edifc|Qstring|varchar|500|-1|id univoco identificativo del punto assegnato automaticamente|id automatico
-2|fonte|Qstring|varchar|500|-1|data assegnazione attributi sorgente|21-10-2014
-3|tipo_edi|Qstring|varchar|500|-1|tipo edificio|E-S E-P
-4|agg|Qstring|varchar|500|-1|null|data
+1|fk_uuid_edifc|Qstring|varchar|500|-1|id univoco identificativo del punto assegnato automaticamente|id automatico|(lungh=500 sembra troppo)
+2|fonte|Qstring|varchar|500|-1|data assegnazione attributi sorgente|21-10-2014|(lungh=500 sembra troppo)
+3|tipo_edi|Qstring|varchar|500|-1|tipo edificio|E-S, E-P|(significato di E-S ed E-P? serve lungh=500?)
+4|agg|Qstring|varchar|500|-1|null|data|(lungh=500 sembra troppo)
 5|pro|Qstring|varchar|500|-1|sigla targa provincia|AL, AT, BI, CN, NO, TO, VB, VC|ridurre a 2 chr
 6|comune|Qstring|varchar|500|-1|nome comune||normalizzati in base all'assenza di apostrofi e lettere accentate '=ascii 096
-7|ristat|Qstring|varchar|500|-1|codice istat comune anteponendo prefisso"R"
-8|istat|Qstring|varchar|500|-1|codice istat comune
-9|tipo_scu|Qstring|varchar|500|-1|grado scolastico edificio scolastico
+7|ristat|Qstring|varchar|500|-1|codice istat comune anteponendo prefisso"R"|(duplicato di 8, ne terrei uno solo e lungh=500 sembra troppo)
+8|istat|Qstring|varchar|500|-1|codice istat comune|(duplicato di 7, ne terrei uno solo e lungh=500 sembra troppo)
+9|tipo_scu|Qstring|varchar|500|-1|grado scolastico edificio scolastico|(lungh=500 sembra troppo)
 10|deno_scu|Qstring|varchar|500|-1|eventuali denominazione dei P.E.S
 11|ind_scu|Qstring|varchar|500|-1|eventuale indirizzo dei P.E.S.|
 12|c_sede_i|Qstring|varchar|500|-1|eliminare
 13|ind_stu|Qstring|varchar|500|-1|eventuale indirizzo distudio dei P.E.S.
-14|rcerp|Qstring|varchar|500|-1|Codice Edificio Regione Piemonte anteponendo prefisso"R"||ridurre a 20 chr
-15|cerp|Qstring|varchar|500|-1|Codice Edificio Regione Piemonte||ridurre a 20 chr
+14|rcerp|Qstring|varchar|500|-1|Codice Edificio Regione Piemonte anteponendo prefisso"R"||ridurre a 20 chr (duplicato di 15, ne terrei uno solo)
+15|cerp|Qstring|varchar|500|-1|Codice Edificio Regione Piemonte||ridurre a 20 chr (duplicato di 14, ne terrei uno solo)
 16|cem|Qstring|varchar|500|-1|Codice Edificio Miur||ridurre a 20 chr
-17|coord_x|double|numeric|15|5|coordinata X nel sistema di proiezione utm-wgs84 32632||Aumentare a 6 cifre decimali
+17|coord_x|double|numeric|15|5|coordinata X nel sistema di proiezione utm-wgs84 32632||Aumentare a 6 cifre decimali (qui tipo=double, nei successivi tipo=num.. verificare)
 18|coord_y|num|double reale|15|5|coordinata Y nel sistema di proiezione utm-wgs84 32632||Aumentare a 6 cifre decimali
-19|fi|num|double reale|15|5|coordinata LAT nel sistema di proiezione geographic 4326||Aumentare a 6 cifre decimali
-20|lambda|num|double reale|15|5|coordinata LON nel sistema di proiezione geographic 4326||Aumentare a 6 cifre decimali
-21|note_gg|Qstring|varchar|500|-1|punto rappresentato dalla coppia di coordinate nel sistema geographic 4326
+19|fi|num|double reale|15|5|coordinata LAT nel sistema di proiezione geographic 4326||Aumentare a 6 cifre decimali (in EPSG:4326, -90 <= LAT <= 90, le cifre sono quasi tutte decimali...)
+20|lambda|num|double reale|15|5|coordinata LON nel sistema di proiezione geographic 4326||Aumentare a 6 cifre decimali (in EPSG:4326, -180 <= LON <= 180, le cifre sono quasi tutte decimali...)
+21|note_gg|Qstring|varchar|500|-1|punto rappresentato dalla coppia di coordinate nel sistema geographic 4326 (nel senso WKT? POINT(xx.xxxxxx yy.yyyyy)? allora leng=50 basta...)
 22|flg_statal|Qstring|varchar|500|-1|flag statale||ridurre a 2 chr
 23|flg_parita|Qstring|varchar|500|-1|flag paritaria||ridurre a 2 chr
 24|flg_comuna|Qstring|varchar|500|-1|flag comunale||ridurre a 2 chr
-25|flg_privat|Qstring|varchar|500|-1|flag privata||attualmente rappresenta punti
-26|note|Qstring|varchar|500|-1|eventuale campo note|x|non coincidenti con edifici della BDTRE
+25|flg_privat|Qstring|varchar|500|-1|flag privata||(ridurre anche questa a 1-2 chr)
+26|note|Qstring|varchar|500|-1|eventuale campo note|x|attualmente rappresenta punti non coincidenti con edifici della BDTRE
 27|data_edit|Qstring|timestamp|254|0|eventuale data di aggiornamento
 28|user_edit|Qstring|varchar|50|-1|codice identificativo del soggetto che ha effettuato la modifica
 
