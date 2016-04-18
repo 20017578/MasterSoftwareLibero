@@ -116,7 +116,9 @@ miurO:meccanografico a owl:DatatypeProperty, rdf:Property;
 miurO:tipologiaIstruzione a owl:Class, rdfs:Class;
 .
 
-miur:tipo_ScuolaInfanzia a miurO:tipologiaIstruzione;#label=descrizione sintetica comment= descrizione estesa
+miur:tipo_ScuolaInfanzia a miurO:tipologiaIstruzione;
+  rdfs:label "SCUOLA INFANZIA"@it; #label=descrizione sintetica
+  rdfs:comment "SCUOLA INFANZIA"@it; #comment=descrizione estesa
 .
 
 miurO:tipoIstituzione a owl:DatatypeProperty, rdf:Property;
@@ -140,21 +142,12 @@ miurO:tipoIstituzione a owl:DatatypeProperty, rdf:Property;
 # Piemonte;Torino;TOAA00401L;TO ALLIEVO SPINA 3;TOEE00400R;CD GIUSEPPE ALLIEVO;V.ORVIETO  1 INTERNO 5-7-9;10147;TORINO;;SCUOLA INFANZIA;45,091540;7,670460
 
 miur:sc_toaa00401l a miurO:PuntoErogazioneServizio ;
-  rdfs:label "TO ALLIEVO SPINA 3"@it ;
-  miurO:meccanografico "TOEE00401L";
-  miurO:haIstitutoPrincipale miur:sc_toee00400r ;
   locn:address miur:ind_sc_toaa00401l ; #
-  geonames:locatedIn spcdataComune:L219 ; # Corrisponde a TORINO su AgID, usare ISTAT?
-  geonames:locatedIn <http://spcdata.digitpa.gov.it/Provincia/TO> ; # Ridondante ?
-  geonames:locatedIn <http://spcdata.digitpa.gov.it/Regione/1> ;  # Ridondante ?!?
   miurO:tipoIstituzione miur:tipo_ScuolaInfanzia ; # NON ANCORA DEFINITE! NÉ PRIPRIETÀ NÉ OGGETTO...
 # miurO:caratteristicaScuola  ; # NON ANCORA DEFINITO! Qui assente...
-  geo:lat "45.091540"^^xsd:float ; # Nelle coordinate stare attenti alla codifica di "punto/virgola" decimale.
-  geo:long "7.670460"^^xsd:float . # O vale la pena metter le coordinare in un locn:Geometry ?
+.
 
 miur:sc_toee00400r a miurO:Autonomia ;
-  rdfs:label "CD GIUSEPPE ALLIEVO"@it ;
-  miurO:meccanografico "TOEE00400R";
   miurO:istitutoPrincipaleDi miur:sc_toaa00401l . # Ridondante a dire il vero...
 
 miur:ind_sc_toaa00401l a locn:Address ; # Le prime tre righe (CAP incluso) sul calco dei dati AgID
