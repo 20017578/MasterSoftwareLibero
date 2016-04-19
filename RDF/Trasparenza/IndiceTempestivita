@@ -1,3 +1,8 @@
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
 <http://spcdata.digitpa.gov.it/Amministrazione/c_l219> ns:IndiceTempestivita ns:indice.
 
 ns:indiceTempestività ns:rifNormativo "Dlgs ...." .    # Rif. normativo
@@ -6,6 +11,12 @@ ns:periodo1 x?x:haDate "date ...." .   # Definizione dei periodi / date di rilev
 ns:periodo2 x?x:haDate "date ...." .
 [..]
 ns:periodoN x?x:haDate "date ...." .
+ns:2016trimestre1 a time:Interval;
+   rdfs:label "Primo trimetre 2016"@it;
+   time:hasBeginning "2016-01-01"^^xsd:date;
+   time:hasEnd "2016-03-31"^^xsd:date;
+   owl:sameAs <http://reference.data.gov.uk/doc/gregorian-quarter/2016-Q1>
+.
 
 ns:indice ns:periodo1 "32" .    # Valori numerici dei giorni di pagamento
 ns:indice ns:periodo2 "28" .
