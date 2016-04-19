@@ -111,8 +111,6 @@ Oltre a scaricare i dati (nel file cercalatuascuola_istruzione_ASS_201516.csv), 
 
  * Nota, il file csv **contiene** una riga di intestazioni.
 
-#### Transizione verso i **LOD**
-
 Il file CSV coi [dati principali sulle scuole statali del MIUR](http://www.istruzione.it/scuolainchiaro_dati/7-Anagrafe_Scuole_Statali_201516.csv) contiene le seguenti colonne, che possono essere riferite a diverse ontologie:
 
 Intestazione colonna|possibile predicato
@@ -278,3 +276,32 @@ restituisce [poche cose](http://datiopen.istat.it/sparql/oracle?query=PREFIX+ORA
 ### Altri dati in giro&hellip;
 
 Forse vale la pena guardare cose pubblicate da altre amministrazioni grandi o piccole e raccolte da [dati.gov.it](http://www.dati.gov.it/dataset?f[0]=field_themes%3A2&f[1]=field_resources%253Afield_format%3A56)
+
+Proposta per un'ontologia dei dati sulle scuole
+===============================================
+
+Partendo dalle proposte indicate per i dati MIUR di anagrafe delle scuole statali, si è provato a scrivere una prima bozza di ontologia per tali dati, [in formato Turtle](RDF/miur.ttl).
+
+Innanzitutto le istituzioni scolastiche sono state definite come sottoclasse delle organizzazioni, ispirandosi all'ontologia standardizzata dal W3C per le organizzazioni <http://www.w3.org/ns/org>, di cui ci siamo estratti [una copia ridotta](RDF/org.ttl).
+
+Le scuole
+---------
+
+Per definire una scuola non ci possiamo limitare al concetto di istituzione, perché la scuola potrebbe non essere una pubblica amministrazione... inoltre ha probabilmente senso creare una classe ampia, che contempli anche la fase pre-scolastica.
+
+Così è stata creata una sottoclasse di `org:Organizazion`, con una precisa chiave distintiva, il codice meccanografico stabilito dal MIUR.
+
+```turtle
+miurO:Scuola a owl:Class, rdfs:Class;
+  rdfs:subClassOf org:Organization;
+  owl:equivalentClass rponto:scuola;
+  rdfs:label "Scuola"@it;
+  owl:hasKey (miurO:meccanografico) ;
+  rdfs:comment "Rappresenta una scuola in senso generale di organizzazione che fornisce servizi di istruzione scolastica o pre-scolastica, ma non universitaria, catalogata dal MIUR."@it;
+  rdfs:isDefinedBy miur:ontologia ;
+  rdfs:seeAlso <http://www.geonames.org/ontology#S.SCH> ;
+.
+```
+
+In questa definizione probabilmente è un po' azzardato considerare classe equivalente quella (maldestramente) definita dalla Regione Piemonte, perché essa non è molto chiara neppure nell'intenzione. Certamente non si può stabilire una equivalenza con la definizione di `geonames`, che si riferisce esplicitamente agli edifici scolastici.
+
