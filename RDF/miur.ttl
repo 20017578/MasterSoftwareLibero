@@ -121,7 +121,7 @@ miur:tipo_ScuolaInfanzia a miurO:tipologiaIstruzione;
   rdfs:comment "SCUOLA INFANZIA"@it; #comment=descrizione estesa
 .
 
-miurO:tipoIstituzione a owl:DatatypeProperty, rdf:Property;
+miurO:tipoIstituzione a owl:ObjectProperty, rdf:Property;
   rdfs:label "tipologia istituzione scolastica"@it, "tipologia istituzione scolastica"@fr;
   rdfs:domain miurO:Scuola;
   rdfs:range miurO:tipologiaIstruzione; #
