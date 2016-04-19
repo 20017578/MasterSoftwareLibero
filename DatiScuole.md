@@ -9,7 +9,7 @@ Obiettivi dell'analisi
 Verifiche sui dati esistenti
 ----------------------------
 
-### I dati RDF del [Sistema Pubblico di Connettività(http://spcdata.digitpa.gov.it/data.html)
+### I dati RDF del [Sistema Pubblico di Connettività](http://spcdata.digitpa.gov.it/data.html)
 L'*Indice della Pubblica Amministrazione* Contiene dati su tutte le amministrazioni, quindi anche sulle scuole.
 
 Tipo di informazioni che possono essere reperite da questo insieme di dati:
