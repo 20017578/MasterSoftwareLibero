@@ -1,0 +1,35 @@
+@prefix pwod:  <http://nostro_spazio_projectwork_opendata.it/> .
+@prefix spcdata:  <http://spcdata.digitpa.gov.it/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+
+############################################
+###    Elenco degli immobili posseduti   ###
+############################################
+
+pwod:Immobili2015 pwod:periodoRif pwod:anno-2015 .	 
+
+pwod:anno-2015 time:hasBeginning "2015-01-01"^^xsd:date;
+		 time:hasEnd "2015-12-31"^^xsd:date .  
+
+spcdata:"/Comune/L219" pwod:possiede pwod:Immobili2015 .
+
+pwod:immobile0001 pwod:tipologiaImmobile "Capannone"^^xsd:string ;		   
+		    pwod:indirizzo "Via dei Gladioli, 54"^^xsd:string ;
+		    geonames:locatedIn spcdata:"/Comune/L219" ;
+		    pwod:percentualePossesso "31,12"^^xsd:float ;
+		    pwod:destinazioneUso "Ritiro materiali"^^xsd:string ;
+		    [...] ;
+		    [...] .
+
+######## Definizioni principali ########
+
+pwod:Immobili a rdf:Class .
+
+Pwod:possiede a rdf:Property .
+
+pwod:Immobili2015 rdf:subClassOf pwod:Immobili .
+
+pwod:immobile0001  a   pwod:Immobili2015 .
