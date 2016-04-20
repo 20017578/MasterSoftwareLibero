@@ -1,24 +1,35 @@
+@prefix pwod:  <http://nostro_spazio_projectwork_opendata.it/> .
+@prefix spcdata:  <http://spcdata.digitpa.gov.it/> .
 @prefix time:    <http://www.w3.org/2006/time#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<http://spcdata.digitpa.gov.it/Amministrazione/c_l219> ns:IndiceTempestivita ns:indice.
+############################################
+### Indice di Tempestività dei pagamenti ###
+############################################
 
-ns:indiceTempestività ns:rifNormativo "Dlgs ...." .    # Rif. normativo
 
-ns:periodo1 x?x:haDate "date ...." .   # Definizione dei periodi / date di rilevazione dell'indice
-ns:periodo2 x?x:haDate "date ...." .
-[..]
-ns:periodoN x?x:haDate "date ...." .
-ns:2016trimestre1 a time:Interval;
-   rdfs:label "Primo trimetre 2016"@it;
-   time:hasBeginning "2016-01-01"^^xsd:date;
-   time:hasEnd "2016-03-31"^^xsd:date;
-   owl:sameAs <http://reference.data.gov.uk/doc/gregorian-quarter/2016-Q1>
-.
+spcdata:"/Comune/L219" pwod:indiceTemp_trimestre-1-2015 "31"^^xsd:integer .
 
-ns:indice ns:periodo1 "32" .    # Valori numerici dei giorni di pagamento
-ns:indice ns:periodo2 "28" .
-[..]
-ns:indice ns:periodoN "15" .
+pwod:indiceTemp_trimestre-1-2015 pwod:periodoRif ns:t1-2015 .
+
+pwod:t1_2015 time:hasBeginning "2015-01-01"^^xsd:date;
+	     time:hasEnd "2015-03-31"^^xsd:date .
+
+pwod:indiceTempestivita ns:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
+
+######## Definizioni principali ########
+
+pwod:IndiceTempestivita a rdf:property ;
+			    rdf:label “Indice di tempestività
+                             medio dei pagamenti ”^^xsd:string .
+
+pwod:indiceTemp_trimestre-1-2015 a rdf:property ;
+                               rdf:subPropertyOf pwod:IndiceTempestivita .
+
+pwod:periodoRif a rdf:property ;
+                rdf:label “Periodo di riferimento della
+    rilevazione”^^xsd:string .	   
+		   
+pwod:t1_2015 rdf:subPropertyOf pwod:periodoRif .
