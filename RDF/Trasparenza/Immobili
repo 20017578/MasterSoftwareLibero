@@ -23,6 +23,8 @@ pwod:immobile0001 pwod:tipologiaImmobile "Capannone"^^xsd:string ;
 		    pwod:destinazioneUso "Ritiro materiali"^^xsd:string ;
 		    [...] ;
 		    [...] .
+		    
+pwod:Immobili pwod:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
 
 ######## Definizioni principali ########
 
