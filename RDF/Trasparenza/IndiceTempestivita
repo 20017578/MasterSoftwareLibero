@@ -12,7 +12,7 @@
 
 spcdata:"/Comune/L219" pwod:indiceTemp_trimestre-1-2015 "31"^^xsd:integer .
 
-pwod:indiceTemp_trimestre-1-2015 pwod:periodoRif ns:t1-2015 .
+pwod:indiceTemp_trimestre-1-2015 pwod:periodoRif pwod:t1-2015 .
 
 pwod:t1_2015 time:hasBeginning "2015-01-01"^^xsd:date;
 	     time:hasEnd "2015-03-31"^^xsd:date .
