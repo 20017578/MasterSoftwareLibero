@@ -17,7 +17,7 @@ pwod:indiceTemp_trimestre-1-2015 pwod:periodoRif ns:t1-2015 .
 pwod:t1_2015 time:hasBeginning "2015-01-01"^^xsd:date;
 	     time:hasEnd "2015-03-31"^^xsd:date .
 
-pwod:indiceTempestivita ns:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
+pwod:indiceTempestivita pwod:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
 
 ######## Definizioni principali ########
 
