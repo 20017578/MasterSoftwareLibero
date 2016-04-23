@@ -1,5 +1,5 @@
 @prefix pwod:  <http://nostro_spazio_projectwork_opendata.it/> .
-@prefix spcdata:  <http://spcdata.digitpa.gov.it/> .
+@prefix spcdataCOM:  <http://spcdata.digitpa.gov.it/Comune/> .
 @prefix time:    <http://www.w3.org/2006/time#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
@@ -9,34 +9,25 @@
 ### Indice di Tempestività dei pagamenti ###
 ############################################
 
+spcdataCOM:L219 pwod:indiceTemp_trimestre-1-2015 "31"^^xsd:integer .
 
-spcdata:"/Comune/L219" pwod:indiceTemp_trimestre-1-2015 "31"^^xsd:integer .
-
-
-pwod:indiceTemp_trimestre-1-2015 pwod:periodoRif pwod:t1-2015 .
-# OPPUER meglio ? --->
-spcdata:"/Comune/L219" pwod:indiceTemp_trimestre-1-2015 pwod:t1_2015
-
-
-pwod:t1_2015 time:hasBeginning "2015-01-01"^^xsd:date;
+pwod:t1_2015 a rdf:trimestre;
+       time:hasBeginning "2015-01-01"^^xsd:date ;
 	     time:hasEnd "2015-03-31"^^xsd:date .
+# pwod:t1_2015 owl:sameAs <http://reference.data.gov.uk/doc/gregorian-quarter/2015-Q1>
 
-
-pwod:indiceTempestivita pwod:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
+pwod:indiceTemp_trimestre-1-2015 a rdf:property, pwod:IndiceTempestivita ;
+                               pwod:periodoRif pwod:t1-2015 ;
+                               rdf:subPropertyOf pwod:IndiceTempestivita .
 
 ######## Definizioni principali ########
 
-pwod:IndiceTempestivita a rdf:property ;
-			    rdf:label “Indice di tempestività
-                             medio dei pagamenti ”^^xsd:string .
-
-pwod:indiceTemp_trimestre-1-2015 a rdf:property ;
-                               rdf:subPropertyOf pwod:IndiceTempestivita .
+pwod:IndiceTempestivita a rdf:property, rdf:class ;
+			pwod:rifNormativo "Dlgs ...." ;    # Rif. normativo, da studiare
+			rdf:label “Indice di tempestività medio dei pagamenti ”^^xsd:string .
 
 pwod:periodoRif a rdf:property ;
-                rdf:label “Periodo di riferimento della
-                rilevazione”^^xsd:string .	   
-		   
-pwod:t1_2015 rdf:subPropertyOf pwod:periodoRif .
-# # OPPUER meglio ? --->
-pwod:t1_2015 a rdf:class .
+                rdf:label “Periodo di riferimento della rilevazione”^^xsd:string .
+
+pwod:trimestre a rdf:class .
+# pwod:trimestre owl:sameAs <http://reference.data.gov.uk/def/intervals/Quarter> .
