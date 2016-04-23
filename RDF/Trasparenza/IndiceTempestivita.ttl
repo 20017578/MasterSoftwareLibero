@@ -12,15 +12,10 @@
 
 spcdata:"/Comune/L219" pwod:indiceTemp_trimestre-1-2015 "31"^^xsd:integer .
 
-
 pwod:indiceTemp_trimestre-1-2015 pwod:periodoRif pwod:t1-2015 .
-# OPPUER meglio ? --->
-spcdata:"/Comune/L219" pwod:indiceTemp_trimestre-1-2015 pwod:t1_2015
-
 
 pwod:t1_2015 time:hasBeginning "2015-01-01"^^xsd:date;
 	     time:hasEnd "2015-03-31"^^xsd:date .
-
 
 pwod:indiceTempestivita pwod:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
 
@@ -35,8 +30,6 @@ pwod:indiceTemp_trimestre-1-2015 a rdf:property ;
 
 pwod:periodoRif a rdf:property ;
                 rdf:label “Periodo di riferimento della
-                rilevazione”^^xsd:string .	   
+    rilevazione”^^xsd:string .	   
 		   
 pwod:t1_2015 rdf:subPropertyOf pwod:periodoRif .
-# # OPPUER meglio ? --->
-pwod:t1_2015 a rdf:class .
