@@ -12,11 +12,7 @@ import string
 def pulisci_input(stringa_pa):
     stringa_pulita = stringa_pa
 # Eliminazioni di eventuali spazi multipli
-    stringa_pulita = stringa_pulita.replace('  ', ' ')
-    doppio_spazio = 1
-    while doppio_spazio == 1:
-        if stringa_pulita.find('  ') == -1:
-            doppio_spazio = 0
+    while '  ' in stringa_pulita:
         stringa_pulita = stringa_pulita.replace('  ', ' ')
 # Eliminazioni di eventuali spazi iniziali
     if stringa_pulita[0]==' ':
