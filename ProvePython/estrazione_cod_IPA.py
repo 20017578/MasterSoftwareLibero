@@ -30,8 +30,12 @@ if len (sys.argv) > 1:
 else:
     pa_input = 'provincia di firenze   '
 #pa_input = '00449420348'
-pa_input=pa_input.upper()            # trasfoma l'input in maiuscole cosi' da evitare problema di case sensitive
-pa_input=pa_input.replace('DI','')   # non consideriamo la preposizione 'di' troppo ricorrente e non significativa
+pa_input=pa_input.upper()             # trasfoma l'input in maiuscole cosi' da evitare problema di case sensitive
+pa_input=pa_input.replace(' DI ',' ') # non consideriamo la preposizione 'di' troppo ricorrente e non significativa
+if pa_input[:3] == 'DI ':
+    pa_input = pa_input[3:]
+if pa_input[-3:] == ' DI':
+    pa_input = pa_input[:-3]
 
 pa_input=pulisci_input(pa_input)
 print ':input pulito:(',pa_input,') len=',len(pa_input)
