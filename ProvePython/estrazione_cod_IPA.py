@@ -48,11 +48,16 @@ for i in range(0, parole_stringa_pa_input):
 
 # APRO IL FILE ONLINE CONTENENTE LE INFORMAZIONI DELLE PA
 URL_Dati = 'http://spcdata.digitpa.gov.it/data/amm.csv'
+nomeFileDati = 'DatiAgID.csv'
 try:
-    file_csv_amministrazioni =urllib.urlopen(URL_Dati)
-    print 'File', URL_Dati, 'aperto in lettura'
+    file_csv_amministrazioni = open (nomeFileDati)
 except:
-    print 'ERRORE: File', URL_Dati, 'non trovato !'
+    print 'File', nomeFileDati, ' non trovato, provo da rete.'
+    try:
+        file_csv_amministrazioni =urllib.urlopen(URL_Dati)
+        print 'File', URL_Dati, 'aperto in lettura'
+    except:
+        print 'ERRORE: File', URL_Dati, 'non trovato !'
 
 # LEGGIAMO IL NOME DELLA PA E VEDIAMO SE ESISTONO SIMILITUDINI COL VALORE INSERITO
 riga_csv=file_csv_amministrazioni.readline()
