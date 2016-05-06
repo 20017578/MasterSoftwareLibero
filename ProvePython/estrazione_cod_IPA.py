@@ -25,8 +25,10 @@ def pulisci_input(stringa_pa):
 
 
 
-
-pa_input = 'provincia di firenze   '
+if len (sys.argv) > 1:
+    pa_input = sys.argv[1]
+else:
+    pa_input = 'provincia di firenze   '
 #pa_input = '00449420348'
 pa_input=pa_input.upper()            # trasfoma l'input in maiuscole cosi' da evitare problema di case sensitive
 pa_input=pa_input.replace('DI','')   # non consideriamo la preposizione 'di' troppo ricorrente e non significativa
