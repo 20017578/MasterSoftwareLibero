@@ -16,10 +16,10 @@ def pulisci_input(stringa_pa):
         stringa_pulita = stringa_pulita.replace('  ', ' ')
 # Eliminazioni di eventuali spazi iniziali
     if stringa_pulita[0]==' ':
-        stringa_pulita = stringa_pulita[1:len(stringa_pulita)]
-# Eliminazioni di eventuali spazi iniziali
-    if stringa_pulita[len(stringa_pulita)-1] == ' ':
-        stringa_pulita = stringa_pulita[0:len(stringa_pulita)-1]
+        stringa_pulita = stringa_pulita[1:]
+# Eliminazioni di eventuali spazi finali
+    if stringa_pulita[-1] == ' ':
+        stringa_pulita = stringa_pulita[:-1]
     return stringa_pulita
 
 
