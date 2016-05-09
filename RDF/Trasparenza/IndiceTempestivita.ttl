@@ -1,4 +1,5 @@
 @prefix pwod:  <http://nostro_spazio_projectwork_opendata.it/> .
+@prefix pwod_ont:  <http://nostro_spazio_projectwork_opendata.it/ontology/> .
 @prefix spcdata:  <http://spcdata.digitpa.gov.it/> .
 @prefix time:    <http://www.w3.org/2006/time#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,26 +11,31 @@
 ############################################
 
 
-spcdata:"/Comune/L219" pwod:indiceTemp_trimestre-1-2015 "31"^^xsd:integer .
+spcdata:Comune/L219 pwod:haTempoDiPagamento pwod:xy1,
+                                            pwod:xy2 .
 
-pwod:indiceTemp_trimestre-1-2015 pwod:periodoRif pwod:t1-2015 .
-
-pwod:t1_2015 time:hasBeginning "2015-01-01"^^xsd:date;
-	     time:hasEnd "2015-03-31"^^xsd:date .
+pwod:xy1 time:hasBeginning "2015-01-01"^^xsd:date;
+	 time:hasEnd "2015-03-31"^^xsd:date;
+	 pwod:descrizionePeriodo "Primo trimenstre 2015"^^xsd:string;
+	 pwod:giorni "31"^^xsd:integer .    
+	 
+pwod:xy2 time:hasBeginning "2015-04-01"^^xsd:date;
+	 time:hasEnd "2015-06-30"^^xsd:date;
+	 pwod:descrizionePeriodo "Secondo trimenstre 2015"^^xsd:string;
+	 pwod:giorni "28"^^xsd:integer .
 
 pwod:indiceTempestivita pwod:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
 
 ######## Definizioni principali ########
 
-pwod:IndiceTempestivita a rdf:property ;
-			    rdf:label “Indice di tempestività
-                             medio dei pagamenti ”^^xsd:string .
+pwod:haTempoDiPagamento a rdf:property ;
+			rdf:label “Indice di tempestività medio dei pagamenti ”^^xsd:string .
 
-pwod:indiceTemp_trimestre-1-2015 a rdf:property ;
-                               rdf:subPropertyOf pwod:IndiceTempestivita .
+pwod:xy1 a rdf:Class ;
+pwod:xy2 a rdf:Class ;
 
-pwod:periodoRif a rdf:property ;
-                rdf:label “Periodo di riferimento della
-    rilevazione”^^xsd:string .	   
+pwod:descrizionePeriodo a rdf:property ;
+                rdf:label “Periodo di riferimento della rilevazione”^^xsd:string .	   
 		   
-pwod:t1_2015 rdf:subPropertyOf pwod:periodoRif .
+pwod:giorni a rdf:property ;
+                rdf:label “Media dei giorni di pagamento delle fatture”^^xsd:string .	   # inserire magari cosa dice la normativa circa la modalità di calcolo
