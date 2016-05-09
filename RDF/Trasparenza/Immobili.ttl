@@ -9,18 +9,15 @@
 ###    Elenco degli immobili posseduti   ###
 ############################################
 
-pwod:Immobili2015 pwod:periodoRif pwod:anno-2015 .	 
-
-pwod:anno-2015 time:hasBeginning "2015-01-01"^^xsd:date;
-		 time:hasEnd "2015-12-31"^^xsd:date .  
-
-spcdata:"/Comune/L219" pwod:possiede pwod:Immobili2015 .
+spcdata:Comune/L219 pwod:possiede pwod:immobile0001 .
 
 pwod:immobile0001 pwod:tipologiaImmobile "Capannone"^^xsd:string ;		   
 		    pwod:indirizzo "Via dei Gladioli, 54"^^xsd:string ;
 		    geonames:locatedIn spcdata:"/Comune/L219" ;
 		    pwod:percentualePossesso "31,12"^^xsd:float ;
 		    pwod:destinazioneUso "Ritiro materiali"^^xsd:string ;
+		    time:hasBeginning "2015-01-01"^^xsd:date;      # data di inzio possesso
+		    time:hasEnd "2015-12-31"^^xsd:date .           # data di fine possesso
 		    [...] ;
 		    [...] .
 		    
@@ -28,10 +25,6 @@ pwod:Immobili pwod:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
 
 ######## Definizioni principali ########
 
-pwod:Immobili a rdf:Class .
+pwod:immobile0001 a rdf:Class .
 
-Pwod:possiede a rdf:Property .
-
-pwod:Immobili2015 rdf:subClassOf pwod:Immobili .
-
-pwod:immobile0001  a   pwod:Immobili2015 .
+pwod:possiede a rdf:Property .
