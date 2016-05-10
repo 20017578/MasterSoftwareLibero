@@ -1,12 +1,9 @@
 # MasterSoftwareLibero
 ProjectWork sugli OpenData
 
-# Proposte titolo :
-PA e OpenData, un esempio di come possono incontrarsi.
+# Proposte titolo 
 
-Una possibile strada per gli OpenData nella PA.
-
-La PA che costruisce i Dati Aperti, uno sguardo su alcune possibili soluzioni.
+La PA che costruisce i Dati Aperti, uno sguardo su opportunità e possibili percorsi.
 
 ## sottotitoli
  Claudia :
