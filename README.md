@@ -12,7 +12,7 @@ La PA che costruisce i Dati Aperti, uno sguardo su opportunità e possibili perc
  
  Gianbruno :
  
- Marco :
+ Marco : Dati aperti sulle sucole: interoperabilità per l'esistente, migliorando qualità e riusabilità; e una rotta verso i LOD.
  
  Guido :
 
