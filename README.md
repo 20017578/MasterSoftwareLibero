@@ -1,9 +1,4 @@
-# MasterSoftwareLibero
-ProjectWork sugli OpenData
-
-# Proposte titolo 
-
-La PA che costruisce i Dati Aperti, uno sguardo su opportunità e possibili percorsi.
+# La PA che costruisce i Dati Aperti, uno sguardo su opportunità e possibili percorsi.
 
 ## sottotitoli
  Claudia :
