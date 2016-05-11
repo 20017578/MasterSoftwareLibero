@@ -7,7 +7,7 @@
  
  Gianbruno :
  
- Marco : Dati aperti sulle sucole: interoperabilità per l'esistente, migliorando qualità e riusabilità; e una rotta verso i LOD.
+ Marco - Dati sulle scuole: interoperabilità per l'esistente, migliorando qualità e riusabilità; una rotta verso i LOD.
  
  Guido :
 
