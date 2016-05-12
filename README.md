@@ -3,13 +3,13 @@
 ## sottotitoli
  Claudia :
  
- Anna :
+ Anna -  Open data e open government: una nuova riorganizzazione settoriale per una migliore qualità dei dati aperti
  
  Gianbruno :
  
  Marco - Dati sulle scuole: interoperabilità per l'esistente, migliorando qualità e riusabilità; una rotta verso i LOD.
  
- Guido :
+ Guido - I Linked Open Data, un possibile strumento per la rimozione delle opacità delle Amministrazioni trasparenti
 
 
 I file più importanti sono:
