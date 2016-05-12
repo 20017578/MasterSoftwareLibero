@@ -4,27 +4,53 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix time:    <http://www.w3.org/2006/time#> .
+@prefix schema:  <http://schema.org> .
 
 ############################################
 ###    Elenco degli immobili posseduti   ###
 ############################################
 
 spcdata:Comune/L219 pwod:possiede pwod:immobile0001 .
+spcdata:Comune/L219 pwod:possiede _:immobile0001,   # blank node, immobile0001 potrebbe essere determinato con un hash
+                                  _:immobile0002 .
 
-pwod:immobile0001 pwod:tipologiaImmobile "Capannone"^^xsd:string ;		   
-		    pwod:indirizzo "Via dei Gladioli, 54"^^xsd:string ;
+pwod:immobile0001 pwod:tipologiaImmobile "Capannone"^^xsd:string ;	# oppure _:immobile0001 	   
 		    geonames:locatedIn spcdata:"/Comune/L219" ;
+		    schema:postalCode “10100”^^xsd:string ;
+                    schema:streetAddress "Via dei Gladioli, 54"^^xsd:string ;
+                    schema:addressCountry "Italia"^^xsd:string ;
+                    schema:latitude "42.4403365"^^xsd:float ;
+                    schema:longitude "7.67706675"^^xsd:float ;
+                    pwod:foglio "65"^^xsd:integer ;
+    		    pwod:particella "15"^^xsd:integer ;
+    		    pwod:subalterno "165"^^xsd:integer ;
+    		    pwod:tipologia "capannone"^^xsd:string ;
+    		    pwod:categoriaCatastale “A/4”^^xsd:string ;       # questo è un insieme finito !!!!
+    		    pwod:descrizione "ex box-auto adibito a ripostiglio"^^xsd:string ;
+    		    pwod:denominazione “Casetta degli attrezziA/4”^^xsd:string ;  
+    		    pwod:identificativoInternoEnte “F00556y/42”^^xsd:string ; 
+    		    pwod:mqCommerciali "21,10"^^xsd:float ;
+                    pwod:mqCalpestabili "17,65"^^xsd:float ;
 		    pwod:percentualePossesso "31,12"^^xsd:float ;
 		    pwod:destinazioneUso "Ritiro materiali"^^xsd:string ;
 		    time:hasBeginning "2015-01-01"^^xsd:date;      # data di inzio possesso
 		    time:hasEnd "2015-12-31"^^xsd:date .           # data di fine possesso
-		    [...] ;
-		    [...] .
+		    pwod:note “......note ”^^xsd:string ;
+                    pwod:affittoPassivo “315,32”^^xsd:float ;
+                    pwod:affittoAttivo “315,32”^^xsd:float ;
+                    pwod:unitaTemporaleCanone “mensile”^^xsd:string ;
+                    pwod:tipologiaContratto “.......”^^xsd:string ;
+                    pwod:linkContratto “.......”^^xsd:anyURI ;
+                    pwod:dataDecorrenzaAffitto “2014-01-01”^^xsd:date ;
+                    pwod:dataScadenzaAffitto “2016-12-31”^^xsd:date ;
+                    pwod:noteScadenzaAffitto “indennità di occupazione”^^xsd:string ;
+                    pwod:altroProprietario “Paolo Rossi”^^xsd:string ;
+                    pwod:locatario “Paolo Rossi”^^xsd:string .
 		    
 pwod:Immobili pwod:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
 
 ######## Definizioni principali ########
 
-pwod:immobile0001 a rdf:Class .
+pwod:immobile0001 a rdf:Class .        # se usiamo i blank node non ci servono
 
 pwod:possiede a rdf:Property .
