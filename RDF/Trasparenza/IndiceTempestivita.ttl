@@ -13,29 +13,36 @@
 
 spcdata:Comune/L219 pwod:haTempoDiPagamento pwod:xy1,
                                             pwod:xy2 .
+spcdata:Comune/L219 pwod:haTempoDiPagamento _:xy1,    # impostando i blank node
+                                            _:xy2 .
 
-pwod:xy1 time:hasBeginning "2015-01-01"^^xsd:date;
+
+pwod:xy1 time:hasBeginning "2015-01-01"^^xsd:date;    # oppure _:xy1
 	 time:hasEnd "2015-03-31"^^xsd:date;
 	 pwod:descrizionePeriodo "Primo trimenstre 2015"^^xsd:string;
-	 pwod:giorni "31"^^xsd:integer .    
+	 pwod:giorni "31"^^xsd:integer ;
+	 pwod:normativa "Dlgs ...."^^xsd:string .
 	 
-pwod:xy2 time:hasBeginning "2015-04-01"^^xsd:date;
+pwod:xy2 time:hasBeginning "2015-04-01"^^xsd:date;     # oppure _:xy2
 	 time:hasEnd "2015-06-30"^^xsd:date;
 	 pwod:descrizionePeriodo "Secondo trimenstre 2015"^^xsd:string;
-	 pwod:giorni "28"^^xsd:integer .
-
-pwod:indiceTempestivita pwod:rifNormativo "Dlgs ...." .    # Rif. normativo, da studiare
+	 pwod:giorni "28"^^xsd:integer ;
+	 pwod:normativa "Dlgs ...."^^xsd:string .
 
 ######## Definizioni principali ########
 
 pwod:haTempoDiPagamento a rdf:property ;
 			rdf:label “Indice di tempestività medio dei pagamenti ”^^xsd:string .
 
-pwod:xy1 a rdf:Class ;
-pwod:xy2 a rdf:Class ;
+pwod:xy1 a rdf:Class ;   # se usiamo i blank node non ci servono
+pwod:xy2 a rdf:Class ;   # se usiamo i blank node non ci servono
+
 
 pwod:descrizionePeriodo a rdf:property ;
                 rdf:label “Periodo di riferimento della rilevazione”^^xsd:string .	   
 		   
 pwod:giorni a rdf:property ;
                 rdf:label “Media dei giorni di pagamento delle fatture”^^xsd:string .	   # inserire magari cosa dice la normativa circa la modalità di calcolo
+
+pwod:normativa a rdf:property ;
+            rdf:label “normativa di riferimento”^^xsd:string .
