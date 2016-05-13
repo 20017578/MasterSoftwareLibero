@@ -5,7 +5,7 @@
  
  Anna -  Open data e open government: una nuova riorganizzazione settoriale per una migliore qualità dei dati aperti
  
- Gianbruno :
+ Gianbruno - Primi tentativi di integrazione e pubblicazione di dati geografici e tabellari sulle scuole regionali
  
  Marco - Dati sulle scuole: interoperabilità per l'esistente, migliorando qualità e riusabilità; una rotta verso i LOD.
  
