@@ -1,7 +1,7 @@
 # La PA che costruisce i Dati Aperti, uno sguardo su opportunità e possibili percorsi.
 
 ## sottotitoli
- Claudia :
+ Claudia - Dati aperti: "se pubblicare"; "come pubblicare". Riflessioni di carattere giuridico
  
  Anna -  Open data e open government: una nuova riorganizzazione settoriale per una migliore qualità dei dati aperti
  
