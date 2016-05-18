@@ -4,50 +4,53 @@ import csv
 import string
 
 
-# FUNZIONE PER LA PULIZIA DELLA STRINGA IN INPUT
-def leggi_configurazione():
-
-    # LEGGIAMO IL FILE CON IL NOME DEI TIPI DI CAMPO (Attenzione le prime 10 righe descrivono il nodo e non il campo
+# FUNZIONE CHE LEGGE I FILE DI CONFIGURAZIONE UTILI ALLA GENERAZIONE DELLE TRIPLE
+def leggi_configurazione(nomeFileConfig):
+    
+    # LEGGO IL FILE campi_config CHE CONTIENE IL NOME DEI DIVERSI RECORD PRESENTI NEI FILE
+    #  DI CONFIGURAZIONE, le prime 10 righe servono a descrivere il nodo e non proprietà ed oggetti
     try:
         file_csv_config_main = open ('campi_config.csv')
     except:
         print 'File non trovato, provo da rete.'
-    def_campi=[]
+    def_campi=[]                             # def_campi contiene i nomi
     riga_csv=file_csv_config_main.readline()
     i=0
     while riga_csv:
-        riga_csv=riga_csv.rstrip()
+        riga_csv=riga_csv.rstrip()           # rstrip elimina il carattere /n a fine riga
         if i>=10:
             def_campi.append(riga_csv)
         i=i+1
         riga_csv = file_csv_config_main.readline()
     file_csv_config_main.close()
 
-    # APRO IL FILE CONTENENTE LA CONFIGURAZIONE
-    campi = []
-    nomeFileDati = 'config_toponomastica.csv'
-    with open(nomeFileDati, 'rb') as csvfile:
-       reader = csv.reader(csvfile, delimiter = ',')
-       n_righe=0
+    # LEGGO IL FILE CONTENENTE LA CONFIGURAZIONE SPECIFICA PER IL TIPO DI DATO CHE STO ELABORANDO, QUESTO SARA' MODELLATO
+    #  SEMPRE NELLO STESSO MODO ED OGNI RIGA (RECORD) SARA' RIFERITO AL TITOLO ESTRATTO COL FILE campi_config PRECEDENTE
+    campi = []                                     # campi i valori utili alla produzione delle triple
+    with open(nomeFileConfig, 'rb') as csvfile:
+       reader = csv.reader(csvfile, delimiter = ',')   # funzione per leggere un csv splittandolo a seconda del carattere delimitatore, funziona meglio della funzione split limitata alle stringhe in quanto riconosce i campi di testo racchiusi tra virgolette
+       n=0
        for row in reader:
-           n_righe=n_righe+1
+           n=n+1
            n_campi=len(row)
-           if n_righe>9:
+           if n>9:                                # perché dopo la riga 10 ci sono i campi con le informazioni di proprietà e oggetti
                 i = 0
                 while i<n_campi:
-                    campi.append(row[i])
-                    i=i+1
+                    campi.append(row[i])          # campi conterrà tutti i dati in sequenza, prima la quelli della riga 11, poi la 12 e così via
+                    i = i + 1
     csvfile.close()
-    print ('Il CSV da sottoporre deve avere le seguenti caratteristiche :')
+    
+    # SCRIVO I DATI UTILI CIRCA I POSSIBILI CAMPI (OVVERO LE PROPRIETA') DELLE TRIPLE
+    print 'Il LOD da produrre potrà avere i seguenti campi :'
     print 'NUMERO CAMPI POSSIBILI = ',n_campi
-    print campi
-    print def_campi
+    print campi                   # solo in test, poi eliminare
+    print def_campi               # solo in test, poi eliminare
     i=0
     while i<n_campi:
         print
-        print 'Campo nr.',i+1
+        print 'Campo [',i+1,']'
         j=0
-        while j<5:
+        while j<5:                # perché i campi successivi al quinto servono al sw per creare le triple e non sono utili all'utente
             print def_campi[j],' -> ',campi[(j*n_campi)+i]
             j=j+1
         i=i+1
@@ -56,6 +59,7 @@ def leggi_configurazione():
 
 
 # FUNZIONE PER LA RICERCA DEGLI OGGETTI SU OPENDATA ESTERNI A SECONDA DEL PARAMETRO PASSATO
+# in lavorazione ............................
 def cerca_istanza(stringa_da_cercare,ind_corrispondenza):
     print'---------------------------'
     print 'funzione: cerca_istanza'
@@ -66,10 +70,16 @@ def cerca_istanza(stringa_da_cercare,ind_corrispondenza):
     return stringa_opendata
 
 ################################################################################################################
+#        FINE FUNZIONI , INIZIO PROGRAMMA PRINCIPALE                                                           #
+################################################################################################################
 
-leggi_configurazione()
 
-# INPUT DEI NOMI DEI FILE
+# INPUT DEI NOMI DEI FILE :
+#   nomeFileDati E' IL FILE CON IL CSV DA TRASFORMARE IN TRIPLE
+#   separatore E' IL CARATTERE SEPARATORE USATO NEL CSV
+#   intestazione CI DICE SE IL CSV HA LA PRIMA RIGA CON I NOMI DEI CAMPI ('s') OPPURE NO ('n')
+#   nomeFileConfig E' IL FILE CSV CONTENENTE LE INFORMAZIONI STANDARDIZZATE PER LA GENERAZIONE DELLE TRIPLE
+
 # nomeFileDati = raw_input("Inserire il nome del file da aprire : ")
 nomeFileDati='civici_torino.csv'
 # separatore = raw_input("Inserire il carattere separatore ( scrivere TAB per il carattere di tabilazione) : ")
@@ -81,32 +91,34 @@ intestazione='s'
 # nomeFileConfig = raw_input("Inserire il nome del file di configurazione da aprire : ")
 nomeFileConfig='config_toponomastica.csv'
 
+leggi_configurazione(nomeFileConfig)
+
 # ABBINAMENTO CAMPI FILE CSV CON FILE DI CONFIGURAZIONE
 print
-print 'Per ogni tipologia di dato possibile indicare a quale campo corrisponde nel proprio CSV.'
-print 'Se nel proprio CSV non esiste quel tipo di dato inserire 0.'
-corrispondenza=['12', '3', '5', '0', '4', '1', '2']
-#corrispondenza=[]
+print 'Per ogni tipo di dato presente nel proprio CSV indicare il numero corrispondente al campo tra quelli proposti. Il numero è indicato tra parentesi quadre [].'
+print 'Se il dato nel proprio CSV non esiste inserire 0.'
+corrispondenza=['12', '3', '5', '0', '4', '1', '2']    # poi da togliere e da scommentare la riga successiva
+#corrispondenza=[]                                     
 with open(nomeFileDati, 'rb') as csvfile:
        reader = csv.reader(csvfile, delimiter = separatore)
-       n_record=0
+       n_record=0                          # n_record conterrà il numero di record da elaborare
        for row in reader:
            n_record=n_record+1
-           n_campi=len(row)
+           n_campi=len(row)                # n_campi conterrà il numero di tipi di dati nel CSV da elaborare
            i=0
            if n_record==1:
                i=0
                print 'Il record e composto da ', len(row), 'campi :'
                while i<n_campi:
                    stringa_input=row[i]+' corrisponde al campo nr? '
-                   #v = raw_input(stringa_input)
-                   #corrispondenza.append(v)
+                   #v = raw_input(stringa_input)          # da scommentare
+                   #corrispondenza.append(v)              # da scommentare
                    i=i+1
 csvfile.close()
 print 'Il file contiene ', n_record, ' record'
-print corrispondenza    #togliere
+print corrispondenza    # solo in test, poi eliminare
 
-#LEGGE IL FILE DI CONFIGURAZIONE E POPOLA LA LISTA campi
+#LEGGE IL FILE DI CONFIGURAZIONE E POPOLA LA LISTA campi, PEZZO DI CODICE GIA' PRESENTE NELLA FUNZIONE leggi_configurazione. VALUTARE SE PASSARE LA LISTA campi per riferimento
 campi = []
 with open(nomeFileConfig, 'rb') as csvfile:
        reader = csv.reader(csvfile, delimiter = ',')
@@ -126,17 +138,18 @@ print '-------------------------------------------------------------------------
 
 # CREO IL LOD
 
-#nome_lod=raw_input('Quale nome vuoi per il tuo LOD: ')
-#nome_lod=nome_lod+'.ttl'
-#spazio_dati=raw_input('Inserisci il link relativo al tuo spazio dati (es. http://miospazio.org/: ')
-spazio_dati="http://miospazio.it"
+#nome_lod=raw_input('Quale nome vuoi per il tuo LOD: ')    # da scommentare
+#nome_lod=nome_lod+'.ttl'                                  # da scommentare
+#spazio_dati=raw_input('Inserisci il link relativo al tuo spazio dati (es. http://miospazio.org/: ')   # da scommentare
+spazio_dati="http://miospazio.it"            # solo in test, poi eliminare
+
 print
 print '############################'
 print '###         LOD          ###'
 print '############################'
 spazio_dati='@prefix myspace:<'+spazio_dati+'>'
-#f=open(nome_lod,'w')
-#f.write(spazio_dati)
+#f=open(nome_lod,'w')   # da scommentare
+#f.write(spazio_dati)   # da scommentare
 print spazio_dati
 # legge tutti i prefix possibili presenti nel file di configurazione
 try:
