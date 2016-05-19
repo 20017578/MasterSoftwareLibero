@@ -223,8 +223,7 @@ with open(nomeFileDati, 'rb') as csvfile:
                 if j<>0:
                     object=lod_object[j-1]
                     if object[-5:] == '<uri>':
-
-                        object=' '+object[:-5]+'"'+cerca_istanza(row[i],campi[n_campi_config*9+(j-1)])+'"'
+                        object=' '+object[:-5]+'"'+cerca_istanza(row[i],campi[n_campi_config*9+(j-1)])+'"'   # Se nel csv il tipo di oggetto è una URI occorre andare a cercare la corrispondenza
                     else:
                         object=' "'+row[i]+'"^^'+lod_object[j-1]
                     stringa_lod=lod_property[j-1]+object
