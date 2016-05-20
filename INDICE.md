@@ -28,6 +28,8 @@ Manuale di transizione verso gli Open-Data
 
 ###Ambito tecnologico
 ####Ricerca di dizionari / ontologie esistenti 
+Sarebbe utile descrivere i campi che abbiamo studiato per creare dei LOD ed analizzare le ontologie già esistenti: quali scegliere, dove cercare, come includerle etc ....
+Si potrebbe fare un discorso generico basato sullo studio dei dataset su Scuole e Trasparenza
 #####Cosa si sta muovendo in Italia (v. AGID)
 
 ####Analisi delle necessità (nostre ma non solo) ai fini della realizzazione di un software
@@ -43,10 +45,12 @@ Esempio di Open-Data interoperabili
 
 ###Dati legati agli obblighi di trasparenza
  1. Normativa di riferimento
- 2. Su quali dati concentrarsi? analisi dell'esistente
- 3. Integrazione e reperimento di altri dati o informazioni
- 4. Creazione di un nuovo Open Data (rdf, linked, xml ... ?)
- 5. Proviamo a fare un po' di Sparql
+ 2. Su quali dati concentrarsi? analisi dell'esistente. Facciamo l'elenco dei dati dovuti per legge e dei dati che ad essi possono essere collegati per migliorarne la leggibilità (p.e. geolocalizzazione degli indirizzi) analizzando anche in base alle tipologie generalmente piu' richieste quali sono i dati più "interessanti".
+     p.e.: bilancio e nuova normativa che impone un formato standard dei dati
+ 3. Breve analisi dell'esistente sulle PA e come pubblicano i loro dati (formati, dati, metadati .... )
+ 4. Analizziamo 3 dataset possibili: Indice di tempestività dei pagamenti, Immobili e in relazione a questo la toponomastica georiferita. Come si è pensato di crearli, quali ontologie, ....
+ 5. Descriviamo il software creato, come funziona e cosa produce
+ 6. Conclusioni
 
 ###Dati legati alle scuole
  1. Normativa di riferimento
