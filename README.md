@@ -5,7 +5,8 @@
  
  Anna -  Open data e open government: una nuova riorganizzazione settoriale per una migliore qualità dei dati aperti
  
- Gianbruno - Primi tentativi di integrazione e pubblicazione di dati geografici e tabellari sulle scuole regionali
+ Gianbruno - Descrizione delle attività di integrazione e pubblicazione dei dati geografici 
+             e tabellari delle scuole presenti nella Regione Piemonte
  
  Marco - Dati sulle scuole: interoperabilità per l'esistente, migliorando qualità e riusabilità; una rotta verso i LOD.
  
