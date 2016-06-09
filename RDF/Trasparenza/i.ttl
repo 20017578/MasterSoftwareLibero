@@ -1,0 +1,590 @@
+###################################################
+############          PREFISSI         ############
+###################################################
+@prefix myspace: <none>
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix spcdata: <http://spcdata.digitpa.gov.it/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix schema:  <http://schema.org> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+
+###################################################
+############        DEFINIZIONI        ############
+###################################################
+# qui definizioni immobili
+
+###################################################
+############           TRIPLE          ############
+###################################################
+
+
+_:c8b36dee507c360d3b8e3040555338eae25120b78a7e0c4e73c0a635  ms:civico myspace_civici:"c7583bf39692c284e254ff7d0b8e1e0ba2e1b9c5a36a9f7e77d080fc" ;
+                                                          myspace:foglio "41"^^xsd:string ;
+                                                          myspace:particella "113"^^xsd:string ;
+                                                          myspace:subalterno "1"^^xsd:string ;
+                                                          myspace:destUso "EDIFICIO SCOLASTICO"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "PIAZZA GIUSEPPE CESARE ABBA 13, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:c8b36dee507c360d3b8e3040555338eae25120b78a7e0c4e73c0a635 .
+
+_:20c7e729568b2d19581196b4b052c83bcbf14a25cb5642e80ef1a267  ms:civico myspace_civici:"c7583bf39692c284e254ff7d0b8e1e0ba2e1b9c5a36a9f7e77d080fc" ;
+                                                          myspace:foglio "41"^^xsd:string ;
+                                                          myspace:particella "113"^^xsd:string ;
+                                                          myspace:subalterno "2"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "PIAZZA GIUSEPPE CESARE ABBA 13, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:20c7e729568b2d19581196b4b052c83bcbf14a25cb5642e80ef1a267 .
+
+_:5c1d0cc2fc10396dd3a1b887cd545fb50747d002473f7c0aecaab242  ms:civico myspace_civici:"c7583bf39692c284e254ff7d0b8e1e0ba2e1b9c5a36a9f7e77d080fc" ;
+                                                          myspace:foglio "41"^^xsd:string ;
+                                                          myspace:particella "113"^^xsd:string ;
+                                                          myspace:subalterno "3"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "PIAZZA GIUSEPPE CESARE ABBA 13, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:5c1d0cc2fc10396dd3a1b887cd545fb50747d002473f7c0aecaab242 .
+
+_:1807045ef1ac2f6a883c989de7a12fc559f0bc53270297fda87812d3  ms:civico myspace_civici:"c7583bf39692c284e254ff7d0b8e1e0ba2e1b9c5a36a9f7e77d080fc" ;
+                                                          myspace:foglio "41"^^xsd:string ;
+                                                          myspace:particella "113"^^xsd:string ;
+                                                          myspace:subalterno "4"^^xsd:string ;
+                                                          myspace:destUso "FABBRICATO PER ATTIVITA' PRODUTTIVA"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "PIAZZA GIUSEPPE CESARE ABBA 13, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:1807045ef1ac2f6a883c989de7a12fc559f0bc53270297fda87812d3 .
+
+_:caf30ede90865ef6eed4d4a2b82739b62d0eca5ea42f16d74493074c  ms:civico myspace_civici:"84fac36e8dbb0f231acfce2799995d8b3fd780189a2f3e68259a4587" ;
+                                                          myspace:foglio "1025"^^xsd:string ;
+                                                          myspace:particella "151"^^xsd:string ;
+                                                          myspace:destUso "IMPIANTO SPORTIVO"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "STRADA DELL'ABBADIA DI STURA 9, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:caf30ede90865ef6eed4d4a2b82739b62d0eca5ea42f16d74493074c .
+
+_:9c200bdda3eb218592fa910bfc0953004d154984694273484587976a  ms:civico myspace_civici:"84fac36e8dbb0f231acfce2799995d8b3fd780189a2f3e68259a4587" ;
+                                                          myspace:foglio "1025"^^xsd:string ;
+                                                          myspace:particella "95"^^xsd:string ;
+                                                          myspace:subalterno "1"^^xsd:string ;
+                                                          myspace:destUso "IMPIANTO SPORTIVO"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "STRADA DELL'ABBADIA DI STURA 9, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:9c200bdda3eb218592fa910bfc0953004d154984694273484587976a .
+
+_:780d08da64c3559b472bf82fbf4ca8f062ea4675582cbcc0c1756270  ms:civico myspace_civici:"84fac36e8dbb0f231acfce2799995d8b3fd780189a2f3e68259a4587" ;
+                                                          myspace:foglio "1025"^^xsd:string ;
+                                                          myspace:particella "95"^^xsd:string ;
+                                                          myspace:subalterno "2"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "STRADA DELL'ABBADIA DI STURA 9, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:780d08da64c3559b472bf82fbf4ca8f062ea4675582cbcc0c1756270 .
+
+_:9a06dbe9d4e1b727cd1accd106a66f13709403c17780aee57dc5c648  myspace:tipoContratto "Concessione "^^xsd:string ;
+                                                          myspace:affittoAttivo "10491,88"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2013-01-01"^^xsd:date ;
+                                                          myspace:scadenzaAffitto "2014-12-31"^^xsd:date ;
+                                                          myspace:foglio "1013"^^xsd:string ;
+                                                          myspace:particella "31"^^xsd:string ;
+                                                          myspace:destUso "MERCATO COPERTO"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA DEGLI ABETI 10, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:9a06dbe9d4e1b727cd1accd106a66f13709403c17780aee57dc5c648 .
+
+_:14b834bb0dfc745bc874f99287010d023e95003a8ab141ca79b1bb87  myspace:foglio "1013"^^xsd:string ;
+                                                          myspace:particella "128"^^xsd:string ;
+                                                          myspace:destUso "OSPEDALI, CASE DI CURA E CLINICHE E ASSIMILABILI"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA DEGLI ABETI 12, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:14b834bb0dfc745bc874f99287010d023e95003a8ab141ca79b1bb87 .
+
+_:61c6dd59304203798c8a892ecc452511d880418642e23af5b9ca47c0  ms:civico myspace_civici:"88b597bc04d819b4f80230291fc81ef3e41817270d381f8ca84b4ca8" ;
+                                                          myspace:tipoContratto "Concessione "^^xsd:string ;
+                                                          myspace:affittoAttivo "58,6"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "1996-02-01"^^xsd:date ;
+                                                          myspace:scadenzaAffitto "2012-12-31"^^xsd:date ;
+                                                          myspace:foglio "1013"^^xsd:string ;
+                                                          myspace:particella "132"^^xsd:string ;
+                                                          myspace:subalterno "1"^^xsd:string ;
+                                                          myspace:destUso "UFFICIO STRUTTURATO ED ASSIMILABILI"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA DEGLI ABETI 12 int. 2, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:61c6dd59304203798c8a892ecc452511d880418642e23af5b9ca47c0 .
+
+_:ff2f523e0dfa2ef5b9a0332e6614f97078e705024b02c75187ccbca3  ms:civico myspace_civici:"c0baef93673b6d5866fb6098b64db082a2ca8619e31d32583b880c11" ;
+                                                          myspace:foglio "1013"^^xsd:string ;
+                                                          myspace:particella "35"^^xsd:string ;
+                                                          myspace:subalterno "2"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA DEGLI ABETI 15, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:ff2f523e0dfa2ef5b9a0332e6614f97078e705024b02c75187ccbca3 .
+
+_:bf25de3b7ac8bca927c1a0755c922401382ede02eb5c0796b33b280f  ms:civico myspace_civici:"c0baef93673b6d5866fb6098b64db082a2ca8619e31d32583b880c11" ;
+                                                          myspace:tipoContratto "Concessione "^^xsd:string ;
+                                                          myspace:affittoAttivo "5495,87"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2013-12-01"^^xsd:date ;
+                                                          myspace:scadenzaAffitto "2017-11-30"^^xsd:date ;
+                                                          myspace:foglio "1013"^^xsd:string ;
+                                                          myspace:particella "35"^^xsd:string ;
+                                                          myspace:subalterno "3"^^xsd:string ;
+                                                          myspace:destUso "EDIFICIO SCOLASTICO"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA DEGLI ABETI 15, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:bf25de3b7ac8bca927c1a0755c922401382ede02eb5c0796b33b280f .
+
+_:021db51e21a93ca6d07870c9413dc0970c56b2ea6d7293fa687b0545  ms:civico myspace_civici:"c0baef93673b6d5866fb6098b64db082a2ca8619e31d32583b880c11" ;
+                                                          myspace:foglio "1013"^^xsd:string ;
+                                                          myspace:particella "35"^^xsd:string ;
+                                                          myspace:subalterno "1"^^xsd:string ;
+                                                          myspace:destUso "BENI COMUNI NON CENSIBILI"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA DEGLI ABETI 15, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:021db51e21a93ca6d07870c9413dc0970c56b2ea6d7293fa687b0545 .
+
+_:a048fa864a121fe78c932c17bbfcb074a5ab591deeb40b4bad079faa  ms:civico myspace_civici:"73e8edccbea5a49379b1b78ddb1eac0e94d7b4b582ecd19fbd56eb36" ;
+                                                          myspace:foglio "1013"^^xsd:string ;
+                                                          myspace:particella "127"^^xsd:string ;
+                                                          myspace:destUso "OSPEDALI, CASE DI CURA E CLINICHE E ASSIMILABILI"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA DEGLI ABETI 16, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:a048fa864a121fe78c932c17bbfcb074a5ab591deeb40b4bad079faa .
+
+_:d49ca8824b9ec4aee61d91bd464628b030fa0b872b1e7eb167ffdfd0  ms:civico myspace_civici:"12d025bb7bc50ceac4cd4bfe2cf426c08dcde9f122d2cc8c463444d0" ;
+                                                          myspace:foglio "1281"^^xsd:string ;
+                                                          myspace:particella "71"^^xsd:string ;
+                                                          myspace:subalterno "1"^^xsd:string ;
+                                                          myspace:destUso "EDIFICIO SCOLASTICO"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA ACCADEMIA ALBERTINA 11, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:d49ca8824b9ec4aee61d91bd464628b030fa0b872b1e7eb167ffdfd0 .
+
+_:1d9d7b2755af139217ec009b54276ab1f774d03eeb52724e94fdc125  ms:civico myspace_civici:"12d025bb7bc50ceac4cd4bfe2cf426c08dcde9f122d2cc8c463444d0" ;
+                                                          myspace:foglio "1281"^^xsd:string ;
+                                                          myspace:particella "B"^^xsd:string ;
+                                                          myspace:destUso "EDIFICIO DI CULTO E ASSIMILABILI"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA ACCADEMIA ALBERTINA 11, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:1d9d7b2755af139217ec009b54276ab1f774d03eeb52724e94fdc125 .
+
+_:c23cbcd976f32582cee2d1143855c628dbaa7dac378f7e59306a1427  ms:civico myspace_civici:"ef04e0aa74d2368d65bd6034da33fa951678da6a562017b8f9dc6b6e" ;
+                                                          myspace:foglio "1394"^^xsd:string ;
+                                                          myspace:particella "343"^^xsd:string ;
+                                                          myspace:subalterno "4"^^xsd:string ;
+                                                          myspace:destUso "EDIFICIO SCOLASTICO"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA FILIPPO ACCIARINI 20, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:c23cbcd976f32582cee2d1143855c628dbaa7dac378f7e59306a1427 .
+
+_:9b0fc99792d30b2d98928c095ee4192a0495fd1aaf8857cc4b434592  ms:civico myspace_civici:"ef04e0aa74d2368d65bd6034da33fa951678da6a562017b8f9dc6b6e" ;
+                                                          myspace:foglio "1394"^^xsd:string ;
+                                                          myspace:particella "343"^^xsd:string ;
+                                                          myspace:subalterno "6"^^xsd:string ;
+                                                          myspace:destUso "FABBRICATO PER ATTIVITA' PRODUTTIVA"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA FILIPPO ACCIARINI 20, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:9b0fc99792d30b2d98928c095ee4192a0495fd1aaf8857cc4b434592 .
+
+_:9ee6445d34b58fdd13fabddb982414d8bab9c32cc2310d9a3751ff2f  ms:civico myspace_civici:"ef04e0aa74d2368d65bd6034da33fa951678da6a562017b8f9dc6b6e" ;
+                                                          myspace:foglio "1394"^^xsd:string ;
+                                                          myspace:particella "343"^^xsd:string ;
+                                                          myspace:subalterno "1"^^xsd:string ;
+                                                          myspace:destUso "BENI COMUNI NON CENSIBILI"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA FILIPPO ACCIARINI 20, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:9ee6445d34b58fdd13fabddb982414d8bab9c32cc2310d9a3751ff2f .
+
+_:3e4c04ed09c259eda4b06a6fcc622cb630ef97ec89750ae11de93f95  ms:civico myspace_civici:"ef04e0aa74d2368d65bd6034da33fa951678da6a562017b8f9dc6b6e" ;
+                                                          myspace:foglio "1394"^^xsd:string ;
+                                                          myspace:particella "343"^^xsd:string ;
+                                                          myspace:subalterno "2"^^xsd:string ;
+                                                          myspace:destUso "BENI COMUNI NON CENSIBILI"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA FILIPPO ACCIARINI 20, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:3e4c04ed09c259eda4b06a6fcc622cb630ef97ec89750ae11de93f95 .
+
+_:9b3391a156cd41e87fb68d527a1313e9acc15af7130e95503357e451  ms:civico myspace_civici:"ef04e0aa74d2368d65bd6034da33fa951678da6a562017b8f9dc6b6e" ;
+                                                          myspace:foglio "1394"^^xsd:string ;
+                                                          myspace:particella "343"^^xsd:string ;
+                                                          myspace:subalterno "3"^^xsd:string ;
+                                                          myspace:destUso "BENI COMUNI NON CENSIBILI"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA FILIPPO ACCIARINI 20, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:9b3391a156cd41e87fb68d527a1313e9acc15af7130e95503357e451 .
+
+_:7a583a2f4b954da63490d1da127e1edd97691f4a7f495b01b75c7587  ms:civico myspace_civici:"c259ac370c4e445a0a5887337064e3691821b4c8987115765f2a033b" ;
+                                                          myspace:foglio "1149"^^xsd:string ;
+                                                          myspace:particella "557"^^xsd:string ;
+                                                          myspace:subalterno "4"^^xsd:string ;
+                                                          myspace:destUso "LOCALE COMMERCIALE, NEGOZIO"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA AGLIE' 9, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:7a583a2f4b954da63490d1da127e1edd97691f4a7f495b01b75c7587 .
+
+_:b479ea3c4dfb0b348dcb134d306a13a3bef7d224224013f825c68a35  ms:civico myspace_civici:"c259ac370c4e445a0a5887337064e3691821b4c8987115765f2a033b" ;
+                                                          myspace:foglio "1149"^^xsd:string ;
+                                                          myspace:particella "557"^^xsd:string ;
+                                                          myspace:subalterno "5"^^xsd:string ;
+                                                          myspace:destUso "LOCALE COMMERCIALE, NEGOZIO"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA AGLIE' 9, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:b479ea3c4dfb0b348dcb134d306a13a3bef7d224224013f825c68a35 .
+
+_:21ccc07119c12d2d5774984b804f96e1028c9627e40b48827594ebfc  ms:civico myspace_civici:"c259ac370c4e445a0a5887337064e3691821b4c8987115765f2a033b" ;
+                                                          myspace:foglio "1149"^^xsd:string ;
+                                                          myspace:particella "557"^^xsd:string ;
+                                                          myspace:subalterno "6"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA AGLIE' 9, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:21ccc07119c12d2d5774984b804f96e1028c9627e40b48827594ebfc .
+
+_:cd71f46a8ef4e3a338fec770ffa28ce683d12609af3aac165cfd4d56  ms:civico myspace_civici:"c259ac370c4e445a0a5887337064e3691821b4c8987115765f2a033b" ;
+                                                          myspace:foglio "1149"^^xsd:string ;
+                                                          myspace:particella "557"^^xsd:string ;
+                                                          myspace:subalterno "3"^^xsd:string ;
+                                                          myspace:destUso "BENI COMUNI NON CENSIBILI"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA AGLIE' 9, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:cd71f46a8ef4e3a338fec770ffa28ce683d12609af3aac165cfd4d56 .
+
+_:8db07a6cc5874571996aceb91089378988f195d75cdad6b0ace4b798  ms:civico myspace_civici:"bb4b6d6ab841d7cafa47ba3ccb497a4068b2fbfad06dd437d3b4e6f8" ;
+                                                          myspace:tipoContratto "Locazione Abitativa"^^xsd:string ;
+                                                          myspace:affittoAttivo "1338,05"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2011-12-01"^^xsd:date ;
+                                                          myspace:scadenzaAffitto "2016-11-30"^^xsd:date ;
+                                                          myspace:foglio "1425"^^xsd:string ;
+                                                          myspace:particella "80"^^xsd:string ;
+                                                          myspace:subalterno "1"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO GIOVANNI AGNELLI 105, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:8db07a6cc5874571996aceb91089378988f195d75cdad6b0ace4b798 .
+
+_:a7f1e71bb4e24cdb245f79387502d9d1eb7b156d2c6662040e056bc8  ms:civico myspace_civici:"bb4b6d6ab841d7cafa47ba3ccb497a4068b2fbfad06dd437d3b4e6f8" ;
+                                                          myspace:tipoContratto "Locazione Abitativa"^^xsd:string ;
+                                                          myspace:affittoAttivo "1475,58"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2011-10-01"^^xsd:date ;
+                                                          myspace:scadenzaAffitto "2016-09-30"^^xsd:date ;
+                                                          myspace:foglio "1425"^^xsd:string ;
+                                                          myspace:particella "80"^^xsd:string ;
+                                                          myspace:subalterno "2"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO GIOVANNI AGNELLI 105, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:a7f1e71bb4e24cdb245f79387502d9d1eb7b156d2c6662040e056bc8 .
+
+_:18f7d272e500b96d781c6149f87bdb65b33e22e1264b8ead3f043550  ms:civico myspace_civici:"bb4b6d6ab841d7cafa47ba3ccb497a4068b2fbfad06dd437d3b4e6f8" ;
+                                                          myspace:tipoContratto "Locazione Abitativa"^^xsd:string ;
+                                                          myspace:affittoAttivo "833,97"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2008-07-01"^^xsd:date ;
+                                                          myspace:scadenzaAffitto "2013-06-30"^^xsd:date ;
+                                                          myspace:foglio "1425"^^xsd:string ;
+                                                          myspace:particella "80"^^xsd:string ;
+                                                          myspace:subalterno "3"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO GIOVANNI AGNELLI 105, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:18f7d272e500b96d781c6149f87bdb65b33e22e1264b8ead3f043550 .
+
+_:c2294860f3583f3c7c90f27e3b46dffa71c1f9f35a7039a2b0456f68  ms:civico myspace_civici:"bb4b6d6ab841d7cafa47ba3ccb497a4068b2fbfad06dd437d3b4e6f8" ;
+                                                          myspace:tipoContratto "Locazione Abitativa"^^xsd:string ;
+                                                          myspace:affittoAttivo "480"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:noteAffitto "canone sociale - PRELIMINARE"^^xsd:string ;
+                                                          myspace:foglio "1425"^^xsd:string ;
+                                                          myspace:particella "80"^^xsd:string ;
+                                                          myspace:subalterno "4"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO GIOVANNI AGNELLI 105, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:c2294860f3583f3c7c90f27e3b46dffa71c1f9f35a7039a2b0456f68 .
+
+_:f8dad75af0f5d8901f34d928169d8bd1033827474c11e0dcf4c826cb  ms:civico myspace_civici:"bb4b6d6ab841d7cafa47ba3ccb497a4068b2fbfad06dd437d3b4e6f8" ;
+                                                          myspace:tipoContratto "Locazione Abitativa"^^xsd:string ;
+                                                          myspace:affittoAttivo "1907,64"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2011-06-01"^^xsd:date ;
+                                                          myspace:scadenzaAffitto "2016-05-31"^^xsd:date ;
+                                                          myspace:foglio "1425"^^xsd:string ;
+                                                          myspace:particella "80"^^xsd:string ;
+                                                          myspace:subalterno "5"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO GIOVANNI AGNELLI 105, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:f8dad75af0f5d8901f34d928169d8bd1033827474c11e0dcf4c826cb .
+
+_:f3cea04cfa611eafb46ed03cc7540e6b930046b1a34dbae2fd330e36  ms:civico myspace_civici:"bb4b6d6ab841d7cafa47ba3ccb497a4068b2fbfad06dd437d3b4e6f8" ;
+                                                          myspace:tipoContratto "Locazione Abitativa"^^xsd:string ;
+                                                          myspace:affittoAttivo "2237,74"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2011-06-01"^^xsd:date ;
+                                                          myspace:scadenzaAffitto "2016-05-31"^^xsd:date ;
+                                                          myspace:foglio "1425"^^xsd:string ;
+                                                          myspace:particella "80"^^xsd:string ;
+                                                          myspace:subalterno "6"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO GIOVANNI AGNELLI 105, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:f3cea04cfa611eafb46ed03cc7540e6b930046b1a34dbae2fd330e36 .
+
+_:717a20103fdeac2e0f08b1ad08c679026056f5ce30289b8077afdd94  ms:civico myspace_civici:"bb4b6d6ab841d7cafa47ba3ccb497a4068b2fbfad06dd437d3b4e6f8" ;
+                                                          myspace:tipoContratto "Locazione Abitativa"^^xsd:string ;
+                                                          myspace:affittoAttivo "1723,8"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:foglio "1425"^^xsd:string ;
+                                                          myspace:particella "80"^^xsd:string ;
+                                                          myspace:subalterno "7"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO GIOVANNI AGNELLI 105, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:717a20103fdeac2e0f08b1ad08c679026056f5ce30289b8077afdd94 .
+
+_:af141b9599bce3909fceec041be7154ea9241e3915c6a18708067768  ms:civico myspace_civici:"bb4b6d6ab841d7cafa47ba3ccb497a4068b2fbfad06dd437d3b4e6f8" ;
+                                                          myspace:tipoContratto "Locazione Abitativa"^^xsd:string ;
+                                                          myspace:affittoAttivo "1328,62"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2011-01-01"^^xsd:date ;
+                                                          myspace:scadenzaAffitto "2016-12-31"^^xsd:date ;
+                                                          myspace:foglio "1425"^^xsd:string ;
+                                                          myspace:particella "80"^^xsd:string ;
+                                                          myspace:subalterno "8"^^xsd:string ;
+                                                          myspace:destUso "ABITAZIONE"^^xsd:string ;
+                                                          myspace:percPossesso "100"^^xsd:float ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO GIOVANNI AGNELLI 105, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:af141b9599bce3909fceec041be7154ea9241e3915c6a18708067768 .
+
+_:e8a19854bc48b01e279940974b1073a7746f3a5c0f542bca24cb76b6  ms:civico myspace_civici:"cf572a2750b4df1214d59aad034035237472b331e2fde8f58db1b25c" ;
+                                                          myspace:mq "147"^^xsd:float ;
+                                                          myspace:affittoPassivo "3780,39"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "60"^^xsd:string ;
+                                                          myspace:particella "107"^^xsd:string ;
+                                                          myspace:subalterno "13"^^xsd:string ;
+                                                          myspace:destUso "Comunità alloggio"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA DELLE PERVINCHE 43, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:e8a19854bc48b01e279940974b1073a7746f3a5c0f542bca24cb76b6 .
+
+_:e88c19536a1241901f4e310570809e580403ab539557b8192b48c160  myspace:mq "228"^^xsd:float ;
+                                                          myspace:affittoPassivo "12890,44"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "1224"^^xsd:string ;
+                                                          myspace:particella "317"^^xsd:string ;
+                                                          myspace:subalterno "26"^^xsd:string ;
+                                                          myspace:destUso "Comunità alloggio"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO RACCONIGI 25, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:e88c19536a1241901f4e310570809e580403ab539557b8192b48c160 .
+
+_:876120fa5d0a9c84a6ce8e4d59d91b67cb1f918a140c410ab9c72bdf  ms:civico myspace_civici:"cd77ad177c7c2d987841e3458a65473ca3a8d8732371a9bf08e822d2" ;
+                                                          myspace:mq "181,1"^^xsd:float ;
+                                                          myspace:affittoPassivo "9013,7"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "53"^^xsd:string ;
+                                                          myspace:particella "231"^^xsd:string ;
+                                                          myspace:subalterno "155"^^xsd:string ;
+                                                          myspace:destUso "Comunità alloggio"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA VEROLENGO 115 int.13, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:876120fa5d0a9c84a6ce8e4d59d91b67cb1f918a140c410ab9c72bdf .
+
+_:f85abae059e9fa1c8894fefeeca682d5f28d3b836f8f76d9ab46e4cd  ms:civico myspace_civici:"a0a301b02f3610057c265d45be0c8e160a1e51285d9f536ec3c3581f" ;
+                                                          myspace:foglio "18"^^xsd:string ;
+                                                          myspace:subalterno "118"^^xsd:string ;
+                                                          myspace:destUso "Comunità alloggio"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA SIDOLI 18, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:f85abae059e9fa1c8894fefeeca682d5f28d3b836f8f76d9ab46e4cd .
+
+_:9af223cbd792d3582c7fd27668895aea5dcf7dd3b52f2cf8ff219d7f  myspace:tipoContratto "Comodato"^^xsd:string ;
+                                                          myspace:destUso "Comunità alloggio"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA SOSTEGNO 41, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:9af223cbd792d3582c7fd27668895aea5dcf7dd3b52f2cf8ff219d7f .
+
+_:257cb1dafae8816b11bbb5cdea69b0ca33b1f97f7b48b19b1b7178ec  myspace:mq "182"^^xsd:float ;
+                                                          myspace:tipoContratto "Comodato"^^xsd:string ;
+                                                          myspace:foglio "1350"^^xsd:string ;
+                                                          myspace:particella "3-5"^^xsd:string ;
+                                                          myspace:destUso "Comunità alloggio"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA SACCHI 47-49, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:257cb1dafae8816b11bbb5cdea69b0ca33b1f97f7b48b19b1b7178ec .
+
+_:7376a7f8814c8728415ecd1dec70f739d8f48a2abfcd03c460d51459  myspace:mq "275"^^xsd:float ;
+                                                          myspace:tipoContratto "Comodato"^^xsd:string ;
+                                                          myspace:foglio "174"^^xsd:string ;
+                                                          myspace:particella "574"^^xsd:string ;
+                                                          myspace:subalterno "21-22"^^xsd:string ;
+                                                          myspace:destUso "Comunità alloggio"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA SANTA CHIARA 56-58, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:7376a7f8814c8728415ecd1dec70f739d8f48a2abfcd03c460d51459 .
+
+_:dbfe0e81347aa915e3e9a46ae3da507bc8e766af4da6d62c4cd006d5  myspace:mq "2000"^^xsd:float ;
+                                                          myspace:affittoPassivo "163228,99"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "21"^^xsd:string ;
+                                                          myspace:particella "30"^^xsd:string ;
+                                                          myspace:subalterno "2"^^xsd:string ;
+                                                          myspace:destUso "Archivio comunale"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"E216" ;
+                                                          locn:fullAddress "STRADA DEL PORTONE 179, GRUGLIASCO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:dbfe0e81347aa915e3e9a46ae3da507bc8e766af4da6d62c4cd006d5 .
+
+_:399cd553415f6c4fcfcadc49ed7a5fafced57b5fa877e56325e6167d  ms:civico myspace_civici:"fe0b27276613ebf7c871c30069eba56de1dcbcbf8074601c58769c89" ;
+                                                          myspace:mq "2300"^^xsd:float ;
+                                                          myspace:affittoPassivo "120292"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "1128"^^xsd:string ;
+                                                          myspace:particella "316"^^xsd:string ;
+                                                          myspace:subalterno "36"^^xsd:string ;
+                                                          myspace:destUso "Archivio comunale"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA CHATILLON 19, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:399cd553415f6c4fcfcadc49ed7a5fafced57b5fa877e56325e6167d .
+
+_:52ff54ab43e852f0fb2920011a5d3f01d9f6de1f67ae1299705e24d6  ms:civico myspace_civici:"b0ba6ff7795defef8c0cbdcd2d7762fd49c214c35e6b1f58f2e636ce" ;
+                                                          myspace:mq "1080"^^xsd:float ;
+                                                          myspace:affittoPassivo "29506,9"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "209"^^xsd:string ;
+                                                          myspace:particella "113"^^xsd:string ;
+                                                          myspace:subalterno "10-46"^^xsd:string ;
+                                                          myspace:destUso "Autorimessa"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA BONELLI 3, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:52ff54ab43e852f0fb2920011a5d3f01d9f6de1f67ae1299705e24d6 .
+
+_:03dee55c5cb385dc4b5b94da9959770959d49dbf0fdcfb37ea5780bb  myspace:mq "292,75"^^xsd:float ;
+                                                          myspace:affittoPassivo "11253,55"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "1281"^^xsd:string ;
+                                                          myspace:particella "150"^^xsd:string ;
+                                                          myspace:subalterno "189"^^xsd:string ;
+                                                          myspace:destUso "Posti auto per VVUU"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "PIAZZA VALDO FUSI , TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:03dee55c5cb385dc4b5b94da9959770959d49dbf0fdcfb37ea5780bb .
+
+_:897863cdfee4ed2d285b65c033597948e67a50f3f69a09138b7c0def  myspace:affittoPassivo "63506,84"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "217"^^xsd:string ;
+                                                          myspace:particella "258-259-260"^^xsd:string ;
+                                                          myspace:destUso "Autorimessa"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO XI FEBBRAIO , TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:897863cdfee4ed2d285b65c033597948e67a50f3f69a09138b7c0def .
+
+_:2cc497414cf9d80b474b6388054692d9107db10c11c5118a2c40c7bb  myspace:mq "79,5"^^xsd:float ;
+                                                          myspace:affittoPassivo "6523,39"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "92"^^xsd:string ;
+                                                          myspace:particella "238"^^xsd:string ;
+                                                          myspace:subalterno "103"^^xsd:string ;
+                                                          myspace:destUso "Centro famiglia"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA MONTEVIDEO 27, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:2cc497414cf9d80b474b6388054692d9107db10c11c5118a2c40c7bb .
+
+_:0a119fb2bc26b8b8a1f2022087cf5709f90480fe64c7f96e1ebea2b5  myspace:mq "60,5"^^xsd:float ;
+                                                          myspace:affittoPassivo "5239,9"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "92"^^xsd:string ;
+                                                          myspace:particella "238"^^xsd:string ;
+                                                          myspace:destUso "Centro famiglia"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA MONTEVIDEO 27, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:0a119fb2bc26b8b8a1f2022087cf5709f90480fe64c7f96e1ebea2b5 .
+
+_:00e380870e6c3776a60aabb3081b0399d5b9c61e55522f92afabc92d  ms:civico myspace_civici:"17d7f89390db10bda49452bdd739f110c3747b4117d1a8d44a79f05d" ;
+                                                          myspace:mq "350"^^xsd:float ;
+                                                          myspace:tipoContratto "Comodato"^^xsd:string ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "106"^^xsd:string ;
+                                                          myspace:particella "131-132"^^xsd:string ;
+                                                          myspace:subalterno "1-3"^^xsd:string ;
+                                                          myspace:destUso "Biblioteca IX Circoscrizione"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "CORSO UNIONE SOVIETICA 490, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:00e380870e6c3776a60aabb3081b0399d5b9c61e55522f92afabc92d .
+
+_:ab31562484f40497d07729f5d2c712bec1c501a0edefcd86ebd91b20  ms:civico myspace_civici:"a64f8fbea9206225d46e43ac09bc583c41691e9ac282722fb1cd8ec1" ;
+                                                          myspace:mq "125"^^xsd:float ;
+                                                          myspace:affittoPassivo "3554,1"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "1219"^^xsd:string ;
+                                                          myspace:particella "19"^^xsd:string ;
+                                                          myspace:subalterno "17"^^xsd:string ;
+                                                          myspace:destUso "Casa dell'affido"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA IGNAZIO ISLER 1, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:ab31562484f40497d07729f5d2c712bec1c501a0edefcd86ebd91b20 .
+
+_:2405467b7cc596b7c5ab309a459994a33c8bc59695cb520372edc026  ms:civico myspace_civici:"65280be4dd83d38724593b3b37d08139da2d17084216ed0b46b61fbb" ;
+                                                          myspace:mq "250"^^xsd:float ;
+                                                          myspace:affittoPassivo "24428,78"^^xsd:float ;
+                                                          myspace:unitaCanone "Annuo"^^xsd:string ;
+                                                          myspace:decorrenzaAffitto "2014-07-01"^^xsd:date ;
+                                                          myspace:foglio "1423"^^xsd:string ;
+                                                          myspace:particella "49"^^xsd:string ;
+                                                          myspace:subalterno "154"^^xsd:string ;
+                                                          myspace:destUso "Comunità alloggio"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+                                                          locn:fullAddress "VIA SAN DOMENICO 28, TORINO"^^xsd:string ;
+spcdata:Comune/L219 myspace:possiede  _:2405467b7cc596b7c5ab309a459994a33c8bc59695cb520372edc026 .
