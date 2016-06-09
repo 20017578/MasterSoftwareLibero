@@ -1,0 +1,158 @@
+###################################################
+############          PREFISSI         ############
+###################################################
+@prefix myspace: <none>
+@prefix spcdata: <http://spcdata.digitpa.gov.it/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+
+###################################################
+############        DEFINIZIONI        ############
+###################################################
+myspace:sedime a rdf:property ;
+              rdf:label “Sedime dell’indirizzo”^^xsd:string .
+myspace:nomeVia a rdf:property ;
+              rdf:label “Nome della via. In caso di vie intitolate a personaggi prima inserire il nome e poi il cognome”^^xsd:string .
+myspace:civicoPrincipale a rdf:property ;
+              rdf:label “Numero civico principale”^^xsd:string .
+myspace:civicoPrincipale a rdf:property ;
+              rdf:label “Numero civico principale”^^xsd:integer .
+myspace:civicoSecondario a rdf:property ;
+              rdf:label “Parte del numero civico principale da esso dipendente, generalmente si trova dopo una barra, p.e. 4/F”^^xsd:string .
+myspace:civicoInterno a rdf:property ;
+              rdf:label “Numero civico derivante dal principale e riportante la dicitura interno o l'abbreviazione int.”^^xsd:string .
+myspace:scala a rdf:property ;
+              rdf:label “Parte del numero civico principale da esso dipendente riportante un codice di scala, p.e. 4 scala B”^^xsd:string .
+myspace:identificativo a rdf:property ;
+              rdf:label “Codice attribuito al civico dal Comune di riferimento, è un valore assegnato internamente”^^xsd:string .
+
+###################################################
+############           TRIPLE          ############
+###################################################
+
+c5f6a09977785e3797474b8cf818a343e7729177ad171a3d5f146a6f  a locn:Address ;
+                                                          myspace:idInterno "COD_CIVICO"^^xsd:string ;
+                                                          locn:fullAddress "INIDIRIZZO FORMATTATO"^^xsd:string ;
+                                                          locn:postCode "CAP"^^xsd:string ;
+                                                          wgs84:lat "COORDINATA_X"^^xsd:float ;
+                                                          wgs84:long "COORDINATA_Y"^^xsd:float ;
+                                                          myspace:sedime "SEDIME"^^xsd:string ;
+                                                          myspace:nomeVia "NOME VIA"^^xsd:string ;
+                                                          myspace:civicoPrincipale "PRIMARIO"^^xsd:integer ;
+                                                          myspace:civicoSecondario "SECONDARIO"^^xsd:string ;
+                                                          myspace:civicoInterno "INTERNO"^^xsd:string ;
+                                                          myspace:idScala "SCALA"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"NUOVO_CAMPO" ;
+
+604b8cb3f34b94003d3b82dbf727be3e46d3fa08980ff1497a2ff0e1  a locn:Address ;
+                                                          myspace:idInterno "153712"^^xsd:string ;
+                                                          locn:fullAddress "CORSO ENRICO TAZZOLI 235 int. 8 int. 10/B, 10137 Torino"^^xsd:string ;
+                                                          locn:postCode "10137"^^xsd:string ;
+                                                          wgs84:lat "7.6147894204"^^xsd:float ;
+                                                          wgs84:long "45.036599453"^^xsd:float ;
+                                                          myspace:sedime "CORSO"^^xsd:string ;
+                                                          myspace:nomeVia "ENRICO TAZZOLI"^^xsd:string ;
+                                                          myspace:civicoPrincipale "235"^^xsd:integer ;
+                                                          myspace:civicoInterno "8 int. 10/B"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+
+2e513c32f0fe101fbbf98be90855049b273fcfbd245e56d83b7590b5  a locn:Address ;
+                                                          myspace:idInterno "153711"^^xsd:string ;
+                                                          locn:fullAddress "CORSO ENRICO TAZZOLI 235 int. 8 int. 16/C, 10137 Torino"^^xsd:string ;
+                                                          locn:postCode "10137"^^xsd:string ;
+                                                          wgs84:lat "7.6137085"^^xsd:float ;
+                                                          wgs84:long "45.0369373601"^^xsd:float ;
+                                                          myspace:sedime "CORSO"^^xsd:string ;
+                                                          myspace:nomeVia "ENRICO TAZZOLI"^^xsd:string ;
+                                                          myspace:civicoPrincipale "235"^^xsd:integer ;
+                                                          myspace:civicoInterno "8 int. 16/C"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+
+dbb3f86e4f81b617c2287fd834cacf0bd0d635725cc4e9f846ca9555  a locn:Address ;
+                                                          myspace:idInterno "151973"^^xsd:string ;
+                                                          locn:fullAddress "CORSO GIULIO CESARE 424 int. 51 int. 26/A, 10156 Torino"^^xsd:string ;
+                                                          locn:postCode "10156"^^xsd:string ;
+                                                          wgs84:lat "7.7157144758"^^xsd:float ;
+                                                          wgs84:long "45.1166103745"^^xsd:float ;
+                                                          myspace:sedime "CORSO"^^xsd:string ;
+                                                          myspace:nomeVia "GIULIO CESARE"^^xsd:string ;
+                                                          myspace:civicoPrincipale "424"^^xsd:integer ;
+                                                          myspace:civicoInterno "51 int. 26/A"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+
+eceb9bee8a532034878335370d0ac227372da6b8c0a272b424015f38  a locn:Address ;
+                                                          myspace:idInterno "151975"^^xsd:string ;
+                                                          locn:fullAddress "CORSO GIULIO CESARE 424 int. 51 int. 33/A, 10156 Torino"^^xsd:string ;
+                                                          locn:postCode "10156"^^xsd:string ;
+                                                          wgs84:lat "7.7146219263"^^xsd:float ;
+                                                          wgs84:long "45.1180621972"^^xsd:float ;
+                                                          myspace:sedime "CORSO"^^xsd:string ;
+                                                          myspace:nomeVia "GIULIO CESARE"^^xsd:string ;
+                                                          myspace:civicoPrincipale "424"^^xsd:integer ;
+                                                          myspace:civicoInterno "51 int. 33/A"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+
+7b0a4fc551ab41c0571bdc4c23a332d6ecb54453538fc43d67b01ecb  a locn:Address ;
+                                                          myspace:idInterno "151974"^^xsd:string ;
+                                                          locn:fullAddress "CORSO GIULIO CESARE 424 int. 51 int. 41/A, 10156 Torino"^^xsd:string ;
+                                                          locn:postCode "10156"^^xsd:string ;
+                                                          wgs84:lat "7.7143774941"^^xsd:float ;
+                                                          wgs84:long "45.1184284573"^^xsd:float ;
+                                                          myspace:sedime "CORSO"^^xsd:string ;
+                                                          myspace:nomeVia "GIULIO CESARE"^^xsd:string ;
+                                                          myspace:civicoPrincipale "424"^^xsd:integer ;
+                                                          myspace:civicoInterno "51 int. 41/A"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+
+b034171023b48cab0ad1527abb0a1df7bd51e0b96b861b3e057befdb  a locn:Address ;
+                                                          myspace:idInterno "152829"^^xsd:string ;
+                                                          locn:fullAddress "CORSO GROSSETO 366 int. 16 int. 4/A, 10151 Torino"^^xsd:string ;
+                                                          locn:postCode "10151"^^xsd:string ;
+                                                          wgs84:lat "7.6465970266"^^xsd:float ;
+                                                          wgs84:long "45.1071890394"^^xsd:float ;
+                                                          myspace:sedime "CORSO"^^xsd:string ;
+                                                          myspace:nomeVia "GROSSETO"^^xsd:string ;
+                                                          myspace:civicoPrincipale "366"^^xsd:integer ;
+                                                          myspace:civicoInterno "16 int. 4/A"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+
+f81021bc0c971dfb6415c57ac0b5319aff09d753c66f5b9b26741dda  a locn:Address ;
+                                                          myspace:idInterno "87500"^^xsd:string ;
+                                                          locn:fullAddress "VIA MALTA 36 int. 10 bis, 10141 Torino"^^xsd:string ;
+                                                          locn:postCode "10141"^^xsd:string ;
+                                                          wgs84:lat "7.6454234233"^^xsd:float ;
+                                                          wgs84:long "45.0573456284"^^xsd:float ;
+                                                          myspace:sedime "VIA"^^xsd:string ;
+                                                          myspace:nomeVia "MALTA"^^xsd:string ;
+                                                          myspace:civicoPrincipale "36"^^xsd:integer ;
+                                                          myspace:civicoInterno "10 bis"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+
+77f49476f6f068668696280b3f809bd4ef58ad98d34a39d9f92caaa8  a locn:Address ;
+                                                          myspace:idInterno "137410"^^xsd:string ;
+                                                          locn:fullAddress "VIA VENARIA 85 int. 10 bis, 10148 Torino"^^xsd:string ;
+                                                          locn:postCode "10148"^^xsd:string ;
+                                                          wgs84:lat "7.6574844457"^^xsd:float ;
+                                                          wgs84:long "45.1101351955"^^xsd:float ;
+                                                          myspace:sedime "VIA"^^xsd:string ;
+                                                          myspace:nomeVia "VENARIA"^^xsd:string ;
+                                                          myspace:civicoPrincipale "85"^^xsd:integer ;
+                                                          myspace:civicoInterno "10 bis"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+
+2553787a0baa6aa3898b550d799be0aea1c6de5bee19ef56441afe75  a locn:Address ;
+                                                          myspace:idInterno "153740"^^xsd:string ;
+                                                          locn:fullAddress "VIA SOMALIA 116 int. 20 bis, 10127 Torino"^^xsd:string ;
+                                                          locn:postCode "10127"^^xsd:string ;
+                                                          wgs84:lat "7.6539149284"^^xsd:float ;
+                                                          wgs84:long "45.0087811868"^^xsd:float ;
+                                                          myspace:sedime "VIA"^^xsd:string ;
+                                                          myspace:nomeVia "SOMALIA"^^xsd:string ;
+                                                          myspace:civicoPrincipale "116"^^xsd:integer ;
+                                                          myspace:civicoInterno "20 bis"^^xsd:string ;
+                                                          gn:locatedIn spcdata:"L219" ;
+
+
