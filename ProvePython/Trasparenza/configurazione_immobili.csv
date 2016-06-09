@@ -1,0 +1,9 @@
+Tipologia immobile,Indirizzo completo,Comune,URI dei numeri civici,Foglio,Particella,Subaltero,Categoria catastale,Descrizione,Denominazione,Destinazione d'uso,Identificativo,Metri quadrati,Percentuale di possesso,Posseduto dalla data,Posseduto fino alla data,Affitto attivo,Affitto passivo,Tipologia di contratto,Link al contratto,Unità temporale del canone,Data di decorrenza dell'affitto ,Data di scadenza dell'affitto ,Note sull'affitto ,Altri proprietari,Locatario
+Property type,Complete address,City,URI-address,,,,,Description,Name,Intended use,Identifier,Square meters,percentage of ownership ,Owned from,Owned until,,,,,,,,,,
+,"Via Roma 1 int.4 scala B, 10100, Torino",L219,,,,,A/4,ex box-auto adibito a ripostiglio ,Casetta per gli attrezzi,Ritiro materiale,,,,,,,,,,Mensile / annuale,,,,,
+,,,Nodo presente nel dataset dei numeri civici,,,,,,,,Identificativo interno se utilizzato dall'ente,,,,,,,,,,,,,,
+,,,,,,,,,,,Identifier if used by the organization,,,,,,,,,,,,,,
+,locn:fullAddress,gn:locatedIn,ms:civico,_:foglio,_:particella,_:subalterno,_:categoriaCatastale,_:descrizione,_:denominazione,_:destUso,_:idInterno,_:mq,_:percPossesso,time:hasBeginning ,time:hasEnd,_:affittoAttivo,_:affittoPassivo,_:tipoContratto,_:linkContratto,_:unitaCanone,_:decorrenzaAffitto,_:scadenzaAffitto,_:noteAffitto,_:altriProprietari,_:locatario
+string,string,spcdata:<uri>,myspace_civici:<uri>,string,string,string,string,string,string,string,string,float,float,date,date,float,float,string,anyURI,string,date,date,string,string,string
+,,http://spcdata.digitpa.gov.it/,http://myspace,,,,,,,,,,,,,,,,,,,,,,
+,,http://spcdata.digitpa.gov.it/data/amm.csv,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,9 @@
+Latitudine,Longitudine,Comune,CAP,Indirizzo completo,Sedime,Nome della via,Numero civico principale,Numero civico secondario,Numero civico interno,Scala,Identificativo
+Latitude,Longitude,City,Postal Code,Complete address,Sedime,Nome della via,Numero civico principale,Numero civico secondario,Numero civico interno,Scala,Identifier
+24.98194,31.4544444,,10100,"Via Roma 1 int.4 scala B, 10100, Torino","Via, Corso, Largo, ...",Roma,1,bis,6,C,
+secondo il sistema WGS84,secondo il sistema WGS84,,Codice di avviamento postale,,,,,,,,Identificativo interno se utilizzato dall'ente
+secondo il sistema WGS84,secondo il sistema WGS84,,,,,,,,,,Identifier if used by the organization
+wgs84:lat,wgs84:long,gn:locatedIn,locn:postCode,locn:fullAddress,_:sedime,_:nomeVia,_:civicoPrincipale,_:civicoSecondario,_:civicoInterno,_:idScala,_:idInterno
+float,float,spcdata:<uri>,string,string,string,string,integer,string,string,string,string
+,,http://spcdata.digitpa.gov.it/,,,,,,,,,
+,,http://spcdata.digitpa.gov.it/data/amm.csv,,,,,,,,,
