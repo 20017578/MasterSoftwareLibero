@@ -1,0 +1,6 @@
+http://spcdata.digitpa.gov.it/Amministrazione/
+my_ld:possiede_affitta
+null
+my_ld:affittato
+null
+null

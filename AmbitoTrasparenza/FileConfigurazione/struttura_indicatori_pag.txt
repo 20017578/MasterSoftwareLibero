@@ -1,0 +1,4 @@
+http://spcdata.digitpa.gov.it/Amministrazione/
+my_ld:ha_indice_di_tempestivita_dei_pagamenti
+null
+null
