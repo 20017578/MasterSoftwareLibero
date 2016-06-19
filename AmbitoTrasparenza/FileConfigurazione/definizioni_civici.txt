@@ -1,0 +1,18 @@
+# DEFINIZIONI
+
+myspace:sedime a rdf:property ;
+              rdf:label “Sedime dell’indirizzo”^^xsd:string .      
+myspace:nomeVia a rdf:property ;
+              rdf:label “Nome della via. In caso di vie intitolate a personaggi prima inserire il nome e poi il cognome”^^xsd:string . 
+myspace:civicoPrincipale a rdf:property ;
+              rdf:label “Numero civico principale”^^xsd:string .
+myspace:civicoPrincipale a rdf:property ;
+              rdf:label “Numero civico principale”^^xsd:integer .
+myspace:civicoSecondario a rdf:property ;
+              rdf:label “Parte del numero civico principale da esso dipendente, generalmente si trova dopo una barra, p.e. 4/F”^^xsd:string .
+myspace:civicoInterno a rdf:property ;
+              rdf:label “Numero civico derivante dal principale e riportante la dicitura interno o l'abbreviazione int.”^^xsd:string .			  
+myspace:scala a rdf:property ;
+              rdf:label “Parte del numero civico principale da esso dipendente riportante un codice di scala, p.e. 4 scala B”^^xsd:string .
+myspace:identificativo a rdf:property ;
+              rdf:label “Codice attribuito al civico dal Comune di riferimento, è un valore assegnato internamente”^^xsd:string .
