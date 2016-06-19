@@ -223,8 +223,8 @@ myspace='my_ld'
 # INPUT: quale Linked Data voglio creare ?
 print "Software per la generazione di Linked Data (in linguaggio turtle) partendo da file CSV per le seguenti tipologie :"
 print "1) Numeri civici"
-print "2) Indice di tempestività dei pagamenti (dlgs. 33/2013 art. xx)"
-print "3) Immobili posseduti e affittati da una PA (dlgs. 33/2013 art. xx)"
+print "2) Indicatore di tempestività dei pagamenti (dlgs. 33/2013 art. 33)"
+print "3) Immobili posseduti e affittati da una PA (dlgs. 33/2013 art. 30)"
 print "-------------------------------------------------------------------------------------------"
 tipoLOD=0
 while tipoLOD<'1' or tipoLOD>'3':
@@ -234,15 +234,15 @@ while tipoLOD<'1' or tipoLOD>'3':
 if tipoLOD=='1':
     suffisso_file='civici'
     prefissoSoggetto=''
-    profondita = 0     # rimettere a 1
+    profondita = 1     # rimettere a 1
 if tipoLOD=='2':
-    suffisso_file='indice_pag'
+    suffisso_file='indicatore_pag'
     prefissoSoggetto='spcdata:'
     profondita = 2
 if tipoLOD=='3':
     suffisso_file='immobili'
     prefissoSoggetto='spcdata:'
-    profondita = 0     # rimettere a 3
+    profondita = 3     # rimettere a 3
 
 nomeFileConfig = 'configurazione_'+suffisso_file+'.csv'
 nomeFileStruct = 'struttura_'+suffisso_file+'.txt'
@@ -317,35 +317,6 @@ while i<profondita:
 
 f_struct.close()
 
-#print"Lista tabelle :"
-#print lista_tabelle
-
-#print"corrispondenza :"
-#print corrispondenza
-
-if tipoLOD=='1':
-    corrispondenza=[['null'],['1', '0', '0', '0', '0', '5', '4', '1', '2', '6', '7', '8', '9', '10', '11', '3']]
-    lista_tabelle=[['civici_torino_ridotto_n.csv', ';', 's', 'locn:Address', '', '', 'null', '', 1]]
-    profondita=1
-if tipoLOD=='x':
-    lista_tabelle=[['indice_temp_1_n.csv', ';', 's', 'http://spcdata.digitpa.gov.it/Amministrazione/', '1', '', 'my_ld:ha_indice_di_tempestivita_dei_pagamenti', 'indice_temp_2.csv', 1], ['indice_temp_2.csv', ';', 's', 'null', '', '0', 'null', '', 2]]
-    corrispondenza =[['null'], ['2', '0', '0', '0'], ['0', '0', '1', '2', '3', '4']]
-    profondita=2
-if tipoLOD=='3':
-    corrispondenza=[['null'],['2', '0', '0', '0'],['0', '0', '0', '0', '0', '2', '9', '10', '5', '6', '7', '8', '13', '0', '11', '14'],['1', '0', '0', '22', '23', '17', '18', '19']]
-    lista_tabelle=[['reg1_n.csv', ';', 's', 'http://spcdata.digitpa.gov.it/Amministrazione/', '1', '', 'my_ld:possiede_affitta', 'reg2.csv', 1], ['reg2.csv', ';', 's', 'null', '1', '0', 'my_ld:affitta', 'reg3.csv', 2], ['reg3.csv', ';', 's', 'null', '', '0', 'null', '', 3]]
-    profondita=3
-#print "La lista è formata così: "
-#print "0- nome della tabella (CSV)"
-#print "1- separatore del CSV"
-#print "2- il CSV ha una intestazione (s/n) ?"
-#print "3- tipo del soggetto: id a ......"
-#print "4- Numero del campo contenente gli id che linkano alla tabella figlia"
-#print "5- Numero del campo contenente gli id che linkano alla tabella padre"
-#print "6- Predicato col quale si legano le due tabelle: id1 predicato id2"
-#print "7- Nome della tabella figlia"
-#print "8- Livello di profondità"
-
 
 #LEGGE IL FILE DI CONFIGURAZIONE E POPOLA LA LISTA campi, PEZZO DI CODICE GIA' PRESENTE NELLA FUNZIONE leggi_configurazione. VALUTARE SE PASSARE LA LISTA campi per riferimento
 campi = []
@@ -374,9 +345,7 @@ while i<n_campi_config:
         object = '^^xsd:' + object
     lod_object.append(object)
     i=i+1
-#print campi
-#print lod_property
-#print lod_object
+
 
 #####################################################################################################################################
 #                                                                                                                                   #
