@@ -3,5 +3,5 @@ Data di inizio rilevazione;Data di fine rilevazione;Descrizione del periodo;Temp
 ;;;;
 ;;;;
 ;;;;
-time:hasBeginning ;time:hasEnd;_:descrizionePeriodo;_:TmedioPagamento;_:note
+time:hasBeginning ;time:hasEnd;_:descrizionePeriodo;_:IndicPagamento;_:note
 date;date;string;float;string
