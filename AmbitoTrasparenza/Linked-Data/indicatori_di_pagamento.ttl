@@ -1,0 +1,2350 @@
+# PREFISSI
+
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix spcdata: <http://spcdata.digitpa.gov.it/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix my_ld: <none>  .
+
+# DEFINIZIONI
+
+my_ld:ha_indice_di_tempestivita_dei_pagamenti a rdf:property ;
+                                              rdf:label “E' l'indicatore di tempestività dei pagamenti realtivo all'ente pubblico soggetto.”^^xsd:string .      
+my_ld:IndicPagamento a rdf:property ;
+                     rdf:label “E' il valore numerico dell'indicatore di pagamento che ogni ente pubblico deve pubblicare nelle proprie pagine della sezione Amministrazione Trasparente del sito web ufficiale secondo le normative vigenti, ad oggi: Art. 33 del Dlgs 33/20131, e gli Artt. 9 e 10 del DPCM 22/09/2014”^^xsd:string . 
+my_ld:descrizionePeriodo a rdf:property ;
+                         rdf:label “Contiene in forma testuale quanto espresso nei due campi data. Serve a rendere più immediatamente leggibile per un umano l'informazione contenuta”^^xsd:string .
+my_ld:note a rdf:property ;
+                  rdf:label “Campo note utile a specificare in forma testuale, laddove necessario, ogni altra informazione relativa al dato pubblicato”^^xsd:string .
+
+# DATI
+
+spcdata:ComunediANCONA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANCONA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANCONA4164042004 .
+
+spcdata:ComunediANCONA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANCONA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANCONA4200542094 .
+
+spcdata:ComunediANCONA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANCONA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANCONA4200542369 .
+
+spcdata:ComunediANCONA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANCONA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANCONA4209542185 .
+
+spcdata:ComunediANCONA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANCONA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANCONA4218642277 .
+
+spcdata:ComunediANCONA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANCONA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANCONA4227842369 .
+
+spcdata:ComunediANCONA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANCONA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANCONA4237042460 .
+
+spcdata:ComunediANDRIA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANDRIA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANDRIA4164042004 .
+
+spcdata:ComunediANDRIA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANDRIA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANDRIA4200542094 .
+
+spcdata:ComunediANDRIA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANDRIA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANDRIA4200542369 .
+
+spcdata:ComunediANDRIA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANDRIA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANDRIA4209542185 .
+
+spcdata:ComunediANDRIA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANDRIA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANDRIA4218642277 .
+
+spcdata:ComunediANDRIA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANDRIA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANDRIA4227842369 .
+
+spcdata:ComunediANDRIA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediANDRIA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediANDRIA4237042460 .
+
+spcdata:ComunediBARI4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBARI4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBARI4127541639 .
+
+spcdata:ComunediBARI4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBARI4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBARI4164042004 .
+
+spcdata:ComunediBARI4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBARI4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBARI4200542094 .
+
+spcdata:ComunediBARI4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBARI4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBARI4200542369 .
+
+spcdata:ComunediBARI4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBARI4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBARI4209542185 .
+
+spcdata:ComunediBARI4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBARI4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBARI4218642277 .
+
+spcdata:ComunediBARI4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBARI4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBARI4227842369 .
+
+spcdata:ComunediBARI4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBARI4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBARI4237042460 .
+
+spcdata:ComunediBERGAMO4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBERGAMO4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBERGAMO4127541639 .
+
+spcdata:ComunediBERGAMO4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBERGAMO4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBERGAMO4164042004 .
+
+spcdata:ComunediBERGAMO4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBERGAMO4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBERGAMO4200542094 .
+
+spcdata:ComunediBERGAMO4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBERGAMO4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBERGAMO4200542369 .
+
+spcdata:ComunediBERGAMO4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBERGAMO4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBERGAMO4209542185 .
+
+spcdata:ComunediBERGAMO4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBERGAMO4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBERGAMO4218642277 .
+
+spcdata:ComunediBERGAMO4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBERGAMO4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBERGAMO4227842369 .
+
+spcdata:ComunediBERGAMO4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBERGAMO4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBERGAMO4237042460 .
+
+spcdata:ComunediBOLOGNA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLOGNA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLOGNA4164042004 .
+
+spcdata:ComunediBOLOGNA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLOGNA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLOGNA4200542094 .
+
+spcdata:ComunediBOLOGNA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLOGNA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLOGNA4200542369 .
+
+spcdata:ComunediBOLOGNA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLOGNA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLOGNA4209542185 .
+
+spcdata:ComunediBOLOGNA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLOGNA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLOGNA4218642277 .
+
+spcdata:ComunediBOLOGNA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLOGNA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLOGNA4227842369 .
+
+spcdata:ComunediBOLOGNA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLOGNA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLOGNA4237042460 .
+
+spcdata:ComunediBOLZANO4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLZANO4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLZANO4127541639 .
+
+spcdata:ComunediBOLZANO4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLZANO4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLZANO4164042004 .
+
+spcdata:ComunediBOLZANO4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLZANO4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLZANO4200542094 .
+
+spcdata:ComunediBOLZANO4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLZANO4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLZANO4200542369 .
+
+spcdata:ComunediBOLZANO4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLZANO4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLZANO4209542185 .
+
+spcdata:ComunediBOLZANO4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLZANO4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLZANO4218642277 .
+
+spcdata:ComunediBOLZANO4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLZANO4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLZANO4227842369 .
+
+spcdata:ComunediBOLZANO4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBOLZANO4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBOLZANO4237042460 .
+
+spcdata:ComunediBRESCIA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBRESCIA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBRESCIA4164042004 .
+
+spcdata:ComunediBRESCIA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBRESCIA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBRESCIA4200542369 .
+
+spcdata:ComunediBRESCIA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediBRESCIA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediBRESCIA4237042460 .
+
+spcdata:ComunediCAGLIARI4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCAGLIARI4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCAGLIARI4127541639 .
+
+spcdata:ComunediCAGLIARI4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCAGLIARI4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCAGLIARI4164042004 .
+
+spcdata:ComunediCAGLIARI4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCAGLIARI4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCAGLIARI4200542094 .
+
+spcdata:ComunediCAGLIARI4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCAGLIARI4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCAGLIARI4200542369 .
+
+spcdata:ComunediCAGLIARI4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCAGLIARI4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCAGLIARI4209542185 .
+
+spcdata:ComunediCAGLIARI4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCAGLIARI4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCAGLIARI4218642277 .
+
+spcdata:ComunediCAGLIARI4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCAGLIARI4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCAGLIARI4227842369 .
+
+spcdata:ComunediCAGLIARI4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCAGLIARI4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCAGLIARI4237042460 .
+
+spcdata:ComunediCATANIA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCATANIA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCATANIA4127541639 .
+
+spcdata:ComunediCATANIA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCATANIA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCATANIA4164042004 .
+
+spcdata:ComunediCATANIA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediCATANIA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediCATANIA4200542369 .
+
+spcdata:ComunediFERRARA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFERRARA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFERRARA4164042004 .
+
+spcdata:ComunediFERRARA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFERRARA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFERRARA4200542094 .
+
+spcdata:ComunediFERRARA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFERRARA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFERRARA4200542369 .
+
+spcdata:ComunediFERRARA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFERRARA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFERRARA4209542185 .
+
+spcdata:ComunediFERRARA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFERRARA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFERRARA4218642277 .
+
+spcdata:ComunediFERRARA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFERRARA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFERRARA4227842369 .
+
+spcdata:ComunediFERRARA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFERRARA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFERRARA4237042460 .
+
+spcdata:ComunediFIRENZE4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFIRENZE4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFIRENZE4127541639 .
+
+spcdata:ComunediFIRENZE4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFIRENZE4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFIRENZE4164042004 .
+
+spcdata:ComunediFIRENZE4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFIRENZE4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFIRENZE4200542094 .
+
+spcdata:ComunediFIRENZE4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFIRENZE4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFIRENZE4200542369 .
+
+spcdata:ComunediFIRENZE4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFIRENZE4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFIRENZE4209542185 .
+
+spcdata:ComunediFIRENZE4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFIRENZE4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFIRENZE4218642277 .
+
+spcdata:ComunediFIRENZE4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFIRENZE4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFIRENZE4227842369 .
+
+spcdata:ComunediFIRENZE4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFIRENZE4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFIRENZE4237042460 .
+
+spcdata:ComunediFOGGIA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFOGGIA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFOGGIA4127541639 .
+
+spcdata:ComunediFOGGIA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFOGGIA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFOGGIA4164042004 .
+
+spcdata:ComunediFOGGIA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFOGGIA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFOGGIA4200542369 .
+
+spcdata:ComunediFORLI'4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFORLI'4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFORLI'4127541639 .
+
+spcdata:ComunediFORLI'4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFORLI'4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFORLI'4164042004 .
+
+spcdata:ComunediFORLI'4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFORLI'4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFORLI'4200542094 .
+
+spcdata:ComunediFORLI'4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFORLI'4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFORLI'4200542369 .
+
+spcdata:ComunediFORLI'4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFORLI'4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFORLI'4209542185 .
+
+spcdata:ComunediFORLI'4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFORLI'4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFORLI'4218642277 .
+
+spcdata:ComunediFORLI'4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFORLI'4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFORLI'4227842369 .
+
+spcdata:ComunediFORLI'4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediFORLI'4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediFORLI'4237042460 .
+
+spcdata:ComunediGENOVA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediGENOVA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediGENOVA4127541639 .
+
+spcdata:ComunediGENOVA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediGENOVA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediGENOVA4164042004 .
+
+spcdata:ComunediGENOVA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediGENOVA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediGENOVA4200542094 .
+
+spcdata:ComunediGENOVA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediGENOVA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediGENOVA4200542369 .
+
+spcdata:ComunediGENOVA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediGENOVA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediGENOVA4209542185 .
+
+spcdata:ComunediGENOVA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediGENOVA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediGENOVA4218642277 .
+
+spcdata:ComunediGENOVA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediGENOVA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediGENOVA4227842369 .
+
+spcdata:ComunediGENOVA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediGENOVA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediGENOVA4237042460 .
+
+spcdata:ComunediLATINA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediLATINA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediLATINA4164042004 .
+
+spcdata:ComunediLATINA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediLATINA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediLATINA4200542094 .
+
+spcdata:ComunediLATINA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediLATINA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediLATINA4200542369 .
+
+spcdata:ComunediLATINA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediLATINA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediLATINA4209542185 .
+
+spcdata:ComunediLATINA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediLATINA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediLATINA4218642277 .
+
+spcdata:ComunediLATINA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediLATINA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediLATINA4227842369 .
+
+spcdata:ComunediLATINA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediLATINA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediLATINA4237042460 .
+
+spcdata:ComunediMESSINA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMESSINA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMESSINA4164042004 .
+
+spcdata:ComunediMESSINA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMESSINA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMESSINA4200542094 .
+
+spcdata:ComunediMESSINA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMESSINA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMESSINA4200542369 .
+
+spcdata:ComunediMESSINA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMESSINA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMESSINA4209542185 .
+
+spcdata:ComunediMESSINA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMESSINA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMESSINA4218642277 .
+
+spcdata:ComunediMESSINA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMESSINA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMESSINA4227842369 .
+
+spcdata:ComunediMILANO4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMILANO4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMILANO4164042004 .
+
+spcdata:ComunediMILANO4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMILANO4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMILANO4200542094 .
+
+spcdata:ComunediMILANO4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMILANO4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMILANO4200542369 .
+
+spcdata:ComunediMILANO4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMILANO4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMILANO4209542185 .
+
+spcdata:ComunediMILANO4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMILANO4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMILANO4218642277 .
+
+spcdata:ComunediMILANO4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMILANO4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMILANO4227842369 .
+
+spcdata:ComunediMILANO4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMILANO4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMILANO4237042460 .
+
+spcdata:ComunediMODENA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMODENA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMODENA4164042004 .
+
+spcdata:ComunediMODENA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMODENA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMODENA4200542094 .
+
+spcdata:ComunediMODENA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMODENA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMODENA4200542369 .
+
+spcdata:ComunediMODENA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMODENA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMODENA4209542185 .
+
+spcdata:ComunediMODENA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMODENA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMODENA4218642277 .
+
+spcdata:ComunediMODENA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMODENA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMODENA4227842369 .
+
+spcdata:ComunediMODENA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMODENA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMODENA4237042460 .
+
+spcdata:ComunediMONZA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMONZA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMONZA4127541639 .
+
+spcdata:ComunediMONZA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMONZA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMONZA4164042004 .
+
+spcdata:ComunediMONZA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMONZA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMONZA4200542369 .
+
+spcdata:ComunediMONZA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediMONZA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediMONZA4237042460 .
+
+spcdata:ComunediNAPOLI4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNAPOLI4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNAPOLI4164042004 .
+
+spcdata:ComunediNAPOLI4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNAPOLI4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNAPOLI4200542094 .
+
+spcdata:ComunediNAPOLI4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNAPOLI4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNAPOLI4200542369 .
+
+spcdata:ComunediNAPOLI4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNAPOLI4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNAPOLI4209542185 .
+
+spcdata:ComunediNAPOLI4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNAPOLI4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNAPOLI4218642277 .
+
+spcdata:ComunediNAPOLI4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNAPOLI4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNAPOLI4227842369 .
+
+spcdata:ComunediNOVARA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNOVARA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNOVARA4127541639 .
+
+spcdata:ComunediNOVARA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNOVARA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNOVARA4164042004 .
+
+spcdata:ComunediNOVARA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNOVARA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNOVARA4200542094 .
+
+spcdata:ComunediNOVARA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNOVARA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNOVARA4209542185 .
+
+spcdata:ComunediNOVARA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediNOVARA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediNOVARA4218642277 .
+
+spcdata:ComunediPADOVA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPADOVA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPADOVA4164042004 .
+
+spcdata:ComunediPADOVA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPADOVA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPADOVA4200542094 .
+
+spcdata:ComunediPADOVA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPADOVA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPADOVA4200542369 .
+
+spcdata:ComunediPADOVA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPADOVA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPADOVA4209542185 .
+
+spcdata:ComunediPADOVA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPADOVA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPADOVA4218642277 .
+
+spcdata:ComunediPADOVA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPADOVA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPADOVA4227842369 .
+
+spcdata:ComunediPADOVA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPADOVA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPADOVA4237042460 .
+
+spcdata:ComunediPALERMO4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPALERMO4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPALERMO4127541639 .
+
+spcdata:ComunediPALERMO4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPALERMO4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPALERMO4164042004 .
+
+spcdata:ComunediPALERMO4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPALERMO4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPALERMO4200542094 .
+
+spcdata:ComunediPALERMO4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPALERMO4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPALERMO4200542369 .
+
+spcdata:ComunediPALERMO4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPALERMO4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPALERMO4209542185 .
+
+spcdata:ComunediPALERMO4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPALERMO4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPALERMO4218642277 .
+
+spcdata:ComunediPALERMO4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPALERMO4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPALERMO4227842369 .
+
+spcdata:ComunediPALERMO4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPALERMO4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPALERMO4237042460 .
+
+spcdata:ComunediPARMA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPARMA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPARMA4200542094 .
+
+spcdata:ComunediPARMA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPARMA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPARMA4200542369 .
+
+spcdata:ComunediPARMA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPARMA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPARMA4209542185 .
+
+spcdata:ComunediPARMA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPARMA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPARMA4218642277 .
+
+spcdata:ComunediPARMA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPARMA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPARMA4227842369 .
+
+spcdata:ComunediPARMA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPARMA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPARMA4237042460 .
+
+spcdata:ComunediPERUGIA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPERUGIA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPERUGIA4164042004 .
+
+spcdata:ComunediPERUGIA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPERUGIA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPERUGIA4200542094 .
+
+spcdata:ComunediPERUGIA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPERUGIA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPERUGIA4209542185 .
+
+spcdata:ComunediPERUGIA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPERUGIA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPERUGIA4218642277 .
+
+spcdata:ComunediPERUGIA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPERUGIA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPERUGIA4227842369 .
+
+spcdata:ComunediPERUGIA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPERUGIA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPERUGIA4237042460 .
+
+spcdata:ComunediPESCARA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPESCARA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPESCARA4164042004 .
+
+spcdata:ComunediPESCARA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPESCARA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPESCARA4200542094 .
+
+spcdata:ComunediPESCARA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPESCARA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPESCARA4200542369 .
+
+spcdata:ComunediPESCARA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPESCARA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPESCARA4209542185 .
+
+spcdata:ComunediPESCARA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPESCARA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPESCARA4218642277 .
+
+spcdata:ComunediPESCARA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPESCARA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPESCARA4227842369 .
+
+spcdata:ComunediPESCARA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPESCARA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPESCARA4237042460 .
+
+spcdata:ComunediPIACENZA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPIACENZA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPIACENZA4127541639 .
+
+spcdata:ComunediPIACENZA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPIACENZA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPIACENZA4164042004 .
+
+spcdata:ComunediPIACENZA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPIACENZA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPIACENZA4200542094 .
+
+spcdata:ComunediPIACENZA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPIACENZA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPIACENZA4200542369 .
+
+spcdata:ComunediPIACENZA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPIACENZA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPIACENZA4209542185 .
+
+spcdata:ComunediPIACENZA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPIACENZA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPIACENZA4218642277 .
+
+spcdata:ComunediPIACENZA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPIACENZA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPIACENZA4227842369 .
+
+spcdata:ComunediPIACENZA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPIACENZA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPIACENZA4237042460 .
+
+spcdata:ComunediPRATO4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPRATO4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPRATO4164042004 .
+
+spcdata:ComunediPRATO4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPRATO4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPRATO4200542094 .
+
+spcdata:ComunediPRATO4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPRATO4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPRATO4200542369 .
+
+spcdata:ComunediPRATO4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPRATO4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPRATO4209542185 .
+
+spcdata:ComunediPRATO4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPRATO4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPRATO4218642277 .
+
+spcdata:ComunediPRATO4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPRATO4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPRATO4227842369 .
+
+spcdata:ComunediPRATO4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediPRATO4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediPRATO4237042460 .
+
+spcdata:ComunediRAVENNA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRAVENNA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRAVENNA4127541639 .
+
+spcdata:ComunediRAVENNA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRAVENNA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRAVENNA4164042004 .
+
+spcdata:ComunediRAVENNA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRAVENNA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRAVENNA4200542094 .
+
+spcdata:ComunediRAVENNA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRAVENNA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRAVENNA4200542369 .
+
+spcdata:ComunediRAVENNA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRAVENNA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRAVENNA4209542185 .
+
+spcdata:ComunediRAVENNA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRAVENNA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRAVENNA4218642277 .
+
+spcdata:ComunediRAVENNA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRAVENNA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRAVENNA4227842369 .
+
+spcdata:ComunediRAVENNA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRAVENNA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRAVENNA4237042460 .
+
+spcdata:ComunediREGGIOCALABRIA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOCALABRIA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOCALABRIA4164042004 .
+
+spcdata:ComunediREGGIOCALABRIA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOCALABRIA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOCALABRIA4200542094 .
+
+spcdata:ComunediREGGIOCALABRIA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOCALABRIA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOCALABRIA4200542369 .
+
+spcdata:ComunediREGGIOCALABRIA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOCALABRIA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOCALABRIA4209542185 .
+
+spcdata:ComunediREGGIOCALABRIA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOCALABRIA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOCALABRIA4218642277 .
+
+spcdata:ComunediREGGIOCALABRIA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOCALABRIA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOCALABRIA4227842369 .
+
+spcdata:ComunediREGGIOEMILIA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOEMILIA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOEMILIA4127541639 .
+
+spcdata:ComunediREGGIOEMILIA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOEMILIA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOEMILIA4164042004 .
+
+spcdata:ComunediREGGIOEMILIA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOEMILIA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOEMILIA4200542094 .
+
+spcdata:ComunediREGGIOEMILIA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOEMILIA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOEMILIA4200542369 .
+
+spcdata:ComunediREGGIOEMILIA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOEMILIA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOEMILIA4209542185 .
+
+spcdata:ComunediREGGIOEMILIA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOEMILIA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOEMILIA4218642277 .
+
+spcdata:ComunediREGGIOEMILIA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOEMILIA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOEMILIA4227842369 .
+
+spcdata:ComunediREGGIOEMILIA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediREGGIOEMILIA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediREGGIOEMILIA4237042460 .
+
+spcdata:ComunediRIMINI4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRIMINI4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRIMINI4127541639 .
+
+spcdata:ComunediRIMINI4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRIMINI4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRIMINI4164042004 .
+
+spcdata:ComunediRIMINI4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRIMINI4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRIMINI4200542094 .
+
+spcdata:ComunediRIMINI4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediRIMINI4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediRIMINI4209542185 .
+
+spcdata:ComunediROMA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediROMA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediROMA4164042004 .
+
+spcdata:ComunediROMA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediROMA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediROMA4200542094 .
+
+spcdata:ComunediROMA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediROMA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediROMA4200542369 .
+
+spcdata:ComunediROMA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediROMA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediROMA4209542185 .
+
+spcdata:ComunediROMA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediROMA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediROMA4218642277 .
+
+spcdata:ComunediROMA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediROMA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediROMA4227842369 .
+
+spcdata:ComunediROMA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediROMA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediROMA4237042460 .
+
+spcdata:ComunediSALERNO4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSALERNO4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSALERNO4164042004 .
+
+spcdata:ComunediSALERNO4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSALERNO4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSALERNO4200542094 .
+
+spcdata:ComunediSALERNO4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSALERNO4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSALERNO4209542185 .
+
+spcdata:ComunediSALERNO4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSALERNO4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSALERNO4218642277 .
+
+spcdata:ComunediSALERNO4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSALERNO4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSALERNO4227842369 .
+
+spcdata:ComunediSASSARI4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSASSARI4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSASSARI4127541639 .
+
+spcdata:ComunediSASSARI4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSASSARI4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSASSARI4164042004 .
+
+spcdata:ComunediSASSARI4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSASSARI4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSASSARI4200542369 .
+
+spcdata:ComunediSASSARI4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSASSARI4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSASSARI4237042460 .
+
+spcdata:ComunediSIRACUSA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSIRACUSA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSIRACUSA4127541639 .
+
+spcdata:ComunediSIRACUSA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSIRACUSA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSIRACUSA4164042004 .
+
+spcdata:ComunediSIRACUSA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSIRACUSA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSIRACUSA4200542094 .
+
+spcdata:ComunediSIRACUSA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSIRACUSA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSIRACUSA4200542369 .
+
+spcdata:ComunediSIRACUSA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSIRACUSA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSIRACUSA4209542185 .
+
+spcdata:ComunediSIRACUSA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSIRACUSA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSIRACUSA4218642277 .
+
+spcdata:ComunediSIRACUSA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSIRACUSA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSIRACUSA4227842369 .
+
+spcdata:ComunediSIRACUSA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediSIRACUSA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediSIRACUSA4237042460 .
+
+spcdata:ComunediTARANTO4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTARANTO4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTARANTO4164042004 .
+
+spcdata:ComunediTARANTO4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTARANTO4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTARANTO4200542094 .
+
+spcdata:ComunediTARANTO4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTARANTO4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTARANTO4200542369 .
+
+spcdata:ComunediTARANTO4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTARANTO4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTARANTO4209542185 .
+
+spcdata:ComunediTARANTO4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTARANTO4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTARANTO4218642277 .
+
+spcdata:ComunediTARANTO4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTARANTO4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTARANTO4227842369 .
+
+spcdata:ComunediTARANTO4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTARANTO4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTARANTO4237042460 .
+
+spcdata:ComunediTORINO4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTORINO4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTORINO4164042004 .
+
+spcdata:ComunediTORINO4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTORINO4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTORINO4200542094 .
+
+spcdata:ComunediTORINO4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTORINO4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTORINO4200542369 .
+
+spcdata:ComunediTORINO4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTORINO4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTORINO4209542185 .
+
+spcdata:ComunediTORINO4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTORINO4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTORINO4218642277 .
+
+spcdata:ComunediTORINO4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTORINO4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTORINO4227842369 .
+
+spcdata:ComunediTORINO4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTORINO4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTORINO4237042460 .
+
+spcdata:ComunediTRENTO4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRENTO4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRENTO4127541639 .
+
+spcdata:ComunediTRENTO4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRENTO4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRENTO4164042004 .
+
+spcdata:ComunediTRENTO4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRENTO4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRENTO4200542094 .
+
+spcdata:ComunediTRENTO4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRENTO4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRENTO4200542369 .
+
+spcdata:ComunediTRENTO4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRENTO4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRENTO4209542185 .
+
+spcdata:ComunediTRENTO4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRENTO4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRENTO4218642277 .
+
+spcdata:ComunediTRENTO4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRENTO4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRENTO4227842369 .
+
+spcdata:ComunediTRENTO4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRENTO4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRENTO4237042460 .
+
+spcdata:ComunediTRIESTE4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRIESTE4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRIESTE4127541639 .
+
+spcdata:ComunediTRIESTE4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRIESTE4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRIESTE4164042004 .
+
+spcdata:ComunediTRIESTE4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRIESTE4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRIESTE4200542094 .
+
+spcdata:ComunediTRIESTE4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRIESTE4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRIESTE4200542369 .
+
+spcdata:ComunediTRIESTE4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRIESTE4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRIESTE4209542185 .
+
+spcdata:ComunediTRIESTE4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRIESTE4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRIESTE4218642277 .
+
+spcdata:ComunediTRIESTE4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRIESTE4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRIESTE4227842369 .
+
+spcdata:ComunediTRIESTE4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediTRIESTE4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediTRIESTE4237042460 .
+
+spcdata:ComunediVENEZIA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVENEZIA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVENEZIA4127541639 .
+
+spcdata:ComunediVENEZIA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVENEZIA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVENEZIA4164042004 .
+
+spcdata:ComunediVENEZIA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVENEZIA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVENEZIA4200542094 .
+
+spcdata:ComunediVENEZIA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVENEZIA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVENEZIA4200542369 .
+
+spcdata:ComunediVENEZIA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVENEZIA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVENEZIA4209542185 .
+
+spcdata:ComunediVENEZIA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVENEZIA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVENEZIA4218642277 .
+
+spcdata:ComunediVENEZIA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVENEZIA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVENEZIA4227842369 .
+
+spcdata:ComunediVENEZIA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVENEZIA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVENEZIA4237042460 .
+
+spcdata:ComunediVERONA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVERONA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVERONA4127541639 .
+
+spcdata:ComunediVERONA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVERONA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVERONA4164042004 .
+
+spcdata:ComunediVERONA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVERONA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVERONA4200542094 .
+
+spcdata:ComunediVERONA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVERONA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVERONA4200542369 .
+
+spcdata:ComunediVERONA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVERONA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVERONA4209542185 .
+
+spcdata:ComunediVERONA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVERONA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVERONA4218642277 .
+
+spcdata:ComunediVERONA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVERONA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVERONA4227842369 .
+
+spcdata:ComunediVERONA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVERONA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVERONA4237042460 .
+
+spcdata:ComunediVICENZA4127541639  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVICENZA4127541639  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVICENZA4127541639 .
+
+spcdata:ComunediVICENZA4164042004  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVICENZA4164042004  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVICENZA4164042004 .
+
+spcdata:ComunediVICENZA4200542094  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVICENZA4200542094  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVICENZA4200542094 .
+
+spcdata:ComunediVICENZA4200542369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVICENZA4200542369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVICENZA4200542369 .
+
+spcdata:ComunediVICENZA4209542185  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVICENZA4209542185  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVICENZA4209542185 .
+
+spcdata:ComunediVICENZA4218642277  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVICENZA4218642277  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVICENZA4218642277 .
+
+spcdata:ComunediVICENZA4227842369  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVICENZA4227842369  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVICENZA4227842369 .
+
+spcdata:ComunediVICENZA4237042460  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:ComunediVICENZA4237042460  my_ld:ha_indice_di_tempestivita_dei_pagamenti  _:ComunediVICENZA4237042460 .
+
+_:ComunediANCONA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "46"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediANCONA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "51"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediANCONA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "42"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediANCONA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "42"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediANCONA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "25"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediANCONA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "49"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediANCONA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "23"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediANDRIA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "277"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediANDRIA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "220"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediANDRIA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "85,24"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediANDRIA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "150,97"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediANDRIA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "130,16"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediANDRIA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "115,59"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediANDRIA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "202,28"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediBARI4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                          time:hasEnd "2013-12-31"^^xsd:date ;
+                          my_ld:IndicPagamento "79"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                          my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediBARI4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                          time:hasEnd "2014-12-31"^^xsd:date ;
+                          my_ld:IndicPagamento "33,54"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediBARI4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                          time:hasEnd "2015-03-31"^^xsd:date ;
+                          my_ld:IndicPagamento "35,25"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediBARI4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                          time:hasEnd "2015-12-31"^^xsd:date ;
+                          my_ld:IndicPagamento "17,14"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediBARI4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                          time:hasEnd "2015-06-30"^^xsd:date ;
+                          my_ld:IndicPagamento "21,16"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediBARI4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                          time:hasEnd "2015-09-30"^^xsd:date ;
+                          my_ld:IndicPagamento "10,36"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediBARI4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                          time:hasEnd "2015-12-31"^^xsd:date ;
+                          my_ld:IndicPagamento "0,71"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediBARI4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                          time:hasEnd "2016-03-31"^^xsd:date ;
+                          my_ld:IndicPagamento "14,98"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediBERGAMO4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "6,36"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediBERGAMO4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "5,25"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediBERGAMO4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-3,6"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediBERGAMO4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-6,68"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediBERGAMO4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "-15,91"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediBERGAMO4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "3,73"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediBERGAMO4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-16,92"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediBERGAMO4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-0,73"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediBOLOGNA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-8"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediBOLOGNA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-3"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediBOLOGNA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-4"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediBOLOGNA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "-4"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediBOLOGNA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "-4"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediBOLOGNA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-7"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediBOLOGNA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-3"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediBOLZANO4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "37,37"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediBOLZANO4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "8,942"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediBOLZANO4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "18,604"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediBOLZANO4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "5,85"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediBOLZANO4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "15,52"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediBOLZANO4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "-1,39"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediBOLZANO4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "0,22"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediBOLZANO4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "35,72"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediBRESCIA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-5,6"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediBRESCIA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-4,6"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediBRESCIA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-3,3"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediCAGLIARI4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                              time:hasEnd "2013-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "49,28"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                              my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediCAGLIARI4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                              time:hasEnd "2014-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "33,23"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediCAGLIARI4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                              time:hasEnd "2015-03-31"^^xsd:date ;
+                              my_ld:IndicPagamento "38,2"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediCAGLIARI4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                              time:hasEnd "2015-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "32,5"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediCAGLIARI4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                              time:hasEnd "2015-06-30"^^xsd:date ;
+                              my_ld:IndicPagamento "27,68"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediCAGLIARI4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                              time:hasEnd "2015-09-30"^^xsd:date ;
+                              my_ld:IndicPagamento "34,71"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediCAGLIARI4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                              time:hasEnd "2015-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "22,37"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediCAGLIARI4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                              time:hasEnd "2016-03-31"^^xsd:date ;
+                              my_ld:IndicPagamento "35,88"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediCATANIA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "469,47"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediCATANIA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "308,59"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediCATANIA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "255,55"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediFERRARA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-4,62"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediFERRARA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-6,75"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediFERRARA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-7,01156"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediFERRARA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "-0,3"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediFERRARA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "-1,67"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediFERRARA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-12,7812"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediFERRARA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-4,52"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediFIRENZE4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "6,27"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediFIRENZE4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-0,64"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediFIRENZE4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "24,7"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediFIRENZE4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "20,94"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediFIRENZE4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "44,81"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediFIRENZE4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "32,95"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediFIRENZE4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-2,66"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediFIRENZE4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "2,36"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediFOGGIA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                            time:hasEnd "2013-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "304,6"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                            my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediFOGGIA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "171,58"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediFOGGIA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "35,5"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediFORLI'4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                            time:hasEnd "2013-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "26"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                            my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediFORLI'4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "78,97"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediFORLI'4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "29,35"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediFORLI'4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "28,36"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediFORLI'4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "15,88"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediFORLI'4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "38,15"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediFORLI'4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "37,74"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediFORLI'4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "21,25"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediGENOVA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                            time:hasEnd "2013-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "17,6437033566"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                            my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediGENOVA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "1,7296981673"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediGENOVA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "1,8942210392"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediGENOVA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-5,16"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediGENOVA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "-4,8114795041"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediGENOVA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "-4,07375"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediGENOVA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-9,57799909"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediGENOVA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "1,2"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediLATINA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "30,96"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediLATINA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "51,66"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediLATINA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "47,46"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediLATINA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "48,14"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediLATINA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "1,6958333333"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediLATINA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "77,31"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediLATINA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "55,58"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediMESSINA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "28,22"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediMESSINA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "19,72"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediMESSINA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "24,84"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediMESSINA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "26,69"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediMESSINA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "28,38"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediMESSINA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "24,74"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediMILANO4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "15,33"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediMILANO4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "13,83"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediMILANO4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "15,15"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediMILANO4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "17,35"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediMILANO4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "12,38"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediMILANO4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "17,14"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediMILANO4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "15,64"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediMODENA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "9,66"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediMODENA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-12,07"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediMODENA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-7,96"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediMODENA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "-7,28"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediMODENA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "-4,32"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediMODENA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-9"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediMODENA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-8,05"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediMONZA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                           time:hasEnd "2013-12-31"^^xsd:date ;
+                           my_ld:IndicPagamento "17,26"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                           my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediMONZA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                           time:hasEnd "2014-12-31"^^xsd:date ;
+                           my_ld:IndicPagamento "51,3"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediMONZA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                           time:hasEnd "2015-12-31"^^xsd:date ;
+                           my_ld:IndicPagamento "65,51"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediMONZA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                           time:hasEnd "2016-03-31"^^xsd:date ;
+                           my_ld:IndicPagamento "84,51"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediNAPOLI4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "197,31"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string ;
+                            my_ld:note "si precisa che, a seguito dell'utilizzazione delle Anticipazioni di liquidità erogate dalla Cassa Depositi e Prestiti nel 2014, è stato possibile pagare tutti i debiti riferiti al periodo 2008 - 2014; considerando anche questi pagamenti, il tempo medio, compreso l'anno 2014, si attesta su 197,31 giorni. "^^xsd:string .
+
+_:ComunediNAPOLI4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "21,41"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediNAPOLI4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "33,3225"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediNAPOLI4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "28,16"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediNAPOLI4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "31,78"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediNAPOLI4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "51,94"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediNOVARA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                            time:hasEnd "2013-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "78"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                            my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediNOVARA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "61"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediNOVARA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "17"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediNOVARA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "35"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediNOVARA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "30"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediPADOVA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "27,53"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediPADOVA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "22,57"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediPADOVA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "17,97"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediPADOVA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "22,32"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediPADOVA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "11,15"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediPADOVA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "16,84"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediPADOVA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "12,26"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediPALERMO4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "80"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediPALERMO4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "45"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediPALERMO4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "5,58"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediPALERMO4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "31,4"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediPALERMO4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "23,39"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediPALERMO4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "12,19"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediPALERMO4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "60,23"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediPALERMO4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "26,95"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediPARMA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                           time:hasEnd "2015-03-31"^^xsd:date ;
+                           my_ld:IndicPagamento "-0,59"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediPARMA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                           time:hasEnd "2015-12-31"^^xsd:date ;
+                           my_ld:IndicPagamento "-3"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediPARMA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                           time:hasEnd "2015-06-30"^^xsd:date ;
+                           my_ld:IndicPagamento "-8,66"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediPARMA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                           time:hasEnd "2015-09-30"^^xsd:date ;
+                           my_ld:IndicPagamento "1,94"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediPARMA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                           time:hasEnd "2015-12-31"^^xsd:date ;
+                           my_ld:IndicPagamento "-4,25"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediPARMA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                           time:hasEnd "2016-03-31"^^xsd:date ;
+                           my_ld:IndicPagamento "0,4"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediPERUGIA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "78,25"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string ;
+                             my_ld:note "incertezza sul valore negativo o positivo dei dati perugini"^^xsd:string .
+
+_:ComunediPERUGIA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "89,73"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediPERUGIA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "84,37"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediPERUGIA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "74,35"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediPERUGIA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "84,2"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediPERUGIA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "57,18"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediPESCARA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "81"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediPESCARA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "146"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediPESCARA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "108"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediPESCARA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "120"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediPESCARA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "122"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediPESCARA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "45"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediPESCARA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "81"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediPIACENZA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                              time:hasEnd "2013-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "28"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                              my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediPIACENZA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                              time:hasEnd "2014-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "5,98"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediPIACENZA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                              time:hasEnd "2015-03-31"^^xsd:date ;
+                              my_ld:IndicPagamento "10,26"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediPIACENZA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                              time:hasEnd "2015-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "9,26"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediPIACENZA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                              time:hasEnd "2015-06-30"^^xsd:date ;
+                              my_ld:IndicPagamento "6,17"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediPIACENZA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                              time:hasEnd "2015-09-30"^^xsd:date ;
+                              my_ld:IndicPagamento "3,45"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediPIACENZA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                              time:hasEnd "2015-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "17,32"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediPIACENZA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                              time:hasEnd "2016-03-31"^^xsd:date ;
+                              my_ld:IndicPagamento "11,77"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediPRATO4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                           time:hasEnd "2014-12-31"^^xsd:date ;
+                           my_ld:IndicPagamento "86,81"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediPRATO4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                           time:hasEnd "2015-03-31"^^xsd:date ;
+                           my_ld:IndicPagamento "43,51"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediPRATO4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                           time:hasEnd "2015-12-31"^^xsd:date ;
+                           my_ld:IndicPagamento "40,01"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediPRATO4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                           time:hasEnd "2015-06-30"^^xsd:date ;
+                           my_ld:IndicPagamento "49,1"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediPRATO4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                           time:hasEnd "2015-09-30"^^xsd:date ;
+                           my_ld:IndicPagamento "56,95"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediPRATO4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                           time:hasEnd "2015-12-31"^^xsd:date ;
+                           my_ld:IndicPagamento "18,27"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediPRATO4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                           time:hasEnd "2016-03-31"^^xsd:date ;
+                           my_ld:IndicPagamento "9,29"^^xsd:float ;
+                           my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediRAVENNA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "57"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediRAVENNA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "4,9"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediRAVENNA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "5,99"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediRAVENNA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "4,56"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediRAVENNA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "5,21"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediRAVENNA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "5,7"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediRAVENNA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "0,78"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediRAVENNA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "6,41"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediREGGIOCALABRIA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                                    time:hasEnd "2014-12-31"^^xsd:date ;
+                                    my_ld:IndicPagamento "734"^^xsd:float ;
+                                    my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediREGGIOCALABRIA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                                    time:hasEnd "2015-03-31"^^xsd:date ;
+                                    my_ld:IndicPagamento "119,49"^^xsd:float ;
+                                    my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediREGGIOCALABRIA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                                    time:hasEnd "2015-12-31"^^xsd:date ;
+                                    my_ld:IndicPagamento "93,39"^^xsd:float ;
+                                    my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediREGGIOCALABRIA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                                    time:hasEnd "2015-06-30"^^xsd:date ;
+                                    my_ld:IndicPagamento "138,12"^^xsd:float ;
+                                    my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediREGGIOCALABRIA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                                    time:hasEnd "2015-09-30"^^xsd:date ;
+                                    my_ld:IndicPagamento "35,82"^^xsd:float ;
+                                    my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediREGGIOCALABRIA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                                    time:hasEnd "2015-12-31"^^xsd:date ;
+                                    my_ld:IndicPagamento "99,71"^^xsd:float ;
+                                    my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediREGGIOEMILIA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                                  time:hasEnd "2013-12-31"^^xsd:date ;
+                                  my_ld:IndicPagamento "6"^^xsd:float ;
+                                  my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                                  my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediREGGIOEMILIA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                                  time:hasEnd "2014-12-31"^^xsd:date ;
+                                  my_ld:IndicPagamento "0"^^xsd:float ;
+                                  my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediREGGIOEMILIA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                                  time:hasEnd "2015-03-31"^^xsd:date ;
+                                  my_ld:IndicPagamento "-14"^^xsd:float ;
+                                  my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediREGGIOEMILIA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                                  time:hasEnd "2015-12-31"^^xsd:date ;
+                                  my_ld:IndicPagamento "-9"^^xsd:float ;
+                                  my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediREGGIOEMILIA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                                  time:hasEnd "2015-06-30"^^xsd:date ;
+                                  my_ld:IndicPagamento "-8"^^xsd:float ;
+                                  my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediREGGIOEMILIA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                                  time:hasEnd "2015-09-30"^^xsd:date ;
+                                  my_ld:IndicPagamento "-6"^^xsd:float ;
+                                  my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediREGGIOEMILIA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                                  time:hasEnd "2015-12-31"^^xsd:date ;
+                                  my_ld:IndicPagamento "-8"^^xsd:float ;
+                                  my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediREGGIOEMILIA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                                  time:hasEnd "2016-03-31"^^xsd:date ;
+                                  my_ld:IndicPagamento "-1"^^xsd:float ;
+                                  my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediRIMINI4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                            time:hasEnd "2013-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "45,6"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                            my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediRIMINI4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "15,44"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediRIMINI4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-4,73"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediRIMINI4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "-5,28"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediROMA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                          time:hasEnd "2014-12-31"^^xsd:date ;
+                          my_ld:IndicPagamento "53,815880"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediROMA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                          time:hasEnd "2015-03-31"^^xsd:date ;
+                          my_ld:IndicPagamento "82,763469"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediROMA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                          time:hasEnd "2015-12-31"^^xsd:date ;
+                          my_ld:IndicPagamento "57,489833"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediROMA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                          time:hasEnd "2015-06-30"^^xsd:date ;
+                          my_ld:IndicPagamento "35,340672"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediROMA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                          time:hasEnd "2015-09-30"^^xsd:date ;
+                          my_ld:IndicPagamento "43,123555"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediROMA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                          time:hasEnd "2015-12-31"^^xsd:date ;
+                          my_ld:IndicPagamento "96,021228"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediROMA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                          time:hasEnd "2016-03-31"^^xsd:date ;
+                          my_ld:IndicPagamento "53,819692"^^xsd:float ;
+                          my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediSALERNO4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "316,24"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediSALERNO4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "116,5"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediSALERNO4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "111,64"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediSALERNO4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "125,596"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediSALERNO4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "85,6761"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediSASSARI4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "30,79"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediSASSARI4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "5,05"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediSASSARI4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "3,92"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediSASSARI4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "17,84"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediSIRACUSA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                              time:hasEnd "2013-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "51"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                              my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediSIRACUSA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                              time:hasEnd "2014-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "16,34"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediSIRACUSA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                              time:hasEnd "2015-03-31"^^xsd:date ;
+                              my_ld:IndicPagamento "20,16"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediSIRACUSA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                              time:hasEnd "2015-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "21,22"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediSIRACUSA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                              time:hasEnd "2015-06-30"^^xsd:date ;
+                              my_ld:IndicPagamento "33,48"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediSIRACUSA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                              time:hasEnd "2015-09-30"^^xsd:date ;
+                              my_ld:IndicPagamento "13,73"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediSIRACUSA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                              time:hasEnd "2015-12-31"^^xsd:date ;
+                              my_ld:IndicPagamento "17,56"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediSIRACUSA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                              time:hasEnd "2016-03-31"^^xsd:date ;
+                              my_ld:IndicPagamento "26,86"^^xsd:float ;
+                              my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediTARANTO4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-10,56"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediTARANTO4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-2,82"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediTARANTO4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "10,19"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediTARANTO4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "-7,3"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediTARANTO4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "24,54"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediTARANTO4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "12,53"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediTARANTO4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "6,32"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediTORINO4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "72"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediTORINO4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "34"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediTORINO4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "29"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediTORINO4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "20"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediTORINO4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "30"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediTORINO4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "31"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediTORINO4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "33"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediTRENTO4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                            time:hasEnd "2013-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "28"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                            my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediTRENTO4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-22,42"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediTRENTO4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-22,47"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediTRENTO4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-16,84"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediTRENTO4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "-20,2"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediTRENTO4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "-13,79"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediTRENTO4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-12,5"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediTRENTO4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-9,58"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediTRIESTE4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "53"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediTRIESTE4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-8,77"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediTRIESTE4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-9,27"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediTRIESTE4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-3,84"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediTRIESTE4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "3,89"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediTRIESTE4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "-5,13"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediTRIESTE4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-4,85"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediTRIESTE4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "-9,93"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediVENEZIA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "24,07"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediVENEZIA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "38,19"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediVENEZIA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "64,8"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediVENEZIA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "38,06"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediVENEZIA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "20,44"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediVENEZIA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "5,77"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediVENEZIA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "39,45"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediVENEZIA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "65,23"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediVERONA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                            time:hasEnd "2013-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-4"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                            my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediVERONA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                            time:hasEnd "2014-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-10"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediVERONA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-6"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediVERONA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-18"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediVERONA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                            time:hasEnd "2015-06-30"^^xsd:date ;
+                            my_ld:IndicPagamento "-16"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediVERONA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                            time:hasEnd "2015-09-30"^^xsd:date ;
+                            my_ld:IndicPagamento "-25"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediVERONA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                            time:hasEnd "2015-12-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-24"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediVERONA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                            time:hasEnd "2016-03-31"^^xsd:date ;
+                            my_ld:IndicPagamento "-29"^^xsd:float ;
+                            my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
+
+_:ComunediVICENZA4127541639  time:hasBeginning  "2013-01-01"^^xsd:date ;
+                             time:hasEnd "2013-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "39"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2013"^^xsd:string ;
+                             my_ld:note "Indicatore secondo il D.Lgs. 231/2002"^^xsd:string .
+
+_:ComunediVICENZA4164042004  time:hasBeginning  "2014-01-01"^^xsd:date ;
+                             time:hasEnd "2014-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "23"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2014"^^xsd:string .
+
+_:ComunediVICENZA4200542094  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "21"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2015"^^xsd:string .
+
+_:ComunediVICENZA4200542369  time:hasBeginning  "2015-01-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "16"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Anno 2015"^^xsd:string .
+
+_:ComunediVICENZA4209542185  time:hasBeginning  "2015-04-01"^^xsd:date ;
+                             time:hasEnd "2015-06-30"^^xsd:date ;
+                             my_ld:IndicPagamento "29"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Secondo trimestre 2015"^^xsd:string .
+
+_:ComunediVICENZA4218642277  time:hasBeginning  "2015-07-01"^^xsd:date ;
+                             time:hasEnd "2015-09-30"^^xsd:date ;
+                             my_ld:IndicPagamento "11"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Terzo trimestre 2015"^^xsd:string .
+
+_:ComunediVICENZA4227842369  time:hasBeginning  "2015-10-01"^^xsd:date ;
+                             time:hasEnd "2015-12-31"^^xsd:date ;
+                             my_ld:IndicPagamento "16"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Quarto trimestre 2015"^^xsd:string .
+
+_:ComunediVICENZA4237042460  time:hasBeginning  "2016-01-01"^^xsd:date ;
+                             time:hasEnd "2016-03-31"^^xsd:date ;
+                             my_ld:IndicPagamento "8"^^xsd:float ;
+                             my_ld:descrizionePeriodo "Primo trimestre 2016"^^xsd:string .
