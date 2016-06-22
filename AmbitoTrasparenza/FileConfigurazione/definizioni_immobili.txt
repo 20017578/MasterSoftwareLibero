@@ -1,5 +1,9 @@
 # DEFINIZIONI
 
+my_ld:possiede_affitta a rdf:property ;
+                       rdf:label “E' la proprietà utile a collegare l'ente con le sue istanze di possesso o affito di immobili”^^xsd:string .      
+my_ld:affittato a rdf:property ;
+                rdf:label “E' la proprietà utile a collegare un'istanza immobile con le sue proprietà relative all'eventuale affitto”^^xsd:string .      
 my_ld:tipoImmobile a rdf:property ;
                    rdf:label “Descrivere di che tipo di stabile si tratta. Con questa proprietà si vuole descrivere meglio lo stabile o l'unità immobiliare ad esempio indicandone le peculiarità abitative o architettoniche come ad esempio Caseggiato in stile barocco, sotto la protezione della Sovraintendenza”^^xsd:string .      
 my_ld:foglio a rdf:property ;
