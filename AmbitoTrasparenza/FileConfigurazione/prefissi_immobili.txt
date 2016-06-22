@@ -6,3 +6,4 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix time:    <http://www.w3.org/2006/time#> .
 @prefix gn: <http://www.geonames.org/ontology#> .
+@prefix my_ld_address: <http://www.myspace.it/address/> .  # sostituire myspace.it col proprio nameSpace
