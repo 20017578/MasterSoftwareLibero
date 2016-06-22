@@ -1,0 +1,2393 @@
+# PREFISSI
+
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix spcdata: <http://spcdata.digitpa.gov.it/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix my_ld_address: <http://www.myspace.it/address/> .  # sostituire myspace.it col proprio nameSpace
+@prefix my_ld: <none>  .
+
+# DEFINIZIONI
+
+my_ld:possiede_affitta a rdf:property ;
+                       rdf:label “E' la proprietà utile a collegare l'ente con le sue istanze di possesso o affito di immobili”^^xsd:string .
+my_ld:affittato a rdf:property ;
+                rdf:label “E' la proprietà utile a collegare un'istanza immobile con le sue proprietà relative all'eventuale affitto”^^xsd:string .
+my_ld:tipoImmobile a rdf:property ;
+                   rdf:label “Descrivere di che tipo di stabile si tratta. Con questa proprietà si vuole descrivere meglio lo stabile o l'unità immobiliare ad esempio indicandone le peculiarità abitative o architettoniche come ad esempio Caseggiato in stile barocco, sotto la protezione della Sovraintendenza”^^xsd:string .
+my_ld:foglio a rdf:property ;
+             rdf:label “Rappresenta uno degli identificativi catastali caratterizzanti un bene immobile. Il Foglio è definito come la porzione di territorio comunale che il catasto rappresenta nelle proprie mappe cartografiche”^^xsd:string .
+my_ld:particella a rdf:property ;
+                 rdf:label “Talvolta chiamato anche mappale questa proprietà rappresenta, all'interno del Foglio, una porzione di terreno o il fabbricato stesso ed è anch'esso contrassegnato tipicamente da un valore numerico”^^xsd:string .
+my_ld:subalterno a rdf:property ;
+                 rdf:label “Rappresenta, per il Catasto fabbricati, l'identificativo di un bene immobile ed è individuabile come l'unità singola immobiliare tanto che all'interno di un fabbricato esso rappresenta la singola unità immobiliare”^^xsd:string .
+my_ld:categoriaCatastale a rdf:property ;
+                         rdf:label “E' la rappresentazione in simboli della destinazione d'uso delle unità immobiliari come definito dal Catasto”^^xsd:string .
+my_ld:descrizione a rdf:property ;
+                  rdf:label “Descrive in modo ancor più dettagliato eventuali altre caratteristiche dell'immobile in maniera più ampia di quanto non sia stato già fatto con altre proprietà, sarà qui possibile indicare specificità dello stabile, lo stato della ristrutturazione, il dettaglio dell'uso che ne viene fatto o altro ancora”^^xsd:string .
+my_ld:denominazione a rdf:property ;
+                    rdf:label “Rappresenta il nome col quale viene generalmente conosciuto lo stabile descritto. Questo nome è talvolta derivato dai nomi degli antichi possessori o da antiche denominazioni o anche dai modi di dire popolari della zona”^^xsd:string .
+my_ld:destUso a rdf:property ;
+              rdf:label “Descrive la destinazione d'uso secondo le indicazioni dell'ente specificando quindi meglio, laddove necessario, l'utilizzo che viene fatto dell'immobile”^^xsd:string .
+my_ld:idInterno a rdf:property ;
+                rdf:label “Rappresenta un valore identificativo utilizzato dall'ente per definire nei database interni l'immobile in questione”^^xsd:string .
+my_ld:mq a rdf:property ;
+         rdf:label “Rappresenta i metri quadrati calpestabili dell'immobile in oggetto ovvero i metri quadri delle superfici dell'immobile non coperte da pareti siano esse perimetrali o divisorie”^^xsd:string .
+my_ld:percPossesso a rdf:property ;
+                   rdf:label “Indica in che percentuale l'Amministrazione detiene il possesso dell'immobile”^^xsd:string .
+my_ld:affittoAttivo a rdf:property ;
+                    rdf:label “Rappresenta la somma dovuta all'ente in quanto locatore per il periodo di tempo”^^xsd:string .
+my_ld:affittoPassivo a rdf:property ;
+                     rdf:label “Rappresenta la somma dovuta dall'ente in quanto locatario per il periodo di tempo”^^xsd:string .
+my_ld:tipoContratto a rdf:property ;
+                    rdf:label “Indica le eventuali specificità relative al contratto di locazione, quali ad esempio concessione, locazione, canone ricognitorio, etc.. o comunque qualsivoglia informazione legata al contratto di locazione”^^xsd:string .
+my_ld:linkContratto a rdf:property ;
+                    rdf:label “Rappresenta il link alla risorsa in rete, ove presente il contratto di locazione. E' identificato da un indirizzo web valido”^^xsd:string .
+my_ld:altriProprietari a rdf:property ;
+                       rdf:label “Rappresenta un campo testuale in cui è possibile indicare, sempre che permesso dalla normativa vigente in tema di privacy e protezione dei dati personali, i nominativi o altre informazioni utili ad identificare gli ulteriori proprietari dell'immobile”^^xsd:string .
+my_ld:locatario a rdf:property ;
+                rdf:label “Rappresenta il riferimento o il nome di chi prende in affitto l'immobile”^^xsd:string .
+my_ld:locatore a rdf:property ;
+               rdf:label “Rappresenta il riferimento di chi affitta ad un terzo l'immobile”^^xsd:string .
+my_ld:noteAffitto a rdf:property ;
+                  rdf:label “Campo note utile a specificare in forma testuale, laddove necessario, ogni altra informazione relativa all'affitto”^^xsd:string .
+
+
+# DATI
+
+spcdata:Amministrazione/r_piemon  a  http://spcdata.digitpa.gov.it/Amministrazione/ .
+spcdata:Amministrazione/r_piemon  my_ld:possiede_affitta  _:00001 ,
+                                                          _:00002 ,
+                                                          _:00003 ,
+                                                          _:00004 ,
+                                                          _:00005 ,
+                                                          _:00006 ,
+                                                          _:00007 ,
+                                                          _:00008 ,
+                                                          _:00009 ,
+                                                          _:00010 ,
+                                                          _:00011 ,
+                                                          _:00012 ,
+                                                          _:00013 ,
+                                                          _:00014 ,
+                                                          _:00015 ,
+                                                          _:00016 ,
+                                                          _:000171 ,
+                                                          _:000172 ,
+                                                          _:000181 ,
+                                                          _:000182 ,
+                                                          _:00019 ,
+                                                          _:00020 ,
+                                                          _:00021 ,
+                                                          _:00022 ,
+                                                          _:00023 ,
+                                                          _:00024 ,
+                                                          _:00025 ,
+                                                          _:00026 ,
+                                                          _:00027 ,
+                                                          _:00028 ,
+                                                          _:00029 ,
+                                                          _:00030 ,
+                                                          _:00031 ,
+                                                          _:00032 ,
+                                                          _:00033 ,
+                                                          _:00034 ,
+                                                          _:00035 ,
+                                                          _:00036 ,
+                                                          _:00037 ,
+                                                          _:00038 ,
+                                                          _:00039 ,
+                                                          _:00040 ,
+                                                          _:00041 ,
+                                                          _:00042 ,
+                                                          _:00043 ,
+                                                          _:00044 ,
+                                                          _:00045 ,
+                                                          _:00046 ,
+                                                          _:00047 ,
+                                                          _:00048 ,
+                                                          _:00049 ,
+                                                          _:00050 ,
+                                                          _:00051 ,
+                                                          _:00052 ,
+                                                          _:00053 ,
+                                                          _:00054 ,
+                                                          _:00055 ,
+                                                          _:00056 ,
+                                                          _:00057 ,
+                                                          _:00058 ,
+                                                          _:00059 ,
+                                                          _:00060 ,
+                                                          _:00061 ,
+                                                          _:00062 ,
+                                                          _:00063 ,
+                                                          _:00064 ,
+                                                          _:00065 ,
+                                                          _:00066 ,
+                                                          _:00067 ,
+                                                          _:00068 ,
+                                                          _:00069 ,
+                                                          _:00070 ,
+                                                          _:00071 ,
+                                                          _:00072 ,
+                                                          _:00073 ,
+                                                          _:00074 ,
+                                                          _:00075 ,
+                                                          _:00076 ,
+                                                          _:00077 ,
+                                                          _:00078 ,
+                                                          _:00079 ,
+                                                          _:00080 ,
+                                                          _:00081 ,
+                                                          _:00082 ,
+                                                          _:00083 ,
+                                                          _:00084 ,
+                                                          _:00085 ,
+                                                          _:00086 ,
+                                                          _:00087 ,
+                                                          _:00088 ,
+                                                          _:00089 ,
+                                                          _:000901 ,
+                                                          _:000902 ,
+                                                          _:00091 ,
+                                                          _:00092 ,
+                                                          _:00093 ,
+                                                          _:00094 ,
+                                                          _:00095 ,
+                                                          _:00096 ,
+                                                          _:00097 ,
+                                                          _:00098 ,
+                                                          _:00099 ,
+                                                          _:00100 ,
+                                                          _:00101 ,
+                                                          _:00102 ,
+                                                          _:00103 ,
+                                                          _:00104 ,
+                                                          _:00105 ,
+                                                          _:00106 ,
+                                                          _:00107 ,
+                                                          _:00108 ,
+                                                          _:00109 ,
+                                                          _:00110 ,
+                                                          _:00111 ,
+                                                          _:00112 ,
+                                                          _:00113 ,
+                                                          _:00114 ,
+                                                          _:00115 ,
+                                                          _:00116 ,
+                                                          _:00117 ,
+                                                          _:00118 ,
+                                                          _:00119 ,
+                                                          _:00120 ,
+                                                          _:00121 ,
+                                                          _:00122 ,
+                                                          _:00123 ,
+                                                          _:00124 ,
+                                                          _:00125 ,
+                                                          _:00126 ,
+                                                          _:00127 ,
+                                                          _:00128 ,
+                                                          _:00129 ,
+                                                          _:00130 ,
+                                                          _:00131 ,
+                                                          _:00132 ,
+                                                          _:00133 ,
+                                                          _:00134 ,
+                                                          _:00135 ,
+                                                          _:00136 ,
+                                                          _:00137 ,
+                                                          _:00138 ,
+                                                          _:00139 ,
+                                                          _:00140 ,
+                                                          _:00141 ,
+                                                          _:00142 ,
+                                                          _:00143 ,
+                                                          _:00144 ,
+                                                          _:00145 ,
+                                                          _:00146 ,
+                                                          _:00147 ,
+                                                          _:00148 ,
+                                                          _:00149 ,
+                                                          _:00150 ,
+                                                          _:00151 ,
+                                                          _:00152 ,
+                                                          _:00153 ,
+                                                          _:00154 ,
+                                                          _:00155 ,
+                                                          _:00156 ,
+                                                          _:00157 ,
+                                                          _:00158 ,
+                                                          _:00159 ,
+                                                          _:00160 ,
+                                                          _:00161 ,
+                                                          _:00162 ,
+                                                          _:00163 ,
+                                                          _:00164 ,
+                                                          _:00165 ,
+                                                          _:00166 ,
+                                                          _:00167 ,
+                                                          _:00168 ,
+                                                          _:00169 ,
+                                                          _:00170 ,
+                                                          _:00171 ,
+                                                          _:00172 ,
+                                                          _:00173 ,
+                                                          _:00174 ,
+                                                          _:00175 ,
+                                                          _:00176 ,
+                                                          _:00177 ,
+                                                          _:00178 ,
+                                                          _:00179 ,
+                                                          _:00180 ,
+                                                          _:00181 ,
+                                                          _:00182 ,
+                                                          _:00183 ,
+                                                          _:00184 ,
+                                                          _:00185 ,
+                                                          _:00186 ,
+                                                          _:00187 ,
+                                                          _:00188 ,
+                                                          _:00189 ,
+                                                          _:00190 ,
+                                                          _:00191 ,
+                                                          _:00192 ,
+                                                          _:00193 ,
+                                                          _:00194 ,
+                                                          _:00195 ,
+                                                          _:00196 ,
+                                                          _:00197 ,
+                                                          _:00198 ,
+                                                          _:00199 ,
+                                                          _:00200 ,
+                                                          _:00201 ,
+                                                          _:00202 ,
+                                                          _:00203 ,
+                                                          _:00204 ,
+                                                          _:00205 ,
+                                                          _:00206 ,
+                                                          _:00207 ,
+                                                          _:00208 ,
+                                                          _:00209 ,
+                                                          _:00210 ,
+                                                          _:00211 ,
+                                                          _:00212 ,
+                                                          _:00213 ,
+                                                          _:00214 ,
+                                                          _:00215 ,
+                                                          _:00216 ,
+                                                          _:00217 ,
+                                                          _:00218 ,
+                                                          _:00219 ,
+                                                          _:00220 ,
+                                                          _:00221 ,
+                                                          _:00222 ,
+                                                          _:00223 ,
+                                                          _:00224 ,
+                                                          _:00225 ,
+                                                          _:00226 ,
+                                                          _:00227 ,
+                                                          _:00228 ,
+                                                          _:00229 ,
+                                                          _:00230 ,
+                                                          _:00231 ,
+                                                          _:00232 ,
+                                                          _:00233 ,
+                                                          _:00234 ,
+                                                          _:00235 ,
+                                                          _:00236 ,
+                                                          _:00237 ,
+                                                          _:00238 ,
+                                                          _:00239 ,
+                                                          _:00240 ,
+                                                          _:00241 ,
+                                                          _:00242 ,
+                                                          _:00243 ,
+                                                          _:00244 ,
+                                                          _:00245 ,
+                                                          _:00246 ,
+                                                          _:00247 ,
+                                                          _:00248 ,
+                                                          _:00249 ,
+                                                          _:00250 ,
+                                                          _:00251 ,
+                                                          _:00252 ,
+                                                          _:00253 ,
+                                                          _:00254 ,
+                                                          _:00255 ,
+                                                          _:00256 ,
+                                                          _:00257 ,
+                                                          _:00258 ,
+                                                          _:00259 ,
+                                                          _:00260 ,
+                                                          _:00261 ,
+                                                          _:00262 ,
+                                                          _:00263 ,
+                                                          _:00264 ,
+                                                          _:00265 ,
+                                                          _:00266 ,
+                                                          _:00267 ,
+                                                          _:002681 ,
+                                                          _:002682 ,
+                                                          _:00269 ,
+                                                          _:00270 ,
+                                                          _:00271 ,
+                                                          _:00272 ,
+                                                          _:00273 ,
+                                                          _:00274 ,
+                                                          _:00275 ,
+                                                          _:00276 ,
+                                                          _:00277 ,
+                                                          _:00278 ,
+                                                          _:00279 ,
+                                                          _:00280 ,
+                                                          _:00281 ,
+                                                          _:00282 ,
+                                                          _:00283 ,
+                                                          _:00284 ,
+                                                          _:00285 ,
+                                                          _:00286 ,
+                                                          _:00287 ,
+                                                          _:00288 ,
+                                                          _:00289 ,
+                                                          _:00290 ,
+                                                          _:00291 ,
+                                                          _:00292 ,
+                                                          _:00293 ,
+                                                          _:00294 ,
+                                                          _:00295 ,
+                                                          _:00296 ,
+                                                          _:00297 ,
+                                                          _:00298 ,
+                                                          _:00299 ,
+                                                          _:00300 ,
+                                                          _:00301 ,
+                                                          _:00302 ,
+                                                          _:00303 ,
+                                                          _:00304 ,
+                                                          _:00305 ,
+                                                          _:00306 ,
+                                                          _:00307 ,
+                                                          _:00308 ,
+                                                          _:00309 ,
+                                                          _:00310 ,
+                                                          _:00311 ,
+                                                          _:00312 ,
+                                                          _:00313 ,
+                                                          _:00314 ,
+                                                          _:00315 ,
+                                                          _:00316 ,
+                                                          _:00317 ,
+                                                          _:00318 ,
+                                                          _:00319 ,
+                                                          _:00320 ,
+                                                          _:00321 ,
+                                                          _:00322 ,
+                                                          _:00323 ,
+                                                          _:00324 ,
+                                                          _:00325 ,
+                                                          _:00326 ,
+                                                          _:00327 ,
+                                                          _:00328 ,
+                                                          _:00329 ,
+                                                          _:00330 ,
+                                                          _:00331 ,
+                                                          _:00332 ,
+                                                          _:00333 ,
+                                                          _:00334 ,
+                                                          _:00335 ,
+                                                          _:00336 ,
+                                                          _:00337 ,
+                                                          _:00338 ,
+                                                          _:00339 ,
+                                                          _:00340 ,
+                                                          _:00341 ,
+                                                          _:00342 ,
+                                                          _:00343 ,
+                                                          _:00344 ,
+                                                          _:00345 ,
+                                                          _:00346 ,
+                                                          _:00347 ,
+                                                          _:00348 ,
+                                                          _:00349 ,
+                                                          _:00350 ,
+                                                          _:00351 ,
+                                                          _:00352 ,
+                                                          _:00353 .
+
+_:00001  locn:fullAddress "Localita' Molino Vecchio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni (Ex Gioventu' Italiana)"^^xsd:string .
+
+_:00002  my_ld:affittato  _:00002_aff .
+_:00002  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Viale Settimio Severo n. 65"^^xsd:string ;
+         locn:Address my_ld_address:"105365" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso ex Opera Universitaria dell'Universita' di Torino denominato   "Villa Gualino""^^xsd:string .
+
+_:00003  gn:locatedIn spcdata:"Comune/A182" ;
+         locn:fullAddress "Frazione San Michele, Via O. Remotti n. 67"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni con entrostanti fabbricati"^^xsd:string .
+
+_:00004  gn:locatedIn spcdata:"Comune/A182" ;
+         locn:fullAddress "Via Amendola n. 1"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ad uso uffici"^^xsd:string .
+
+_:00005  gn:locatedIn spcdata:"Comune/A182" ;
+         locn:fullAddress "Via Guasco ang. Piazza Libertà"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ad uso uffici e commerciale"^^xsd:string .
+
+_:00006  locn:fullAddress "Carpeneto e Roccagrimalda"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Azienda Agricola "La Cannona""^^xsd:string .
+
+_:00007  gn:locatedIn spcdata:"Comune/B847" ;
+         locn:fullAddress "Località Arbiglia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni e fabbricato"^^xsd:string .
+
+_:00008  gn:locatedIn spcdata:"Comune/F281" ;
+         locn:fullAddress "Molare"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni boscati"^^xsd:string .
+
+_:00009  gn:locatedIn spcdata:"Comune/F965" ;
+         locn:fullAddress "Via Edilio Raggio n. 95"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Quota indivisa del 35% dell'immobile del "Centro di Assistenza e Pronto Intervento""^^xsd:string .
+
+_:00010  gn:locatedIn spcdata:"Comune/L881" ;
+         locn:fullAddress "Via Aldo Bergamaschino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato denominato "Palazzo Callori""^^xsd:string .
+
+_:00011  gn:locatedIn spcdata:"Comune/B306" ;
+         locn:fullAddress "Via Riva n. 6"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni con entrostante fabbricato ad uso sociale denominato "Ex Colonia Maffei""^^xsd:string .
+
+_:00012  gn:locatedIn spcdata:"Comune/A859" ;
+         locn:fullAddress "Via Ivrea n. 20"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porzione di fabbricato ad uso uffici, denominato "Ex Macello""^^xsd:string .
+
+_:00013  gn:locatedIn spcdata:"Comune/H662" ;
+         locn:fullAddress "Via Giuseppe Verdi"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni e fabbricati denominato  "Incubatoio ittico""^^xsd:string .
+
+_:00014  gn:locatedIn spcdata:"Comune/D271" ;
+         locn:fullAddress "Località Castello"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con annessi fabbricati"^^xsd:string .
+
+_:00015  gn:locatedIn spcdata:"Comune/D742" ;
+         locn:fullAddress "Via Mondovì n. 19"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso immobiliare"^^xsd:string .
+
+_:00016  gn:locatedIn spcdata:"Comune/C497" ;
+         locn:fullAddress "P.zza IV Novembre n. 4"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni con entrostante fabbricato denominato "Ex Colonia Montana Villa Broglia""^^xsd:string .
+
+_:000171  gn:locatedIn spcdata:"Comune/D373" ;
+          locn:fullAddress "Druento"^^xsd:string ;
+          my_ld:percPossesso "100"^^xsd:float ;
+          my_ld:descrizione "Tenuta "I Laghi""^^xsd:string .
+
+_:000172  gn:locatedIn spcdata:"Comune/L727" ;
+          locn:fullAddress "Venaria Reale"^^xsd:string ;
+          my_ld:percPossesso "100"^^xsd:float ;
+          my_ld:descrizione "Tenuta "La Mandria""^^xsd:string .
+
+_:000181  gn:locatedIn spcdata:"Comune/D933" ;
+          locn:fullAddress "Gassino Torinese"^^xsd:string ;
+          my_ld:percPossesso "100"^^xsd:float ;
+          my_ld:descrizione "Terreni - opere di compensazione ambientale"^^xsd:string .
+
+_:000182  gn:locatedIn spcdata:"Comune/I703" ;
+          locn:fullAddress "Settimo Torinese"^^xsd:string ;
+          my_ld:percPossesso "100"^^xsd:float ;
+          my_ld:descrizione "Terreni - opere di compensazione ambientale"^^xsd:string .
+
+_:00019  gn:locatedIn spcdata:"Comune/F335" ;
+         locn:fullAddress "Località Vallere, C.so Trieste"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni con entrostante fabbricato"^^xsd:string .
+
+_:00020  gn:locatedIn spcdata:"Comune/G087" ;
+         locn:fullAddress "Strada Rivalta n. 50"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato ad uso ufficio denominato "Istituto Ceppi""^^xsd:string .
+
+_:00021  gn:locatedIn spcdata:"Comune/G087" ;
+         locn:fullAddress "Orbassano"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni "Interporto Torino - Orbassano""^^xsd:string .
+
+_:00022  locn:fullAddress "Rivalta"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni "Interporto Torino - Orbassano""^^xsd:string .
+
+_:00023  gn:locatedIn spcdata:"Comune/E216" ;
+         locn:fullAddress "Grugliasco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni "Interporto Torino - Orbassano""^^xsd:string .
+
+_:00024  gn:locatedIn spcdata:"Comune/H355" ;
+         locn:fullAddress "Rivoli"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni "Interporto Torino - Orbassano""^^xsd:string .
+
+_:00025  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Torino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni "Interporto Torino - Orbassano""^^xsd:string .
+
+_:00026  gn:locatedIn spcdata:"Comune/H555" ;
+         locn:fullAddress "Borgo Selleries"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso Immobiliare denominato "Albergo Rifugio Selleries""^^xsd:string .
+
+_:00027  locn:fullAddress "Strada Giaveno n. 40"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Giardino Botanico Rea"^^xsd:string .
+
+_:00028  gn:locatedIn spcdata:"Comune/I466" ;
+         locn:fullAddress "Via Richardette n. 63"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso Immobiliare denominato "Stazione Sperimentale Alpina""^^xsd:string .
+
+_:00029  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Piazza Castello n. 161/165"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ad uso uffici"^^xsd:string .
+
+_:00030  my_ld:affittato  _:00030_aff .
+_:00030  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Garibaldi n. 2"^^xsd:string ;
+         locn:Address my_ld_address_address:"29823" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ad uso uffici"^^xsd:string .
+
+_:00031  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Garibaldi  4"^^xsd:string ;
+         locn:Address my_ld_address_address:"29796" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Unità Immobiliare"^^xsd:string .
+
+_:00032  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via XX Settembre 74"^^xsd:string ;
+         locn:Address my_ld_address_address:"113857" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Unità Immobiliare"^^xsd:string .
+
+_:00033  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Palazzo di Città 7"^^xsd:string ;
+         locn:Address my_ld_address_address:"79505" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Unità Immobiliare"^^xsd:string .
+
+_:00034  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Farinelli n. 25"^^xsd:string ;
+         locn:Address my_ld_address_address:"47033" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso  ospedaliero denominato "Presidio Sanitario Vittorio Valletta""^^xsd:string .
+
+_:00035  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Maria Vittoria n.  35"^^xsd:string ;
+         locn:Address my_ld_address_address:"67285" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Unità Immobiliare"^^xsd:string .
+
+_:00036  gn:locatedIn spcdata:"Comune/L277" ;
+         locn:fullAddress "Corso Jacopo Lombardini"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Impianto olimpico Palaghiaccio"^^xsd:string .
+
+_:00037  gn:locatedIn spcdata:"Comune/L727" ;
+         locn:fullAddress "Venaria Reale"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Parte del Compendio della Ferrovia Torino -Ceres"^^xsd:string .
+
+_:00038  gn:locatedIn spcdata:"Comune/L727" ;
+         locn:fullAddress "Venaria Reale"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno"^^xsd:string .
+
+_:00039  gn:locatedIn spcdata:"Comune/L727" ;
+         locn:fullAddress "Via XX Settembre n. 7"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato denominato "Galoppatoio La Marmora""^^xsd:string .
+
+_:00040  gn:locatedIn spcdata:"Comune/L727" ;
+         locn:fullAddress "Viale Carlo Emanuele II n. 135/A"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso immobiliare denominato "Cascina Parco Basso""^^xsd:string .
+
+_:00041  gn:locatedIn spcdata:"Comune/M007" ;
+         locn:fullAddress "Via Montebenedetto"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso monumentale della Certosa di Montebenedetto"^^xsd:string .
+
+_:00042  gn:locatedIn spcdata:"Comune/M013" ;
+         locn:fullAddress "Piazza Jervis n. 1"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso  immobiliare ad uso ricettivo denominato  "La Crumiere""^^xsd:string .
+
+_:00043  gn:locatedIn spcdata:"Comune/C478" ;
+         locn:fullAddress "Via Pianale n. 4"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno e fabbricato"^^xsd:string .
+
+_:00044  gn:locatedIn spcdata:"Comune/L746" ;
+         locn:fullAddress "Via Vittorio Veneto"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato ad uso uffici denominato "Villa San Remigio""^^xsd:string .
+
+_:00045  gn:locatedIn spcdata:"Comune/A130" ;
+         locn:fullAddress "Via XX Settembre n. 2-4"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato "Parco Naturale del Lame del Sesia""^^xsd:string .
+
+_:00046  gn:locatedIn spcdata:"Comune/G018" ;
+         locn:fullAddress "Oldenico"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno  "l'Isolone""^^xsd:string .
+
+_:00047  gn:locatedIn spcdata:"Comune/L750" ;
+         locn:fullAddress "Via Fratelli Ponti n. 24 e  Via F.lli Garrone n. 15"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porzioni immobiliari ad uso uffici  facenti parte del fabbricato denominato "Palazzo Verga""^^xsd:string .
+
+_:00048  gn:locatedIn spcdata:"Comune/L750" ;
+         locn:fullAddress "Corso Rigola n. 150"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato "Ex Colonia Elioterapica Fluviale""^^xsd:string .
+
+_:00049  gn:locatedIn spcdata:"Comune/L750" ;
+         locn:fullAddress "Via Borasio n. 4 e n.  6"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobile"^^xsd:string .
+
+_:00050  gn:locatedIn spcdata:"Comune/L750" ;
+         locn:fullAddress "Via Marsala n. 8"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Unità Immobiliare"^^xsd:string .
+
+_:00051  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Corso Casale n. 476"^^xsd:string ;
+         locn:Address my_ld_address_address:"7153" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni e fabbricati denominati "Tenuta Millerose" (TO)"^^xsd:string .
+
+_:00052  locn:fullAddress "Grignasco e Prato Sesia (NO)"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni e fabbricati denominati "Tenuta Spazzacamini (NO)"^^xsd:string .
+
+_:00053  locn:fullAddress "Valenza Po (AL)"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni con entrostante fabbricato"^^xsd:string .
+
+_:00054  gn:locatedIn spcdata:"Comune/D771" ;
+         locn:fullAddress "Frascarolo (PV)"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni con entrostante fabbricato"^^xsd:string .
+
+_:00055  gn:locatedIn spcdata:"Comune/B080" ;
+         locn:fullAddress "Bosio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00056  gn:locatedIn spcdata:"Comune/B882" ;
+         locn:fullAddress "Casaleggio Boiro"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00057  gn:locatedIn spcdata:"Comune/E543" ;
+         locn:fullAddress "Lerma"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00058  gn:locatedIn spcdata:"Comune/F281" ;
+         locn:fullAddress "Molare"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00059  gn:locatedIn spcdata:"Comune/G877" ;
+         locn:fullAddress "Ponzone"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00060  gn:locatedIn spcdata:"Comune/M123" ;
+         locn:fullAddress "Voltaggio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00061  gn:locatedIn spcdata:"Comune/A107" ;
+         locn:fullAddress "Ailoche"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00062  gn:locatedIn spcdata:"Comune/A876" ;
+         locn:fullAddress "Bioglio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00063  gn:locatedIn spcdata:"Comune/B417" ;
+         locn:fullAddress "Callabiana"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00064  gn:locatedIn spcdata:"Comune/B457" ;
+         locn:fullAddress "Camandona"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00065  gn:locatedIn spcdata:"Comune/B708" ;
+         locn:fullAddress "Caprile"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00066  gn:locatedIn spcdata:"Comune/C819" ;
+         locn:fullAddress "Coggiola"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00067  locn:fullAddress "Mosso Santa Maria"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00068  gn:locatedIn spcdata:"Comune/G927" ;
+         locn:fullAddress "Portula"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00069  gn:locatedIn spcdata:"Comune/L436" ;
+         locn:fullAddress "Trivero"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00070  gn:locatedIn spcdata:"Comune/L620" ;
+         locn:fullAddress "Valle San Nicolao"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00071  gn:locatedIn spcdata:"Comune/G973" ;
+         locn:fullAddress "Pragelato"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00072  gn:locatedIn spcdata:"Comune/A834" ;
+         locn:fullAddress "Beura Cardezza"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00073  gn:locatedIn spcdata:"Comune/D099" ;
+         locn:fullAddress "Cossogno"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00074  gn:locatedIn spcdata:"Comune/D225" ;
+         locn:fullAddress "Cursolo Orasso"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00075  gn:locatedIn spcdata:"Comune/F192" ;
+         locn:fullAddress "Miazzina"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00076  gn:locatedIn spcdata:"Comune/H037" ;
+         locn:fullAddress "Premosello Chiovenda"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00077  gn:locatedIn spcdata:"Comune/E237" ;
+         locn:fullAddress "Guardabosone"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00078  gn:locatedIn spcdata:"Comune/G940" ;
+         locn:fullAddress "Postua"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Foreste con entrostanti fabbricati"^^xsd:string .
+
+_:00079  gn:locatedIn spcdata:"Comune/B629" ;
+         locn:fullAddress "Cantalupo Ligure"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Vivai"^^xsd:string .
+
+_:00080  gn:locatedIn spcdata:"Comune/D447" ;
+         locn:fullAddress "Fabbrica Curone"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Vivai"^^xsd:string .
+
+_:00081  gn:locatedIn spcdata:"Comune/C653" ;
+         locn:fullAddress "Chiusa di Pesio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Vivai"^^xsd:string .
+
+_:00082  gn:locatedIn spcdata:"Comune/M055" ;
+         locn:fullAddress "Vinadio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Vivai"^^xsd:string .
+
+_:00083  gn:locatedIn spcdata:"Comune/D532" ;
+         locn:fullAddress "Fenestrelle"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Vivai"^^xsd:string .
+
+_:00084  gn:locatedIn spcdata:"Comune/L779" ;
+         locn:fullAddress "Verolengo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Vivai"^^xsd:string .
+
+_:00085  gn:locatedIn spcdata:"Comune/A130" ;
+         locn:fullAddress "Albano Vercellese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Vivai"^^xsd:string .
+
+_:00086  gn:locatedIn spcdata:"Comune/L669" ;
+         locn:fullAddress "Varallo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Vivai"^^xsd:string .
+
+_:00087  gn:locatedIn spcdata:"Comune/L727" ;
+         locn:fullAddress "Venaria Reale"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00088  gn:locatedIn spcdata:"Comune/L779" ;
+         locn:fullAddress "Verolengo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00089  gn:locatedIn spcdata:"Comune/L811" ;
+         locn:fullAddress "Vestignè"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:000901  gn:locatedIn spcdata:"Comune/M004" ;
+          locn:fullAddress "Villareggia"^^xsd:string ;
+          my_ld:percPossesso "100"^^xsd:float ;
+          my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:000902  gn:locatedIn spcdata:"Comune/A130" ;
+          locn:fullAddress "Albano Vercellese"^^xsd:string ;
+          my_ld:percPossesso "100"^^xsd:float ;
+          my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00091  gn:locatedIn spcdata:"Comune/A198" ;
+         locn:fullAddress "Alice Castello"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00092  gn:locatedIn spcdata:"Comune/A466" ;
+         locn:fullAddress "Asigliano Vercellese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00093  gn:locatedIn spcdata:"Comune/A601" ;
+         locn:fullAddress "Balocco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00094  gn:locatedIn spcdata:"Comune/A847" ;
+         locn:fullAddress "Bianzè"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00095  gn:locatedIn spcdata:"Comune/B009" ;
+         locn:fullAddress "Borgo d'Ale"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00096  gn:locatedIn spcdata:"Comune/B046" ;
+         locn:fullAddress "Borgo Vercelli"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00097  gn:locatedIn spcdata:"Comune/B280" ;
+         locn:fullAddress "Buronzo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00098  gn:locatedIn spcdata:"Comune/B767" ;
+         locn:fullAddress "Caresana"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00099  gn:locatedIn spcdata:"Comune/B782" ;
+         locn:fullAddress "Carisio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00100  gn:locatedIn spcdata:"Comune/B928" ;
+         locn:fullAddress "Casanova Elvo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00101  gn:locatedIn spcdata:"Comune/C680" ;
+         locn:fullAddress "Cigliano"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00102  gn:locatedIn spcdata:"Comune/D113" ;
+         locn:fullAddress "Costanzana"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00103  gn:locatedIn spcdata:"Comune/D154" ;
+         locn:fullAddress "Crescentino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00104  gn:locatedIn spcdata:"Comune/D187" ;
+         locn:fullAddress "Crova"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00105  gn:locatedIn spcdata:"Comune/D281" ;
+         locn:fullAddress "Desana"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00106  gn:locatedIn spcdata:"Comune/D676" ;
+         locn:fullAddress "Fontanetto Po"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00107  gn:locatedIn spcdata:"Comune/D712" ;
+         locn:fullAddress "Formigliana"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00108  gn:locatedIn spcdata:"Comune/E163" ;
+         locn:fullAddress "Greggio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00109  gn:locatedIn spcdata:"Comune/E433" ;
+         locn:fullAddress "Lamporo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00110  gn:locatedIn spcdata:"Comune/E583" ;
+         locn:fullAddress "Lignana"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00111  gn:locatedIn spcdata:"Comune/E626" ;
+         locn:fullAddress "Livorno Ferraris"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00112  gn:locatedIn spcdata:"Comune/F342" ;
+         locn:fullAddress "Moncrivello"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00113  locn:fullAddress "Motta dei Conti"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00114  gn:locatedIn spcdata:"Comune/G266" ;
+         locn:fullAddress "Palazzolo Vercellese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00115  gn:locatedIn spcdata:"Comune/G471" ;
+         locn:fullAddress "Pertengo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00116  gn:locatedIn spcdata:"Comune/G528" ;
+         locn:fullAddress "pezzana"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00117  gn:locatedIn spcdata:"Comune/H132" ;
+         locn:fullAddress "Quinto Vercellese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00118  gn:locatedIn spcdata:"Comune/H346" ;
+         locn:fullAddress "Rive"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00119  gn:locatedIn spcdata:"Comune/H549" ;
+         locn:fullAddress "Ronsecco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00120  gn:locatedIn spcdata:"Comune/H690" ;
+         locn:fullAddress "Salasco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00121  gn:locatedIn spcdata:"Comune/H725" ;
+         locn:fullAddress "Saluggia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00122  gn:locatedIn spcdata:"Comune/H861" ;
+         locn:fullAddress "San Germano Vercellese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00123  gn:locatedIn spcdata:"Comune/I337" ;
+         locn:fullAddress "Santhià"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00124  gn:locatedIn spcdata:"Comune/I984" ;
+         locn:fullAddress "Stroppiana"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00125  gn:locatedIn spcdata:"Comune/L420" ;
+         locn:fullAddress "Tricerro"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00126  locn:fullAddress "Trino Vercellese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00127  gn:locatedIn spcdata:"Comune/L451" ;
+         locn:fullAddress "Tronzano Vercellese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00128  gn:locatedIn spcdata:"Comune/L750" ;
+         locn:fullAddress "Vercelli"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00129  gn:locatedIn spcdata:"Comune/M003" ;
+         locn:fullAddress "Villarboit"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00130  locn:fullAddress "Argentina,Provincia di Cordoba, San Francisco, Avenida Libertador (S), 466"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobile denominato "Casa Losana""^^xsd:string .
+
+_:00131  gn:locatedIn spcdata:"Comune/L304" ;
+         locn:fullAddress "Via Marsala"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato  (Ex Caserma Passalacqua)"^^xsd:string .
+
+_:00132  gn:locatedIn spcdata:"Comune/F965" ;
+         locn:fullAddress "Via Carducci n. 8"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato ad uso uffici  - CFP (Ex Inapli)"^^xsd:string .
+
+_:00133  gn:locatedIn spcdata:"Comune/L304" ;
+         locn:fullAddress "Via Matteotti n. 13"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Unita' Immobiliari (Ex Ente nazionale lavoratori rimpatriati e profughi)"^^xsd:string .
+
+_:00134  gn:locatedIn spcdata:"Comune/L193" ;
+         locn:fullAddress "Localita' Bazzera"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni (Ex Gioventu' Italiana)"^^xsd:string .
+
+_:00135  gn:locatedIn spcdata:"Comune/C589" ;
+         locn:fullAddress "Via IV Novembre n. 13 ang. Via Regina Margherita n. 4"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ad uso uffici (Ex Gioventu' Italiana)"^^xsd:string .
+
+_:00136  gn:locatedIn spcdata:"Comune/A651" ;
+         locn:fullAddress "Viale della Vittoria n. 42"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato denominato "Ex Colonia Medail" (Ex Gioventu' Italiana)"^^xsd:string .
+
+_:00137  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Petrarca n.  44"^^xsd:string ;
+         locn:Address my_ld_address_address:"81872" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ad uso uffici (Ex Esap)"^^xsd:string .
+
+_:00138  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Principe Amedeo n. 17"^^xsd:string ;
+         locn:Address my_ld_address:"62660" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ad uso uffici (Ex Enalc)"^^xsd:string .
+
+_:00139  my_ld:affittato  _:00139_aff .
+_:00139  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Corso Principe Eugenio n. 36"^^xsd:string ;
+         locn:Address my_ld_address:"124786" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Unita' immobiliarI ad uso uffici (Ex Eam)"^^xsd:string .
+
+_:00140  gn:locatedIn spcdata:"Comune/L779" ;
+         locn:fullAddress "Localita' Casa Bianca"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni (Ex Gioventu' Italiana)"^^xsd:string .
+
+_:00141  gn:locatedIn spcdata:"Comune/D205" ;
+         locn:fullAddress "Corso IV Novembre 14/16"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato scolastico ed impianti sportivi "Ex casa della Gioventu' Italiana""^^xsd:string .
+
+_:00142  gn:locatedIn spcdata:"Comune/H518" ;
+         locn:fullAddress "Romentino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Realizzazione sub tratta Novara - Milano della tratta AV/AC Torino - Milano. Terreni per opere di mitigazione ambientale"^^xsd:string .
+
+_:00143  locn:fullAddress "Moncalieri e Trofarello"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni per lavori di sistemazione idraulica sul Rio Sauglio"^^xsd:string .
+
+_:00144  gn:locatedIn spcdata:"Comune/A182" ;
+         locn:fullAddress "Alessandria"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00145  gn:locatedIn spcdata:"Comune/A605" ;
+         locn:fullAddress "Balzola"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00146  gn:locatedIn spcdata:"Comune/B029" ;
+         locn:fullAddress "Borgoratto Alessandrino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00147  gn:locatedIn spcdata:"Comune/B885" ;
+         locn:fullAddress "Casale Monferrato"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00148  gn:locatedIn spcdata:"Comune/C027" ;
+         locn:fullAddress "Cassine"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00149  gn:locatedIn spcdata:"Comune/C148" ;
+         locn:fullAddress "Castellazzo Bormida"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00150  gn:locatedIn spcdata:"Comune/D770" ;
+         locn:fullAddress "Frascaro"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00151  gn:locatedIn spcdata:"Comune/D780" ;
+         locn:fullAddress "Frassineto Po"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00152  gn:locatedIn spcdata:"Comune/D890" ;
+         locn:fullAddress "Gamalero"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00153  gn:locatedIn spcdata:"Comune/F232" ;
+         locn:fullAddress "Mirabello Monferrato"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00154  gn:locatedIn spcdata:"Comune/F707" ;
+         locn:fullAddress "Morano sul Po"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00155  gn:locatedIn spcdata:"Comune/F995" ;
+         locn:fullAddress "Occimiano"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00156  gn:locatedIn spcdata:"Comune/I711" ;
+         locn:fullAddress "Sezzadio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00157  gn:locatedIn spcdata:"Comune/L972" ;
+         locn:fullAddress "Villanova Monferrato"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00158  gn:locatedIn spcdata:"Comune/B229" ;
+         locn:fullAddress "Brusnengo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00159  gn:locatedIn spcdata:"Comune/C155" ;
+         locn:fullAddress "Castelletto Cervo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00160  gn:locatedIn spcdata:"Comune/C363" ;
+         locn:fullAddress "Cavaglià"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00161  gn:locatedIn spcdata:"Comune/D094" ;
+         locn:fullAddress "Cossato"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00162  gn:locatedIn spcdata:"Comune/E024" ;
+         locn:fullAddress "Gifflenga"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00163  gn:locatedIn spcdata:"Comune/F037" ;
+         locn:fullAddress "Massazza"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00164  gn:locatedIn spcdata:"Comune/F042" ;
+         locn:fullAddress "Masserano"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00165  gn:locatedIn spcdata:"Comune/F776" ;
+         locn:fullAddress "Mottalciata"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00166  gn:locatedIn spcdata:"Comune/H726" ;
+         locn:fullAddress "Salussola"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00167  gn:locatedIn spcdata:"Comune/L978" ;
+         locn:fullAddress "Villanova Biellese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00168  gn:locatedIn spcdata:"Comune/B111" ;
+         locn:fullAddress "Bra"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00169  locn:fullAddress "Caramagna"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00170  gn:locatedIn spcdata:"Comune/C466" ;
+         locn:fullAddress "Centallo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00171  gn:locatedIn spcdata:"Comune/C550" ;
+         locn:fullAddress "Cervere"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00172  gn:locatedIn spcdata:"Comune/D742" ;
+         locn:fullAddress "Fossano"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00173  gn:locatedIn spcdata:"Comune/H150" ;
+         locn:fullAddress "Racconigi"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00174  gn:locatedIn spcdata:"Comune/A752" ;
+         locn:fullAddress "Bellinzago Novarese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00175  gn:locatedIn spcdata:"Comune/A844" ;
+         locn:fullAddress "Biandrate"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00176  gn:locatedIn spcdata:"Comune/B183" ;
+         locn:fullAddress "Briona"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00177  locn:fullAddress "Caltignana"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00178  gn:locatedIn spcdata:"Comune/B473" ;
+         locn:fullAddress "Cameri"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00179  gn:locatedIn spcdata:"Comune/B823" ;
+         locn:fullAddress "Carpignano Sesia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00180  gn:locatedIn spcdata:"Comune/B864" ;
+         locn:fullAddress "Casalbeltrame"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00181  locn:fullAddress "Casaleggio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00182  gn:locatedIn spcdata:"Comune/B897" ;
+         locn:fullAddress "Casalino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00183  gn:locatedIn spcdata:"Comune/B920" ;
+         locn:fullAddress "Casalvolone"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00184  gn:locatedIn spcdata:"Comune/C483" ;
+         locn:fullAddress "Cerano"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00185  gn:locatedIn spcdata:"Comune/D872" ;
+         locn:fullAddress "Galliate"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00186  gn:locatedIn spcdata:"Comune/D911" ;
+         locn:fullAddress "Garbagna Novarese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00187  gn:locatedIn spcdata:"Comune/E001" ;
+         locn:fullAddress "Ghemme"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00188  gn:locatedIn spcdata:"Comune/E143" ;
+         locn:fullAddress "Granozzo con Monticello"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00189  gn:locatedIn spcdata:"Comune/E436" ;
+         locn:fullAddress "Landiona"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00190  gn:locatedIn spcdata:"Comune/E907" ;
+         locn:fullAddress "Marano Ticino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00191  gn:locatedIn spcdata:"Comune/F952" ;
+         locn:fullAddress "Novara"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00192  gn:locatedIn spcdata:"Comune/G019" ;
+         locn:fullAddress "Oleggio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00193  gn:locatedIn spcdata:"Comune/G809" ;
+         locn:fullAddress "Pombia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00194  gn:locatedIn spcdata:"Comune/H213" ;
+         locn:fullAddress "Recetto"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00195  gn:locatedIn spcdata:"Comune/H518" ;
+         locn:fullAddress "Romentino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00196  gn:locatedIn spcdata:"Comune/I052" ;
+         locn:fullAddress "San Nazzaro Sesia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00197  gn:locatedIn spcdata:"Comune/I116" ;
+         locn:fullAddress "San Pietro Mosezzo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00198  gn:locatedIn spcdata:"Comune/I736" ;
+         locn:fullAddress "Sillavengo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00199  gn:locatedIn spcdata:"Comune/I880" ;
+         locn:fullAddress "Sozzago"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00200  gn:locatedIn spcdata:"Comune/L104" ;
+         locn:fullAddress "Terdobbiate"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00201  gn:locatedIn spcdata:"Comune/L223" ;
+         locn:fullAddress "Tornaco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00202  gn:locatedIn spcdata:"Comune/L356" ;
+         locn:fullAddress "Trecate"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00203  gn:locatedIn spcdata:"Comune/L670" ;
+         locn:fullAddress "Varallo Pombia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00204  gn:locatedIn spcdata:"Comune/L847" ;
+         locn:fullAddress "Vicolungo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00205  gn:locatedIn spcdata:"Comune/M062" ;
+         locn:fullAddress "Vinzaglio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00206  gn:locatedIn spcdata:"Comune/A074" ;
+         locn:fullAddress "Agliè"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00207  gn:locatedIn spcdata:"Comune/A157" ;
+         locn:fullAddress "Albiano d'Ivrea"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00208  gn:locatedIn spcdata:"Comune/A525" ;
+         locn:fullAddress "Azeglio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00209  gn:locatedIn spcdata:"Comune/A584" ;
+         locn:fullAddress "Bairo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00210  gn:locatedIn spcdata:"Comune/A673" ;
+         locn:fullAddress "Barone Canavese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00211  gn:locatedIn spcdata:"Comune/B021" ;
+         locn:fullAddress "Borgomasino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00212  gn:locatedIn spcdata:"Comune/B225" ;
+         locn:fullAddress "Brusasco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00213  gn:locatedIn spcdata:"Comune/B435" ;
+         locn:fullAddress "Caluso"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00214  gn:locatedIn spcdata:"Comune/B733" ;
+         locn:fullAddress "Caravino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00215  gn:locatedIn spcdata:"Comune/B791" ;
+         locn:fullAddress "Carmagnola"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00216  gn:locatedIn spcdata:"Comune/C045" ;
+         locn:fullAddress "Castagneto Po"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00217  gn:locatedIn spcdata:"Comune/C133" ;
+         locn:fullAddress "Castellamonte"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00218  gn:locatedIn spcdata:"Comune/C369" ;
+         locn:fullAddress "Cavagnolo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00219  gn:locatedIn spcdata:"Comune/C665" ;
+         locn:fullAddress "Chivasso"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00220  gn:locatedIn spcdata:"Comune/C860" ;
+         locn:fullAddress "Collegno"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00221  gn:locatedIn spcdata:"Comune/D373" ;
+         locn:fullAddress "Druento"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00222  gn:locatedIn spcdata:"Comune/D725" ;
+         locn:fullAddress "Forno Canavese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00223  gn:locatedIn spcdata:"Comune/E379" ;
+         locn:fullAddress "Ivrea"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00224  gn:locatedIn spcdata:"Comune/E484" ;
+         locn:fullAddress "Lauriano"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00225  gn:locatedIn spcdata:"Comune/E817" ;
+         locn:fullAddress "Maglione"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00226  gn:locatedIn spcdata:"Comune/F067" ;
+         locn:fullAddress "Mazzè"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00227  gn:locatedIn spcdata:"Comune/F411" ;
+         locn:fullAddress "Montalenghe"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00228  gn:locatedIn spcdata:"Comune/F651" ;
+         locn:fullAddress "Monteu da Po"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00229  gn:locatedIn spcdata:"Comune/G109" ;
+         locn:fullAddress "Orio Canavese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00230  gn:locatedIn spcdata:"Comune/G559" ;
+         locn:fullAddress "Pianezza"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00231  gn:locatedIn spcdata:"Comune/H367" ;
+         locn:fullAddress "Robassomero"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00232  gn:locatedIn spcdata:"Comune/H890" ;
+         locn:fullAddress "San Giorgio Canavese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00233  locn:fullAddress "San Sebastiano Po"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Canali demaniali di Irrigazione"^^xsd:string .
+
+_:00234  gn:locatedIn spcdata:"Comune/A052" ;
+         locn:fullAddress "Acqui Terme"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00235  gn:locatedIn spcdata:"Comune/A182" ;
+         locn:fullAddress "Alessandria"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00236  gn:locatedIn spcdata:"Comune/C005" ;
+         locn:fullAddress "Cassano Spinola"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00237  gn:locatedIn spcdata:"Comune/C158" ;
+         locn:fullAddress "Castelletto d'Orba"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00238  gn:locatedIn spcdata:"Comune/F518" ;
+         locn:fullAddress "Montegioco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00239  gn:locatedIn spcdata:"Comune/I144" ;
+         locn:fullAddress "San Salvatore Monferrato"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00240  gn:locatedIn spcdata:"Comune/I711" ;
+         locn:fullAddress "Sezzadio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00241  gn:locatedIn spcdata:"Comune/I911" ;
+         locn:fullAddress "Spineto Scrivia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00242  gn:locatedIn spcdata:"Comune/L570" ;
+         locn:fullAddress "Valenza"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00243  gn:locatedIn spcdata:"Comune/L881" ;
+         locn:fullAddress "Vignale Monferrato"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00244  gn:locatedIn spcdata:"Comune/M123" ;
+         locn:fullAddress "Voltaggio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00245  locn:fullAddress "Agliano"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00246  gn:locatedIn spcdata:"Comune/C230" ;
+         locn:fullAddress "Castelnuovo Calcea"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00247  gn:locatedIn spcdata:"Comune/C232" ;
+         locn:fullAddress "Castelnuovo Don Bosco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00248  gn:locatedIn spcdata:"Comune/D119" ;
+         locn:fullAddress "Costigliole d'Asti"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00249  locn:fullAddress "Montechiaro"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00250  locn:fullAddress "Montiglio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00251  gn:locatedIn spcdata:"Comune/A859" ;
+         locn:fullAddress "Biella"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00252  gn:locatedIn spcdata:"Comune/D339" ;
+         locn:fullAddress "Donato"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00253  gn:locatedIn spcdata:"Comune/E130" ;
+         locn:fullAddress "Graglia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00254  gn:locatedIn spcdata:"Comune/A571" ;
+         locn:fullAddress "Bagnolo Piemonte"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00255  locn:fullAddress "Borgo San Dalmazzo e Roccasparvera"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00256  gn:locatedIn spcdata:"Comune/B285" ;
+         locn:fullAddress "Busca"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00257  gn:locatedIn spcdata:"Comune/C653" ;
+         locn:fullAddress "Chiusa di Pesio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00258  gn:locatedIn spcdata:"Comune/D205" ;
+         locn:fullAddress "Cuneo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00259  gn:locatedIn spcdata:"Comune/D920" ;
+         locn:fullAddress "Garessio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00260  gn:locatedIn spcdata:"Comune/G114" ;
+         locn:fullAddress "Ormea"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00261  gn:locatedIn spcdata:"Comune/H377" ;
+         locn:fullAddress "Robilante"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00262  locn:fullAddress "Robourent"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00263  gn:locatedIn spcdata:"Comune/H407" ;
+         locn:fullAddress "Roccaforte Mondovì"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00264  gn:locatedIn spcdata:"Comune/H812" ;
+         locn:fullAddress "San Damiano Macra"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00265  gn:locatedIn spcdata:"Comune/L558" ;
+         locn:fullAddress "Valdieri"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00266  locn:fullAddress "Vinadio Provincia di Novara:Galliate"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00267  gn:locatedIn spcdata:"Comune/G020" ;
+         locn:fullAddress "Oleggio Castello"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:002681  gn:locatedIn spcdata:"Comune/L670" ;
+          locn:fullAddress "Varallo Pombia"^^xsd:string ;
+          my_ld:percPossesso "100"^^xsd:float ;
+          my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:002682  gn:locatedIn spcdata:"Comune/A599" ;
+          locn:fullAddress "Balme"^^xsd:string ;
+          my_ld:percPossesso "100"^^xsd:float ;
+          my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00269  gn:locatedIn spcdata:"Comune/B015" ;
+         locn:fullAddress "Borgofranco d'Ivrea"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00270  gn:locatedIn spcdata:"Comune/B705" ;
+         locn:fullAddress "Caprie"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00271  gn:locatedIn spcdata:"Comune/C045" ;
+         locn:fullAddress "Castagneto Po"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00272  gn:locatedIn spcdata:"Comune/C722" ;
+         locn:fullAddress "Ciriè"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00273  gn:locatedIn spcdata:"Comune/E020" ;
+         locn:fullAddress "Giaveno"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00274  gn:locatedIn spcdata:"Comune/E758" ;
+         locn:fullAddress "Luserna San Giovanni"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00275  gn:locatedIn spcdata:"Comune/H554" ;
+         locn:fullAddress "Rorà"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00276  gn:locatedIn spcdata:"Comune/L538" ;
+         locn:fullAddress "Vaie"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00277  locn:fullAddress "Villardora"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00278  gn:locatedIn spcdata:"Comune/A325" ;
+         locn:fullAddress "Anzola d'Ossola"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00279  gn:locatedIn spcdata:"Comune/A534" ;
+         locn:fullAddress "Baceno"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00280  gn:locatedIn spcdata:"Comune/A725" ;
+         locn:fullAddress "Baveno"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00281  gn:locatedIn spcdata:"Comune/A925" ;
+         locn:fullAddress "Bognanco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00282  gn:locatedIn spcdata:"Comune/B615" ;
+         locn:fullAddress "Cannobio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00283  gn:locatedIn spcdata:"Comune/D177" ;
+         locn:fullAddress "Crodo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00284  gn:locatedIn spcdata:"Comune/E853" ;
+         locn:fullAddress "Malesco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00285  gn:locatedIn spcdata:"Comune/G007" ;
+         locn:fullAddress "Oggebbio"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00286  gn:locatedIn spcdata:"Comune/H033" ;
+         locn:fullAddress "Premia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00287  gn:locatedIn spcdata:"Comune/I976" ;
+         locn:fullAddress "Stresa"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00288  locn:fullAddress "Vanzone San Carlo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00289  gn:locatedIn spcdata:"Comune/L746" ;
+         locn:fullAddress "Verbania"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00290  gn:locatedIn spcdata:"Comune/B928" ;
+         locn:fullAddress "Casanova Elvo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00291  locn:fullAddress "Quarona Sesia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00292  gn:locatedIn spcdata:"Comune/H291" ;
+         locn:fullAddress "Rima San Giuseppe"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00293  gn:locatedIn spcdata:"Comune/L451" ;
+         locn:fullAddress "Tronzano Vercellese"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Acque minerali, termali, cave e torbiere"^^xsd:string .
+
+_:00294  gn:locatedIn spcdata:"Comune/H247" ;
+         locn:fullAddress "Località La Fornace Via Staffarda n. 54, Revello"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobili  costituenti il contesto storico -agricolo della "Tenuta di Staffarda" entro i confini del Parco Naturale del Po - Tratto Cuneese"^^xsd:string .
+
+_:00295  gn:locatedIn spcdata:"Comune/I025" ;
+         locn:fullAddress "Località Lagna"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni"^^xsd:string .
+
+_:00296  gn:locatedIn spcdata:"Comune/C361" ;
+         locn:fullAddress "C.so Re Umberto I n. 45"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Unità Immobiliare"^^xsd:string .
+
+_:00297  gn:locatedIn spcdata:"Comune/C564" ;
+         locn:fullAddress "San Sicario"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso immobiliare olimpico per il Biathlon comprendente anche l'ex Colonia Italsider"^^xsd:string .
+
+_:00298  gn:locatedIn spcdata:"Comune/C665" ;
+         locn:fullAddress "Frazione Mandria n. 8"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso  denominato "Ex Tenuta Sabauda La Mandria""^^xsd:string .
+
+_:00299  gn:locatedIn spcdata:"Comune/G196" ;
+         locn:fullAddress "Corso Montenero n. 57"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porzione di fabbricato"^^xsd:string .
+
+_:00300  gn:locatedIn spcdata:"Comune/G600" ;
+         locn:fullAddress "Via Pallanzeno n. 104"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno e fabbricato"^^xsd:string .
+
+_:00301  gn:locatedIn spcdata:"Comune/A429" ;
+         locn:fullAddress "Arona "^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porti lacuali e stazione lacuale"^^xsd:string .
+
+_:00302  gn:locatedIn spcdata:"Comune/G134" ;
+         locn:fullAddress "Orta San Giulio "^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porti lacuali e stazione lacuale"^^xsd:string .
+
+_:00303  gn:locatedIn spcdata:"Comune/G421" ;
+         locn:fullAddress "Pella "^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porti lacuali e stazione lacuale"^^xsd:string .
+
+_:00304  gn:locatedIn spcdata:"Comune/G520" ;
+         locn:fullAddress "Pettenasco"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porti lacuali e stazione lacuale"^^xsd:string .
+
+_:00305  gn:locatedIn spcdata:"Comune/A742" ;
+         locn:fullAddress "Belgirate "^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porti lacuali e stazione lacuale"^^xsd:string .
+
+_:00306  locn:fullAddress "Verbania Intra"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porti lacuali e stazione lacuale"^^xsd:string .
+
+_:00307  locn:fullAddress "Belgio, Bruxelles, Rue du Trone n. 62"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porzione dell'immobile"^^xsd:string .
+
+_:00308  gn:locatedIn spcdata:"Comune/A182" ;
+         locn:fullAddress "Piazza Filippo Turati"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Porzione di fabbricato ad uso uffici"^^xsd:string .
+
+_:00309  gn:locatedIn spcdata:"Comune/F952" ;
+         locn:fullAddress "Viale Mora e Gibin n. 4"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ad uso uffici e impianti sportivi (Ex Gioventu' Italiana)"^^xsd:string .
+
+_:00310  gn:locatedIn spcdata:"Comune/C722" ;
+         locn:fullAddress "Via del Battitore n. 82"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato ad uso uffici (Ex Inapli)"^^xsd:string .
+
+_:00311  gn:locatedIn spcdata:"Comune/C793" ;
+         locn:fullAddress "Strada Nazionale n. 31"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ex colonia montana - Casa Alpina (Ex Gioventu' Italiana)"^^xsd:string .
+
+_:00312  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Piazza Bernini n. 12"^^xsd:string ;
+         locn:Address my_ld_address:"25631" ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Fabbricato ad uso uffici ed impianti sportivi (Ex Gioventu' Italiana)"^^xsd:string .
+
+_:00313  gn:locatedIn spcdata:"Comune/H468" ;
+         locn:fullAddress "Casale Gatti"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato  denominato    "Regione Valbenenta""^^xsd:string .
+
+_:00314  gn:locatedIn spcdata:"Comune/A859" ;
+         locn:fullAddress "Rione Piazzo Piazza Cisterna n. 9"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobile denominato "Palazzo Cisterna""^^xsd:string .
+
+_:00315  gn:locatedIn spcdata:"Comune/D920" ;
+         locn:fullAddress "Frazione Casotto"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso immobiliare del Castello Sabaudo di Casotto già Certosa"^^xsd:string .
+
+_:00316  gn:locatedIn spcdata:"Comune/B864" ;
+         locn:fullAddress "Cascina Vallera"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostanti fabbricato denominato "Palude di Casalbeltrame""^^xsd:string .
+
+_:00317  gn:locatedIn spcdata:"Comune/F952" ;
+         locn:fullAddress "Regione Agogna, Via Agogna"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreno con entrostante fabbricato denominato "Ex colonia fluviale e solare""^^xsd:string .
+
+_:00318  gn:locatedIn spcdata:"Comune/F952" ;
+         locn:fullAddress "Viale Piazza D'Armi"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Complesso immobiliare denominato "Piazza d'Armi ed ex Polveriera""^^xsd:string .
+
+_:00319  gn:locatedIn spcdata:"Comune/A651" ;
+         locn:fullAddress "Bardonecchia"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Impianto sportivo HALF-PIPE"^^xsd:string .
+
+_:00320  locn:fullAddress "Buttigliera Alta e Rosta"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Terreni agricoli a contorno della Precettoria Antoniana di Sant' Antonio di Ranverso"^^xsd:string .
+
+_:00321  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Nizza n. 312"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Area denominata ex Fiat -  Avio"^^xsd:string .
+
+_:00322  gn:locatedIn spcdata:"Comune/L746" ;
+         locn:fullAddress "Località Piano Grande, Via dell'Industria  19A e 19B"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobile"^^xsd:string .
+
+_:00323  gn:locatedIn spcdata:"Comune/B592" ;
+         locn:fullAddress "Candiolo"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobili ricompresi nel contesto urbano e rurale del Parco Naturale di Stupinigi"^^xsd:string .
+
+_:00324  gn:locatedIn spcdata:"Comune/F889" ;
+         locn:fullAddress "Nichelino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobili ricompresi nel contesto urbano e rurale del Parco Naturale di Stupinigi"^^xsd:string .
+
+_:00325  gn:locatedIn spcdata:"Comune/G087" ;
+         locn:fullAddress "Orbassano"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobili ricompresi nel contesto urbano e rurale del Parco Naturale di Stupinigi"^^xsd:string .
+
+_:00326  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Torino"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobili ricompresi nel contesto urbano e rurale del Parco Naturale di Stupinigi"^^xsd:string .
+
+_:00327  gn:locatedIn spcdata:"Comune/L804" ;
+         locn:fullAddress "Via Don Orione n. 37"^^xsd:string ;
+         my_ld:percPossesso "100"^^xsd:float ;
+         my_ld:descrizione "Immobile   - Sede del C.F.P."^^xsd:string .
+
+_:00328  my_ld:affittato  _:00328_aff .
+_:00328  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "C.so Galileo Ferraris n. 2"^^xsd:string ;
+         locn:Address my_ld_address:"53914" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00329  my_ld:affittato  _:00329_aff .
+_:00329  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "C.so Massimo D'azeglio n. 42"^^xsd:string ;
+         locn:Address my_ld_address:"42949" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00330  my_ld:affittato  _:00330_aff .
+_:00330  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "C.so Regina M.ta 153/bis"^^xsd:string ;
+         locn:Address my_ld_address:"122244" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00331  my_ld:affittato  _:00331_aff .
+_:00331  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "C.so Stati Uniti 21"^^xsd:string ;
+         locn:Address my_ld_address:"118055" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00332  my_ld:affittato  _:00332_aff .
+_:00332  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "C.so Stati Uniti 23"^^xsd:string ;
+         locn:Address my_ld_address:"107457" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00333  my_ld:affittato  _:00333_aff .
+_:00333  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Corso Grosseto n. 73/6"^^xsd:string ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Magazzino archivio"^^xsd:string .
+
+_:00334  my_ld:affittato  _:00334_aff .
+_:00334  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Corso Marche n. 79"^^xsd:string ;
+         locn:Address my_ld_address:"126155" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00335  my_ld:affittato  _:00335_aff .
+_:00335  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Corso Orbassano 336"^^xsd:string ;
+         locn:Address my_ld_address:"77647" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Magazzino Economato"^^xsd:string .
+
+_:00336  my_ld:affittato  _:00336_aff .
+_:00336  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Corso Regina Margherita n. 174"^^xsd:string ;
+         locn:Address my_ld_address:"65573" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "uffici"^^xsd:string .
+
+_:00337  my_ld:affittato  _:00337_aff .
+_:00337  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "P.zza Castello 153"^^xsd:string ;
+         locn:Address my_ld_address:"7918" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00338  my_ld:affittato  _:00338_aff .
+_:00338  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Avogadro n. 30"^^xsd:string ;
+         locn:Address my_ld_address:"14778" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "uffici"^^xsd:string .
+
+_:00339  my_ld:affittato  _:00339_aff .
+_:00339  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Bertola n. 34"^^xsd:string ;
+         locn:Address my_ld_address:"19194" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00340  my_ld:affittato  _:00340_aff .
+_:00340  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Bogino n. 9"^^xsd:string ;
+         locn:Address my_ld_address:"26008" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00341  my_ld:affittato  _:00341_aff .
+_:00341  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Lagrange 24"^^xsd:string ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "uffici"^^xsd:string .
+
+_:00342  my_ld:affittato  _:00342_aff .
+_:00342  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Livorno n. 60"^^xsd:string ;
+         locn:Address my_ld_address:"37722" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00343  my_ld:affittato  _:00343_aff .
+_:00343  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Magenta 12"^^xsd:string ;
+         locn:Address my_ld_address:"80632" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00344  my_ld:affittato  _:00344_aff .
+_:00344  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Meucci 1"^^xsd:string ;
+         locn:Address my_ld_address:"69594" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00345  my_ld:affittato  _:00345_aff .
+_:00345  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Nizza 18"^^xsd:string ;
+         locn:Address my_ld_address:"84688" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00346  my_ld:affittato  _:00346_aff .
+_:00346  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Pietro Micca n. 18"^^xsd:string ;
+         locn:Address my_ld_address:"69615" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00347  my_ld:affittato  _:00347_aff .
+_:00347  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Pisano 6 "Molini Dora""^^xsd:string ;
+         locn:Address my_ld_address:"60822" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "uffici"^^xsd:string .
+
+_:00348  my_ld:affittato  _:00348_aff .
+_:00348  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via S. Teresa 23-2"^^xsd:string ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00349  my_ld:affittato  _:00349_aff .
+_:00349  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Sospello 193"^^xsd:string ;
+         locn:Address my_ld_address:"106800" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Magazzino"^^xsd:string .
+
+_:00350  my_ld:affittato  _:00350_aff .
+_:00350  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Sospello 197/A 199"^^xsd:string ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Magazzino e uffici"^^xsd:string .
+
+_:00351  my_ld:affittato  _:00351_aff .
+_:00351  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Sospello 199"^^xsd:string ;
+         locn:Address my_ld_address:"106803" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Alloggio"^^xsd:string .
+
+_:00352  my_ld:affittato  _:00352_aff .
+_:00352  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Sospello 211"^^xsd:string ;
+         locn:Address my_ld_address:"106775" ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Magazzino"^^xsd:string .
+
+_:00353  my_ld:affittato  _:00353_aff .
+_:00353  gn:locatedIn spcdata:"Comune/L219" ;
+         locn:fullAddress "Via Viotti n. 8"^^xsd:string ;
+         my_ld:percPossesso "0"^^xsd:float ;
+         my_ld:destUso "Uffici"^^xsd:string .
+
+_:00139_aff  my_ld:affittoAttivo "16865,15"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date .
+
+_:00030_aff  my_ld:affittoAttivo "160599,46"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+_:00030_aff  my_ld:affittoAttivo "160000"^^xsd:float ;
+             time:hasBeginning  "2014-01-01"^^xsd:date ;
+             time:hasEnd "2014-12-31"^^xsd:date ;
+_:00030_aff  my_ld:tipoContratto "Sublocazione"^^xsd:string ;
+             my_ld:affittoAttivo "32062,42"^^xsd:float ;
+             time:hasBeginning  "2013-01-01"^^xsd:date ;
+             time:hasEnd "2013-12-31"^^xsd:date .
+
+_:00002_aff  my_ld:affittoAttivo "136,18"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+_:00002_aff  my_ld:affittoAttivo "136,03"^^xsd:float ;
+             time:hasBeginning  "2014-01-01"^^xsd:date ;
+             time:hasEnd "2014-12-31"^^xsd:date ;
+_:00002_aff  my_ld:tipoContratto "Locazione "^^xsd:string ;
+             my_ld:affittoAttivo "122189,74"^^xsd:float ;
+             time:hasBeginning  "2013-01-01"^^xsd:date ;
+             time:hasEnd "2013-12-31"^^xsd:date .
+
+_:00328_aff  my_ld:affittoPassivo "47773,31"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2014-04-30"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015 - recesso 30.4.2015"^^xsd:string .
+
+_:00329_aff  my_ld:affittoPassivo "97510,6"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00330_aff  my_ld:affittoPassivo "377130,93"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00331_aff  my_ld:affittoPassivo "1302776,72"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00332_aff  my_ld:affittoPassivo "181437,6"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00333_aff  my_ld:affittoPassivo "100479,92"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00334_aff  my_ld:affittoPassivo "205181,76"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00335_aff  my_ld:affittoPassivo "378524,04"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00336_aff  my_ld:affittoPassivo "727600,44"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00337_aff  my_ld:affittoPassivo "29260,05"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-01-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015 -  recesso 31.1.2015"^^xsd:string .
+
+_:00338_aff  my_ld:affittoPassivo "762076,24"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00339_aff  my_ld:affittoPassivo "1145117,76"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00340_aff  my_ld:affittoPassivo "245037,04"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00341_aff  my_ld:affittoPassivo "711448,96"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00342_aff  my_ld:affittoPassivo "520040,16"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00343_aff  my_ld:affittoPassivo "699981,4"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00344_aff  my_ld:affittoPassivo "347304,68"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00345_aff  my_ld:affittoPassivo "340666,56"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00346_aff  my_ld:affittoPassivo "11256,48"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-03-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015 * recesso 31.3.2015"^^xsd:string .
+
+_:00347_aff  my_ld:affittoPassivo "1086051,4"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00348_aff  my_ld:affittoPassivo "3205,82"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-02-27"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015 * recesso 27.2.2015"^^xsd:string .
+
+_:00349_aff  my_ld:affittoPassivo "65338,8"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00350_aff  my_ld:affittoPassivo "128047,22"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00351_aff  my_ld:affittoPassivo "2841,92"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00352_aff  my_ld:affittoPassivo "156380"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
+
+_:00353_aff  my_ld:affittoPassivo "976936,96"^^xsd:float ;
+             time:hasBeginning  "2015-01-01"^^xsd:date ;
+             time:hasEnd "2015-12-31"^^xsd:date ;
+             my_ld:noteAffitto "importo previsto per l'anno 2015"^^xsd:string .
