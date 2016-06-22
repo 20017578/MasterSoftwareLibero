@@ -48,7 +48,6 @@ def crea_triple(prefSoggetto,soggetto,listaProprieta,corrispondenzeProprieta,lis
                         # print lod_object
                         # print object
                         if object[-5:] == '<uri>':
-                            # object=' '+object[:-5]+'"'+cerca_istanza(row[i],campi[n_campi_config*9+(j-1)])+'"'   # Se nel csv il tipo di oggetto è una URI occorre andare a cercare la corrispondenza
                             object = ' ' + object[:-5] + '"' + row[i] + '"'
                         else:
                             object = ' "' + row[i] + '"' + listaOggetti[j - 1]
@@ -61,8 +60,6 @@ def crea_triple(prefSoggetto,soggetto,listaProprieta,corrispondenzeProprieta,lis
                             tripla = aggiungi_spazi(nSpazi)+tripla
                         triple.append(tripla)
                     i = i + 1
-                #if soggPred <> "null":
-                    #f_lod.write(soggPred + "  " + prefSoggetto + nodo + " .\n")
     i=len(triple)
     if i>0:
         ultimaTripla=triple[i-1]
@@ -77,18 +74,6 @@ def aggiungi_spazi(ns):
         s=s+' '
         i=i+1
     return s
-
-def ordina_csv(f_name,separatore,intestazione,colonna):    #DELETE
-    file_csv=open(f_name,'rb')
-    data=csv.reader(file_csv,delimiter=separatore)
-    print data
-    sortedlist=sorted(data,key=operator.itemgetter(int(colonna)))
-    f_name='sorted_'+f_name
-    with open(f_name,'wb') as f:
-        f_write=csv.writer(f,delimiter=separatore)
-        for row in sortedlist:
-            f_write.writerow(row)
-    return
 
 def occorrenzeFiglia(id,tabFigliaName,separatore,colonnaFiglia):
     file_csv = open(tabFigliaName, 'rb')
@@ -187,26 +172,6 @@ def leggi_configurazione(nomeFileConfig):
 
     return
 
-
-# FUNZIONE PER LA RICERCA DEGLI OGGETTI SU OPENDATA ESTERNI A SECONDA DEL PARAMETRO PASSATO
-# in lavorazione ............................ da togliere ???????
-def cerca_istanza(stringa_da_cercare,ind_corrispondenza):    #DELETE
-    print'---------------------------'
-    print 'funzione: cerca_istanza'
-    print stringa_da_cercare
-    print ind_corrispondenza
-    print'---------------------------'
-    stringa_opendata=stringa_da_cercare
-    return stringa_opendata
-
-def calcola_hash(stringa):
-    c_hash=hashlib.sha224(stringa).hexdigest()
-    return c_hash
-
-
-
-
-
 ###################################################################################################################################
 #                           FINE FUNZIONI , INIZIO PROGRAMMA PRINCIPALE                                                           #
 ###################################################################################################################################
@@ -266,12 +231,10 @@ while i<profondita:
     if i>0:
         lista_tabelle[i-1][7]=nomeFile
     separatore = raw_input("Inserire il carattere separatore ( scrivere TAB per il carattere di tabulazione) : ")
-    separatore = ';'                      #TOGLIERE
     if separatore == "TAB":
         separatore = '\t'
     stringa = "La prima riga del file " + nomeFile + " e' una riga di intestazione dei campi (s/n) ? "
     intestazione = raw_input(stringa)
-    intestazione = 's'                      #TOGLIERE
     with open(nomeFile, 'rb') as csvfile:
         reader = csv.reader(csvfile, delimiter=separatore)
         n_record = 0                                    # n_record conterrà il numero di record da elaborare
