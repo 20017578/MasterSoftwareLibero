@@ -4,5 +4,5 @@ Property type;Complete address;City;URI-address;;;;;Description;Name;Intended us
 ;;;Nodo presente nel dataset dei numeri civici;;;;;;;;Identificativo interno se utilizzato dall'ente;;;;;;;;;;;;;;
 ;;;;;;;;;;;Identifier if used by the organization;;;;;;;;;;;;;;
 _:tipoImmobile;locn:fullAddress;gn:locatedIn;locn:Address;_:foglio;_:particella;_:subalterno;_:categoriaCatastale;_:descrizione;_:denominazione;_:destUso;_:idInterno;_:mq;_:percPossesso;time:hasBeginning ;time:hasEnd;_:affittoAttivo;_:affittoPassivo;_:tipoContratto;_:linkContratto;time:hasBeginning ;time:hasEnd;_:noteAffitto;_:altriProprietari;_:locatario;_:locatore
-string;string;spcdata:<uri>;my_ld:<uri>;string;string;string;string;string;string;string;string;float;float;date;date;float;float;string;anyURI;date;date;string;string;string;string
+string;string;spcdata:<uri>;my_ld_address:<uri>;string;string;string;string;string;string;string;string;float;float;date;date;float;float;string;anyURI;date;date;string;string;string;string
 ;;http://spcdata.digitpa.gov.it/;http://myspace;;;;;;;;;;;;;;;;;;;;;;
