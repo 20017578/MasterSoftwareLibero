@@ -236,7 +236,7 @@ if tipoLOD=='1':
     prefissoSoggetto=''
     profondita = 1     # rimettere a 1
 if tipoLOD=='2':
-    suffisso_file='indicatore_pag'
+    suffisso_file='indicatori_pag'
     prefissoSoggetto='spcdata:'
     profondita = 2
 if tipoLOD=='3':
