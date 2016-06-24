@@ -1,0 +1,358 @@
+id_immobile;CAMPO_SPCDATA;Comune;Indirizzo;uri_indirizzi_torino;Perc_possesso;Descrizione;Note;Destinazione d'uso;id_affitti
+00001;;Cerano Novarese;Localita' Molino Vecchio;;100;Terreni (Ex Gioventu' Italiana);;;00001_aff
+00002;Comune/L219;Torino;Viale Settimio Severo n. 65;105365;100;"Complesso ex Opera Universitaria dell'Universita' di Torino denominato   ""Villa Gualino""";;;00002_aff
+00003;Comune/A182;Alessandria;Frazione San Michele, Via O. Remotti n. 67;;100;Terreni con entrostanti fabbricati;;;00003_aff
+00004;Comune/A182;Alessandria;Via Amendola n. 1;;100;Fabbricato ad uso uffici;;;00004_aff
+00005;Comune/A182;Alessandria;Via Guasco ang. Piazza Libertà;;100;Fabbricato ad uso uffici e commerciale;;;00005_aff
+00006;;Carpeneto e Roccagrimalda;Carpeneto e Roccagrimalda;;100;"Azienda Agricola ""La Cannona""";;;00006_aff
+00007;Comune/B847;Cartosio;Località Arbiglia;;100;Terreni e fabbricato;;;00007_aff
+00008;Comune/F281;Molare;Molare;;100;Terreni boscati;;;00008_aff
+00009;Comune/F965;Novi Ligure;Via Edilio Raggio n. 95;;100;"Quota indivisa del 35% dell'immobile del ""Centro di Assistenza e Pronto Intervento""";;;00009_aff
+00010;Comune/L881;Vignale Monferrato;Via Aldo Bergamaschino;;100;"Fabbricato denominato ""Palazzo Callori""";;;00010_aff
+00011;Comune/B306;Buttigliera d'Asti;Via Riva n. 6;;100;"Terreni con entrostante fabbricato ad uso sociale denominato ""Ex Colonia Maffei""";;;00011_aff
+00012;Comune/A859;Biella;Via Ivrea n. 20;;100;"Porzione di fabbricato ad uso uffici, denominato ""Ex Macello""";;;00012_aff
+00013;Comune/H662;Sagliano Micca;Via Giuseppe Verdi;;100;"Terreni e fabbricati denominato  ""Incubatoio ittico""";;;00013_aff
+00014;Comune/D271;Demonte;Località Castello;;100;Terreno con annessi fabbricati;;;00014_aff
+00015;Comune/D742;Fossano;Via Mondovì n. 19;;100;Complesso immobiliare;;;00015_aff
+00016;Comune/C497;Ceres;P.zza IV Novembre n. 4;;100;"Terreni con entrostante fabbricato denominato ""Ex Colonia Montana Villa Broglia""";;;00016_aff
+000171;Comune/D373;Druento;Druento;;100;"Tenuta ""I Laghi""";;;000171_aff
+000172;Comune/L727;Venaria Reale;Venaria Reale;;100;"Tenuta ""La Mandria""";;;000172_aff
+000181;Comune/D933;Gassino Torinese;Gassino Torinese;;100;Terreni - opere di compensazione ambientale;;;000181_aff
+000182;Comune/I703;Settimo Torinese;Settimo Torinese;;100;Terreni - opere di compensazione ambientale;;;000182_aff
+00019;Comune/F335;Moncalieri;Località Vallere, C.so Trieste;;100;Terreni con entrostante fabbricato;;;00019_aff
+00020;Comune/G087;Orbassano;Strada Rivalta n. 50;;100;"Terreno con entrostante fabbricato ad uso ufficio denominato ""Istituto Ceppi""";;;00020_aff
+00021;Comune/G087;Orbassano;Orbassano;;100;"Terreni ""Interporto Torino - Orbassano""";;;00021_aff
+00022;;Rivalta;Rivalta;;100;"Terreni ""Interporto Torino - Orbassano""";;;00022_aff
+00023;Comune/E216;Grugliasco;Grugliasco;;100;"Terreni ""Interporto Torino - Orbassano""";;;00023_aff
+00024;Comune/H355;Rivoli;Rivoli;;100;"Terreni ""Interporto Torino - Orbassano""";;;00024_aff
+00025;Comune/L219;Torino;Torino;;100;"Terreni ""Interporto Torino - Orbassano""";;;00025_aff
+00026;Comune/H555;Roure;Borgo Selleries;;100;"Complesso Immobiliare denominato ""Albergo Rifugio Selleries""";;;00026_aff
+00027;;San Bernardino di Trana;Strada Giaveno n. 40;;100;Giardino Botanico Rea;;;00027_aff
+00028;Comune/I466;Sauze d'Oulx;Via Richardette n. 63;;100;"Complesso Immobiliare denominato ""Stazione Sperimentale Alpina""";;;00028_aff
+00029;Comune/L219;Torino;Piazza Castello n. 161/165;;100;Fabbricato ad uso uffici;;;00029_aff
+00030;Comune/L219;Torino;Via Garibaldi n. 2;29823;100;Fabbricato ad uso uffici;;;00030_aff
+00031;Comune/L219;Torino;Via Garibaldi  4;29796;100;Unità Immobiliare;;;00031_aff
+00032;Comune/L219;Torino;Via XX Settembre 74;113857;100;Unità Immobiliare;;;00032_aff
+00033;Comune/L219;Torino;Via Palazzo di Città 7;79505;100;Unità Immobiliare;;;00033_aff
+00034;Comune/L219;Torino;Via Farinelli n. 25;47033;100;"Complesso  ospedaliero denominato ""Presidio Sanitario Vittorio Valletta""";;;00034_aff
+00035;Comune/L219;Torino;Via Maria Vittoria n.  35;67285;100;Unità Immobiliare;;;00035_aff
+00036;Comune/L277;Torre Pellice;Corso Jacopo Lombardini;;100;Impianto olimpico Palaghiaccio;;;00036_aff
+00037;Comune/L727;Venaria Reale;Venaria Reale;;100;Parte del Compendio della Ferrovia Torino -Ceres;;;00037_aff
+00038;Comune/L727;Venaria Reale;Venaria Reale;;100;Terreno;;;00038_aff
+00039;Comune/L727;Venaria Reale;Via XX Settembre n. 7;;100;"Fabbricato denominato ""Galoppatoio La Marmora""";;;00039_aff
+00040;Comune/L727;Venaria Reale;Viale Carlo Emanuele II n. 135/A;;100;"Complesso immobiliare denominato ""Cascina Parco Basso""";;;00040_aff
+00041;Comune/M007;Villar Focchiardo;Via Montebenedetto;;100;Complesso monumentale della Certosa di Montebenedetto;;;00041_aff
+00042;Comune/M013;Villar Pellice;Piazza Jervis n. 1;;100;"Complesso  immobiliare ad uso ricettivo denominato  ""La Crumiere""";;;00042_aff
+00043;Comune/C478;Ceppo Morelli;Via Pianale n. 4;;100;Terreno e fabbricato;;;00043_aff
+00044;Comune/L746;Verbania;Via Vittorio Veneto;;100;"Terreno con entrostante fabbricato ad uso uffici denominato ""Villa San Remigio""";;;00044_aff
+00045;Comune/A130;Albano Vercellese;Via XX Settembre n. 2-4;;100;"Terreno con entrostante fabbricato ""Parco Naturale del Lame del Sesia""";;;00045_aff
+00046;Comune/G018;Oldenico;Oldenico;;100;"Terreno  ""l'Isolone""";;;00046_aff
+00047;Comune/L750;Vercelli;Via Fratelli Ponti n. 24 e  Via F.lli Garrone n. 15;;100;"Porzioni immobiliari ad uso uffici  facenti parte del fabbricato denominato ""Palazzo Verga""";;;00047_aff
+00048;Comune/L750;Vercelli;Corso Rigola n. 150;;100;"Terreno con entrostante fabbricato ""Ex Colonia Elioterapica Fluviale""";;;00048_aff
+00049;Comune/L750;Vercelli;Via Borasio n. 4 e n.  6;;100;Immobile;;;00049_aff
+00050;Comune/L750;Vercelli;Via Marsala n. 8;;100;Unità Immobiliare;;;00050_aff
+00051;Comune/L219;Torino;Corso Casale n. 476;7153;100;"Terreni e fabbricati denominati ""Tenuta Millerose"" (TO)";;;00051_aff
+00052;;Grignasco e Prato Sesia;Grignasco e Prato Sesia (NO);;100;"Terreni e fabbricati denominati ""Tenuta Spazzacamini (NO)";;;00052_aff
+00053;;Valenza Po;Valenza Po (AL);;100;Terreni con entrostante fabbricato;;;00053_aff
+00054;Comune/D771;Frascarolo;Frascarolo (PV);;100;Terreni con entrostante fabbricato;;;00054_aff
+00055;Comune/B080;Bosio;Bosio;;100;Foreste con entrostanti fabbricati;;;00055_aff
+00056;Comune/B882;Casaleggio Boiro;Casaleggio Boiro;;100;Foreste con entrostanti fabbricati;;;00056_aff
+00057;Comune/E543;Lerma;Lerma;;100;Foreste con entrostanti fabbricati;;;00057_aff
+00058;Comune/F281;Molare;Molare;;100;Foreste con entrostanti fabbricati;;;00058_aff
+00059;Comune/G877;Ponzone;Ponzone;;100;Foreste con entrostanti fabbricati;;;00059_aff
+00060;Comune/M123;Voltaggio;Voltaggio;;100;Foreste con entrostanti fabbricati;;;00060_aff
+00061;Comune/A107;Ailoche;Ailoche;;100;Foreste con entrostanti fabbricati;;;00061_aff
+00062;Comune/A876;Bioglio;Bioglio;;100;Foreste con entrostanti fabbricati;;;00062_aff
+00063;Comune/B417;Callabiana;Callabiana;;100;Foreste con entrostanti fabbricati;;;00063_aff
+00064;Comune/B457;Camandona;Camandona;;100;Foreste con entrostanti fabbricati;;;00064_aff
+00065;Comune/B708;Caprile;Caprile;;100;Foreste con entrostanti fabbricati;;;00065_aff
+00066;Comune/C819;Coggiola;Coggiola;;100;Foreste con entrostanti fabbricati;;;00066_aff
+00067;;Mosso Santa Maria;Mosso Santa Maria;;100;Foreste con entrostanti fabbricati;;;00067_aff
+00068;Comune/G927;Portula;Portula;;100;Foreste con entrostanti fabbricati;;;00068_aff
+00069;Comune/L436;Trivero;Trivero;;100;Foreste con entrostanti fabbricati;;;00069_aff
+00070;Comune/L620;Valle San Nicolao;Valle San Nicolao;;100;Foreste con entrostanti fabbricati;;;00070_aff
+00071;Comune/G973;Pragelato;Pragelato;;100;Foreste con entrostanti fabbricati;;;00071_aff
+00072;Comune/A834;Beura Cardezza;Beura Cardezza;;100;Foreste con entrostanti fabbricati;;;00072_aff
+00073;Comune/D099;Cossogno;Cossogno;;100;Foreste con entrostanti fabbricati;;;00073_aff
+00074;Comune/D225;Cursolo Orasso;Cursolo Orasso;;100;Foreste con entrostanti fabbricati;;;00074_aff
+00075;Comune/F192;Miazzina;Miazzina;;100;Foreste con entrostanti fabbricati;;;00075_aff
+00076;Comune/H037;Premosello Chiovenda;Premosello Chiovenda;;100;Foreste con entrostanti fabbricati;;;00076_aff
+00077;Comune/E237;Guardabosone;Guardabosone;;100;Foreste con entrostanti fabbricati;;;00077_aff
+00078;Comune/G940;Postua;Postua;;100;Foreste con entrostanti fabbricati;;;00078_aff
+00079;Comune/B629;Cantalupo Ligure;Cantalupo Ligure;;100;Vivai;;;00079_aff
+00080;Comune/D447;Fabbrica Curone;Fabbrica Curone;;100;Vivai;;;00080_aff
+00081;Comune/C653;Chiusa di Pesio;Chiusa di Pesio;;100;Vivai;;;00081_aff
+00082;Comune/M055;Vinadio;Vinadio;;100;Vivai;;;00082_aff
+00083;Comune/D532;Fenestrelle;Fenestrelle;;100;Vivai;;;00083_aff
+00084;Comune/L779;Verolengo;Verolengo;;100;Vivai;;;00084_aff
+00085;Comune/A130;Albano Vercellese;Albano Vercellese;;100;Vivai;;;00085_aff
+00086;Comune/L669;Varallo;Varallo;;100;Vivai;;;00086_aff
+00087;Comune/L727;Venaria Reale;Venaria Reale;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00087_aff
+00088;Comune/L779;Verolengo;Verolengo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00088_aff
+00089;Comune/L811;Vestigne';Vestignè;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00089_aff
+000901;Comune/M004;Villareggia;Villareggia;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;000901_aff
+000902;Comune/A130;Albano Vercellese;Albano Vercellese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;000902_aff
+00091;Comune/A198;Alice Castello;Alice Castello;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00091_aff
+00092;Comune/A466;Asigliano Vercellese;Asigliano Vercellese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00092_aff
+00093;Comune/A601;Balocco;Balocco;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00093_aff
+00094;Comune/A847;Bianze';Bianzè;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00094_aff
+00095;Comune/B009;Borgo d'Ale;Borgo d'Ale;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00095_aff
+00096;Comune/B046;Borgo Vercelli;Borgo Vercelli;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00096_aff
+00097;Comune/B280;Buronzo;Buronzo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00097_aff
+00098;Comune/B767;Caresana;Caresana;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00098_aff
+00099;Comune/B782;Carisio;Carisio;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00099_aff
+00100;Comune/B928;Casanova Elvo;Casanova Elvo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00100_aff
+00101;Comune/C680;Cigliano;Cigliano;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00101_aff
+00102;Comune/D113;Costanzana;Costanzana;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00102_aff
+00103;Comune/D154;Crescentino;Crescentino;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00103_aff
+00104;Comune/D187;Crova;Crova;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00104_aff
+00105;Comune/D281;Desana;Desana;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00105_aff
+00106;Comune/D676;Fontanetto Po;Fontanetto Po;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00106_aff
+00107;Comune/D712;Formigliana;Formigliana;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00107_aff
+00108;Comune/E163;Greggio;Greggio;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00108_aff
+00109;Comune/E433;Lamporo;Lamporo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00109_aff
+00110;Comune/E583;Lignana;Lignana;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00110_aff
+00111;Comune/E626;Livorno Ferraris;Livorno Ferraris;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00111_aff
+00112;Comune/F342;Moncrivello;Moncrivello;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00112_aff
+00113;;Motta dei Conti;Motta dei Conti;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00113_aff
+00114;Comune/G266;Palazzolo Vercellese;Palazzolo Vercellese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00114_aff
+00115;Comune/G471;Pertengo;Pertengo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00115_aff
+00116;Comune/G528;pezzana;pezzana;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00116_aff
+00117;Comune/H132;Quinto Vercellese;Quinto Vercellese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00117_aff
+00118;Comune/H346;Rive;Rive;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00118_aff
+00119;Comune/H549;Ronsecco;Ronsecco;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00119_aff
+00120;Comune/H690;Salasco;Salasco;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00120_aff
+00121;Comune/H725;Saluggia;Saluggia;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00121_aff
+00122;Comune/H861;San Germano Vercellese;San Germano Vercellese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00122_aff
+00123;Comune/I337;Santhia';Santhià;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00123_aff
+00124;Comune/I984;Stroppiana;Stroppiana;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00124_aff
+00125;Comune/L420;Tricerro;Tricerro;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00125_aff
+00126;;Trino Vercellese;Trino Vercellese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00126_aff
+00127;Comune/L451;Tronzano Vercellese;Tronzano Vercellese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00127_aff
+00128;Comune/L750;Vercelli;Vercelli;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00128_aff
+00129;Comune/M003;Villarboit;Villarboit;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00129_aff
+00130;;;Argentina,Provincia di Cordoba, San Francisco, Avenida Libertador (S), 466;;100;"Immobile denominato ""Casa Losana""";;;00130_aff
+00131;Comune/L304;Tortona;Via Marsala;;100;Fabbricato  (Ex Caserma Passalacqua);;;00131_aff
+00132;Comune/F965;Novi Ligure;Via Carducci n. 8;;100;Terreno con entrostante fabbricato ad uso uffici  - CFP (Ex Inapli);;;00132_aff
+00133;Comune/L304;Tortona;Via Matteotti n. 13;;100;Unita' Immobiliari (Ex Ente nazionale lavoratori rimpatriati e profughi);;;00133_aff
+00134;Comune/L193;Tollegno;Localita' Bazzera;;100;Terreni (Ex Gioventu' Italiana);;;00134_aff
+00135;Comune/C589;Ceva;Via IV Novembre n. 13 ang. Via Regina Margherita n. 4;;100;Fabbricato ad uso uffici (Ex Gioventu' Italiana);;;00135_aff
+00136;Comune/A651;Bardonecchia;Viale della Vittoria n. 42;;100;"Terreno con entrostante fabbricato denominato ""Ex Colonia Medail"" (Ex Gioventu' Italiana)";;;00136_aff
+00137;Comune/L219;Torino;Via Petrarca n.  44;81872;100;Fabbricato ad uso uffici (Ex Esap);;;00137_aff
+00138;Comune/L219;Torino;Via Principe Amedeo n. 17;62660;100;Fabbricato ad uso uffici (Ex Enalc);;;00138_aff
+00139;Comune/L219;Torino;Corso Principe Eugenio n. 36;124786;100;Unita' immobiliarI ad uso uffici (Ex Eam);;;00139_aff
+00140;Comune/L779;Verolengo;Localita' Casa Bianca;;100;Terreni (Ex Gioventu' Italiana);;;00140_aff
+00141;Comune/D205;Cuneo;Corso IV Novembre 14/16;;100;"Terreno con entrostante fabbricato scolastico ed impianti sportivi ""Ex casa della Gioventu' Italiana""";;;00141_aff
+00142;Comune/H518;Romentino;Romentino;;100;Realizzazione sub tratta Novara - Milano della tratta AV/AC Torino - Milano. Terreni per opere di mitigazione ambientale;Decreto di esproprio n. 42/2011del 2.3.2011;;00142_aff
+00143;;Moncalieri e Trofarello;Moncalieri e Trofarello;;100;Terreni per lavori di sistemazione idraulica sul Rio Sauglio;Atto rep. 261371/23419 del 28.3.1994 e atto rep. 262930/23885 del 29.11.1994;;00143_aff
+00144;Comune/A182;Alessandria;Alessandria;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00144_aff
+00145;Comune/A605;Balzola;Balzola;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00145_aff
+00146;Comune/B029;Borgoratto Alessandrino;Borgoratto Alessandrino;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00146_aff
+00147;Comune/B885;Casale Monferrato;Casale Monferrato;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00147_aff
+00148;Comune/C027;Cassine;Cassine;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00148_aff
+00149;Comune/C148;Castellazzo Bormida;Castellazzo Bormida;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00149_aff
+00150;Comune/D770;Frascaro;Frascaro;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00150_aff
+00151;Comune/D780;Frassineto Po;Frassineto Po;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00151_aff
+00152;Comune/D890;Gamalero;Gamalero;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00152_aff
+00153;Comune/F232;Mirabello Monferrato;Mirabello Monferrato;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00153_aff
+00154;Comune/F707;Morano sul Po;Morano sul Po;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00154_aff
+00155;Comune/F995;Occimiano;Occimiano;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00155_aff
+00156;Comune/I711;Sezzadio;Sezzadio;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00156_aff
+00157;Comune/L972;Villanova Monferrato;Villanova Monferrato;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00157_aff
+00158;Comune/B229;Brusnengo;Brusnengo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00158_aff
+00159;Comune/C155;Castelletto Cervo;Castelletto Cervo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00159_aff
+00160;Comune/C363;Cavaglia';Cavaglià;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00160_aff
+00161;Comune/D094;Cossato;Cossato;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00161_aff
+00162;Comune/E024;Gifflenga;Gifflenga;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00162_aff
+00163;Comune/F037;Massazza;Massazza;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00163_aff
+00164;Comune/F042;Masserano;Masserano;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00164_aff
+00165;Comune/F776;Mottalciata;Mottalciata;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00165_aff
+00166;Comune/H726;Salussola;Salussola;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00166_aff
+00167;Comune/L978;Villanova Biellese;Villanova Biellese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00167_aff
+00168;Comune/B111;Bra;Bra;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00168_aff
+00169;;Caramagna;Caramagna;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00169_aff
+00170;Comune/C466;Centallo;Centallo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00170_aff
+00171;Comune/C550;Cervere;Cervere;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00171_aff
+00172;Comune/D742;Fossano;Fossano;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00172_aff
+00173;Comune/H150;Racconigi;Racconigi;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00173_aff
+00174;Comune/A752;Bellinzago Novarese;Bellinzago Novarese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00174_aff
+00175;Comune/A844;Biandrate;Biandrate;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00175_aff
+00176;Comune/B183;Briona;Briona;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00176_aff
+00177;;Caltignana;Caltignana;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00177_aff
+00178;Comune/B473;Cameri;Cameri;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00178_aff
+00179;Comune/B823;Carpignano Sesia;Carpignano Sesia;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00179_aff
+00180;Comune/B864;Casalbeltrame;Casalbeltrame;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00180_aff
+00181;;Casaleggio;Casaleggio;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00181_aff
+00182;Comune/B897;Casalino;Casalino;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00182_aff
+00183;Comune/B920;Casalvolone;Casalvolone;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00183_aff
+00184;Comune/C483;Cerano;Cerano;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00184_aff
+00185;Comune/D872;Galliate;Galliate;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00185_aff
+00186;Comune/D911;Garbagna Novarese;Garbagna Novarese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00186_aff
+00187;Comune/E001;Ghemme;Ghemme;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00187_aff
+00188;Comune/E143;Granozzo con Monticello;Granozzo con Monticello;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00188_aff
+00189;Comune/E436;Landiona;Landiona;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00189_aff
+00190;Comune/E907;Marano Ticino;Marano Ticino;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00190_aff
+00191;Comune/F952;Novara;Novara;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00191_aff
+00192;Comune/G019;Oleggio;Oleggio;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00192_aff
+00193;Comune/G809;Pombia;Pombia;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00193_aff
+00194;Comune/H213;Recetto;Recetto;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00194_aff
+00195;Comune/H518;Romentino;Romentino;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00195_aff
+00196;Comune/I052;San Nazzaro Sesia;San Nazzaro Sesia;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00196_aff
+00197;Comune/I116;San Pietro Mosezzo;San Pietro Mosezzo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00197_aff
+00198;Comune/I736;Sillavengo;Sillavengo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00198_aff
+00199;Comune/I880;Sozzago;Sozzago;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00199_aff
+00200;Comune/L104;Terdobbiate;Terdobbiate;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00200_aff
+00201;Comune/L223;Tornaco;Tornaco;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00201_aff
+00202;Comune/L356;Trecate;Trecate;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00202_aff
+00203;Comune/L670;Varallo Pombia;Varallo Pombia;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00203_aff
+00204;Comune/L847;Vicolungo;Vicolungo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00204_aff
+00205;Comune/M062;Vinzaglio;Vinzaglio;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00205_aff
+00206;Comune/A074;Aglie';Agliè;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00206_aff
+00207;Comune/A157;Albiano d'Ivrea;Albiano d'Ivrea;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00207_aff
+00208;Comune/A525;Azeglio;Azeglio;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00208_aff
+00209;Comune/A584;Bairo;Bairo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00209_aff
+00210;Comune/A673;Barone Canavese;Barone Canavese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00210_aff
+00211;Comune/B021;Borgomasino;Borgomasino;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00211_aff
+00212;Comune/B225;Brusasco;Brusasco;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00212_aff
+00213;Comune/B435;Caluso;Caluso;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00213_aff
+00214;Comune/B733;Caravino;Caravino;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00214_aff
+00215;Comune/B791;Carmagnola;Carmagnola;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00215_aff
+00216;Comune/C045;Castagneto Po;Castagneto Po;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00216_aff
+00217;Comune/C133;Castellamonte;Castellamonte;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00217_aff
+00218;Comune/C369;Cavagnolo;Cavagnolo;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00218_aff
+00219;Comune/C665;Chivasso;Chivasso;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00219_aff
+00220;Comune/C860;Collegno;Collegno;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00220_aff
+00221;Comune/D373;Druento;Druento;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00221_aff
+00222;Comune/D725;Forno Canavese;Forno Canavese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00222_aff
+00223;Comune/E379;Ivrea;Ivrea;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00223_aff
+00224;Comune/E484;Lauriano;Lauriano;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00224_aff
+00225;Comune/E817;Maglione;Maglione;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00225_aff
+00226;Comune/F067;Mazze';Mazzè;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00226_aff
+00227;Comune/F411;Montalenghe;Montalenghe;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00227_aff
+00228;Comune/F651;Monteu da Po;Monteu da Po;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00228_aff
+00229;Comune/G109;Orio Canavese;Orio Canavese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00229_aff
+00230;Comune/G559;Pianezza;Pianezza;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00230_aff
+00231;Comune/H367;Robassomero;Robassomero;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00231_aff
+00232;Comune/H890;San Giorgio Canavese;San Giorgio Canavese;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00232_aff
+00233;;San Sebastiano Po;San Sebastiano Po;;100;Canali demaniali di Irrigazione;In uso ai Consorzi di Irrigazione e bonifica;;00233_aff
+00234;Comune/A052;Acqui Terme;Acqui Terme;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00234_aff
+00235;Comune/A182;Alessandria;Alessandria;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00235_aff
+00236;Comune/C005;Cassano Spinola;Cassano Spinola;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00236_aff
+00237;Comune/C158;Castelletto d'Orba;Castelletto d'Orba;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00237_aff
+00238;Comune/F518;Montegioco;Montegioco;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00238_aff
+00239;Comune/I144;San Salvatore Monferrato;San Salvatore Monferrato;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00239_aff
+00240;Comune/I711;Sezzadio;Sezzadio;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00240_aff
+00241;Comune/I911;Spineto Scrivia;Spineto Scrivia;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00241_aff
+00242;Comune/L570;Valenza;Valenza;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00242_aff
+00243;Comune/L881;Vignale Monferrato;Vignale Monferrato;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00243_aff
+00244;Comune/M123;Voltaggio;Voltaggio;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00244_aff
+00245;;Agliano;Agliano;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00245_aff
+00246;Comune/C230;Castelnuovo Calcea;Castelnuovo Calcea;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00246_aff
+00247;Comune/C232;Castelnuovo Don Bosco;Castelnuovo Don Bosco;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00247_aff
+00248;Comune/D119;Costigliole d'Asti;Costigliole d'Asti;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00248_aff
+00249;;Montechiaro;Montechiaro;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00249_aff
+00250;;Montiglio;Montiglio;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00250_aff
+00251;Comune/A859;Biella;Biella;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00251_aff
+00252;Comune/D339;Donato;Donato;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00252_aff
+00253;Comune/E130;Graglia;Graglia;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00253_aff
+00254;Comune/A571;Bagnolo Piemonte;Bagnolo Piemonte;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00254_aff
+00255;;Borgo San Dalmazzo e Roccasparvera;Borgo San Dalmazzo e Roccasparvera;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00255_aff
+00256;Comune/B285;Busca;Busca;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00256_aff
+00257;Comune/C653;Chiusa di Pesio;Chiusa di Pesio;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00257_aff
+00258;Comune/D205;Cuneo;Cuneo;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00258_aff
+00259;Comune/D920;Garessio;Garessio;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00259_aff
+00260;Comune/G114;Ormea;Ormea;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00260_aff
+00261;Comune/H377;Robilante;Robilante;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00261_aff
+00262;;Robourent;Robourent;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00262_aff
+00263;Comune/H407;Roccaforte Mondovi';Roccaforte Mondovì;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00263_aff
+00264;Comune/H812;San Damiano Macra;San Damiano Macra;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00264_aff
+00265;Comune/L558;Valdieri;Valdieri;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00265_aff
+00266;;Vinadio Provincia di Novara:Galliate;Vinadio Provincia di Novara:Galliate;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00266_aff
+00267;Comune/G020;Oleggio Castello;Oleggio Castello;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00267_aff
+002681;Comune/L670;Varallo Pombia;Varallo Pombia;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;002681_aff
+002682;Comune/A599;Balme;Balme;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;002682_aff
+00269;Comune/B015;Borgofranco d'Ivrea;Borgofranco d'Ivrea;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00269_aff
+00270;Comune/B705;Caprie;Caprie;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00270_aff
+00271;Comune/C045;Castagneto Po;Castagneto Po;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00271_aff
+00272;Comune/C722;Cirie';Ciriè;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00272_aff
+00273;Comune/E020;Giaveno;Giaveno;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00273_aff
+00274;Comune/E758;Luserna San Giovanni;Luserna San Giovanni;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00274_aff
+00275;Comune/H554;Rora';Rorà;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00275_aff
+00276;Comune/L538;Vaie;Vaie;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00276_aff
+00277;;Villardora;Villardora;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00277_aff
+00278;Comune/A325;Anzola d'Ossola;Anzola d'Ossola;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00278_aff
+00279;Comune/A534;Baceno;Baceno;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00279_aff
+00280;Comune/A725;Baveno;Baveno;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00280_aff
+00281;Comune/A925;Bognanco;Bognanco;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00281_aff
+00282;Comune/B615;Cannobio;Cannobio;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00282_aff
+00283;Comune/D177;Crodo;Crodo;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00283_aff
+00284;Comune/E853;Malesco;Malesco;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00284_aff
+00285;Comune/G007;Oggebbio;Oggebbio;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00285_aff
+00286;Comune/H033;Premia;Premia;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00286_aff
+00287;Comune/I976;Stresa;Stresa;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00287_aff
+00288;;Vanzone San Carlo;Vanzone San Carlo;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00288_aff
+00289;Comune/L746;Verbania;Verbania;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00289_aff
+00290;Comune/B928;Casanova Elvo;Casanova Elvo;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00290_aff
+00291;;Quarona Sesia;Quarona Sesia;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00291_aff
+00292;Comune/H291;Rima San Giuseppe;Rima San Giuseppe;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00292_aff
+00293;Comune/L451;Tronzano Vercellese;Tronzano Vercellese;;100;Acque minerali, termali, cave e torbiere;Per alcuni sussiste concessione di sfruttamento a favore di terzi;;00293_aff
+00294;Comune/H247;Revello;Località La Fornace Via Staffarda n. 54, Revello;;100;"Immobili  costituenti il contesto storico -agricolo della ""Tenuta di Staffarda"" entro i confini del Parco Naturale del Po - Tratto Cuneese";;;00294_aff
+00295;Comune/I025;San Maurizio d'Opaglio;Località Lagna;;100;Terreni;;;00295_aff
+00296;Comune/C361;Cava de' Tirreni;C.so Re Umberto I n. 45;;100;Unità Immobiliare;;;00296_aff
+00297;Comune/C564;Cesana Torinese;San Sicario;;100;Complesso immobiliare olimpico per il Biathlon comprendente anche l'ex Colonia Italsider;;;00297_aff
+00298;Comune/C665;Chivasso;Frazione Mandria n. 8;;100;"Complesso  denominato ""Ex Tenuta Sabauda La Mandria""";;;00298_aff
+00299;Comune/G196;Oulx;Corso Montenero n. 57;;100;Porzione di fabbricato;;;00299_aff
+00300;Comune/G600;Piedimulera;Via Pallanzeno n. 104;;100;Terreno e fabbricato;;;00300_aff
+00301;Comune/A429;Arona ;Arona ;;100;Porti lacuali e stazione lacuale;;;00301_aff
+00302;Comune/G134;Orta San Giulio ;Orta San Giulio ;;100;Porti lacuali e stazione lacuale;;;00302_aff
+00303;Comune/G421;Pella ;Pella ;;100;Porti lacuali e stazione lacuale;;;00303_aff
+00304;Comune/G520;Pettenasco;Pettenasco;;100;Porti lacuali e stazione lacuale;;;00304_aff
+00305;Comune/A742;Belgirate ;Belgirate ;;100;Porti lacuali e stazione lacuale;;;00305_aff
+00306;;Verbania Intra;Verbania Intra;;100;Porti lacuali e stazione lacuale;;;00306_aff
+00307;;;Belgio, Bruxelles, Rue du Trone n. 62;;100;Porzione dell'immobile;;;00307_aff
+00308;Comune/A182;Alessandria;Piazza Filippo Turati;;100;Porzione di fabbricato ad uso uffici;;;00308_aff
+00309;Comune/F952;Novara;Viale Mora e Gibin n. 4;;100;Fabbricato ad uso uffici e impianti sportivi (Ex Gioventu' Italiana);;;00309_aff
+00310;Comune/C722;Cirie';Via del Battitore n. 82;;100;Terreno con entrostante fabbricato ad uso uffici (Ex Inapli);;;00310_aff
+00311;Comune/C793;Claviere;Strada Nazionale n. 31;;100;Fabbricato ex colonia montana - Casa Alpina (Ex Gioventu' Italiana);;;00311_aff
+00312;Comune/L219;Torino;Piazza Bernini n. 12;25631;100;Fabbricato ad uso uffici ed impianti sportivi (Ex Gioventu' Italiana);;;00312_aff
+00313;Comune/H468;Rocchetta Tanaro;Casale Gatti;;100;"Terreno con entrostante fabbricato  denominato    ""Regione Valbenenta""";;;00313_aff
+00314;Comune/A859;Biella;Rione Piazzo Piazza Cisterna n. 9;;100;"Immobile denominato ""Palazzo Cisterna""";;;00314_aff
+00315;Comune/D920;Garessio;Frazione Casotto;;100;Complesso immobiliare del Castello Sabaudo di Casotto – già Certosa;;;00315_aff
+00316;Comune/B864;Casalbeltrame;Cascina Vallera;;100;"Terreno con entrostanti fabbricato denominato ""Palude di Casalbeltrame""";;;00316_aff
+00317;Comune/F952;Novara;Regione Agogna, Via Agogna;;100;"Terreno con entrostante fabbricato denominato ""Ex colonia fluviale e solare""";;;00317_aff
+00318;Comune/F952;Novara;Viale Piazza D'Armi;;100;"Complesso immobiliare denominato ""Piazza d'Armi ed ex Polveriera""";;;00318_aff
+00319;Comune/A651;Bardonecchia;Bardonecchia;;100;Impianto sportivo HALF-PIPE;;;00319_aff
+00320;;Buttigliera Alta e Rosta;Buttigliera Alta e Rosta;;100;Terreni agricoli a contorno della Precettoria Antoniana di Sant' Antonio di Ranverso;;;00320_aff
+00321;Comune/L219;Torino;Via Nizza n. 312;;100;Area denominata ex Fiat -  Avio;;;00321_aff
+00322;Comune/L746;Verbania;Località Piano Grande, Via dell'Industria  19A e 19B;;100;Immobile;;;00322_aff
+00323;Comune/B592;Candiolo;Candiolo;;100;Immobili ricompresi nel contesto urbano e rurale del Parco Naturale di Stupinigi;;;00323_aff
+00324;Comune/F889;Nichelino;Nichelino;;100;Immobili ricompresi nel contesto urbano e rurale del Parco Naturale di Stupinigi;;;00324_aff
+00325;Comune/G087;Orbassano;Orbassano;;100;Immobili ricompresi nel contesto urbano e rurale del Parco Naturale di Stupinigi;;;00325_aff
+00326;Comune/L219;Torino;Torino;;100;Immobili ricompresi nel contesto urbano e rurale del Parco Naturale di Stupinigi;;;00326_aff
+00327;Comune/L804;Verzuolo;Via Don Orione n. 37;;100;Immobile   - Sede del C.F.P.;;;00327_aff
+00328;Comune/L219;Torino;C.so Galileo Ferraris n. 2;53914;0;;;Uffici;00328_aff
+00329;Comune/L219;Torino;C.so Massimo D'azeglio n. 42;42949;0;;;Uffici;00329_aff
+00330;Comune/L219;Torino;C.so Regina M.ta 153/bis;122244;0;;;Uffici;00330_aff
+00331;Comune/L219;Torino;C.so Stati Uniti 21;118055;0;;;Uffici;00331_aff
+00332;Comune/L219;Torino;C.so Stati Uniti 23;107457;0;;;Uffici;00332_aff
+00333;Comune/L219;Torino;Corso Grosseto n. 73/6;;0;;;Magazzino archivio;00333_aff
+00334;Comune/L219;Torino;Corso Marche n. 79;126155;0;;;Uffici;00334_aff
+00335;Comune/L219;Torino;Corso Orbassano 336;77647;0;;;Magazzino Economato;00335_aff
+00336;Comune/L219;Torino;Corso Regina Margherita n. 174;65573;0;;;uffici;00336_aff
+00337;Comune/L219;Torino;P.zza Castello 153;7918;0;;;Uffici;00337_aff
+00338;Comune/L219;Torino;Via Avogadro n. 30;14778;0;;;uffici;00338_aff
+00339;Comune/L219;Torino;Via Bertola n. 34;19194;0;;;Uffici;00339_aff
+00340;Comune/L219;Torino;Via Bogino n. 9;26008;0;;;Uffici;00340_aff
+00341;Comune/L219;Torino;Via Lagrange 24;;0;;;uffici;00341_aff
+00342;Comune/L219;Torino;Via Livorno n. 60;37722;0;;;Uffici;00342_aff
+00343;Comune/L219;Torino;Via Magenta 12;80632;0;;;Uffici;00343_aff
+00344;Comune/L219;Torino;Via Meucci 1;69594;0;;;Uffici;00344_aff
+00345;Comune/L219;Torino;Via Nizza 18;84688;0;;;Uffici;00345_aff
+00346;Comune/L219;Torino;Via Pietro Micca n. 18;69615;0;;;Uffici;00346_aff
+00347;Comune/L219;Torino;"Via Pisano 6 ""Molini Dora""";60822;0;;;uffici;00347_aff
+00348;Comune/L219;Torino;Via S. Teresa 23-2;;0;;;Uffici;00348_aff
+00349;Comune/L219;Torino;Via Sospello 193;106800;0;;;Magazzino;00349_aff
+00350;Comune/L219;Torino;Via Sospello 197/A 199;;0;;;Magazzino e uffici;00350_aff
+00351;Comune/L219;Torino;Via Sospello 199;106803;0;;;Alloggio;00351_aff
+00352;Comune/L219;Torino;Via Sospello 211;106775;0;;;Magazzino;00352_aff
+00353;Comune/L219;Torino;Via Viotti n. 8;;0;;;Uffici;00353_aff

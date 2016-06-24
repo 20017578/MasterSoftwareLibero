@@ -1,0 +1,995 @@
+# PREFISSI
+
+@prefix spcdata: <http://spcdata.digitpa.gov.it/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix my_ld: <none>  .
+
+# DEFINIZIONI
+
+my_ld:tipoStrada a rdf:property ;
+                 rdf:label “rappresenta la tipologia di strada tipicamente presente negli indirizzi prima del nome vero e proprio della via, come ad esempio: via, corso, viale, piazza, largo, località, lungomare, ….”^^xsd:string .      
+my_ld:nomeVia a rdf:property ;
+              rdf:label “Nome della via. Rappresenta il nome della strada ovvero il toponimo generalmente preceduto dal tipo di strada. In caso di vie intitolate a personaggi prima inserire il nome e poi il cognome”^^xsd:string . 
+my_ld:civicoPrincipale a rdf:property ;
+                       rdf:label “E' il valore numerico del civico escludendo da esso ogni sotto-indicazione come ad esempio le particelle bis, ter, /2 ….”^^xsd:string .
+my_ld:sottoCivico a rdf:property ;
+                  rdf:label “E' l'indicazione, se presente, che generalmente segue il valore numerico assegnato al numero civico e che indica una sottosezione derivata dal numero principale, come ad esempio 4 bis, ove bis sarà individuabile come sotto-civico del numero civico principale. Questa proprietà non è da confondersi con le indicazioni del numero interno o della scala altrettanto presenti negli indirizzi italiani e descritti in altri campi”^^xsd:string .
+my_ld:civicoInterno a rdf:property ;
+                    rdf:label “Rappresenta, ove presente, l'indicazione dell'interno derivato dall'indirizzo principale. Negli indirizzi spesso il valore da assegnare a questo campo è seguito dalle particelle int. o interno”^^xsd:string .			  
+my_ld:idScala a rdf:property ;
+              rdf:label “Rappresenta, ove presente, l'indicazione della scala derivante dall'indirizzo principale. Questa indicazione si trova sovente negli indirizzi di grossi stabili il cui civico principale si riferisce alla struttura principale del caseggiato che contiene all'interno diversi accessi, appunto suddivisi in scale”^^xsd:string .
+
+# DATI
+
+153712  a  locn:Address .
+153712  locn:fullAddress "CORSO ENRICO TAZZOLI 235 int. 8 int. 10/B, 10137 Torino"^^xsd:string ;
+        locn:postCode "10137"^^xsd:string ;
+        wgs84:lat "7.6147894204"^^xsd:float ;
+        wgs84:long "45.036599453"^^xsd:float ;
+        my_ld:tipoStrada  "CORSO"^^xsd:string ;
+        my_ld:nomeVia "ENRICO TAZZOLI"^^xsd:string ;
+        my_ld:civicoPrincipale "235"^^xsd:string ;
+        my_ld:civicoInterno "8 int. 10/B"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+153711  a  locn:Address .
+153711  locn:fullAddress "CORSO ENRICO TAZZOLI 235 int. 8 int. 16/C, 10137 Torino"^^xsd:string ;
+        locn:postCode "10137"^^xsd:string ;
+        wgs84:lat "7.6137085"^^xsd:float ;
+        wgs84:long "45.0369373601"^^xsd:float ;
+        my_ld:tipoStrada  "CORSO"^^xsd:string ;
+        my_ld:nomeVia  "ENRICO TAZZOLI"^^xsd:string ;
+        my_ld:civicoPrincipale  "235"^^xsd:string ;
+        my_ld:civicoInterno "8 int. 16/C"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151973  a  locn:Address .
+151973  locn:fullAddress "CORSO GIULIO CESARE 424 int. 51 int. 26/A, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7157144758"^^xsd:float ;
+        wgs84:long "45.1166103745"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "424"^^xsd:string ;
+        my_ld:civicoInterno "51 int. 26/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151975  a  locn:Address .
+151975  locn:fullAddress "CORSO GIULIO CESARE 424 int. 51 int. 33/A, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7146219263"^^xsd:float ;
+        wgs84:long "45.1180621972"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "424"^^xsd:string ;
+        my_ld:civicoInterno "51 int. 33/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151974  a  locn:Address .
+151974  locn:fullAddress "CORSO GIULIO CESARE 424 int. 51 int. 41/A, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7143774941"^^xsd:float ;
+        wgs84:long "45.1184284573"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "424"^^xsd:string ;
+        my_ld:civicoInterno "51 int. 41/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+152829  a  locn:Address .
+152829  locn:fullAddress "CORSO GROSSETO 366 int. 16 int. 4/A, 10151 Torino"^^xsd:string ;
+        locn:postCode "10151"^^xsd:string ;
+        wgs84:lat "7.6465970266"^^xsd:float ;
+        wgs84:long "45.1071890394"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GROSSETO"^^xsd:string ;
+        my_ld:civicoPrincipale "366"^^xsd:string ;
+        my_ld:civicoInterno "16 int. 4/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+87500  a  locn:Address .
+87500  locn:fullAddress "VIA MALTA 36 int. 10 bis, 10141 Torino"^^xsd:string ;
+        locn:postCode "10141"^^xsd:string ;
+        wgs84:lat "7.6454234233"^^xsd:float ;
+        wgs84:long "45.0573456284"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "MALTA"^^xsd:string ;
+        my_ld:civicoPrincipale "36"^^xsd:string ;
+        my_ld:civicoInterno "10 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+137410  a  locn:Address .
+137410  locn:fullAddress "VIA VENARIA 85 int. 10 bis, 10148 Torino"^^xsd:string ;
+        locn:postCode "10148"^^xsd:string ;
+        wgs84:lat "7.6574844457"^^xsd:float ;
+        wgs84:long "45.1101351955"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "VENARIA"^^xsd:string ;
+        my_ld:civicoPrincipale "85"^^xsd:string ;
+        my_ld:civicoInterno "10 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+153740  a  locn:Address .
+153740  locn:fullAddress "VIA SOMALIA 116 int. 20 bis, 10127 Torino"^^xsd:string ;
+        locn:postCode "10127"^^xsd:string ;
+        wgs84:lat "7.6539149284"^^xsd:float ;
+        wgs84:long "45.0087811868"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "SOMALIA"^^xsd:string ;
+        my_ld:civicoPrincipale "116"^^xsd:string ;
+        my_ld:civicoInterno "20 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+101676  a  locn:Address .
+101676  locn:fullAddress "VIA SALBERTRAND 57 int. 20 bis, 10146 Torino"^^xsd:string ;
+        locn:postCode "10146"^^xsd:string ;
+        wgs84:lat "7.6353460149"^^xsd:float ;
+        wgs84:long "45.0806736438"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "SALBERTRAND"^^xsd:string ;
+        my_ld:civicoPrincipale "57"^^xsd:string ;
+        my_ld:civicoInterno "20 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+57614  a  locn:Address .
+57614  locn:fullAddress "STRADA DEL PAVARINO 8 int. 10 bis, 10132 Torino"^^xsd:string ;
+        locn:postCode "10132"^^xsd:string ;
+        wgs84:lat "7.737701026"^^xsd:float ;
+        wgs84:long "45.0631727422"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "DEL PAVARINO"^^xsd:string ;
+        my_ld:civicoPrincipale "8"^^xsd:string ;
+        my_ld:civicoInterno "10 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+127422  a  locn:Address .
+127422  locn:fullAddress "LUNGO DORA PIETRO COLLETTA 113 int. 10 bis, 10153 Torino"^^xsd:string ;
+        locn:postCode "10153"^^xsd:string ;
+        wgs84:lat "7.7138114955"^^xsd:float ;
+        wgs84:long "45.0762061061"^^xsd:float ;
+        my_ld:tipoStrada "LUNGO"^^xsd:string ;
+        my_ld:nomeVia "DORA PIETRO COLLETTA"^^xsd:string ;
+        my_ld:civicoPrincipale "113"^^xsd:string ;
+        my_ld:civicoInterno "10 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+66201  a  locn:Address .
+66201  locn:fullAddress "VIA GUGLIELMO REISS ROMOLI 122 int. 30 bis, 10148 Torino"^^xsd:string ;
+        locn:postCode "10148"^^xsd:string ;
+        wgs84:lat "7.6874347685"^^xsd:float ;
+        wgs84:long "45.113392284"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "GUGLIELMO REISS ROMOLI"^^xsd:string ;
+        my_ld:civicoPrincipale "122"^^xsd:string ;
+        my_ld:civicoInterno "30 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+136838  a  locn:Address .
+136838  locn:fullAddress "CORSO FRANCIA 333 int. 10/A, 10142 Torino"^^xsd:string ;
+        locn:postCode "10142"^^xsd:string ;
+        wgs84:lat "7.614367626"^^xsd:float ;
+        wgs84:long "45.0733793607"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "FRANCIA"^^xsd:string ;
+        my_ld:civicoPrincipale "333"^^xsd:string ;
+        my_ld:civicoInterno "10/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+126734  a  locn:Address .
+126734  locn:fullAddress "CORSO GIULIO CESARE 338 int. 50/A, 10154 Torino"^^xsd:string ;
+        locn:postCode "10154"^^xsd:string ;
+        wgs84:lat "7.7058646873"^^xsd:float ;
+        wgs84:long "45.1057561081"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "338"^^xsd:string ;
+        my_ld:civicoInterno "50/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+138438  a  locn:Address .
+138438  locn:fullAddress "CORSO FRANCESCO FERRUCCI 77 int. 10/A, 10138 Torino"^^xsd:string ;
+        locn:postCode "10138"^^xsd:string ;
+        wgs84:lat "7.6560051062"^^xsd:float ;
+        wgs84:long "45.0678006394"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "FRANCESCO FERRUCCI"^^xsd:string ;
+        my_ld:civicoPrincipale "77"^^xsd:string ;
+        my_ld:civicoInterno "10/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151025  a  locn:Address .
+151025  locn:fullAddress "CORSO FILIPPO BRUNELLESCHI 7 int. 10/A, 10141 Torino"^^xsd:string ;
+        locn:postCode "10141"^^xsd:string ;
+        wgs84:lat "7.624474505"^^xsd:float ;
+        wgs84:long "45.0733394006"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "FILIPPO BRUNELLESCHI"^^xsd:string ;
+        my_ld:civicoPrincipale "7"^^xsd:string ;
+        my_ld:civicoInterno "10/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+136839  a  locn:Address .
+136839  locn:fullAddress "CORSO FRANCIA 333 int. 10/B, 10142 Torino"^^xsd:string ;
+        locn:postCode "10142"^^xsd:string ;
+        wgs84:lat "7.614372979"^^xsd:float ;
+        wgs84:long "45.0733065829"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "FRANCIA"^^xsd:string ;
+        my_ld:civicoPrincipale "333"^^xsd:string ;
+        my_ld:civicoInterno "10/B"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+126735  a  locn:Address .
+126735  locn:fullAddress "CORSO GIULIO CESARE 338 int. 50/B, 10154 Torino"^^xsd:string ;
+        locn:postCode "10154"^^xsd:string ;
+        wgs84:lat "7.7057892991"^^xsd:float ;
+        wgs84:long "45.1056406799"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "338"^^xsd:string ;
+        my_ld:civicoInterno "50/B"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+150464  a  locn:Address .
+150464  locn:fullAddress "CORSO ENRICO TAZZOLI 228 int. 10/B, 10137 Torino"^^xsd:string ;
+        locn:postCode "10137"^^xsd:string ;
+        wgs84:lat "7.6144811112"^^xsd:float ;
+        wgs84:long "45.0386102135"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "ENRICO TAZZOLI"^^xsd:string ;
+        my_ld:civicoPrincipale "228"^^xsd:string ;
+        my_ld:civicoInterno "10/B"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+126736  a  locn:Address .
+126736  locn:fullAddress "CORSO GIULIO CESARE 338 int. 50/C, 10154 Torino"^^xsd:string ;
+        locn:postCode "10154"^^xsd:string ;
+        wgs84:lat "7.7057126094"^^xsd:float ;
+        wgs84:long "45.1055232386"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "338"^^xsd:string ;
+        my_ld:civicoInterno "50/C"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151707  a  locn:Address .
+151707  locn:fullAddress "CORSO CARLO E NELLO ROSSELLI 99 int. 20/C, 10129 Torino"^^xsd:string ;
+        locn:postCode "10129"^^xsd:string ;
+        wgs84:lat "7.6529586886"^^xsd:float ;
+        wgs84:long "45.0524931806"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CARLO E NELLO ROSSELLI"^^xsd:string ;
+        my_ld:civicoPrincipale "99"^^xsd:string ;
+        my_ld:civicoInterno "20/C"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+126737  a  locn:Address .
+126737  locn:fullAddress "CORSO GIULIO CESARE 338 int. 50/D, 10154 Torino"^^xsd:string ;
+        locn:postCode "10154"^^xsd:string ;
+        wgs84:lat "7.7056451466"^^xsd:float ;
+        wgs84:long "45.1054199354"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "338"^^xsd:string ;
+        my_ld:civicoInterno "50/D"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+123092  a  locn:Address .
+123092  locn:fullAddress "VIA VALENZA 49 int. 1 bis, 10127 Torino"^^xsd:string ;
+        locn:postCode "10127"^^xsd:string ;
+        wgs84:lat "7.6654768256"^^xsd:float ;
+        wgs84:long "45.0250790537"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "VALENZA"^^xsd:string ;
+        my_ld:civicoPrincipale "49"^^xsd:string ;
+        my_ld:civicoInterno "1 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+52105  a  locn:Address .
+52105  locn:fullAddress "STRADA LANZO 147 int. 1 bis, 10148 Torino"^^xsd:string ;
+        locn:postCode "10148"^^xsd:string ;
+        wgs84:lat "7.6574565057"^^xsd:float ;
+        wgs84:long "45.11599662"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "LANZO"^^xsd:string ;
+        my_ld:civicoPrincipale "147"^^xsd:string ;
+        my_ld:civicoInterno "1 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+106153  a  locn:Address .
+106153  locn:fullAddress "VIA SOMALIA 108 int. 21 bis, 10127 Torino"^^xsd:string ;
+        locn:postCode "10127"^^xsd:string ;
+        wgs84:lat "7.6532752671"^^xsd:float ;
+        wgs84:long "45.0092419921"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "SOMALIA"^^xsd:string ;
+        my_ld:civicoPrincipale "108"^^xsd:string ;
+        my_ld:civicoInterno "21 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+122992  a  locn:Address .
+122992  locn:fullAddress "PIAZZA FABIO FILZI 2 int. 1 bis, 10126 Torino"^^xsd:string ;
+        locn:postCode "10126"^^xsd:string ;
+        wgs84:lat "7.666114502"^^xsd:float ;
+        wgs84:long "45.0276292378"^^xsd:float ;
+        my_ld:tipoStrada "PIAZZA"^^xsd:string ;
+        my_ld:nomeVia "FABIO FILZI"^^xsd:string ;
+        my_ld:civicoPrincipale "2"^^xsd:string ;
+        my_ld:civicoInterno "1 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+66980  a  locn:Address .
+66980  locn:fullAddress "VIA GIOVANNI RIBET 8 int. 1 bis, 10125 Torino"^^xsd:string ;
+        locn:postCode "10125"^^xsd:string ;
+        wgs84:lat "7.6751877272"^^xsd:float ;
+        wgs84:long "45.0552946834"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "GIOVANNI RIBET"^^xsd:string ;
+        my_ld:civicoPrincipale "8"^^xsd:string ;
+        my_ld:civicoInterno "1 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+124059  a  locn:Address .
+124059  locn:fullAddress "VIA ANTONIO CECCHI 30 int. 1 bis, 10152 Torino"^^xsd:string ;
+        locn:postCode "10152"^^xsd:string ;
+        wgs84:lat "7.6821869279"^^xsd:float ;
+        wgs84:long "45.0863313421"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "ANTONIO CECCHI"^^xsd:string ;
+        my_ld:civicoPrincipale "30"^^xsd:string ;
+        my_ld:civicoInterno "1 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+8740  a  locn:Address .
+8740  locn:fullAddress "VIA ANTONIO CECCHI 63 int. 1 bis, 10152 Torino"^^xsd:string ;
+        locn:postCode "10152"^^xsd:string ;
+        wgs84:lat "7.6784326757"^^xsd:float ;
+        wgs84:long "45.0885853282"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "ANTONIO CECCHI"^^xsd:string ;
+        my_ld:civicoPrincipale "63"^^xsd:string ;
+        my_ld:civicoInterno "1 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+10362  a  locn:Address .
+10362  locn:fullAddress "VIA DAMIANO CHIESA 43 int. 31 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7282912659"^^xsd:float ;
+        wgs84:long "45.1027719875"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "DAMIANO CHIESA"^^xsd:string ;
+        my_ld:civicoPrincipale "43"^^xsd:string ;
+        my_ld:civicoInterno "31 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+61954  a  locn:Address .
+61954  locn:fullAddress "VIA NICOLA PORPORA 39 int. 11 bis, 10155 Torino"^^xsd:string ;
+        locn:postCode "10155"^^xsd:string ;
+        wgs84:lat "7.6980883109"^^xsd:float ;
+        wgs84:long "45.1006037958"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "NICOLA PORPORA"^^xsd:string ;
+        my_ld:civicoPrincipale "39"^^xsd:string ;
+        my_ld:civicoInterno "11 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+153282  a  locn:Address .
+153282  locn:fullAddress "CORSO GIOVANNI LANZA 27 int. 1 bis, 10131 Torino"^^xsd:string ;
+        locn:postCode "10131"^^xsd:string ;
+        wgs84:lat "7.7015985239"^^xsd:float ;
+        wgs84:long "45.0592397463"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIOVANNI LANZA"^^xsd:string ;
+        my_ld:civicoPrincipale "27"^^xsd:string ;
+        my_ld:civicoInterno "1 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+30091  a  locn:Address .
+30091  locn:fullAddress "VIA GARRONE FRATELLI 61 int. 61 bis, 10127 Torino"^^xsd:string ;
+        locn:postCode "10127"^^xsd:string ;
+        wgs84:lat "7.651967608"^^xsd:float ;
+        wgs84:long "45.0118480261"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "GARRONE FRATELLI"^^xsd:string ;
+        my_ld:civicoPrincipale "61"^^xsd:string ;
+        my_ld:civicoInterno "61 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+24441  a  locn:Address .
+24441  locn:fullAddress "STRADA DEGLI ALBERONI 18 int. 21 bis, 10133 Torino"^^xsd:string ;
+        locn:postCode "10133"^^xsd:string ;
+        wgs84:lat "7.6831335463"^^xsd:float ;
+        wgs84:long "45.0326826456"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "DEGLI ALBERONI"^^xsd:string ;
+        my_ld:civicoPrincipale "18"^^xsd:string ;
+        my_ld:civicoInterno "21 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+7245  a  locn:Address .
+7245  locn:fullAddress "STRADA DEL CASCINOTTO 139 int. 41 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7415311981"^^xsd:float ;
+        wgs84:long "45.1081115393"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "DEL CASCINOTTO"^^xsd:string ;
+        my_ld:civicoPrincipale "139"^^xsd:string ;
+        my_ld:civicoInterno "41 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151047  a  locn:Address .
+151047  locn:fullAddress "CORSO CHIERI 214 int. 21/A, 10132 Torino"^^xsd:string ;
+        locn:postCode "10132"^^xsd:string ;
+        wgs84:lat "7.746688091"^^xsd:float ;
+        wgs84:long "45.0532795266"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CHIERI"^^xsd:string ;
+        my_ld:civicoPrincipale "214"^^xsd:string ;
+        my_ld:civicoInterno "21/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+150407  a  locn:Address .
+150407  locn:fullAddress "CORSO GROSSETO 361 int. 1/A, 10151 Torino"^^xsd:string ;
+        locn:postCode "10151"^^xsd:string ;
+        wgs84:lat "7.6512040161"^^xsd:float ;
+        wgs84:long "45.1055912584"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GROSSETO"^^xsd:string ;
+        my_ld:civicoPrincipale "361"^^xsd:string ;
+        my_ld:civicoInterno "1/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+137722  a  locn:Address .
+137722  locn:fullAddress "CORSO ENRICO TAZZOLI 215 int. 1/A, 10137 Torino"^^xsd:string ;
+        locn:postCode "10137"^^xsd:string ;
+        wgs84:lat "7.6194315929"^^xsd:float ;
+        wgs84:long "45.0363117589"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "ENRICO TAZZOLI"^^xsd:string ;
+        my_ld:civicoPrincipale "215"^^xsd:string ;
+        my_ld:civicoInterno "1/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+145051  a  locn:Address .
+145051  locn:fullAddress "CORSO GIULIO CESARE 424 int. 81/A, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7193711817"^^xsd:float ;
+        wgs84:long "45.1152073157"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "424"^^xsd:string ;
+        my_ld:civicoInterno "81/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+153580  a  locn:Address .
+153580  locn:fullAddress "CORSO GAETANO SALVEMINI 19 int. 11/A, 10137 Torino"^^xsd:string ;
+        locn:postCode "10137"^^xsd:string ;
+        wgs84:lat "7.6264346703"^^xsd:float ;
+        wgs84:long "45.0428381105"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GAETANO SALVEMINI"^^xsd:string ;
+        my_ld:civicoPrincipale "19"^^xsd:string ;
+        my_ld:civicoInterno "11/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151190  a  locn:Address .
+151190  locn:fullAddress "CORSO CANONICO GIUSEPPE ALLAMANO 40 int. 1/A, 10136 Torino"^^xsd:string ;
+        locn:postCode "10136"^^xsd:string ;
+        wgs84:lat "7.6258487688"^^xsd:float ;
+        wgs84:long "45.0509784752"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CANONICO GIUSEPPE ALLAMANO"^^xsd:string ;
+        my_ld:civicoPrincipale "40"^^xsd:string ;
+        my_ld:civicoInterno "1/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+139098  a  locn:Address .
+139098  locn:fullAddress "CORSO LIONE 85 int. 11/C, 10141 Torino"^^xsd:string ;
+        locn:postCode "10141"^^xsd:string ;
+        wgs84:lat "7.6529386911"^^xsd:float ;
+        wgs84:long "45.0549238072"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "LIONE"^^xsd:string ;
+        my_ld:civicoPrincipale "85"^^xsd:string ;
+        my_ld:civicoInterno "11/C"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+124833  a  locn:Address .
+124833  locn:fullAddress "CORSO CARLO E NELLO ROSSELLI 105 int. 1/C, 10129 Torino"^^xsd:string ;
+        locn:postCode "10129"^^xsd:string ;
+        wgs84:lat "7.652873136"^^xsd:float ;
+        wgs84:long "45.0535534657"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CARLO E NELLO ROSSELLI"^^xsd:string ;
+        my_ld:civicoPrincipale "105"^^xsd:string ;
+        my_ld:civicoInterno "1/C"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+143872  a  locn:Address .
+143872  locn:fullAddress "CORSO CARLO E NELLO ROSSELLI 99 int. 11/D, 10129 Torino"^^xsd:string ;
+        locn:postCode "10129"^^xsd:string ;
+        wgs84:lat "7.6532406663"^^xsd:float ;
+        wgs84:long "45.0525729061"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CARLO E NELLO ROSSELLI"^^xsd:string ;
+        my_ld:civicoPrincipale "99"^^xsd:string ;
+        my_ld:civicoInterno "11/D"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+135302  a  locn:Address .
+135302  locn:fullAddress "CORSO CARLO E NELLO ROSSELLI 105 int. 1/E, 10129 Torino"^^xsd:string ;
+        locn:postCode "10129"^^xsd:string ;
+        wgs84:lat "7.6528609997"^^xsd:float ;
+        wgs84:long "45.0535272982"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CARLO E NELLO ROSSELLI"^^xsd:string ;
+        my_ld:civicoPrincipale "105"^^xsd:string ;
+        my_ld:civicoInterno "1/E"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151740  a  locn:Address .
+151740  locn:fullAddress "CORSO CARLO E NELLO ROSSELLI 105 int. 11/F, 10129 Torino"^^xsd:string ;
+        locn:postCode "10129"^^xsd:string ;
+        wgs84:lat "7.6524472295"^^xsd:float ;
+        wgs84:long "45.0526220137"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CARLO E NELLO ROSSELLI"^^xsd:string ;
+        my_ld:civicoPrincipale "105"^^xsd:string ;
+        my_ld:civicoInterno "11/F"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151745  a  locn:Address .
+151745  locn:fullAddress "CORSO CARLO E NELLO ROSSELLI 91 bis int. 10/F, 10129 Torino"^^xsd:string ;
+        locn:postCode "10129"^^xsd:string ;
+        wgs84:lat "7.6538570602"^^xsd:float ;
+        wgs84:long "45.0525466632"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CARLO E NELLO ROSSELLI"^^xsd:string ;
+        my_ld:civicoPrincipale "91"^^xsd:string ;
+        my_ld:sottoCivico  "bis"^^xsd:string ;
+        my_ld:civicoInterno "10/F"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+51086  a  locn:Address .
+51086  locn:fullAddress "VIA GENOVA 91 int. 22 bis, 10126 Torino"^^xsd:string ;
+        locn:postCode "10126"^^xsd:string ;
+        wgs84:lat "7.6692498823"^^xsd:float ;
+        wgs84:long "45.0302003736"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "GENOVA"^^xsd:string ;
+        my_ld:civicoPrincipale "91"^^xsd:string ;
+        my_ld:civicoInterno "22 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+94592  a  locn:Address .
+94592  locn:fullAddress "VIA VENARIA 85 int. 12 bis, 10148 Torino"^^xsd:string ;
+        locn:postCode "10148"^^xsd:string ;
+        wgs84:lat "7.6572806364"^^xsd:float ;
+        wgs84:long "45.1100428645"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "VENARIA"^^xsd:string ;
+        my_ld:civicoPrincipale "85"^^xsd:string ;
+        my_ld:civicoInterno "12 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+9030  a  locn:Address .
+9030  locn:fullAddress "VIA CENTALLO 62 int. 32 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7234902453"^^xsd:float ;
+        wgs84:long "45.1057810337"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "CENTALLO"^^xsd:string ;
+        my_ld:civicoPrincipale "62"^^xsd:string ;
+        my_ld:civicoInterno "32 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+9629  a  locn:Address .
+9629  locn:fullAddress "VIA CHAMBERY 61 int. 22 bis, 10142 Torino"^^xsd:string ;
+        locn:postCode "10142"^^xsd:string ;
+        wgs84:lat "7.6160649922"^^xsd:float ;
+        wgs84:long "45.0683190484"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "CHAMBERY"^^xsd:string ;
+        my_ld:civicoPrincipale "61"^^xsd:string ;
+        my_ld:civicoInterno "22 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+40428  a  locn:Address .
+40428  locn:fullAddress "VIA CONI ZUGNA 2 int. 2 bis, 10135 Torino"^^xsd:string ;
+        locn:postCode "10135"^^xsd:string ;
+        wgs84:lat "7.6216258067"^^xsd:float ;
+        wgs84:long "45.0192697609"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "CONI ZUGNA"^^xsd:string ;
+        my_ld:civicoPrincipale "2"^^xsd:string ;
+        my_ld:civicoInterno "2 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+127101  a  locn:Address .
+127101  locn:fullAddress "VIA SOMALIA 108 int. 12 bis, 10127 Torino"^^xsd:string ;
+        locn:postCode "10127"^^xsd:string ;
+        wgs84:lat "7.6545906555"^^xsd:float ;
+        wgs84:long "45.0091196304"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "SOMALIA"^^xsd:string ;
+        my_ld:civicoPrincipale "108"^^xsd:string ;
+        my_ld:civicoInterno "12 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+44442  a  locn:Address .
+44442  locn:fullAddress "PIAZZA DERNA 231 int. 12 bis, 10154 Torino"^^xsd:string ;
+        locn:postCode "10154"^^xsd:string ;
+        wgs84:lat "7.7000466068"^^xsd:float ;
+        wgs84:long "45.1036105732"^^xsd:float ;
+        my_ld:tipoStrada "PIAZZA"^^xsd:string ;
+        my_ld:nomeVia "DERNA"^^xsd:string ;
+        my_ld:civicoPrincipale "231"^^xsd:string ;
+        my_ld:civicoInterno "12 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+115712  a  locn:Address .
+115712  locn:fullAddress "VIA VALFENERA 20 int. 22 bis, 10147 Torino"^^xsd:string ;
+        locn:postCode "10147"^^xsd:string ;
+        wgs84:lat "7.677363506"^^xsd:float ;
+        wgs84:long "45.0943041624"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "VALFENERA"^^xsd:string ;
+        my_ld:civicoPrincipale "20"^^xsd:string ;
+        my_ld:civicoInterno "22 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+85695  a  locn:Address .
+85695  locn:fullAddress "VIA PASSO BUOLE 17 int. 12 bis, 10127 Torino"^^xsd:string ;
+        locn:postCode "10127"^^xsd:string ;
+        wgs84:lat "7.6607765073"^^xsd:float ;
+        wgs84:long "45.0216603213"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "PASSO BUOLE"^^xsd:string ;
+        my_ld:civicoPrincipale "17"^^xsd:string ;
+        my_ld:civicoInterno "12 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+43122  a  locn:Address .
+43122  locn:fullAddress "VIA LUIGI DAMIANO 15 int. 2 bis, 10152 Torino"^^xsd:string ;
+        locn:postCode "10152"^^xsd:string ;
+        wgs84:lat "7.6847496406"^^xsd:float ;
+        wgs84:long "45.0880720275"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "LUIGI DAMIANO"^^xsd:string ;
+        my_ld:civicoPrincipale "15"^^xsd:string ;
+        my_ld:civicoInterno "2 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+136455  a  locn:Address .
+136455  locn:fullAddress "STRADA DELLA VERNA 8 int. 12 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7321915793"^^xsd:float ;
+        wgs84:long "45.0995064089"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "DELLA VERNA"^^xsd:string ;
+        my_ld:civicoPrincipale "8"^^xsd:string ;
+        my_ld:civicoInterno "12 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+54281  a  locn:Address .
+54281  locn:fullAddress "STRADA DEL FRANCESE 152 int. 2 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.67099052"^^xsd:float ;
+        wgs84:long "45.1310135245"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "DEL FRANCESE"^^xsd:string ;
+        my_ld:civicoPrincipale "152"^^xsd:string ;
+        my_ld:civicoInterno "2 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+49756  a  locn:Address .
+49756  locn:fullAddress "STRADA DEL FRANCESE 141 int. 22 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.6725820087"^^xsd:float ;
+        wgs84:long "45.1346093839"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "DEL FRANCESE"^^xsd:string ;
+        my_ld:civicoPrincipale "141"^^xsd:string ;
+        my_ld:civicoInterno "22 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+125449  a  locn:Address .
+125449  locn:fullAddress "STRADA VAL PATTONERA 106 int. 12 bis, 10133 Torino"^^xsd:string ;
+        locn:postCode "10133"^^xsd:string ;
+        wgs84:lat "7.6939760586"^^xsd:float ;
+        wgs84:long "45.0329461417"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "VAL PATTONERA"^^xsd:string ;
+        my_ld:civicoPrincipale "106"^^xsd:string ;
+        my_ld:civicoInterno "12 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+111169  a  locn:Address .
+111169  locn:fullAddress "VIA ONORATO VIGLIANI 164 int. 52 bis, 10127 Torino"^^xsd:string ;
+        locn:postCode "10127"^^xsd:string ;
+        wgs84:lat "7.6523262952"^^xsd:float ;
+        wgs84:long "45.0165054806"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "ONORATO VIGLIANI"^^xsd:string ;
+        my_ld:civicoPrincipale "164"^^xsd:string ;
+        my_ld:civicoInterno "52 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+40069  a  locn:Address .
+40069  locn:fullAddress "STRADA ANTICA DI COLLEGNO 180 int. 2 bis, 10146 Torino"^^xsd:string ;
+        locn:postCode "10146"^^xsd:string ;
+        wgs84:lat "7.6209713288"^^xsd:float ;
+        wgs84:long "45.0818039123"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "ANTICA DI COLLEGNO"^^xsd:string ;
+        my_ld:civicoPrincipale "180"^^xsd:string ;
+        my_ld:civicoInterno "2 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+153285  a  locn:Address .
+153285  locn:fullAddress "CORSO LUIGI KOSSUTH 49 int. 2 bis/A, 10132 Torino"^^xsd:string ;
+        locn:postCode "10132"^^xsd:string ;
+        wgs84:lat "7.7264291744"^^xsd:float ;
+        wgs84:long "45.0691067725"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "LUIGI KOSSUTH"^^xsd:string ;
+        my_ld:civicoPrincipale "49"^^xsd:string ;
+        my_ld:civicoInterno "2 bis/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+153286  a  locn:Address .
+153286  locn:fullAddress "CORSO LUIGI KOSSUTH 49 int. 2 bis/B, 10132 Torino"^^xsd:string ;
+        locn:postCode "10132"^^xsd:string ;
+        wgs84:lat "7.7264624623"^^xsd:float ;
+        wgs84:long "45.0691179766"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "LUIGI KOSSUTH"^^xsd:string ;
+        my_ld:civicoPrincipale "49"^^xsd:string ;
+        my_ld:civicoInterno "2 bis/B"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+153287  a  locn:Address .
+153287  locn:fullAddress "CORSO LUIGI KOSSUTH 49 int. 2 bis/C, 10132 Torino"^^xsd:string ;
+        locn:postCode "10132"^^xsd:string ;
+        wgs84:lat "7.7264951206"^^xsd:float ;
+        wgs84:long "45.0691289688"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "LUIGI KOSSUTH"^^xsd:string ;
+        my_ld:civicoPrincipale "49"^^xsd:string ;
+        my_ld:civicoInterno "2 bis/C"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+153288  a  locn:Address .
+153288  locn:fullAddress "CORSO LUIGI KOSSUTH 49 int. 2 bis/D, 10132 Torino"^^xsd:string ;
+        locn:postCode "10132"^^xsd:string ;
+        wgs84:lat "7.726527779"^^xsd:float ;
+        wgs84:long "45.0691399609"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "LUIGI KOSSUTH"^^xsd:string ;
+        my_ld:civicoPrincipale "49"^^xsd:string ;
+        my_ld:civicoInterno "2 bis/D"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+152738  a  locn:Address .
+152738  locn:fullAddress "CORSO FRANCIA 356 int. 22/A, 10145 Torino"^^xsd:string ;
+        locn:postCode "10145"^^xsd:string ;
+        wgs84:lat "7.616522468"^^xsd:float ;
+        wgs84:long "45.0753546615"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "FRANCIA"^^xsd:string ;
+        my_ld:civicoPrincipale "356"^^xsd:string ;
+        my_ld:civicoInterno "22/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+126739  a  locn:Address .
+126739  locn:fullAddress "CORSO GIULIO CESARE 338 int. 52/A, 10154 Torino"^^xsd:string ;
+        locn:postCode "10154"^^xsd:string ;
+        wgs84:lat "7.7055919112"^^xsd:float ;
+        wgs84:long "45.1053384156"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "338"^^xsd:string ;
+        my_ld:civicoInterno "52/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+126742  a  locn:Address .
+126742  locn:fullAddress "CORSO GIULIO CESARE 338 int. 62/A, 10154 Torino"^^xsd:string ;
+        locn:postCode "10154"^^xsd:string ;
+        wgs84:lat "7.7051246467"^^xsd:float ;
+        wgs84:long "45.105204051"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "338"^^xsd:string ;
+        my_ld:civicoInterno "62/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+150409  a  locn:Address .
+150409  locn:fullAddress "CORSO ENRICO TAZZOLI 228 int. 22/A, 10137 Torino"^^xsd:string ;
+        locn:postCode "10137"^^xsd:string ;
+        wgs84:lat "7.6143991526"^^xsd:float ;
+        wgs84:long "45.0393060816"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "ENRICO TAZZOLI"^^xsd:string ;
+        my_ld:civicoPrincipale "228"^^xsd:string ;
+        my_ld:civicoInterno "22/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+153765  a  locn:Address .
+153765  locn:fullAddress "CORSO GIULIO CESARE 424 int. 122/A, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7280804534"^^xsd:float ;
+        wgs84:long "45.1172843604"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "424"^^xsd:string ;
+        my_ld:civicoInterno "122/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+152374  a  locn:Address .
+152374  locn:fullAddress "CORSO GAETANO SALVEMINI 19 int. 12/A, 10137 Torino"^^xsd:string ;
+        locn:postCode "10137"^^xsd:string ;
+        wgs84:lat "7.6260834109"^^xsd:float ;
+        wgs84:long "45.0429484068"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GAETANO SALVEMINI"^^xsd:string ;
+        my_ld:civicoPrincipale "19"^^xsd:string ;
+        my_ld:civicoInterno "12/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151708  a  locn:Address .
+151708  locn:fullAddress "CORSO CARLO E NELLO ROSSELLI 99 int. 22/A, 10129 Torino"^^xsd:string ;
+        locn:postCode "10129"^^xsd:string ;
+        wgs84:lat "7.6529365996"^^xsd:float ;
+        wgs84:long "45.0524440034"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CARLO E NELLO ROSSELLI"^^xsd:string ;
+        my_ld:civicoPrincipale "99"^^xsd:string ;
+        my_ld:civicoInterno "22/A"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+152748  a  locn:Address .
+152748  locn:fullAddress "CORSO FRANCIA 356 int. 12/B, 10146 Torino"^^xsd:string ;
+        locn:postCode "10146"^^xsd:string ;
+        wgs84:lat "7.6160157386"^^xsd:float ;
+        wgs84:long "45.0754592748"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "FRANCIA"^^xsd:string ;
+        my_ld:civicoPrincipale "356"^^xsd:string ;
+        my_ld:civicoInterno "12/B"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+126740  a  locn:Address .
+126740  locn:fullAddress "CORSO GIULIO CESARE 338 int. 52/B, 10154 Torino"^^xsd:string ;
+        locn:postCode "10154"^^xsd:string ;
+        wgs84:lat "7.7054958962"^^xsd:float ;
+        wgs84:long "45.1051913915"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "338"^^xsd:string ;
+        my_ld:civicoInterno "52/B"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+126743  a  locn:Address .
+126743  locn:fullAddress "CORSO GIULIO CESARE 338 int. 62/B, 10154 Torino"^^xsd:string ;
+        locn:postCode "10154"^^xsd:string ;
+        wgs84:lat "7.7048685293"^^xsd:float ;
+        wgs84:long "45.1052872293"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "GIULIO CESARE"^^xsd:string ;
+        my_ld:civicoPrincipale "338"^^xsd:string ;
+        my_ld:civicoInterno "62/B"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+151189  a  locn:Address .
+151189  locn:fullAddress "CORSO CANONICO GIUSEPPE ALLAMANO 40 int. 2/D, 10136 Torino"^^xsd:string ;
+        locn:postCode "10136"^^xsd:string ;
+        wgs84:lat "7.6259924461"^^xsd:float ;
+        wgs84:long "45.05101253"^^xsd:float ;
+        my_ld:tipoStrada "CORSO"^^xsd:string ;
+        my_ld:nomeVia "CANONICO GIUSEPPE ALLAMANO"^^xsd:string ;
+        my_ld:civicoPrincipale "40"^^xsd:string ;
+        my_ld:civicoInterno "2/D"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+120116  a  locn:Address .
+120116  locn:fullAddress "VIA S. PAOLO 5 int. 3 bis, 10138 Torino"^^xsd:string ;
+        locn:postCode "10138"^^xsd:string ;
+        wgs84:lat "7.6544794959"^^xsd:float ;
+        wgs84:long "45.0649366364"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "S. PAOLO"^^xsd:string ;
+        my_ld:civicoPrincipale "5"^^xsd:string ;
+        my_ld:civicoInterno "3 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+57182  a  locn:Address .
+57182  locn:fullAddress "STRADA DEL PASCOLO 43 int. 13 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7272554278"^^xsd:float ;
+        wgs84:long "45.0982523919"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "DEL PASCOLO"^^xsd:string ;
+        my_ld:civicoPrincipale "43"^^xsd:string ;
+        my_ld:civicoInterno "13 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+93284  a  locn:Address .
+93284  locn:fullAddress "STRADA VAL SALICE 227 int. 23 bis, 10131 Torino"^^xsd:string ;
+        locn:postCode "10131"^^xsd:string ;
+        wgs84:lat "7.7168649522"^^xsd:float ;
+        wgs84:long "45.0395319057"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "VAL SALICE"^^xsd:string ;
+        my_ld:civicoPrincipale "227"^^xsd:string ;
+        my_ld:civicoInterno "23 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+8765  a  locn:Address .
+8765  locn:fullAddress "VIA ANTONIO CECCHI 63 int. 13 bis, 10152 Torino"^^xsd:string ;
+        locn:postCode "10152"^^xsd:string ;
+        wgs84:lat "7.6780524201"^^xsd:float ;
+        wgs84:long "45.0887456878"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "ANTONIO CECCHI"^^xsd:string ;
+        my_ld:civicoPrincipale "63"^^xsd:string ;
+        my_ld:civicoInterno "13 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+10366  a  locn:Address .
+10366  locn:fullAddress "VIA DAMIANO CHIESA 35 int. 13 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7277118908"^^xsd:float ;
+        wgs84:long "45.101528528"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "DAMIANO CHIESA"^^xsd:string ;
+        my_ld:civicoPrincipale "35"^^xsd:string ;
+        my_ld:civicoInterno "13 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+27077  a  locn:Address .
+27077  locn:fullAddress "VIA DAMIANO CHIESA 43 int. 33 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7281358484"^^xsd:float ;
+        wgs84:long "45.1027819135"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "DAMIANO CHIESA"^^xsd:string ;
+        my_ld:civicoPrincipale "43"^^xsd:string ;
+        my_ld:civicoInterno "33 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+63551  a  locn:Address .
+63551  locn:fullAddress "STRADA DELLA PRONDA 52 int. 93 bis, 10142 Torino"^^xsd:string ;
+        locn:postCode "10142"^^xsd:string ;
+        wgs84:lat "7.6154342266"^^xsd:float ;
+        wgs84:long "45.067150052"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "DELLA PRONDA"^^xsd:string ;
+        my_ld:civicoPrincipale "52"^^xsd:string ;
+        my_ld:civicoInterno "93 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+120699  a  locn:Address .
+120699  locn:fullAddress "VIA FRANCESCO RISMONDO 60 int. 3 bis, 10127 Torino"^^xsd:string ;
+        locn:postCode "10127"^^xsd:string ;
+        wgs84:lat "7.6511040819"^^xsd:float ;
+        wgs84:long "45.0133720382"^^xsd:float ;
+        my_ld:tipoStrada "VIA"^^xsd:string ;
+        my_ld:nomeVia "FRANCESCO RISMONDO"^^xsd:string ;
+        my_ld:civicoPrincipale "60"^^xsd:string ;
+        my_ld:civicoInterno "3 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .
+
+7247  a  locn:Address .
+7247  locn:fullAddress "STRADA DEL CASCINOTTO 139 int. 43 bis, 10156 Torino"^^xsd:string ;
+        locn:postCode "10156"^^xsd:string ;
+        wgs84:lat "7.7415598358"^^xsd:float ;
+        wgs84:long "45.1082007106"^^xsd:float ;
+        my_ld:tipoStrada "STRADA"^^xsd:string ;
+        my_ld:nomeVia "DEL CASCINOTTO"^^xsd:string ;
+        my_ld:civicoPrincipale "139"^^xsd:string ;
+        my_ld:civicoInterno "43 bis"^^xsd:string ;
+        gn:locatedIn spcdata:"Comune/L219" .

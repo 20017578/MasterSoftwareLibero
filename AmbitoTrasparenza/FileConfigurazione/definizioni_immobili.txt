@@ -1,1 +1,44 @@
 # DEFINIZIONI
+
+my_ld:possiede_affitta a rdf:property ;
+                       rdf:label “E' la proprietà utile a collegare l'ente con le sue istanze di possesso o affito di immobili”^^xsd:string .      
+my_ld:affittato a rdf:property ;
+                rdf:label “E' la proprietà utile a collegare un'istanza immobile con le sue proprietà relative all'eventuale affitto”^^xsd:string .      
+my_ld:tipoImmobile a rdf:property ;
+                   rdf:label “Descrivere di che tipo di stabile si tratta. Con questa proprietà si vuole descrivere meglio lo stabile o l'unità immobiliare ad esempio indicandone le peculiarità abitative o architettoniche come ad esempio Caseggiato in stile barocco, sotto la protezione della Sovraintendenza”^^xsd:string .      
+my_ld:foglio a rdf:property ;
+             rdf:label “Rappresenta uno degli identificativi catastali caratterizzanti un bene immobile. Il Foglio è definito come la porzione di territorio comunale che il catasto rappresenta nelle proprie mappe cartografiche”^^xsd:string . 
+my_ld:particella a rdf:property ;
+                 rdf:label “Talvolta chiamato anche mappale questa proprietà rappresenta, all'interno del Foglio, una porzione di terreno o il fabbricato stesso ed è anch'esso contrassegnato tipicamente da un valore numerico”^^xsd:string .
+my_ld:subalterno a rdf:property ;
+                 rdf:label “Rappresenta, per il Catasto fabbricati, l'identificativo di un bene immobile ed è individuabile come l'unità singola immobiliare tanto che all'interno di un fabbricato esso rappresenta la singola unità immobiliare”^^xsd:string .
+my_ld:categoriaCatastale a rdf:property ;
+                         rdf:label “E' la rappresentazione in simboli della destinazione d'uso delle unità immobiliari come definito dal Catasto”^^xsd:string .
+my_ld:descrizione a rdf:property ;
+                  rdf:label “Descrive in modo ancor più dettagliato eventuali altre caratteristiche dell'immobile in maniera più ampia di quanto non sia stato già fatto con altre proprietà, sarà qui possibile indicare specificità dello stabile, lo stato della ristrutturazione, il dettaglio dell'uso che ne viene fatto o altro ancora”^^xsd:string .
+my_ld:denominazione a rdf:property ;
+                    rdf:label “Rappresenta il nome col quale viene generalmente conosciuto lo stabile descritto. Questo nome è talvolta derivato dai nomi degli antichi possessori o da antiche denominazioni o anche dai modi di dire popolari della zona”^^xsd:string .
+my_ld:destUso a rdf:property ;
+              rdf:label “Descrive la destinazione d'uso secondo le indicazioni dell'ente specificando quindi meglio, laddove necessario, l'utilizzo che viene fatto dell'immobile”^^xsd:string .
+my_ld:idInterno a rdf:property ;
+                rdf:label “Rappresenta un valore identificativo utilizzato dall'ente per definire nei database interni l'immobile in questione”^^xsd:string .
+my_ld:mq a rdf:property ;
+         rdf:label “Rappresenta i metri quadrati calpestabili dell'immobile in oggetto ovvero i metri quadri delle superfici dell'immobile non coperte da pareti siano esse perimetrali o divisorie”^^xsd:string .
+my_ld:percPossesso a rdf:property ;
+                   rdf:label “Indica in che percentuale l'Amministrazione detiene il possesso dell'immobile”^^xsd:string .
+my_ld:affittoAttivo a rdf:property ;
+                    rdf:label “Rappresenta la somma dovuta all'ente in quanto locatore per il periodo di tempo”^^xsd:string .
+my_ld:affittoPassivo a rdf:property ;
+                     rdf:label “Rappresenta la somma dovuta dall'ente in quanto locatario per il periodo di tempo”^^xsd:string .
+my_ld:tipoContratto a rdf:property ;
+                    rdf:label “Indica le eventuali specificità relative al contratto di locazione, quali ad esempio concessione, locazione, canone ricognitorio, etc.. o comunque qualsivoglia informazione legata al contratto di locazione”^^xsd:string .
+my_ld:linkContratto a rdf:property ;
+                    rdf:label “Rappresenta il link alla risorsa in rete, ove presente il contratto di locazione. E' identificato da un indirizzo web valido”^^xsd:string .
+my_ld:altriProprietari a rdf:property ;
+                       rdf:label “Rappresenta un campo testuale in cui è possibile indicare, sempre che permesso dalla normativa vigente in tema di privacy e protezione dei dati personali, i nominativi o altre informazioni utili ad identificare gli ulteriori proprietari dell'immobile”^^xsd:string .
+my_ld:locatario a rdf:property ;
+                rdf:label “Rappresenta il riferimento o il nome di chi prende in affitto l'immobile”^^xsd:string .
+my_ld:locatore a rdf:property ;
+               rdf:label “Rappresenta il riferimento di chi affitta ad un terzo l'immobile”^^xsd:string .
+my_ld:noteAffitto a rdf:property ;
+                  rdf:label “Campo note utile a specificare in forma testuale, laddove necessario, ogni altra informazione relativa all'affitto”^^xsd:string .

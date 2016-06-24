@@ -1,1 +1,10 @@
-#  DEFINIZIONI
+# DEFINIZIONI
+
+my_ld:ha_indice_di_tempestivita_dei_pagamenti a rdf:property ;
+                                              rdf:label “E' l'indicatore di tempestività dei pagamenti realtivo all'ente pubblico soggetto.”^^xsd:string .      
+my_ld:IndicPagamento a rdf:property ;
+                     rdf:label “E' il valore numerico dell'indicatore di pagamento che ogni ente pubblico deve pubblicare nelle proprie pagine della sezione Amministrazione Trasparente del sito web ufficiale secondo le normative vigenti, ad oggi: Art. 33 del Dlgs 33/20131, e gli Artt. 9 e 10 del DPCM 22/09/2014”^^xsd:string . 
+my_ld:descrizionePeriodo a rdf:property ;
+                         rdf:label “Contiene in forma testuale quanto espresso nei due campi data. Serve a rendere più immediatamente leggibile per un umano l'informazione contenuta”^^xsd:string .
+my_ld:note a rdf:property ;
+                  rdf:label “Campo note utile a specificare in forma testuale, laddove necessario, ogni altra informazione relativa al dato pubblicato”^^xsd:string .

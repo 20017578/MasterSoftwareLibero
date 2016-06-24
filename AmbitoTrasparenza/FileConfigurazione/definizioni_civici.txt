@@ -1,18 +1,14 @@
 # DEFINIZIONI
 
-myspace:sedime a rdf:property ;
-              rdf:label “Sedime dell’indirizzo”^^xsd:string .      
-myspace:nomeVia a rdf:property ;
-              rdf:label “Nome della via. In caso di vie intitolate a personaggi prima inserire il nome e poi il cognome”^^xsd:string . 
-myspace:civicoPrincipale a rdf:property ;
-              rdf:label “Numero civico principale”^^xsd:string .
-myspace:civicoPrincipale a rdf:property ;
-              rdf:label “Numero civico principale”^^xsd:integer .
-myspace:civicoSecondario a rdf:property ;
-              rdf:label “Parte del numero civico principale da esso dipendente, generalmente si trova dopo una barra, p.e. 4/F”^^xsd:string .
-myspace:civicoInterno a rdf:property ;
-              rdf:label “Numero civico derivante dal principale e riportante la dicitura interno o l'abbreviazione int.”^^xsd:string .			  
-myspace:scala a rdf:property ;
-              rdf:label “Parte del numero civico principale da esso dipendente riportante un codice di scala, p.e. 4 scala B”^^xsd:string .
-myspace:identificativo a rdf:property ;
-              rdf:label “Codice attribuito al civico dal Comune di riferimento, è un valore assegnato internamente”^^xsd:string .
+my_ld:tipoStrada a rdf:property ;
+                 rdf:label “rappresenta la tipologia di strada tipicamente presente negli indirizzi prima del nome vero e proprio della via, come ad esempio: via, corso, viale, piazza, largo, località, lungomare, ….”^^xsd:string .      
+my_ld:nomeVia a rdf:property ;
+              rdf:label “Nome della via. Rappresenta il nome della strada ovvero il toponimo generalmente preceduto dal tipo di strada. In caso di vie intitolate a personaggi prima inserire il nome e poi il cognome”^^xsd:string . 
+my_ld:civicoPrincipale a rdf:property ;
+                       rdf:label “E' il valore numerico del civico escludendo da esso ogni sotto-indicazione come ad esempio le particelle bis, ter, /2 ….”^^xsd:string .
+my_ld:sottoCivico a rdf:property ;
+                  rdf:label “E' l'indicazione, se presente, che generalmente segue il valore numerico assegnato al numero civico e che indica una sottosezione derivata dal numero principale, come ad esempio 4 bis, ove bis sarà individuabile come sotto-civico del numero civico principale. Questa proprietà non è da confondersi con le indicazioni del numero interno o della scala altrettanto presenti negli indirizzi italiani e descritti in altri campi”^^xsd:string .
+my_ld:civicoInterno a rdf:property ;
+                    rdf:label “Rappresenta, ove presente, l'indicazione dell'interno derivato dall'indirizzo principale. Negli indirizzi spesso il valore da assegnare a questo campo è seguito dalle particelle int. o interno”^^xsd:string .			  
+my_ld:idScala a rdf:property ;
+              rdf:label “Rappresenta, ove presente, l'indicazione della scala derivante dall'indirizzo principale. Questa indicazione si trova sovente negli indirizzi di grossi stabili il cui civico principale si riferisce alla struttura principale del caseggiato che contiene all'interno diversi accessi, appunto suddivisi in scale”^^xsd:string .
