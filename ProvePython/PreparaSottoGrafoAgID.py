@@ -71,5 +71,39 @@ while len (daAggiungere) != 0:
             daAggiungere.add (o)
 
 aggiunti.clear ()
+del grafo_AgID
+
+namespace_attenzione = rdflib.Namespace('http://www.example.org/MIUR/Attenzione/')
+IRI_pec = rdflib.URIRef ('http://spcdata.digitpa.gov.it/PEC')
+IRI_mail = rdflib.namespace.FOAF.mbox
+grafo_AgID_essenziale.bind ('warn', namespace_attenzione)
+nomeFileDati = 'AgID-MIUR.csv'
+scritturaRighe = csv.writer (open (nomeFileDati, 'w'), delimiter = separatoreDati)
+
+for amministrazione in scuole:
+    if str(amministrazione)[-16:-10].upper () == 'ISTSC_':
+        meccanograficoScuola = str(amministrazione)[-10:].upper ()
+    else:
+        meccanograficoScuola = ''
+    for mail in grafo_AgID_essenziale.objects (amministrazione, IRI_pec):
+         if (str (mail)[-18:].upper () == '@PEC.ISTRUZIONE.IT'):
+             if len (meccanograficoScuola) != 10:
+                 meccanograficoScuola = str (mail)[:-18].upper ()
+                 if len (meccanograficoScuola) != 10:
+                     grafo_AgID_essenziale.add ( (amministrazione, namespace_attenzione.PEC, mail) )
+             else:
+                 if str (mail)[:-18].upper () != meccanograficoScuola:
+                     grafo_AgID_essenziale.add ( (amministrazione, namespace_attenzione.PEC, mail) )
+    for mail in grafo_AgID_essenziale.objects (amministrazione, IRI_mail):
+         if (str (mail)[-14:].upper () == '@ISTRUZIONE.IT'):
+             if len (meccanograficoScuola) != 10:
+                 meccanograficoScuola = str (mail)[:-14].upper ()
+                 if len (meccanograficoScuola) != 10:
+                     grafo_AgID_essenziale.add ( (amministrazione, namespace_attenzione.mbox, mail) )
+             else:
+                 if str (mail)[:-14].upper () != meccanograficoScuola:
+                     grafo_AgID_essenziale.add ( (amministrazione, namespace_attenzione.mbox, mail) )
+    if len (meccanograficoScuola) == 10:
+         scritturaRighe.writerow([str (amministrazione), meccanograficoScuola] )
 
 grafo_AgID_essenziale.serialize (destination=open ('AgID.ttl', 'w'), format='n3')

@@ -9,6 +9,27 @@ import csv
 import locale
 
 #
+# Lettura dati per incrocio con AgID
+#
+
+fonteDati = 'AgID'
+nomeFileDati = 'AgID-MIUR.csv'
+separatoreDati = '\t'
+try:
+    f = open (nomeFileDati)
+    csvDatiMIUR = csv.reader (f, delimiter = separatoreDati)
+    print 'Leggo i dati', fonteDati, 'dal file', nomeFileDati
+except:
+    print 'File', nomeFileDati, 'non trovato, lanciare ScaricaDatiDaRete.py'
+    sys.exit (1)
+
+autonomie = {}
+for rigaScuola in csvDatiMIUR:
+    autonomie[rigaScuola[1]] = rdflib.URIRef (rigaScuola[0])
+
+f.close ()
+
+#
 # Lettura dei dati da MIUR
 #
 
@@ -26,7 +47,6 @@ except:
 # Prepara grafo MIUR
 #
 
-autonomie = {}
 grafo_MIUR = rdflib.Graph ()
 
 nomeFileDati = '../RDF/miur.ttl'
@@ -41,9 +61,12 @@ except:
     sys.exit (1)
 
 namespace_MIUR = None
+namespace_locn = None
 for abbrev, ns in grafo_MIUR.namespaces ():
-    if abbrev == '':
+    if abbrev == 'miur':
         namespace_MIUR = ns
+    if abbrev == 'locn':
+        namespace_locn = ns
 
 if namespace_MIUR == None:
     print 'Non trovato un `namespace` di riferimento in', nomeFileDati, ', esco'
@@ -82,12 +105,16 @@ for comune in grafo_AgID.subjects (predicate=rdflib.RDF.type, object=rdflib.URIR
         comuniAgID[nomeComune] = comune
 
 namespace_scuole = namespace_MIUR + 'Scuola/'
+namespace_indirizzi = namespace_MIUR + 'Indirizzo/'
 namespace_ontologia = namespace_MIUR + 'ontologia#'
+namespace_attenzione = namespace_MIUR + 'Attenzione/'
 prop_latitudine = rdflib.URIRef ('http://www.w3.org/2003/01/geo/wgs84_pos#lat')
 prop_longitudine = rdflib.URIRef ('http://www.w3.org/2003/01/geo/wgs84_pos#long')
-locn_CAP = rdflib.URIRef ('http://www.w3.org/ns/locn#postCode')
+locn_CAP = namespace_locn + 'postCode'
+locn_full = namespace_locn + 'fullAddress'
 
 grafo_MIUR.bind ('scuola', namespace_scuole)
+grafo_MIUR.bind ('indirizzi', namespace_indirizzi)
 
 caratteristiche = set ()
 tipiIstituzione = set ()
@@ -105,19 +132,26 @@ contoCAPimprecisi = 0
 for rigaScuola in csvDatiMIUR:
     meccanografico = rigaScuola['PLESSO/SCUOLA'].upper ()
     IRI_scuola = namespace_scuole + meccanografico
+    IRI_indirizzo = namespace_indirizzi + meccanografico
     grafo_MIUR.add ( (IRI_scuola, namespace_ontologia + 'meccanografico', rdflib.Literal (meccanografico)) )
     autonomia = rigaScuola['ISTITUTO PRINCIPALE'].upper ()
     if autonomia == meccanografico:
         if rigaScuola['DENOMINAZIONE'].upper () != rigaScuola['DENOMINAZIONE ISTITUTO PRINCIPALE'].upper ():
             print 'Anomalia sulla autonomia', meccanografico, 'denominazioni non coincidenti'
         grafo_MIUR.add ( (IRI_scuola, rdflib.RDF.type, namespace_ontologia + 'Autonomia') )
+        if meccanografico in autonomie:
+            grafo_MIUR.add ( (IRI_scuola, rdflib.OWL.sameAs, autonomie[meccanografico]) )
     else:
         grafo_MIUR.add ( (IRI_scuola, rdflib.RDF.type, namespace_ontologia + 'PuntoErogazioneServizio') )
         grafo_MIUR.add ( (IRI_scuola, namespace_ontologia + 'haIstitutoPrincipale', namespace_scuole + autonomia) )
         grafo_MIUR.add ( (namespace_scuole + autonomia, namespace_ontologia + 'istitutoPrincipaleDi', IRI_scuola) )
     grafo_MIUR.add ( (IRI_scuola, rdflib.RDFS.label, rdflib.Literal (rigaScuola['DENOMINAZIONE'])) )
-    caratteristiche |= {rigaScuola['CARATTERISTICA']}
-    tipiIstituzione |= {rigaScuola['TIPO ISTITUZIONE']}
+    if rigaScuola['CARATTERISTICA'] != '':
+        caratteristiche |= {rigaScuola['CARATTERISTICA']}
+        grafo_MIUR.add ( (IRI_scuola, namespace_ontologia + 'caratteristicaScuola', rdflib.Literal (rigaScuola['CARATTERISTICA'])) )
+    if rigaScuola['TIPO ISTITUZIONE'] != '':
+        tipiIstituzione |= {rigaScuola['TIPO ISTITUZIONE']}
+        grafo_MIUR.add ( (IRI_scuola, namespace_ontologia + 'tipoIstituzione', rdflib.Literal (rigaScuola['TIPO ISTITUZIONE'])) )
     try:
         lat = locale.atof (rigaScuola['LATITUDINE'])
         lon = locale.atof (rigaScuola['LONGITUDINE'])
@@ -144,16 +178,24 @@ for rigaScuola in csvDatiMIUR:
         comune = comuniAgID[aliasComuni[nomeComune]]
     if comune:
         grafo_MIUR.add ( (IRI_scuola, geonames_In, comune) )
+        grafo_MIUR.add ( (IRI_scuola, namespace_locn + 'address', IRI_indirizzo) )
+        grafo_MIUR.add ( (IRI_indirizzo, rdflib.RDF.type, namespace_locn + 'Address') )
         CAP_scuola = rigaScuola['CAP']
+        IND_scuola = rigaScuola['INDIRIZZO']
+        if IND_scuola:
+            grafo_MIUR.add ( (IRI_indirizzo, locn_full, rdflib.Literal (IND_scuola + ', ' + CAP_scuola + ', ' + nomeComune)) )
+        grafo_MIUR.add ( (IRI_indirizzo,  namespace_locn + 'postName', rdflib.Literal (nomeComune)) )
         if CAP_scuola:
             CAP_comune = grafo_AgID.value (comune, locn_CAP).toPython ()
             if len (CAP_scuola) != 5:
                 CAP_scuola = ('0000' + CAP_scuola) [-5:]
+            grafo_MIUR.add ( (IRI_indirizzo, locn_CAP, rdflib.Literal (CAP_scuola)) )
             while CAP_comune[-1:] == 'x':
                 CAP_comune = CAP_comune[:-1]
                 CAP_scuola = CAP_scuola[:-1]
             if CAP_comune != CAP_scuola:
                 contoCAPimprecisi += 1
+                grafo_MIUR.add ( (IRI_indirizzo, namespace_attenzione + 'CAP', comune) )
 #                print 'Verificare ', meccanografico, 'in', nomeComune, ', i CAP non coincidono:', CAP_scuola, '!=', CAP_comune
         re = grafo_AgID.value (grafo_AgID.value (grafo_AgID.value (comune, geonames_In), geonames_In), rdflib.RDFS.label).toPython ()
         if re[:5] != nomeRegione[:5]:
