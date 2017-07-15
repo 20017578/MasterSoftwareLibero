@@ -2,22 +2,22 @@ Analisi delle attività
 ============================
 Manuale di transizione verso gli Open-Data
 ------------------------------------------
-###Analisi delle scelte di indirizzo sugli Open Data delle amministrazioni
-####Ricerca dell'esistente (esistono già guide, istruzioni, direttive in proposito?)
+### Analisi delle scelte di indirizzo sugli Open Data delle amministrazioni
+#### Ricerca dell'esistente (esistono già guide, istruzioni, direttive in proposito?)
  1. Open Data, come rendere aperti i dati delle pubbliche amministrazioni (anno 2011): http://www.funzionepubblica.gov.it/media/982175/vademecumopendata.pdf , [osservazioni](osservazionivademecumopendata.md)
  2. http://www.agid.gov.it/agenda-digitale/open-data
  3. LINEE GUIDA NAZIONALI PER LA VALORIZZAZIONE DEL PATRIMONIO INFORMATIVO PUBBLICO (ANNO 2014): http://www.agid.gov.it/sites/default/files/linee_guida/patrimoniopubblicolg2014_v0.7finale.pdf , [un breve resoconto](LineeGuidaAgIG.md)
  4. Linee guida per la stesura di convenzioni per la fruibilità di dati delle pubbliche amministrazioni - art. 58 comma 2 del CAD: http://www.agid.gov.it/sites/default/files/linee_guida/linee_guida_convenzioni_fruibilita_dati_delle_pa_art_58_cad_0.pdf ,  [alcuni appunti](note-link_n_4.md)
  5. LINEE GUIDA PER L’INTEROPERABILITÀ SEMANTICA ATTRAVERSO I LINKED OPEN DATA (2012): http://www.agid.gov.it/sites/default/files/documentazione_trasparenza/cdc-spc-gdl6-interoperabilitasemopendata_v2.0_0.pdf , [un condensato](InteroperabilitàSemantica_LOD.md)
 
-####Tre casi di PA:
+#### Tre casi di PA:
  1. Breve analisi delle scelte politiche, tecniche ed organizzative dell USR
  2. Breve analisi delle scelte politiche, tecniche ed organizzative della Regione Piemonte 
  3. Breve analisi delle scelte politiche, tecniche ed organizzative del Comune di Torino
 
-####Quali sono leve che storicamente hanno permesso la diffusione dei dati pubblici nelle PA
+#### Quali sono leve che storicamente hanno permesso la diffusione dei dati pubblici nelle PA
 
-###Panorama legislativo (Normativa di riferimento: obblighi/possibilità, fonti: CAD, diritti PI, privacy...)
+### Panorama legislativo (Normativa di riferimento: obblighi/possibilità, fonti: CAD, diritti PI, privacy...)
  1. Diritto d'autore
  2. Obblighi di pubblicazione [Normativa di riferimento](AmbitoGiuridico/Normativa.md)
  3. Privacy
@@ -26,13 +26,13 @@ Manuale di transizione verso gli Open-Data
  6. Analisi delle licenze piu' usate
  7. La licenza del nostro PW ?
 
-###Ambito tecnologico
-####Ricerca di dizionari / ontologie esistenti 
+### Ambito tecnologico
+#### Ricerca di dizionari / ontologie esistenti 
 Sarebbe utile descrivere i campi che abbiamo studiato per creare dei LOD ed analizzare le ontologie già esistenti: quali scegliere, dove cercare, come includerle etc ....
 Si potrebbe fare un discorso generico basato sullo studio dei dataset su Scuole e Trasparenza
-#####Cosa si sta muovendo in Italia (v. AGID)
+##### Cosa si sta muovendo in Italia (v. AGID)
 
-####Analisi delle necessità (nostre ma non solo) ai fini della realizzazione di un software
+#### Analisi delle necessità (nostre ma non solo) ai fini della realizzazione di un software
  1. Ricerca del linguaggio di programmazione
  2. Formato dell'output
  3. analisi dei requisiti
@@ -43,7 +43,7 @@ Si potrebbe fare un discorso generico basato sullo studio dei dataset su Scuole 
 Esempio di Open-Data interoperabili
 -----------------------------------
 
-###Dati legati agli obblighi di trasparenza
+### Dati legati agli obblighi di trasparenza
  1. Normativa di riferimento
  2. Su quali dati concentrarsi? analisi dell'esistente. Facciamo l'elenco dei dati dovuti per legge e dei dati che ad essi possono essere collegati per migliorarne la leggibilità (p.e. geolocalizzazione degli indirizzi) analizzando anche in base alle tipologie generalmente piu' richieste quali sono i dati più "interessanti".
      p.e.: bilancio e nuova normativa che impone un formato standard dei dati
@@ -52,7 +52,7 @@ Esempio di Open-Data interoperabili
  5. Descriviamo il software creato, come funziona e cosa produce
  6. Conclusioni
 
-###Dati legati alle scuole
+### Dati legati alle scuole
  1. Normativa di riferimento
  2. Su quali dati concentrarsi? analisi dell'esistente [documento in proposito](DatiScuole.md)
  3. Integrazione e reperimento di altri dati o informazioni
@@ -68,4 +68,4 @@ Esempio di Open-Data interoperabili
 
 Risultati e conclusioni, ovvero lo scopo del nostro PW(super-super-bozza)
 -----------------------------------
-###Cosa deve fare e cosa deve tenere in considerazione una PA che ha dei dati da pubblicare
+### Cosa deve fare e cosa deve tenere in considerazione una PA che ha dei dati da pubblicare

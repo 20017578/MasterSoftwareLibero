@@ -18,7 +18,7 @@ MASTER IN MANAGEMENT DEL SOFTWARE LIBERO - PROJECT WORK
 
 ## CONSIDERAZIONI INTRODUTTIVE
 
-###Perché promuovere open data e open source?
+### Perché promuovere open data e open source?
 
 Perché la condivisione delle informazioni, oltre a garantire risparmio di denaro, contribuisce alla 
 nascita di nuove opportunità per creare nuovi prodotti o servizi a beneficio delle imprese e della 
@@ -34,7 +34,7 @@ all'utente di ricavare informazioni specifiche in settori determinati.
 L'Open Government rappresenta un modello di amministrazione aperto e trasparente da parte degli
 enti e delle istituzioni pubbliche verso i cittadini.
 
-###Licenze
+### Licenze
 
 Esistono due tipi li licenze con cui è possibile pubblicare i dati: “closed” e “open”.
 Le licenze chiuse consentono di riservare tutti i diritti, utilizzando il simbolo c che viene usato per 
